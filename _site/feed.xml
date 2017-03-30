@@ -3,8 +3,8 @@
   <channel>
     <title>idblockchain</title>
     <description>A working plateform to communicate about idblockchain project</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.perfectlyrandom.org/trio/</link>
+    <atom:link href="http://www.perfectlyrandom.org/trio/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Color Themes and Post Logos</title>
@@ -34,8 +34,8 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;fort_awesome_icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cog&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;fa-spin'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Mon, 07 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/09/07/color-themes-and-post-logos/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/07/color-themes-and-post-logos/</guid>
+        <link>http://www.perfectlyrandom.org/trio/2015/09/07/color-themes-and-post-logos/</link>
+        <guid isPermaLink="true">http://www.perfectlyrandom.org/trio/2015/09/07/color-themes-and-post-logos/</guid>
       </item>
     
       <item>
@@ -53,8 +53,8 @@
 &lt;p&gt;The URL to this blog post depends on the YAML field &lt;code&gt;date&lt;/code&gt;. Do not change the date after you publish this post. Use the YAML field &lt;code&gt;update_date&lt;/code&gt; instead.&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/09/06/what-is-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/06/what-is-jekyll/</guid>
+        <link>http://www.perfectlyrandom.org/trio/2015/09/06/what-is-jekyll/</link>
+        <guid isPermaLink="true">http://www.perfectlyrandom.org/trio/2015/09/06/what-is-jekyll/</guid>
       </item>
     
       <item>
@@ -72,8 +72,8 @@
 &lt;p&gt;There is a delay (about 5-10 minutes) between setting up Disqus correctly and seeing the comments and comment counts show up. For more details or to understand how Trio adds Disqus comments, see &lt;a href=&quot;http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/09/06/setting-up-disqus-integration/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/06/setting-up-disqus-integration/</guid>
+        <link>http://www.perfectlyrandom.org/trio/2015/09/06/setting-up-disqus-integration/</link>
+        <guid isPermaLink="true">http://www.perfectlyrandom.org/trio/2015/09/06/setting-up-disqus-integration/</guid>
       </item>
     
       <item>
@@ -107,8 +107,8 @@ You can override the global &lt;code&gt;permalink&lt;/code&gt; value in &lt;code
 &lt;p&gt;Trio is setup so that the URL to a post depends on the YAML front-matter field &lt;code&gt;date&lt;/code&gt; in the Markdown file. Once you publish a post, the search engines link to that URL. You do not want to change the &lt;code&gt;date&lt;/code&gt; field after you publish a post. If you make changes and want to notify readers of the changes, use the YAML field &lt;code&gt;update_date&lt;/code&gt; instead in the &lt;code&gt;.md&lt;/code&gt; file.&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/09/06/getting-started-with-trio/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/06/getting-started-with-trio/</guid>
+        <link>http://www.perfectlyrandom.org/trio/2015/09/06/getting-started-with-trio/</link>
+        <guid isPermaLink="true">http://www.perfectlyrandom.org/trio/2015/09/06/getting-started-with-trio/</guid>
       </item>
     
       <item>
@@ -217,8 +217,8 @@ You can override the global &lt;code&gt;permalink&lt;/code&gt; value in &lt;code
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 06 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/09/06/code-blocks-tables-and-github-gists/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/06/code-blocks-tables-and-github-gists/</guid>
+        <link>http://www.perfectlyrandom.org/trio/2015/09/06/code-blocks-tables-and-github-gists/</link>
+        <guid isPermaLink="true">http://www.perfectlyrandom.org/trio/2015/09/06/code-blocks-tables-and-github-gists/</guid>
       </item>
     
       <item>
@@ -226,13 +226,13 @@ You can override the global &lt;code&gt;permalink&lt;/code&gt; value in &lt;code
         <description>&lt;p&gt;Trio is a simple, content-focused, responsive, mobile-friendly &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; theme. Trio comes with support for these things out-of-the-box:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:4000/feed.xml&quot;&gt;RSS feed&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:4000/404.html&quot;&gt;404 page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.perfectlyrandom.org/trio/feed.xml&quot;&gt;RSS feed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.perfectlyrandom.org/trio/404.html&quot;&gt;404 page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Markdown syntax highlighting, fenced code blocks, tables, GitHub gists, blockquotes&lt;/li&gt;
 &lt;li&gt;Post sharing buttons&lt;/li&gt;
 &lt;li&gt;Paginated list of posts&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:4000/2015/09/06/setting-up-disqus-integration/&quot;&gt;Disqus integration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Formspree &lt;a href=&quot;http://localhost:4000/contact/&quot;&gt;contact form&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.perfectlyrandom.org/trio/2015/09/06/setting-up-disqus-integration/&quot;&gt;Disqus integration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Formspree &lt;a href=&quot;http://www.perfectlyrandom.org/trio/contact/&quot;&gt;contact form&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Nine color themes&lt;/li&gt;
 &lt;li&gt;Support for logos using &lt;a href=&quot;http://fortawesome.github.io/Font-Awesome&quot;&gt;Font Awesome&lt;/a&gt; icons&lt;/li&gt;
 &lt;li&gt;Full-text search&lt;/li&gt;
@@ -247,8 +247,8 @@ You can override the global &lt;code&gt;permalink&lt;/code&gt; value in &lt;code
 &lt;p&gt;Please feel free to download it, request a feature or report a bug.&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/09/05/welcome-to-trio/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/05/welcome-to-trio/</guid>
+        <link>http://www.perfectlyrandom.org/trio/2015/09/05/welcome-to-trio/</link>
+        <guid isPermaLink="true">http://www.perfectlyrandom.org/trio/2015/09/05/welcome-to-trio/</guid>
       </item>
     
   </channel>
