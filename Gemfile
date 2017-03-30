@@ -1,10 +1,11 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby '2.4.0'
+gem 'kramdown', '1.13.2'
+gem 'rack-jekyll', '0.5.0'
+gem 'rake', '12.0.0'
+gem 'puma', '3.7.1'
+gem 'yajl-ruby', '1.3.0'
 
-gem 'kramdown'
-gem 'rack-jekyll'
-gem 'rake'
-gem 'puma'
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
