@@ -42,8 +42,6 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
 
 # Gems
-gems: ['jekyll-paginate']
-
+gems: ['jekyll-paginate', 'kramdown']
 # Exclude
-exclude: ['README.md']
-
+exclude: ['README.md', 'config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
