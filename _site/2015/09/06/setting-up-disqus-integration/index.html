@@ -33,6 +33,7 @@
     
     <meta name="twitter:title" content="Setting up Disqus integration" />
     <meta name="twitter:description" content="Trio comes with Disqus integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the disqus_shortname field in _config.yml.
+
 " />
     <meta name="twitter:url" content="http://localhost:4000/2015/09/06/setting-up-disqus-integration/" />
 
@@ -41,6 +42,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Setting up Disqus integration" />
     <meta property="og:description" content="Trio comes with Disqus integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the disqus_shortname field in _config.yml.
+
 " />
     <meta property="og:url" content="http://localhost:4000/2015/09/06/setting-up-disqus-integration/" />
     <meta property="og:site_name" content="idblockchain">
@@ -82,13 +84,17 @@
 <body>
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
-    <a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>
+    <!--<a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>-->
+		<a href="http://localhost:4000">ID Blockchain</a>
   </div>
     <ul>
-      <li><a href="http://localhost:4000/">News</a></li>
-      <li><a href="http://localhost:4000/documents/">Documents</a></li>
-      <li><a href="http://localhost:4000/search/">Search</a></li>
-      <li><a href="http://localhost:4000/about/">About</a></li>
+	  <li><a href="http://localhost:4000/"><strong>ID Blockchain</strong></a></li>
+	  <li><a href="http://localhost:4000/about/">Fact Sheet</a></li>
+	<li><a href="http://localhost:4000/about/">Members & Sponsors</a></li>
+      <li><a href="http://localhost:4000/">Events</a></li>
+      <li><a href="http://localhost:4000/deliverables/">Deliverables</a></li>
+      <!--<li><a href="http://localhost:4000/search/">Search</a></li>-->
+      <li><a href="http://localhost:4000/about/">FAQ</a></li>
       <li><a href="http://localhost:4000/contact/">Contact</a></li>
     </ul>
     <br/>
@@ -131,14 +137,17 @@
     <br/>
 </div>
 
-<p>Trio comes with <a href="http://disqus.com">Disqus</a> integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the <code>disqus_shortname</code> field in <code>_config.yml</code>.</p>
+<p>Trio comes with <a href="http://disqus.com">Disqus</a> integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the <code class="highlighter-rouge">disqus_shortname</code> field in <code class="highlighter-rouge">_config.yml</code>.</p>
 
-<p>To get a <code>disqus_shortname</code>, you&rsquo;ll need to <a href="https://disqus.com/profile/signup/">sign up</a> for a Disqus account.</p>
+<p>To get a <code class="highlighter-rouge">disqus_shortname</code>, you’ll need to <a href="https://disqus.com/profile/signup/">sign up</a> for a Disqus account.</p>
 
-<p>While testing on your local machine, you might want to enable <em>developer mode</em> for Disqus by setting the Javascript <code>disqus_developer</code> variable to <code>1</code> in
-<code>index.html</code> and <code>_layouts/post.html</code> files:</p>
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">disqus_developer</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Comment out when the site is live</span>
-</code></pre></div>
+<p>While testing on your local machine, you might want to enable <em>developer mode</em> for Disqus by setting the Javascript <code class="highlighter-rouge">disqus_developer</code> variable to <code class="highlighter-rouge">1</code> in
+<code class="highlighter-rouge">index.html</code> and <code class="highlighter-rouge">_layouts/post.html</code> files:</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">disqus_developer</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Comment out when the site is live</span>
+</code></pre>
+</div>
+
 <p>Remember to comment out the lines when making your website live.</p>
 
 <p>There is a delay (about 5-10 minutes) between setting up Disqus correctly and seeing the comments and comment counts show up. For more details or to understand how Trio adds Disqus comments, see <a href="http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/">this post</a>.</p>
@@ -229,7 +238,7 @@
 
     <div class="footer-primary-links">
       <ul>
-        <li>Powered by <a href="http://paymium.com/">paymium</a>.
+        <!--<li>Powered by <a href="http://paymium.com/">paymium</a>-->
         </li>
       </ul>
     </div>

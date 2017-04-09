@@ -33,6 +33,7 @@
     
     <meta name="twitter:title" content="Code blocks, Tables and GitHub gists" />
     <meta name="twitter:description" content="Examples to show how these basic components look in Trio.
+
 " />
     <meta name="twitter:url" content="http://localhost:4000/2015/09/06/code-blocks-tables-and-github-gists/" />
 
@@ -41,6 +42,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Code blocks, Tables and GitHub gists" />
     <meta property="og:description" content="Examples to show how these basic components look in Trio.
+
 " />
     <meta property="og:url" content="http://localhost:4000/2015/09/06/code-blocks-tables-and-github-gists/" />
     <meta property="og:site_name" content="idblockchain">
@@ -82,13 +84,17 @@
 <body>
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
-    <a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>
+    <!--<a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>-->
+		<a href="http://localhost:4000">ID Blockchain</a>
   </div>
     <ul>
-      <li><a href="http://localhost:4000/">News</a></li>
-      <li><a href="http://localhost:4000/documents/">Documents</a></li>
-      <li><a href="http://localhost:4000/search/">Search</a></li>
-      <li><a href="http://localhost:4000/about/">About</a></li>
+	  <li><a href="http://localhost:4000/"><strong>ID Blockchain</strong></a></li>
+	  <li><a href="http://localhost:4000/about/">Fact Sheet</a></li>
+	<li><a href="http://localhost:4000/about/">Members & Sponsors</a></li>
+      <li><a href="http://localhost:4000/">Events</a></li>
+      <li><a href="http://localhost:4000/deliverables/">Deliverables</a></li>
+      <!--<li><a href="http://localhost:4000/search/">Search</a></li>-->
+      <li><a href="http://localhost:4000/about/">FAQ</a></li>
       <li><a href="http://localhost:4000/contact/">Contact</a></li>
     </ul>
     <br/>
@@ -133,20 +139,22 @@
 
 <p>Examples to show how these basic components look in Trio.</p>
 
-<p><br/></p>
-
+<p><br /></p>
 <h3 id="code-blocks">Code blocks</h3>
 
-<p>Since Trio uses <code>redcarpet</code> instead of <code>kramdown</code>, we can use the triple backticks to define fenced code blocks. See the Markdown source of this file <a href="https://github.com/ankur-gupta/trio/blob/master/_posts/2015-09-06-code-blocks-tables-and-github-gists.md">here</a>.</p>
+<p>Since Trio uses <code class="highlighter-rouge">redcarpet</code> instead of <code class="highlighter-rouge">kramdown</code>, we can use the triple backticks to define fenced code blocks. See the Markdown source of this file <a href="https://github.com/ankur-gupta/trio/blob/master/_posts/2015-09-06-code-blocks-tables-and-github-gists.md">here</a>.</p>
 
 <p>Here is how code blocks look in Trio:</p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nf">#container</span> <span class="p">{</span>
     <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
     <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
     <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
-<p>You can also use liquid tag <code>highlight</code> which has the same effect:</p>
+</code></pre>
+</div>
+
+<p>You can also use liquid tag <code class="highlighter-rouge">highlight</code> which has the same effect:</p>
 
 <figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
@@ -168,47 +176,49 @@
   <span class="mi">42</span>
 <span class="k">end</span></code></pre></figure>
 
-<p>You can also use the triple tilde ala <code>kramdown</code> which same the same effect:</p>
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">what?</span>
+<p>You can also use the triple tilde ala <code class="highlighter-rouge">kramdown</code> which same the same effect:</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">what?</span>
   <span class="mi">42</span>
 <span class="k">end</span>
-</code></pre></div>
+</code></pre>
+</div>
+
 <h3 id="footnotes">Footnotes</h3>
+<p>Markdown footnotes<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> work nicely in Trio. You need to make sure proper extensions are enabled in either <code class="highlighter-rouge">redcarpet</code> or <code class="highlighter-rouge">kramdown</code> parsers.</p>
 
-<p>Markdown footnotes<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> work nicely in Trio. You need to make sure proper extensions are enabled in either <code>redcarpet</code> or <code>kramdown</code> parsers.</p>
-
-<p><br/></p>
-
+<p><br /></p>
 <h3 id="tables">Tables</h3>
-
 <p>This is how tables look like in Solo. See the Markdown source of this file <a href="https://github.com/ankur-gupta/trio/blob/master/_posts/2015-09-06-code-blocks-tables-and-github-gists.md">here</a> for a demo of Markdown Tables. An excellent source to create tables in many formats (including Markdown) is <a href="http://www.tablesgenerator.com/">Tables Generator</a>.</p>
 
-<table><thead>
-<tr>
-<th style="text-align: left">Left-Aligned</th>
-<th style="text-align: center">Center Aligned</th>
-<th style="text-align: right">Right Aligned</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">col 3 is</td>
-<td style="text-align: center">some wordy text</td>
-<td style="text-align: right">$1600</td>
-</tr>
-<tr>
-<td style="text-align: left">col 2 is</td>
-<td style="text-align: center">centered</td>
-<td style="text-align: right">$12</td>
-</tr>
-<tr>
-<td style="text-align: left">zebra stripes</td>
-<td style="text-align: center">are neat</td>
-<td style="text-align: right">$1</td>
-</tr>
-</tbody></table>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Left-Aligned</th>
+      <th style="text-align: center">Center Aligned</th>
+      <th style="text-align: right">Right Aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">col 3 is</td>
+      <td style="text-align: center">some wordy text</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">col 2 is</td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">$12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">zebra stripes</td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><br/></p>
-
+<p><br /></p>
 <h3 id="github-gists">Github Gists</h3>
 
 <p>This is how GitHub Gists look in Solo.</p>
@@ -217,21 +227,18 @@
 
 <h3 id="blockquotes">Blockquotes</h3>
 
-<p>Trio supports lists, <code>&lt;hr&gt;</code>s, <code>&lt;table&gt;</code>s  and</p>
+<p>Trio supports lists, <code class="highlighter-rouge">&lt;hr&gt;</code>s, <code class="highlighter-rouge">&lt;table&gt;</code>s  and</p>
 
 <blockquote>
-<p>blockquotes</p>
+  <p>blockquotes</p>
 </blockquote>
 
 <div class="footnotes">
-<hr>
-<ol>
-
-<li id="fn1">
-<p><a href="http://en.wikipedia.org/wiki/Syntax_highlighting">http://en.wikipedia.org/wiki/Syntax_highlighting</a>&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
+  <ol>
+    <li id="fn:1">
+      <p><a href="http://en.wikipedia.org/wiki/Syntax_highlighting">http://en.wikipedia.org/wiki/Syntax_highlighting</a>&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
 </div>
 
 
@@ -320,7 +327,7 @@
 
     <div class="footer-primary-links">
       <ul>
-        <li>Powered by <a href="http://paymium.com/">paymium</a>.
+        <!--<li>Powered by <a href="http://paymium.com/">paymium</a>-->
         </li>
       </ul>
     </div>
