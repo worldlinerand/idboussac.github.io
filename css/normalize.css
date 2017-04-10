@@ -409,3 +409,20 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+
+.markdown-block p {
+margin-left:1.5em;
+}
+.markdown-block .ui-closed:before {
+font-family:monospace;
+content:"+ ";
+}
+
+.markdown-block .ui-open:before {
+font-family:monospace;
+content:"- ";
+}

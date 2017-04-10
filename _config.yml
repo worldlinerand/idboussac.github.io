@@ -1,6 +1,6 @@
 # Site wide configuration
 title: idblockchain
-description: 'A working plateform to communicate about idblockchain project'
+description: 'A working platform to communicate about idblockchain project'
 url: https://idboussac.github.io
 date_format: '%B %d, %Y'
 fort_awesome_icon: 'cog fa-spin'

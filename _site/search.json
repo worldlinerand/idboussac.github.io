@@ -1,6 +1,16 @@
 [
   
     {
+      "title"    : "Rebooting the Web of Trust",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/",
+      "date"     : "April 10, 2017",
+      "content"  : "A conference to be held in Paris on April 19-20-21.\n\n",
+      "snippet"  : "A conference to be held in Paris on April 19-20-21."
+    } ,
+  
+    {
       "title"    : "Color Themes and Post Logos",
       "category" : "",
       "tags"     : "",
@@ -100,6 +110,18 @@
         "category" : "",
         "tags"     : "",
         "url"      : "http://localhost:4000/deliverables/",
+        "date"     : " ",
+        "content"  : "",
+        "snippet"  : " "
+     
+   } ,
+  
+   {
+     
+        "title"    : "FAQ",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "http://localhost:4000/faq/",
         "date"     : " ",
         "content"  : "",
         "snippet"  : " "

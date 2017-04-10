@@ -7,6 +7,16 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Rebooting the Web of Trust</title>
+        <description>&lt;p&gt;A conference to be held in Paris on April 19-20-21.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 10 Apr 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/</guid>
+      </item>
+    
+      <item>
         <title>Color Themes and Post Logos</title>
         <description>&lt;p&gt;Trio comes with support for 9 different color themes as well as &lt;a href=&quot;https://fortawesome.github.io/Font-Awesome/icons/&quot;&gt;Font Awesome icons&lt;/a&gt; as logos.&lt;/p&gt;
 

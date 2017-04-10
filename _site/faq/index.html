@@ -11,7 +11,7 @@
 
     <title>
         
-            Search &#8211;
+            FAQ &#8211;
         
         idblockchain
     </title>
@@ -29,16 +29,16 @@
     
         <meta name="twitter:creator" content="@pierrenoizat" />
     
-    <meta name="twitter:title" content="Search" />
+    <meta name="twitter:title" content="FAQ" />
     <meta name="twitter:description" content="A working plateform to communicate about idblockchain project" />
-    <meta name="twitter:url" content="http://localhost:4000/search/" />
+    <meta name="twitter:url" content="http://localhost:4000/faq/" />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Search" />
+    <meta property="og:title" content="FAQ" />
     <meta property="og:description" content="A working plateform to communicate about idblockchain project" />
-    <meta property="og:url" content="http://localhost:4000/search/" />
+    <meta property="og:url" content="http://localhost:4000/faq/" />
     <meta property="og:site_name" content="idblockchain">
 
     <!-- Custom CSS -->
@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Set the canonical URL for search engines -->
-    <link rel="canonical" href="http://localhost:4000/search/">
+    <link rel="canonical" href="http://localhost:4000/faq/">
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://localhost:4000/feed.xml" />
@@ -100,31 +100,42 @@
         <a href="http://localhost:4000">idblockchain</a>
     </div> -->
     <div class = "container">
-        <div class="search-query">
-    <br>
-    <h2><a href="http://localhost:4000/search/">Search</a></h2>
-    <br>
-    <br>
-    <input type="text" id="search-input" placeholder="Search entire site" />
+        <br/>
+
+<h2>FAQ</h2>
+<br/>
+<br/>
+
+<head>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+ <script>
+   $(function() {
+     $( ".accordion" ).accordion();
+     $(".accordion").accordion({ header: "h4", collapsible: true, active: false ,heightStyle: "content" });
+   });
+   </script>
+
+
+</head>
+<div class="accordion">
+	<h4>Question 1</h4>
+	    <div>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus</p>
+	    </div>
+	<h4>Question 2</h4>
+	    <div>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus</p>
+	    </div>
+	<h4>Question 3</h4>
+		<div>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus</p>
+		</div>
 </div>
 
-<div class="search-results" id="results-container"></div>
 
-<!-- Script pointing to jekyll-search.js -->
-<script src="http://localhost:4000/js/jekyll-search.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: 'http://localhost:4000/search.json',
-    searchResultTemplate: '<div class="single-search-result"><h2><a href="{url}" title="{desc}">{title}</a></h2><p>{snippet}</p><p class="date">{date}</p></div>',
-    noResultsText: 'No results found',
-    limit: 20,
-    fuzzy: false
-    // exclude: ['search']
-})
-</script>
     </div>
 </div>
 
