@@ -138,6 +138,18 @@
   
    {
      
+        "title"    : "Members &amp; Sponsors",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "http://localhost:4000/members/",
+        "date"     : " ",
+        "content"  : "",
+        "snippet"  : " "
+     
+   } ,
+  
+   {
+     
         "title"    : "Search",
         "category" : "",
         "tags"     : "",
