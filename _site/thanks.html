@@ -13,12 +13,14 @@
         
             Thanks For Your Message &#8211;
         
-        idblockchain
+        id-blockchain
     </title>
     <script
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
+
+
     <!-- Meta information for search engines -->
     <meta name="author" content="">
     <meta name="description" content="A working platform to communicate about idblockchain project">
@@ -39,7 +41,7 @@
     <meta property="og:title" content="Thanks For Your Message" />
     <meta property="og:description" content="A working platform to communicate about idblockchain project" />
     <meta property="og:url" content="http://localhost:4000/thanks.html" />
-    <meta property="og:site_name" content="idblockchain">
+    <meta property="og:site_name" content="id-blockchain">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="http://localhost:4000/css/trio.css">
@@ -51,7 +53,7 @@
     <link rel="canonical" href="http://localhost:4000/thanks.html">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://localhost:4000/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for id-blockchain" href="http://localhost:4000/feed.xml" />
 
     <!-- Icons -->
     <!-- The ?v=8jjamLzmpR simply forces the browser to reload the favicon. Remove after a long time. -->
@@ -73,33 +75,64 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://localhost:4000/mstile-144x144.png?v=8jjamLzmpR">
 
+<!-- slide effect -->
+
+<!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
 </head>
 <!-- Header: end -->
 
 <body>
+
+<script>
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('navbar');
+        jQuery('.stickyheader ul').toggleClass('navbar');
+
+        e.preventDefault();
+    });
+    jQuery('.stickyheader li').click(function(e){
+      jQuery('.toggle-nav').toggleClass('navbar');
+      jQuery('.stickyheader ul').toggleClass('navbar');
+    });
+});
+</script>
+
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
     <!--<a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>-->
-		<a href="http://localhost:4000">ID Blockchain</a>
+		<!--<a href="http://localhost:4000">ID Blockchain</a>-->
   </div>
-    <ul>
-	  <li><a href="http://localhost:4000/"><strong>ID Blockchain</strong></a></li>
-	  <li><a href="http://localhost:4000/about/">Fact Sheet</a></li>
-	<li><a href="http://localhost:4000/members/">Members & Sponsors</a></li>
-      <li><a href="http://localhost:4000/">Events</a></li>
-      <li><a href="http://localhost:4000/deliverables/">Deliverables</a></li>
+    <ul class="navbar">
+	  <li><a href="#aboutpage" data-transition="slideup"><strong>ID-BLOCKCHAIN</strong></a></li>
+	  <li><a href="#aboutpage" data-transition="slideup">Project</a></li>
+	   <li class="dropdown">
+       <a href="#memberspage" data-transition="slideup" class="dropbtn">Members & Sponsors</a>
+          <div class="dropdown-content">
+            <a href="#sponsors">Sponsors</a>
+            <a href="#labels">Label</a>
+            <a href="#members">Members</a>
+          </div>
+     </li>
+      <li><a href="#newspage" data-transition="slideup">Events & News</a></li>
+      <li><a href="#deliverablespage" data-transition="slideup">Deliverables</a></li>
       <!--<li><a href="http://localhost:4000/search/">Search</a></li>-->
-      <li><a href="http://localhost:4000/faq/">FAQ</a></li>
-      <li><a href="http://localhost:4000/contact/">Contact</a></li>
+     <li><a href="#faqpage" data-transition="slideup">FAQ</a></li>
+      <li><a href="#contactpage" data-transition="slideup">Contact</a></li>
     </ul>
+    <a class="toggle-nav" href="#">&#9776;</a>
     <br/>
 </header>
 
 <div class="wrapper-for-content-outside-of-footer">
-<!--     <div class="site-title">
-        <a href="http://localhost:4000">idblockchain</a>
-    </div> -->
+     <!--<div class="site-title">
+        <a href="http://localhost:4000">id-blockchain</a>
+    </div>-->
     <div class = "container">
+
         <div class="contact">
     <h2>Thank you</h2>
     We will reply as soon as possible.
@@ -108,8 +141,7 @@
 <div class="contact">
       <a href="http://localhost:4000" class="button">Home</a>
 </div>
-    </div>
-</div>
+
 
 <header class="stickyfooter" role="contentinfo">
 
@@ -155,6 +187,7 @@
 
 </header>
 <!-- Some empty space between the page counter and footer -->
+
 
 </body>
 </html>

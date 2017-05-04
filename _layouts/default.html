@@ -19,6 +19,8 @@
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
+
+
     <!-- Meta information for search engines -->
     <meta name="author" content="{{ owner.name }}">
     <meta name="description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
@@ -75,36 +77,66 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="{{ site.url }}/mstile-144x144.png?v=8jjamLzmpR">
 
+<!-- slide effect -->
+
+<!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
 </head>
 <!-- Header: end -->
 
 <body>
+
+<script>
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('navbar');
+        jQuery('.stickyheader ul').toggleClass('navbar');
+
+        e.preventDefault();
+    });
+    jQuery('.stickyheader li').click(function(e){
+      jQuery('.toggle-nav').toggleClass('navbar');
+      jQuery('.stickyheader ul').toggleClass('navbar');
+    });
+});
+</script>
+
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
     <!--<a href="{{ site.url }}"><i class="fa fa-{{ site.fort_awesome_icon }}"></i></a>-->
-		<a href="{{ site.url }}">ID Blockchain</a>
+		<!--<a href="{{ site.url }}">ID Blockchain</a>-->
   </div>
-    <ul>
-	  <li><a href="{{ site.url }}/"><strong>ID Blockchain</strong></a></li>
-	  <li><a href="{{ site.url }}/about/">Fact Sheet</a></li>
-	<li><a href="{{ site.url }}/members/">Members & Sponsors</a></li>
-      <li><a href="{{ site.url }}/">Events</a></li>
-      <li><a href="{{ site.url }}/deliverables/">Deliverables</a></li>
+    <ul class="navbar">
+	  <li><a href="#aboutpage" data-transition="slideup"><strong>ID-BLOCKCHAIN</strong></a></li>
+	  <li><a href="#aboutpage" data-transition="slideup">Project</a></li>
+	   <li class="dropdown">
+       <a href="#memberspage" data-transition="slideup" class="dropbtn">Members & Sponsors</a>
+          <div class="dropdown-content">
+            <a href="#sponsors">Sponsors</a>
+            <a href="#labels">Label</a>
+            <a href="#members">Members</a>
+          </div>
+     </li>
+      <li><a href="#newspage" data-transition="slideup">Events & News</a></li>
+      <li><a href="#deliverablespage" data-transition="slideup">Deliverables</a></li>
       <!--<li><a href="{{ site.url }}/search/">Search</a></li>-->
-      <li><a href="{{ site.url }}/faq/">FAQ</a></li>
-      <li><a href="{{ site.url }}/contact/">Contact</a></li>
+     <li><a href="#faqpage" data-transition="slideup">FAQ</a></li>
+      <li><a href="#contactpage" data-transition="slideup">Contact</a></li>
     </ul>
+    <a class="toggle-nav" href="#">&#9776;</a>
     <br/>
 </header>
 
 <div class="wrapper-for-content-outside-of-footer">
-<!--     <div class="site-title">
+     <!--<div class="site-title">
         <a href="{{ site.url }}">{{ site.title }}</a>
-    </div> -->
+    </div>-->
     <div class = "container">
+
         {{ content }}
-    </div>
-</div>
+
 
 <header class="stickyfooter" role="contentinfo">
 
@@ -158,6 +190,7 @@
 
 </header>
 <!-- Some empty space between the page counter and footer -->
+
 
 </body>
 </html>

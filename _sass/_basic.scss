@@ -15,6 +15,7 @@ ul, li {
 body {
   margin-top: 0rem;
   color: $base-gray;
+  background: url(/assets/backgroundWorld.jpg) 50% 50% fixed no-repeat;
 }
 
 * {
@@ -134,6 +135,7 @@ hr {
 .container img {
   margin: 0 auto;
   display: block;
+  opacity: 1;
 }
 
 table {
@@ -174,10 +176,17 @@ pre > code {
   background-color: $white;
 }
 
+
 .container {
-  max-width: 35rem;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 0 1rem;
+  font-size: 150%;
+  background-color: rgba(256, 256, 256, 0.95);
+  opacity: 1;
+  z-index: 1;
+
+
 }
 
 div.post-title {

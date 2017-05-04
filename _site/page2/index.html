@@ -17,6 +17,8 @@
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
+
+
     <!-- Meta information for search engines -->
     <meta name="author" content="">
     <meta name="description" content="A working platform to communicate about idblockchain project">
@@ -29,76 +31,230 @@
     
     <meta name="twitter:title" content="idblockchain" />
     <meta name="twitter:description" content="A working platform to communicate about idblockchain project" />
-    <meta name="twitter:url" content="http://localhost:4000/page2/" />
+    <meta name="twitter:url" content="http://127.0.0.1:4000/page2/" />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="idblockchain" />
     <meta property="og:description" content="A working platform to communicate about idblockchain project" />
-    <meta property="og:url" content="http://localhost:4000/page2/" />
+    <meta property="og:url" content="http://127.0.0.1:4000/page2/" />
     <meta property="og:site_name" content="idblockchain">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="http://localhost:4000/css/trio.css">
+    <link rel="stylesheet" href="http://127.0.0.1:4000/css/trio.css">
 
     <!-- Social buttons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Set the canonical URL for search engines -->
-    <link rel="canonical" href="http://localhost:4000/page2/">
+    <link rel="canonical" href="http://127.0.0.1:4000/page2/">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://localhost:4000/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://127.0.0.1:4000/feed.xml" />
 
     <!-- Icons -->
     <!-- The ?v=8jjamLzmpR simply forces the browser to reload the favicon. Remove after a long time. -->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/apple-touch-icon-57x57.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/apple-touch-icon-60x60.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/apple-touch-icon-72x72.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/apple-touch-icon-76x76.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/apple-touch-icon-114x114.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/apple-touch-icon-120x120.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/apple-touch-icon-144x144.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/apple-touch-icon-152x152.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/apple-touch-icon-180x180.png?v=8jjamLzmpR">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-32x32.png?v=8jjamLzmpR" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-194x194.png?v=8jjamLzmpR" sizes="194x194">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-96x96.png?v=8jjamLzmpR" sizes="96x96">
-    <link rel="icon" type="image/png" href="http://localhost:4000/android-chrome-192x192.png?v=8jjamLzmpR" sizes="192x192">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-16x16.png?v=8jjamLzmpR" sizes="16x16">
-    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="57x57" href="http://127.0.0.1:4000/apple-touch-icon-57x57.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://127.0.0.1:4000/apple-touch-icon-60x60.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:4000/apple-touch-icon-72x72.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://127.0.0.1:4000/apple-touch-icon-76x76.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:4000/apple-touch-icon-114x114.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://127.0.0.1:4000/apple-touch-icon-120x120.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://127.0.0.1:4000/apple-touch-icon-144x144.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://127.0.0.1:4000/apple-touch-icon-152x152.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:4000/apple-touch-icon-180x180.png?v=8jjamLzmpR">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-32x32.png?v=8jjamLzmpR" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-194x194.png?v=8jjamLzmpR" sizes="194x194">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-96x96.png?v=8jjamLzmpR" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/android-chrome-192x192.png?v=8jjamLzmpR" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-16x16.png?v=8jjamLzmpR" sizes="16x16">
+    <link rel="shortcut icon" href="http://127.0.0.1:4000/favicon.ico?v=8jjamLzmpR">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="http://localhost:4000/mstile-144x144.png?v=8jjamLzmpR">
+    <meta name="msapplication-TileImage" content="http://127.0.0.1:4000/mstile-144x144.png?v=8jjamLzmpR">
+
+<!-- slide effect -->
+
+<!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
 
 </head>
 <!-- Header: end -->
 
 <body>
+
+<script>
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('navbar');
+        jQuery('.stickyheader ul').toggleClass('navbar');
+
+        e.preventDefault();
+    });
+    jQuery('.stickyheader li').click(function(e){
+      jQuery('.toggle-nav').toggleClass('navbar');
+      jQuery('.stickyheader ul').toggleClass('navbar');
+    });
+});
+</script>
+
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
-    <!--<a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>-->
-		<a href="http://localhost:4000">ID Blockchain</a>
+    <!--<a href="http://127.0.0.1:4000"><i class="fa fa-cog fa-spin"></i></a>-->
+		<!--<a href="http://127.0.0.1:4000">ID Blockchain</a>-->
   </div>
-    <ul>
-	  <li><a href="http://localhost:4000/"><strong>ID Blockchain</strong></a></li>
-	  <li><a href="http://localhost:4000/about/">Fact Sheet</a></li>
-	<li><a href="http://localhost:4000/members/">Members & Sponsors</a></li>
-      <li><a href="http://localhost:4000/">Events</a></li>
-      <li><a href="http://localhost:4000/deliverables/">Deliverables</a></li>
-      <!--<li><a href="http://localhost:4000/search/">Search</a></li>-->
-      <li><a href="http://localhost:4000/faq/">FAQ</a></li>
-      <li><a href="http://localhost:4000/contact/">Contact</a></li>
+    <ul class="navbar">
+	  <li><a href="#aboutpage" data-transition="slideup"><strong>ID Blockchain</strong></a></li>
+	  <li><a href="#aboutpage" data-transition="slideup">Fact Sheet</a></li>
+	   <li class="dropdown">
+       <a href="#memberspage" data-transition="slideup" class="dropbtn">Members & Sponsors</a>
+          <div class="dropdown-content">
+            <a href="#sponsors">Sponsors</a>
+            <a href="#labels">Labels</a>
+            <a href="#members">Members</a>
+          </div>
+     </li>
+      <li><a href="#newspage" data-transition="slideup">Events</a></li>
+      <li><a href="#deliverablespage" data-transition="slideup">Deliverables</a></li>
+      <!--<li><a href="http://127.0.0.1:4000/search/">Search</a></li>-->
+     <li><a href="#faqpage" data-transition="slideup">FAQ</a></li>
+      <li><a href="#contactpage" data-transition="slideup">Contact</a></li>
     </ul>
+    <a class="toggle-nav" href="#">&#9776;</a>
     <br/>
 </header>
 
 <div class="wrapper-for-content-outside-of-footer">
-<!--     <div class="site-title">
-        <a href="http://localhost:4000">idblockchain</a>
-    </div> -->
+     <!--<div class="site-title">
+        <a href="http://127.0.0.1:4000">idblockchain</a>
+    </div>-->
     <div class = "container">
-        <div class="news">
+
+        <div data-role="page" id="aboutpage">
+
+<br />
+<br/>
+  <br/>
+
+  <h2>Fact Sheet</h2>
+  <br/>
+  <br/>
+  <!--ID-BLOCKCHAIN aborde la gestion de l’identité numérique et l’authentification forte. ID-BLOCKCHAIN fournit des services d’authentification et de fourniture d’attributs personnels, associés à un dispositif matériel communiquant et sécurisé, dans le respect de la vie privée. ID-BLOCKCHAIN est basé sur les technologies dites blockchain dont Bitcoin est à ce jour l’exemple le plus connu.
+
+  Cette approche disruptive doit permettre d’augmenter le niveau de sécurité et de respect de la vie privée, le niveau de contrôle par l’utilisateur et la transparence dans l’usage tout en diminuant les coûts et le niveau des risques potentiels de dysfonctionnement.
+  Ce cas d’usage a donné lieu aux USA à un appel à projet explicite « Applicability of Blockchain Technology to Privacy Respecting Identity Management » du « Department of Homeland Security ».
+  Plusieurs travaux et initiatives (NameID, EmerCoin/EMCSSL, ShoCard, Onename, IDCoin, Synereo, ..) sont en cours au niveau international. ID-BLOCKCHAIN vient les compléter entre autre dans la dimension protection de la vie privée, telle qu’elle est définie et réglementée dans les pays européens.
+  -->
+
+  Id-Blockchain is a joint initiative to investigate the possibilities offered by Blockchain technologies in the field of digital identity management with a particular focus on personal data protection. The goal of ID-Blockchain is to prototype a service combining strong authentication and verifiable claims management; this service will be secured using hardware devices and provide a high level of data protection. The project will design use cases, functional and technical architecture, a protocol implemented with software and hardware assets and validation through prototyping.
+
+  <!--Start Date: October 1, 2016
+  Duration: 24 months
+  Cost: 1 178 k€
+  Effort: 15.5 man*year
+  BPI France Funding: 567 k€
+  -->
+
+  <div>
+      <hr>
+    	<ul>
+    		<li><b>Start date</b>&nbsp;–&nbsp;1 october 2016</li>
+    	</ul>
+      <hr>
+      <ul>
+        <li><b>Duration</b>&nbsp;–&nbsp;24 months</li>
+      </ul>
+      <hr>
+      <ul>
+        <li><b>Cost</b>&nbsp;–&nbsp;1 178 k€</li>
+      </ul>
+      <hr>
+      <ul>
+        <li><b>Effort</b>&nbsp;–&nbsp;15.5 man.year<br></li>
+      </ul>
+      <hr>
+      <ul>
+        <li><b>Total funding</b>&nbsp;–&nbsp;567 k€ by BPI France<br></li>
+      </ul>
+      <hr>
+      <ul>
+        <li><b>Label</b>&nbsp;–&nbsp;Pôle TES<br></li>
+      </ul>
+    </div>
+
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div data-role="page" id="memberspage">
+  <br/>
+  <br/>
+    <br/>
+
+    <h2>Members & Sponsors</h2>
+    <div id="sponsors"></div>
+    <br/>
+    <br/>
+    <h4 >Sponsors :</h4>
+    <br/>
+    <div>
+    <ul>
+    <li><b>BPI</b>&nbsp;–&nbsp;Government<br><a href="http://www.gouvernement.fr/investissements-d-avenir-cgi"><img src="http://127.0.0.1:4000/assets/logo_investissements_avenir320.png"></a></li>
+    </ul>
+    </div>
+    <div id="labels"></div>
+    <br />
+    <br />
+    <h4 >Labels :</h4>
+    <br />
+    <div>
+    <ul>
+    <li><b>Pôle-TES</b>&nbsp;–&nbsp;Organization<br><a href="http://www.pole-tes.com/azerty
+    "><img src="http://127.0.0.1:4000/assets/logo-pole-TES320.png"></a></li>
+    </ul>
+    </div>
+    <div id="members"></div> 
+    <br />
+    <br/>
+    <h4 >Members :</h4>
+    <br/>
+    <div>
+      	<ul>
+      		<li><b>Paymium</b>&nbsp;–&nbsp;SME<br><a href="https://www.paymium.com/"><img src="http://127.0.0.1:4000/assets/logo-paymium-resized320.png"></a></li>
+      	</ul>
+        <hr>
+        <ul>
+          <li><b>Worldline</b>&nbsp;–&nbsp;Corporation<br><a href="http://worldline.com/"><img src="http://127.0.0.1:4000/assets/logo-worldline320.png"></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><b>Ledger</b>&nbsp;–&nbsp;SME<br><a href="https://www.ledger.co/"><img src="http://127.0.0.1:4000/assets/logo-ledger200.png"></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><b>Greyc</b>&nbsp;–&nbsp;laboratory<br><a href="https://www.greyc.fr/"><img src="http://127.0.0.1:4000/assets/logo-greyc320.png"></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><b>Liris</b>&nbsp;–&nbsp;laboratory<br><a href="https://liris.cnrs.fr/"><img src="http://127.0.0.1:4000/assets/logo-liris320.png"></a></li>
+        </ul>
+      </div>
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div data-role="page" id="newspage">
+
+<div class="news">
+  <br/>
+  <br/>
     <br>
     <h2>News</h2>
 </div>
@@ -107,38 +263,20 @@
 
 <div class="post-index">
     <div class="post-content">
-        <h2><a href="http://localhost:4000/2015/09/06/getting-started-with-trio/">Getting started with Trio</a></h2>
+        <h2><a href="http://127.0.0.1:4000/2017/04/10/rebooting-the-web-of-trust2/">Rebooting the Web of Trust 2</a></h2>
         <p>
             
-                <span class="excerpt">Basic instructions and tips to get Trio working on your local machine.</span>
-            
-        </p>
-        <p class="post-detail">
-            September 06, 2015
-            
-              &middot;
-              <a href="http://localhost:4000/2015/09/06/getting-started-with-trio/index.html#disqus_thread" data-disqus-identifier="/2015/09/06/getting-started-with-trio/"></a>
-              
-            
-        </p>
-    </div>
-</div>
-
-<div class="post-index">
-    <div class="post-content">
-        <h2><a href="http://localhost:4000/2015/09/06/code-blocks-tables-and-github-gists/">Code blocks, Tables and GitHub gists</a></h2>
-        <p>
-            
-                <span class="excerpt">Examples to show how these basic components look in Trio.
-
+                <span class="excerpt">A conference held in Paris on April 19-20-21.
+ID-blockchain was there.
+https://github.com/WebOfTrustInfo
 </span>
             
         </p>
         <p class="post-detail">
-            September 06, 2015
+            April 10, 2017
             
               &middot;
-              <a href="http://localhost:4000/2015/09/06/code-blocks-tables-and-github-gists/index.html#disqus_thread" data-disqus-identifier="/2015/09/06/code-blocks-tables-and-github-gists/"></a>
+              <a href="http://127.0.0.1:4000/2017/04/10/rebooting-the-web-of-trust2/index.html#disqus_thread" data-disqus-identifier="/2017/04/10/rebooting-the-web-of-trust2/"></a>
               
             
         </p>
@@ -147,20 +285,20 @@
 
 <div class="post-index">
     <div class="post-content">
-        <h2><a href="http://localhost:4000/2015/09/05/welcome-to-trio/">Welcome to idblockchain</a></h2>
+        <h2><a href="http://127.0.0.1:4000/2017/04/10/rebooting-the-web-of-trust/">Rebooting the Web of Trust</a></h2>
         <p>
             
-                <span class="excerpt">An introduction to a new Jekyll theme named Trio.</span>
+                <span class="excerpt">A conference held in Paris on April 19-20-21.
+ID-blockchain was there.
+https://github.com/WebOfTrustInfo
+</span>
             
         </p>
         <p class="post-detail">
-            September 05, 2015
+            April 10, 2017
             
               &middot;
-              <a href="http://localhost:4000/2015/09/05/welcome-to-trio/index.html#disqus_thread" data-disqus-identifier="/2015/09/05/welcome-to-trio/"></a>
-              
-                &middot;
-                Updated September 12, 2015
+              <a href="http://127.0.0.1:4000/2017/04/10/rebooting-the-web-of-trust/index.html#disqus_thread" data-disqus-identifier="/2017/04/10/rebooting-the-web-of-trust/"></a>
               
             
         </p>
@@ -174,7 +312,7 @@
   <ul>
       <li class="page-prev">
           
-              <a href="http://localhost:4000/">Prev</a>
+              <a href="http://127.0.0.1:4000/#newspage">Prev</a>
           
       </li>
       <li>
@@ -204,8 +342,170 @@
   }());
 </script>
 
-    </div>
+
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div data-role="page" id="deliverablespage" >
+      <div class="documents">
+        <br/>
+        <br/>
+      	<br>
+          <h2>Deliverables</h2>
+      </div>
+      <br>
+      <br>
+      <ul class="tabs">
+        <li class="active" rel="tab1">Documents</li>
+        <li rel="tab2">Videos</li>
+        <li rel="tab3">Images</li>
+      </ul>
+      <div class="tab_container">
+
+        <!-- Documents -->
+        <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+        <div id="tab1" class="tab_content">
+        	<ul>
+        		<li><b>Locally hosted link title</b> 01/02/2017&nbsp;–&nbsp;<a href="http://127.0.0.1:4000/assets/BlockchainPaper.pdf" download="BlockchainPaper.pdf">Download the pdf</a></li>
+        	</ul>
+            <ul>
+            <li><b>Online link title</b> 01/02/2017&nbsp;–&nbsp;<a href="http://scet.berkeley.edu/wp-content/uploads/BlockchainPaper.pdf" download="newfilename">Download the pdf</a></li>
+          </ul>
+            </div>
+
+        <!-- Videos -->
+        <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+        <div id="tab2" class="tab_content">
+        	<ul>
+        		<li>Added 01/02/2017&nbsp;–&nbsp;<a href="https://www.youtube.com/watch?v=s4g1XFU8Gto" target="_blank">Absolute link example only</a></li>
+        	</ul>
+        </div>
+
+        <!-- Images -->
+        <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+        <div id="tab3" class="tab_content">
+        	<ul>
+        		<li><b>Locally hosted link title</b>&nbsp;–&nbsp;Added 01/02/2017<br><img src="http://127.0.0.1:4000/assets/Logo-Paymium.png"></img></li>
+        	</ul>
+          <hr>
+          <ul>
+            <li><b>Online link title</b>&nbsp;–&nbsp;Added 01/02/2017<br><img src="http://www.savoirscom1.info/wp-content/uploads/2015/12/Blockchain-Logo-Blue6.png"></img></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <script type="text/javascript">
+          $(".tab_content").hide();
+          $(".tab_content:first").show();
+
+          $("ul.tabs li").click(function() {
+
+            $(".tab_content").hide();
+            var activeTab = $(this).attr("rel");
+            $("#"+activeTab).fadeIn();
+
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+
+      	  $(".tab_drawer_heading").removeClass("d_active");
+      	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+
+          });
+      	$(".tab_drawer_heading").click(function() {
+
+            $(".tab_content").hide();
+            var d_activeTab = $(this).attr("rel");
+            $("#"+d_activeTab).fadeIn();
+
+      	  $(".tab_drawer_heading").removeClass("d_active");
+            $(this).addClass("d_active");
+
+      	  $("ul.tabs li").removeClass("active");
+      	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+          });
+      	$('ul.tabs li').last().addClass("tab_last");
+</script>
+
+    </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<div data-role="page" id="faqpage">
+  <br/>
+  <br/>
+    <br/>
+
+    <h2>FAQ</h2>
+    <br/>
+    <br/>
+    <head>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+       <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+       <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+     <script>
+       $(function() {
+         $( ".accordion" ).accordion();
+         $(".accordion").accordion({ header: "h4", collapsible: true, active: false ,heightStyle: "content" });
+       });
+       </script>
+
+
+    </head>
+    <div class="accordion">
+      <h4>Question 1</h4>
+          <div>
+            <p></p>
+          </div>
+      <h4>Question 2</h4>
+          <div>
+            <p></p>
+          </div>
+      <h4>Question 3</h4>
+        <div>
+         <p></p>
+        </div>
+    </div>
+
+
+  </div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+  <div data-role="page" id="contactpage">
+    <br/>
+    <br/>
+    <br/>
+
+    <h2>Contact us</h2>
+    <br/>
+    <br/>
+    <div>
+        <form action="https://formspree.io/jean-claude.barbezange@worldline.com" method="POST" class="contact">
+            <input type="text" name="email" placeholder="Email Address" />
+            <textarea type="text" name="content" rows="10" placeholder="Ask us anything"></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:4000/thanks.html" />
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Send message" />
+        </form>
+    </div>
+
+  </div>
+
+
 
 <header class="stickyfooter" role="contentinfo">
 
@@ -251,6 +551,7 @@
 
 </header>
 <!-- Some empty space between the page counter and footer -->
+
 
 </body>
 </html>

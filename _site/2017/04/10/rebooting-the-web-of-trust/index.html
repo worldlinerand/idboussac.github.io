@@ -13,12 +13,14 @@
         
             Rebooting the Web of Trust &#8211;
         
-        idblockchain
+        id-blockchain
     </title>
     <script
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
+
+
     <!-- Meta information for search engines -->
     <meta name="author" content="">
     <meta name="description" content="A working platform to communicate about idblockchain project">
@@ -32,8 +34,17 @@
         <meta name="twitter:creator" content="@pierrenoizat" />
     
     <meta name="twitter:title" content="Rebooting the Web of Trust" />
-    <meta name="twitter:description" content="A conference to be held in Paris on April 19-20-21.
+    <meta name="twitter:description" content="Participation in Rebooting web of trust.
+A conference held in Paris on April 19-20-21.
+https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017
+Our Papers :
+Self-sovereign Delegated Identity by Pierre Noizat
 
+Credit-based Reputations for Identity Management with Blockchain and Flow Networks by Tobias Mayer, Omar Hasan, and Lionel Brunie 
+
+ID-Blockchain: An Initiative towards Privacy-preserving Blockchain-based Identity by Olivier Maas &amp; Florent Poiron
+
+RWoT Proposals and Modern Portable Secure Hardware by Nicolas Bacca
 " />
     <meta name="twitter:url" content="http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/" />
 
@@ -41,11 +52,20 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Rebooting the Web of Trust" />
-    <meta property="og:description" content="A conference to be held in Paris on April 19-20-21.
+    <meta property="og:description" content="Participation in Rebooting web of trust.
+A conference held in Paris on April 19-20-21.
+https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017
+Our Papers :
+Self-sovereign Delegated Identity by Pierre Noizat
 
+Credit-based Reputations for Identity Management with Blockchain and Flow Networks by Tobias Mayer, Omar Hasan, and Lionel Brunie 
+
+ID-Blockchain: An Initiative towards Privacy-preserving Blockchain-based Identity by Olivier Maas &amp; Florent Poiron
+
+RWoT Proposals and Modern Portable Secure Hardware by Nicolas Bacca
 " />
     <meta property="og:url" content="http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/" />
-    <meta property="og:site_name" content="idblockchain">
+    <meta property="og:site_name" content="id-blockchain">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="http://localhost:4000/css/trio.css">
@@ -57,7 +77,7 @@
     <link rel="canonical" href="http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://localhost:4000/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for id-blockchain" href="http://localhost:4000/feed.xml" />
 
     <!-- Icons -->
     <!-- The ?v=8jjamLzmpR simply forces the browser to reload the favicon. Remove after a long time. -->
@@ -79,34 +99,61 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://localhost:4000/mstile-144x144.png?v=8jjamLzmpR">
 
+
+
+
 </head>
 <!-- Header: end -->
 
 <body>
+  <script>
+  jQuery(document).ready(function() {
+      jQuery('.toggle-nav').click(function(e) {
+          jQuery(this).toggleClass('navbar');
+          jQuery('.stickyheader ul').toggleClass('navbar');
+
+          e.preventDefault();
+      });
+      jQuery('.stickyheader li').click(function(e){
+        jQuery('.toggle-nav').toggleClass('navbar');
+        jQuery('.stickyheader ul').toggleClass('navbar');
+      });
+  });
+  </script>
+
+
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
     <!--<a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>-->
-		<a href="http://localhost:4000">ID Blockchain</a>
   </div>
-    <ul>
-	  <li><a href="http://localhost:4000/"><strong>ID Blockchain</strong></a></li>
-	  <li><a href="http://localhost:4000/about/">Fact Sheet</a></li>
-	<li><a href="http://localhost:4000/members/">Members & Sponsors</a></li>
-      <li><a href="http://localhost:4000/">Events</a></li>
-      <li><a href="http://localhost:4000/deliverables/">Deliverables</a></li>
+    <ul class="navbar">
+	  <li><a href="http://localhost:4000/" ><strong>ID-Blockchain</strong></a></li>
+	  <li><a href="http://localhost:4000/#aboutpage">Fact Sheet</a></li>
+    <li class="dropdown">
+      <a href="http://localhost:4000/#memberspage" data-transition="slideup" class="dropbtn">Members & Sponsors</a>
+         <div class="dropdown-content">
+           <a href="http://localhost:4000/#sponsors">Sponsors</a>
+           <a href="http://localhost:4000/#labels">Label</a>
+           <a href="http://localhost:4000/#members">Members</a>
+         </div>
+    </li>
+      <li><a href="http://localhost:4000/#newspage" >Events & News</a></li>
+      <li><a href="http://localhost:4000/#deliverablespage">Deliverables</a></li>
       <!--<li><a href="http://localhost:4000/search/">Search</a></li>-->
-      <li><a href="http://localhost:4000/faq/">FAQ</a></li>
-      <li><a href="http://localhost:4000/contact/">Contact</a></li>
+     <li><a href="http://localhost:4000/#faqpage" >FAQ</a></li>
+      <li><a href="http://localhost:4000/#contactpage">Contact</a></li>
     </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
     <br/>
 </header>
 
 <div class="wrapper-for-content-outside-of-footer">
-<!--     <div class="site-title">
-        <a href="http://localhost:4000">idblockchain</a>
-    </div> -->
+     <!--<div class="site-title">
+        <a href="http://localhost:4000">id-blockchain</a>
+    </div>-->
     <div class = "container">
-        <br/>
+
+<br/>
 
 <div class="post-title">
 <!--     <div class="logo">
@@ -138,8 +185,17 @@
     <br/>
 </div>
 
-<p>A conference to be held in Paris on April 19-20-21.</p>
-
+<p>Participation in Rebooting web of trust.
+A conference held in Paris on April 19-20-21.<br />
+<a href="https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017">https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017</a><br />
+Our Papers :<br />
+<a href="https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017/blob/master/topics-and-advance-readings/170418_IDEAS_Paper.pdf">Self-sovereign Delegated Identity</a> by Pierre Noizat<br />
+<br />
+<a href="topics-and-advance-readings/Credit-based-Reputations-for-Identity-Management.md">Credit-based Reputations for Identity Management with Blockchain and Flow Networks</a> by Tobias Mayer, Omar Hasan, and Lionel Brunie <br />
+<br />
+<a href="topics-and-advance-readings/id-blockchain.md">ID-Blockchain: An Initiative towards Privacy-preserving Blockchain-based Identity</a> by Olivier Maas &amp; Florent Poiron
+<br />
+<a href="topics-and-advance-readings/RWoT_proposals_and_modern_portable_secure_hardware.md">RWoT Proposals and Modern Portable Secure Hardware</a> by Nicolas Bacca</p>
 
 
 <div class="sharing">
@@ -219,10 +275,6 @@
 </noscript>
 
 
-
-    </div>
-</div>
-
 <header class="stickyfooter" role="contentinfo">
 
     <div class="footer-primary-links">
@@ -267,6 +319,7 @@
 
 </header>
 <!-- Some empty space between the page counter and footer -->
+
 
 </body>
 </html>

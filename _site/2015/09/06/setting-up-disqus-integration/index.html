@@ -34,8 +34,20 @@
     <meta name="twitter:title" content="Setting up Disqus integration" />
     <meta name="twitter:description" content="Trio comes with Disqus integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the disqus_shortname field in _config.yml.
 
+To get a disqus_shortname, you’ll need to sign up for a Disqus account.
+
+While testing on your local machine, you might want to enable developer mode for Disqus by setting the Javascript disqus_developer variable to 1 in
+index.html and _layouts/post.html files:
+
+js
+var disqus_developer = 1; // Comment out when the site is live
+
+
+Remember to comment out the lines when making your website live.
+
+There is a delay (about 5-10 minutes) between setting up Disqus correctly and seeing the comments and comment counts show up. For more details or to understand how Trio adds Disqus comments, see this post.
 " />
-    <meta name="twitter:url" content="http://localhost:4000/2015/09/06/setting-up-disqus-integration/" />
+    <meta name="twitter:url" content="http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/" />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="en_US" />
@@ -43,41 +55,53 @@
     <meta property="og:title" content="Setting up Disqus integration" />
     <meta property="og:description" content="Trio comes with Disqus integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the disqus_shortname field in _config.yml.
 
+To get a disqus_shortname, you’ll need to sign up for a Disqus account.
+
+While testing on your local machine, you might want to enable developer mode for Disqus by setting the Javascript disqus_developer variable to 1 in
+index.html and _layouts/post.html files:
+
+js
+var disqus_developer = 1; // Comment out when the site is live
+
+
+Remember to comment out the lines when making your website live.
+
+There is a delay (about 5-10 minutes) between setting up Disqus correctly and seeing the comments and comment counts show up. For more details or to understand how Trio adds Disqus comments, see this post.
 " />
-    <meta property="og:url" content="http://localhost:4000/2015/09/06/setting-up-disqus-integration/" />
+    <meta property="og:url" content="http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/" />
     <meta property="og:site_name" content="idblockchain">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="http://localhost:4000/css/trio.css">
+    <link rel="stylesheet" href="http://127.0.0.1:4000/css/trio.css">
 
     <!-- Social buttons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Set the canonical URL for search engines -->
-    <link rel="canonical" href="http://localhost:4000/2015/09/06/setting-up-disqus-integration/">
+    <link rel="canonical" href="http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://localhost:4000/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://127.0.0.1:4000/feed.xml" />
 
     <!-- Icons -->
     <!-- The ?v=8jjamLzmpR simply forces the browser to reload the favicon. Remove after a long time. -->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/apple-touch-icon-57x57.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/apple-touch-icon-60x60.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/apple-touch-icon-72x72.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/apple-touch-icon-76x76.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/apple-touch-icon-114x114.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/apple-touch-icon-120x120.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/apple-touch-icon-144x144.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/apple-touch-icon-152x152.png?v=8jjamLzmpR">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/apple-touch-icon-180x180.png?v=8jjamLzmpR">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-32x32.png?v=8jjamLzmpR" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-194x194.png?v=8jjamLzmpR" sizes="194x194">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-96x96.png?v=8jjamLzmpR" sizes="96x96">
-    <link rel="icon" type="image/png" href="http://localhost:4000/android-chrome-192x192.png?v=8jjamLzmpR" sizes="192x192">
-    <link rel="icon" type="image/png" href="http://localhost:4000/favicon-16x16.png?v=8jjamLzmpR" sizes="16x16">
-    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="57x57" href="http://127.0.0.1:4000/apple-touch-icon-57x57.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://127.0.0.1:4000/apple-touch-icon-60x60.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:4000/apple-touch-icon-72x72.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://127.0.0.1:4000/apple-touch-icon-76x76.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:4000/apple-touch-icon-114x114.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://127.0.0.1:4000/apple-touch-icon-120x120.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://127.0.0.1:4000/apple-touch-icon-144x144.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://127.0.0.1:4000/apple-touch-icon-152x152.png?v=8jjamLzmpR">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:4000/apple-touch-icon-180x180.png?v=8jjamLzmpR">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-32x32.png?v=8jjamLzmpR" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-194x194.png?v=8jjamLzmpR" sizes="194x194">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-96x96.png?v=8jjamLzmpR" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/android-chrome-192x192.png?v=8jjamLzmpR" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:4000/favicon-16x16.png?v=8jjamLzmpR" sizes="16x16">
+    <link rel="shortcut icon" href="http://127.0.0.1:4000/favicon.ico?v=8jjamLzmpR">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="http://localhost:4000/mstile-144x144.png?v=8jjamLzmpR">
+    <meta name="msapplication-TileImage" content="http://127.0.0.1:4000/mstile-144x144.png?v=8jjamLzmpR">
 
 </head>
 <!-- Header: end -->
@@ -85,25 +109,25 @@
 <body>
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
-    <!--<a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>-->
-		<a href="http://localhost:4000">ID Blockchain</a>
+    <!--<a href="http://127.0.0.1:4000"><i class="fa fa-cog fa-spin"></i></a>-->
+		<a href="http://127.0.0.1:4000">ID Blockchain</a>
   </div>
     <ul>
-	  <li><a href="http://localhost:4000/"><strong>ID Blockchain</strong></a></li>
-	  <li><a href="http://localhost:4000/about/">Fact Sheet</a></li>
-	<li><a href="http://localhost:4000/members/">Members & Sponsors</a></li>
-      <li><a href="http://localhost:4000/">Events</a></li>
-      <li><a href="http://localhost:4000/deliverables/">Deliverables</a></li>
-      <!--<li><a href="http://localhost:4000/search/">Search</a></li>-->
-      <li><a href="http://localhost:4000/faq/">FAQ</a></li>
-      <li><a href="http://localhost:4000/contact/">Contact</a></li>
+	  <li><a href="http://127.0.0.1:4000/"><strong>ID Blockchain</strong></a></li>
+	  <li><a href="http://127.0.0.1:4000/about/">Fact Sheet</a></li>
+	<li><a href="http://127.0.0.1:4000/members/">Members & Sponsors</a></li>
+      <li><a href="http://127.0.0.1:4000/">Events</a></li>
+      <li><a href="http://127.0.0.1:4000/deliverables/">Deliverables</a></li>
+      <!--<li><a href="http://127.0.0.1:4000/search/">Search</a></li>-->
+      <li><a href="http://127.0.0.1:4000/faq/">FAQ</a></li>
+      <li><a href="http://127.0.0.1:4000/contact/">Contact</a></li>
     </ul>
     <br/>
 </header>
 
 <div class="wrapper-for-content-outside-of-footer">
 <!--     <div class="site-title">
-        <a href="http://localhost:4000">idblockchain</a>
+        <a href="http://127.0.0.1:4000">idblockchain</a>
     </div> -->
     <div class = "container">
         <br/>
@@ -124,7 +148,7 @@
                 September 06, 2015
                 
                     &middot;
-                    <a href="http://localhost:4000/2015/09/06/setting-up-disqus-integration/index.html#disqus_thread" data-disqus-identifier="/2015/09/06/setting-up-disqus-integration/"></a>
+                    <a href="http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/index.html#disqus_thread" data-disqus-identifier="/2015/09/06/setting-up-disqus-integration/"></a>
                     
                 
             </time>
@@ -145,9 +169,9 @@
 <p>While testing on your local machine, you might want to enable <em>developer mode</em> for Disqus by setting the Javascript <code class="highlighter-rouge">disqus_developer</code> variable to <code class="highlighter-rouge">1</code> in
 <code class="highlighter-rouge">index.html</code> and <code class="highlighter-rouge">_layouts/post.html</code> files:</p>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">disqus_developer</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Comment out when the site is live</span>
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">js
+var disqus_developer = 1; // Comment out when the site is live
+</code></p>
 
 <p>Remember to comment out the lines when making your website live.</p>
 
@@ -161,31 +185,31 @@
     <ul>
         <li><i class="fa fa-share-square-o"></i></li>
         
-        <li><a href="https://twitter.com/intent/tweet?text=Setting up Disqus integration&url=http://localhost:4000/2015/09/06/setting-up-disqus-integration/" rel="nofollow" target="_blank" title="Share on Twitter">
+        <li><a href="https://twitter.com/intent/tweet?text=Setting up Disqus integration&url=http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/" rel="nofollow" target="_blank" title="Share on Twitter">
                 <i class="fa fa-twitter-square"></i>
         </a></li>
         
 
         
-        <li><a href="http://www.linkedin.com/shareArticle?url=http://localhost:4000/2015/09/06/setting-up-disqus-integration/&title=Setting up Disqus integration" rel="nofollow" target="_blank" title="Share on LinkedIn">
+        <li><a href="http://www.linkedin.com/shareArticle?url=http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/&title=Setting up Disqus integration" rel="nofollow" target="_blank" title="Share on LinkedIn">
                 <i class="fa fa-linkedin-square"></i>
         </a></li>
         
 
         
-        <li><a href="https://facebook.com/sharer.php?u=http://localhost:4000/2015/09/06/setting-up-disqus-integration/" rel="nofollow" target="_blank" title="Share on Facebook">
+        <li><a href="https://facebook.com/sharer.php?u=http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/" rel="nofollow" target="_blank" title="Share on Facebook">
                 <i class="fa fa-facebook-square"></i>
         </a></li>
         
 
         
-        <li><a href="https://plus.google.com/share?url=http://localhost:4000/2015/09/06/setting-up-disqus-integration/" rel="nofollow" target="_blank" title="Share on Google+">
+        <li><a href="https://plus.google.com/share?url=http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/" rel="nofollow" target="_blank" title="Share on Google+">
                 <i class="fa fa-google-plus-square"></i>
         </a></li>
         
 
         
-        <li><a href="http://reddit.com/submit?url=http://localhost:4000/2015/09/06/setting-up-disqus-integration/&title=Setting up Disqus integration" rel="nofollow" target="_blank" title="Share on Reddit">
+        <li><a href="http://reddit.com/submit?url=http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/&title=Setting up Disqus integration" rel="nofollow" target="_blank" title="Share on Reddit">
                 <i class="fa fa-reddit-square"></i>
         </a></li>
         
@@ -201,7 +225,7 @@
     var disqus_shortname  = 'idblockchain';
     var disqus_identifier = '/2015/09/06/setting-up-disqus-integration/';
     var disqus_title      = 'Setting up Disqus integration';
-    var disqus_url        = 'http://localhost:4000/2015/09/06/setting-up-disqus-integration/';
+    var disqus_url        = 'http://127.0.0.1:4000/2015/09/06/setting-up-disqus-integration/';
     // var disqus_developer = 1; // Comment out when the site is live
 
     (function() {

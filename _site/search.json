@@ -6,68 +6,8 @@
       "tags"     : "",
       "url"      : "http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/",
       "date"     : "April 10, 2017",
-      "content"  : "A conference to be held in Paris on April 19-20-21.\n\n",
-      "snippet"  : "A conference to be held in Paris on April 19-20-21."
-    } ,
-  
-    {
-      "title"    : "Color Themes and Post Logos",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "http://localhost:4000/2015/09/07/color-themes-and-post-logos/",
-      "date"     : "September 07, 2015",
-      "content"  : "Trio comes with support for 9 different color themes as well as Font Awesome icons as logos.\n\nColor Themes\nBy default, Trio has two basic colors – black and baby blue. Black is used for all text and headings and this color is fixed. The other color (which is baby blue, by default) may be changed. Trio ships with 8 other colors (copied from Lanyon theme). These colors are listed in _sass/_colors.scss. If you want to change the color theme, simply change the $theme-color variable in _sass/_colors.scss:\n\n$theme-color: $base-08; /* Red */\n\n\n\nThanks to Mark Otto and Chris Kempson’s base16 for these themes. See the README.md on GitHub Trio page for a screenshot of the red theme.\n\nLogos\nTrio also comes with support for logos, as you can see on the Trio homepage and this post. The logos are simply Font Awesome icons dipped in the current color theme. Post logos are shown both in the paginated index on the Trio homepage as well in the title of the blog post. In order to add a post logo, simply search for an icon on Font Awesome and find the icon keyword. Simply add icon keyword as the logo field in the YAML from-matter to the post’s .md file.\n\n---\nlayout: post\ntitle: Blog Post Title\nlogo: leaf\n---\n\n\n\nThe above example will add a leaf logo for the blog post.\n\nFont Awesome has a few animated icons that can also be used. Animated icons could be useful to draw attention to a new post (such as this post).\n\nIn addition to individual post logos, Trio also supports a site logo that appears in the footer of all pages. Site wide logo is also a Font Awesome icon and may be set in a similar manner. The only difference is that instead of setting the logo in a .md file, you need to set the logo in _config.yml file:\n\nfort_awesome_icon: 'cog fa-spin'\n\n\n\n",
-      "snippet"  : "Trio comes with support for 9 different color themes as well as Font Awesome icons as logos."
-    } ,
-  
-    {
-      "title"    : "What is Jeykll?",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "http://localhost:4000/2015/09/06/what-is-jekyll/",
-      "date"     : "September 06, 2015",
-      "content"  : "Jekyll is a system to create blog-aware, static web pages. Jekyll integrates nicely with GitHub Pages.\n\nUsing Jekyll, you can quickly create blog posts using Markdown instead of HTML (in fact, you can still use HTML is you’d like). All you need is a text editor, a terminal (or a Git GUI software like GitHub Desktop) and a web browser.\n\nIf you are comfortable with some terminal work, checkout Jekyll Quickstart. If not, you may want to look at GitHub Pages Automatic Generator and these no-command-line instructions.\n\nThis post might help with a more in-depth understanding of how Liquid tags, Markdown and HTML are mixed together.\n\nTips\n\nThe URL to this blog post depends on the YAML field date. Do not change the date after you publish this post. Use the YAML field update_date instead.\n\n",
-      "snippet"  : "Jekyll is a system to create blog-aware, static web pages. Jekyll integrates nicely with GitHub Pages."
-    } ,
-  
-    {
-      "title"    : "Setting up Disqus integration",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "http://localhost:4000/2015/09/06/setting-up-disqus-integration/",
-      "date"     : "September 06, 2015",
-      "content"  : "Trio comes with Disqus integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the disqus_shortname field in _config.yml.\n\nTo get a disqus_shortname, you’ll need to sign up for a Disqus account.\n\nWhile testing on your local machine, you might want to enable developer mode for Disqus by setting the Javascript disqus_developer variable to 1 in\nindex.html and _layouts/post.html files:\n\nvar disqus_developer = 1; // Comment out when the site is live\n\n\n\nRemember to comment out the lines when making your website live.\n\nThere is a delay (about 5-10 minutes) between setting up Disqus correctly and seeing the comments and comment counts show up. For more details or to understand how Trio adds Disqus comments, see this post.\n",
-      "snippet"  : "Trio comes with Disqus integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All..."
-    } ,
-  
-    {
-      "title"    : "Getting started with Trio",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "http://localhost:4000/2015/09/06/getting-started-with-trio/",
-      "date"     : "September 06, 2015",
-      "content"  : "Very First Steps\nYou should begin by installing Jekyll if you don’t already have it. You can then download Trio or clone Trio. Try running Jekyll using these commands\n\njekyll serve --watch\n\n\n\nand see how Trio looks on your local machine.\n\n\nModify _config.yml\n\nTake a look at _config.yml which contains the basic configuration for Trio. You will probably need to change title, description, url, owner and disqus_shortname fields.\n\nYou can disable a link to one of the social networks in the website footer by leaving owner.&lt;sharing-platform&gt; blank.\n\nYou can disable or enable post sharing buttons at the end of a post by modifying the sharing fields.\n\nRedcarpet has been tested to work nicely with tables, footnotes and fenced code blocks. Kramdown works as well but triple backticks are not supported yet for fenced code blocks. You can switch between redcarpet and kramdown in _config.yml.\n\n\nNaming post Markdown files\n\nThe permalink field in _config.yml decides how the URL to posts are formed.\nYou can override the global permalink value in _config.yml by adding a permalink field in the .md file.\n\nTrio is setup so that the URL to a post depends on the YAML front-matter field date in the Markdown file. Once you publish a post, the search engines link to that URL. You do not want to change the date field after you publish a post. If you make changes and want to notify readers of the changes, use the YAML field update_date instead in the .md file.\n",
-      "snippet"  : "Basic instructions and tips to get Trio working on your local machine."
-    } ,
-  
-    {
-      "title"    : "Code blocks, Tables and GitHub gists",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "http://localhost:4000/2015/09/06/code-blocks-tables-and-github-gists/",
-      "date"     : "September 06, 2015",
-      "content"  : "Examples to show how these basic components look in Trio.\n\n\nCode blocks\n\nSince Trio uses redcarpet instead of kramdown, we can use the triple backticks to define fenced code blocks. See the Markdown source of this file here.\n\nHere is how code blocks look in Trio:\n\n#container {\n    float: left;\n    margin: 0 -240px 0 0;\n    width: 100%;\n}\n\n\n\nYou can also use liquid tag highlight which has the same effect:\n\nvoid main() {\n    printf(\"Hello World!\");\n}\n\ndef print_hi(name)\n  puts \"Hi, #{name}\"\nend\nprint_hi('Tom')\n#=&gt; prints 'Hi, Tom' to STDOUT.\n\n#container {\n    float: left;\n    margin: 0 -240px 0 0;\n    width: 100%;\n}\n\ndef what?\n  42\nend\n\nYou can also use the triple tilde ala kramdown which same the same effect:\n\ndef what?\n  42\nend\n\n\n\nFootnotes\nMarkdown footnotes1 work nicely in Trio. You need to make sure proper extensions are enabled in either redcarpet or kramdown parsers.\n\n\nTables\nThis is how tables look like in Solo. See the Markdown source of this file here for a demo of Markdown Tables. An excellent source to create tables in many formats (including Markdown) is Tables Generator.\n\n\n  \n    \n      Left-Aligned\n      Center Aligned\n      Right Aligned\n    \n  \n  \n    \n      col 3 is\n      some wordy text\n      $1600\n    \n    \n      col 2 is\n      centered\n      $12\n    \n    \n      zebra stripes\n      are neat\n      $1\n    \n  \n\n\n\nGithub Gists\n\nThis is how GitHub Gists look in Solo.\n\n\n\nBlockquotes\n\nTrio supports lists, &lt;hr&gt;s, &lt;table&gt;s  and\n\n\n  blockquotes\n\n\n\n  \n    \n      http://en.wikipedia.org/wiki/Syntax_highlighting&nbsp;&#8617;\n    \n  \n\n",
-      "snippet"  : "Examples to show how these basic components look in Trio."
-    } ,
-  
-    {
-      "title"    : "Welcome to idblockchain",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "http://localhost:4000/2015/09/05/welcome-to-trio/",
-      "date"     : "September 05, 2015",
-      "content"  : "Trio is a simple, content-focused, responsive, mobile-friendly Jekyll theme. Trio comes with support for these things out-of-the-box:\n\n\n  RSS feed\n  404 page\n  Markdown syntax highlighting, fenced code blocks, tables, GitHub gists, blockquotes\n  Post sharing buttons\n  Paginated list of posts\n  Disqus integration\n  Formspree contact form\n  Nine color themes\n  Support for logos using Font Awesome icons\n  Full-text search\n\n\n\nWhere is it?\n\nTrio lives in a GitHub repository. It is free and open-source with MIT License.\n\nPlease feel free to download it, request a feature or report a bug.\n\n",
-      "snippet"  : "An introduction to a new Jekyll theme named Trio."
+      "content"  : "Participation in Rebooting web of trust.\nA conference held in Paris on April 19-20-21.\nhttps://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017\nOur Papers :\nSelf-sovereign Delegated Identity by Pierre Noizat\n\nCredit-based Reputations for Identity Management with Blockchain and Flow Networks by Tobias Mayer, Omar Hasan, and Lionel Brunie \n\nID-Blockchain: An Initiative towards Privacy-preserving Blockchain-based Identity by Olivier Maas &amp; Florent Poiron\n\nRWoT Proposals and Modern Portable Secure Hardware by Nicolas Bacca\n",
+      "snippet"  : "Participation in Rebooting web of trust. A conference held in Paris on April 19-20-21. https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017 Our Papers : Self-sovereign Delegated..."
     } 
   
   ,
@@ -77,30 +17,6 @@
    } ,
   
    {
-     
-        "title"    : "Fact Sheet",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "http://localhost:4000/about/",
-        "date"     : " ",
-        "content"  : "",
-        "snippet"  : " "
-     
-   } ,
-  
-   {
-     
-   } ,
-  
-   {
-     
-        "title"    : "Contact us",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "http://localhost:4000/contact/",
-        "date"     : " ",
-        "content"  : "",
-        "snippet"  : " "
      
    } ,
   
@@ -118,33 +34,9 @@
   
    {
      
-        "title"    : "FAQ",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "http://localhost:4000/faq/",
-        "date"     : " ",
-        "content"  : "",
-        "snippet"  : " "
-     
    } ,
   
    {
-     
-   } ,
-  
-   {
-     
-   } ,
-  
-   {
-     
-        "title"    : "Members &amp; Sponsors",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "http://localhost:4000/members/",
-        "date"     : " ",
-        "content"  : "",
-        "snippet"  : " "
      
    } ,
   
@@ -173,10 +65,6 @@
         "date"     : " ",
         "content"  : "",
         "snippet"  : " "
-     
-   } ,
-  
-   {
      
    } ,
   

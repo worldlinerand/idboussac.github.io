@@ -11,12 +11,14 @@
 
     <title>
         
-        idblockchain
+        id-blockchain
     </title>
     <script
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
+
+
     <!-- Meta information for search engines -->
     <meta name="author" content="">
     <meta name="description" content="A working platform to communicate about idblockchain project">
@@ -27,17 +29,17 @@
     
         <meta name="twitter:creator" content="@pierrenoizat" />
     
-    <meta name="twitter:title" content="idblockchain" />
+    <meta name="twitter:title" content="id-blockchain" />
     <meta name="twitter:description" content="A working platform to communicate about idblockchain project" />
     <meta name="twitter:url" content="http://localhost:4000/" />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="idblockchain" />
+    <meta property="og:title" content="id-blockchain" />
     <meta property="og:description" content="A working platform to communicate about idblockchain project" />
     <meta property="og:url" content="http://localhost:4000/" />
-    <meta property="og:site_name" content="idblockchain">
+    <meta property="og:site_name" content="id-blockchain">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="http://localhost:4000/css/trio.css">
@@ -49,7 +51,7 @@
     <link rel="canonical" href="http://localhost:4000/">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for idblockchain" href="http://localhost:4000/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for id-blockchain" href="http://localhost:4000/feed.xml" />
 
     <!-- Icons -->
     <!-- The ?v=8jjamLzmpR simply forces the browser to reload the favicon. Remove after a long time. -->
@@ -71,36 +73,180 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://localhost:4000/mstile-144x144.png?v=8jjamLzmpR">
 
+<!-- slide effect -->
+
+<!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
 </head>
 <!-- Header: end -->
 
 <body>
+
+<script>
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('navbar');
+        jQuery('.stickyheader ul').toggleClass('navbar');
+
+        e.preventDefault();
+    });
+    jQuery('.stickyheader li').click(function(e){
+      jQuery('.toggle-nav').toggleClass('navbar');
+      jQuery('.stickyheader ul').toggleClass('navbar');
+    });
+});
+</script>
+
 <header class="stickyheader" role="contentinfo">
   <div class="footer-logo">
     <!--<a href="http://localhost:4000"><i class="fa fa-cog fa-spin"></i></a>-->
-		<a href="http://localhost:4000">ID Blockchain</a>
+		<!--<a href="http://localhost:4000">ID Blockchain</a>-->
   </div>
-    <ul>
-	  <li><a href="http://localhost:4000/"><strong>ID Blockchain</strong></a></li>
-	  <li><a href="http://localhost:4000/about/">Fact Sheet</a></li>
-	<li><a href="http://localhost:4000/members/">Members & Sponsors</a></li>
-      <li><a href="http://localhost:4000/">Events</a></li>
-      <li><a href="http://localhost:4000/deliverables/">Deliverables</a></li>
+    <ul class="navbar">
+	  <li><a href="#aboutpage" data-transition="slideup"><strong>ID-BLOCKCHAIN</strong></a></li>
+	  <li><a href="#aboutpage" data-transition="slideup">Project</a></li>
+	   <li class="dropdown">
+       <a href="#memberspage" data-transition="slideup" class="dropbtn">Members & Sponsors</a>
+          <div class="dropdown-content">
+            <a href="#sponsors">Sponsors</a>
+            <a href="#labels">Label</a>
+            <a href="#members">Members</a>
+          </div>
+     </li>
+      <li><a href="#newspage" data-transition="slideup">Events & News</a></li>
+      <li><a href="#deliverablespage" data-transition="slideup">Deliverables</a></li>
       <!--<li><a href="http://localhost:4000/search/">Search</a></li>-->
-      <li><a href="http://localhost:4000/faq/">FAQ</a></li>
-      <li><a href="http://localhost:4000/contact/">Contact</a></li>
+     <li><a href="#faqpage" data-transition="slideup">FAQ</a></li>
+      <li><a href="#contactpage" data-transition="slideup">Contact</a></li>
     </ul>
+    <a class="toggle-nav" href="#">&#9776;</a>
     <br/>
 </header>
 
 <div class="wrapper-for-content-outside-of-footer">
-<!--     <div class="site-title">
-        <a href="http://localhost:4000">idblockchain</a>
-    </div> -->
+     <!--<div class="site-title">
+        <a href="http://localhost:4000">id-blockchain</a>
+    </div>-->
     <div class = "container">
-        <div class="news">
+
+        <div data-role="page" id="aboutpage">
+
+<br />
+<br/>
+  <br/>
+
+  <br/>
+  <br/>
+  <!--ID-BLOCKCHAIN aborde la gestion de l’identité numérique et l’authentification forte. ID-BLOCKCHAIN fournit des services d’authentification et de fourniture d’attributs personnels, associés à un dispositif matériel communiquant et sécurisé, dans le respect de la vie privée. ID-BLOCKCHAIN est basé sur les technologies dites blockchain dont Bitcoin est à ce jour l’exemple le plus connu.
+
+  Cette approche disruptive doit permettre d’augmenter le niveau de sécurité et de respect de la vie privée, le niveau de contrôle par l’utilisateur et la transparence dans l’usage tout en diminuant les coûts et le niveau des risques potentiels de dysfonctionnement.
+  Ce cas d’usage a donné lieu aux USA à un appel à projet explicite « Applicability of Blockchain Technology to Privacy Respecting Identity Management » du « Department of Homeland Security ».
+  Plusieurs travaux et initiatives (NameID, EmerCoin/EMCSSL, ShoCard, Onename, IDCoin, Synereo, ..) sont en cours au niveau international. ID-BLOCKCHAIN vient les compléter entre autre dans la dimension protection de la vie privée, telle qu’elle est définie et réglementée dans les pays européens.
+  -->
+
+  ID-BLOCKCHAIN is a joint initiative to investigate the possibilities offered by Blockchain technologies in the field of digital identity management with a particular focus on personal data protection.<br /> The goal of ID-BLOCKCHAIN is to prototype a service combining strong authentication and verifiable claims management; this service will be secured using hardware tokens and provide a high level of privacy.<br /> The project establishes state of art, defines use cases, designs functional and technical architecture, a specific protocol implemented with open source software and hardware assets and validation through prototyping.
+
+  <!--Start Date: October 1, 2016
+  Duration: 24 months
+  Cost: 1 178 k€
+  Effort: 15.5 man*year
+  BPI France Funding: 567 k€
+  -->
+
+  <div>
+      <hr>
+    	<ul>
+    		<li><b>Start date</b>&nbsp;–&nbsp;1 october 2016</li>
+    	</ul>
+      <hr>
+      <ul>
+        <li><b>Duration</b>&nbsp;–&nbsp;24 months</li>
+      </ul>
+      <hr>
+      <ul>
+        <li><b>Refunding</b>&nbsp;–&nbsp;by <a href="http://www.bpifrance.fr/">BPI France</a><br></li>
+      </ul>
+      <hr>
+      <ul>
+        <li><b>Label</b>&nbsp;–&nbsp;by <a href="http://www.pole-tes.com/">TES Cluster</a><br></li>
+      </ul>
+    </div>
+
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div data-role="page" id="memberspage">
+  <br/>
+  <br/>
+    <br/>
+
+    <h2>Members & Sponsors</h2>
+    <div id="sponsors"></div>
+    <br/>
+    <br/>
+    <h4 >Sponsors :</h4>
+    <br/>
+    <div>
+    <ul>
+    <li><b>BPI France</b>&nbsp;–&nbsp;French government agency for innovation<br><a href="http://www.gouvernement.fr/programme-investissements-avenir"><img src="http://localhost:4000/assets/logo_investissements_avenir320.png"></a></li>
+    </ul>
+    </div>
+    <div id="labels"></div>
+    <br />
+    <br />
+    <h4 >Label :</h4>
+    <br />
+    <div>
+    <ul>
+    <li><b>TES Cluster</b>&nbsp;–&nbsp;Secure electronic transactions cluster<br><a href="http://www.pole-tes.com/"><img src="http://localhost:4000/assets/logo-pole-TES320.png"></a></li>
+    </ul>
+    </div>
+    <div id="members"></div>
+    <br />
+    <br/>
+    <h4 >Members :</h4>
+    <br/>
+    <div>
+      	<ul>
+      		<li><b>Paymium</b><br><a href="https://www.paymium.com/"><img src="http://localhost:4000/assets/logo-paymium-resized320.png"></a></li>
+      	</ul>
+        <hr>
+        <ul>
+          <li><b>Worldline</b><br><a href="http://worldline.com/"><img src="http://localhost:4000/assets/logo-worldline320.png"></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><b>Ledger</b><br><a href="https://www.ledger.co/"><img src="http://localhost:4000/assets/logo-ledger200.png"></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><b>Greyc</b><br><a href="https://www.greyc.fr/"><img src="http://localhost:4000/assets/logo-greyc320.png"></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><b>Liris</b><br><a href="https://liris.cnrs.fr/"><img src="http://localhost:4000/assets/logo-liris320.png"></a></li>
+        </ul>
+      </div>
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div data-role="page" id="newspage">
+
+<div class="news">
+  <br/>
+  <br/>
     <br>
-    <h2>News</h2>
+    <h2>Events & News</h2>
 </div>
 <br>
 <br>
@@ -110,9 +256,7 @@
         <h2><a href="http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/">Rebooting the Web of Trust</a></h2>
         <p>
             
-                <span class="excerpt">A conference to be held in Paris on April 19-20-21.
-
-</span>
+                <span class="excerpt">Participation in Rebooting web of trust. A conference held in Paris on April 19-20-21. https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017 Our Papers : Self-sovereign Delegated...</span>
             
         </p>
         <p class="post-detail">
@@ -120,70 +264,6 @@
             
               &middot;
               <a href="http://localhost:4000/2017/04/10/rebooting-the-web-of-trust/index.html#disqus_thread" data-disqus-identifier="/2017/04/10/rebooting-the-web-of-trust/"></a>
-              
-            
-        </p>
-    </div>
-</div>
-
-<div class="post-index">
-    <div class="post-content">
-        <h2><a href="http://localhost:4000/2015/09/07/color-themes-and-post-logos/">Color Themes and Post Logos</a></h2>
-        <p>
-            
-                <span class="excerpt">Trio comes with support for 9 different color themes as well as Font Awesome icons as logos.
-
-</span>
-            
-        </p>
-        <p class="post-detail">
-            September 07, 2015
-            
-              &middot;
-              <a href="http://localhost:4000/2015/09/07/color-themes-and-post-logos/index.html#disqus_thread" data-disqus-identifier="/2015/09/07/color-themes-and-post-logos/"></a>
-              
-            
-        </p>
-    </div>
-</div>
-
-<div class="post-index">
-    <div class="post-content">
-        <h2><a href="http://localhost:4000/2015/09/06/what-is-jekyll/">What is Jeykll?</a></h2>
-        <p>
-            
-                <span class="excerpt">Jekyll is a system to create blog-aware, static web pages. Jekyll integrates nicely with GitHub Pages.
-
-</span>
-            
-        </p>
-        <p class="post-detail">
-            September 06, 2015
-            
-              &middot;
-              <a href="http://localhost:4000/2015/09/06/what-is-jekyll/index.html#disqus_thread" data-disqus-identifier="/2015/09/06/what-is-jekyll/"></a>
-              
-                &middot;
-                Updated September 07, 2015
-              
-            
-        </p>
-    </div>
-</div>
-
-<div class="post-index">
-    <div class="post-content">
-        <h2><a href="http://localhost:4000/2015/09/06/setting-up-disqus-integration/">Setting up Disqus integration</a></h2>
-        <p>
-            
-                <span class="excerpt">Trio comes with Disqus integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All...</span>
-            
-        </p>
-        <p class="post-detail">
-            September 06, 2015
-            
-              &middot;
-              <a href="http://localhost:4000/2015/09/06/setting-up-disqus-integration/index.html#disqus_thread" data-disqus-identifier="/2015/09/06/setting-up-disqus-integration/"></a>
               
             
         </p>
@@ -201,11 +281,11 @@
           
       </li>
       <li>
-          <span class="current">Page 1 of 2</span>
+          <span class="current">Page 1 of 1</span>
       </li>
       <li class="page-next">
           
-              <a href="http://localhost:4000/page2">Next</a></li>
+              <span class="disabled">Next</span>
           
       </li>
   </ul>
@@ -227,8 +307,170 @@
   }());
 </script>
 
-    </div>
+
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div data-role="page" id="deliverablespage" >
+      <div class="documents">
+        <br/>
+        <br/>
+      	<br>
+          <h2>Deliverables</h2>
+      </div>
+      <br>
+      <br>
+      <ul class="tabs">
+        <li class="active" rel="tab1">Documents</li>
+        <li rel="tab2">Videos</li>
+        <li rel="tab3">Images</li>
+      </ul>
+      <div class="tab_container">
+
+        <!-- Documents -->
+        <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+        <div id="tab1" class="tab_content">
+        	<ul>
+        		<li><b>Locally hosted link title</b> 01/02/2017&nbsp;–&nbsp;<a href="http://localhost:4000/assets/BlockchainPaper.pdf" download="BlockchainPaper.pdf">Download the pdf</a></li>
+        	</ul>
+            <ul>
+            <li><b>Online link title</b> 01/02/2017&nbsp;–&nbsp;<a href="http://scet.berkeley.edu/wp-content/uploads/BlockchainPaper.pdf" download="newfilename">Download the pdf</a></li>
+          </ul>
+            </div>
+
+        <!-- Videos -->
+        <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+        <div id="tab2" class="tab_content">
+        	<ul>
+        		<li>Added 01/02/2017&nbsp;–&nbsp;<a href="https://www.youtube.com/watch?v=s4g1XFU8Gto" target="_blank">Absolute link example only</a></li>
+        	</ul>
+        </div>
+
+        <!-- Images -->
+        <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+        <div id="tab3" class="tab_content">
+        	<ul>
+        		<li><b>Locally hosted link title</b>&nbsp;–&nbsp;Added 01/02/2017<br><img src="http://localhost:4000/assets/Logo-Paymium.png"></img></li>
+        	</ul>
+          <hr>
+          <ul>
+            <li><b>Online link title</b>&nbsp;–&nbsp;Added 01/02/2017<br><img src="http://www.savoirscom1.info/wp-content/uploads/2015/12/Blockchain-Logo-Blue6.png"></img></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <script type="text/javascript">
+          $(".tab_content").hide();
+          $(".tab_content:first").show();
+
+          $("ul.tabs li").click(function() {
+
+            $(".tab_content").hide();
+            var activeTab = $(this).attr("rel");
+            $("#"+activeTab).fadeIn();
+
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+
+      	  $(".tab_drawer_heading").removeClass("d_active");
+      	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+
+          });
+      	$(".tab_drawer_heading").click(function() {
+
+            $(".tab_content").hide();
+            var d_activeTab = $(this).attr("rel");
+            $("#"+d_activeTab).fadeIn();
+
+      	  $(".tab_drawer_heading").removeClass("d_active");
+            $(this).addClass("d_active");
+
+      	  $("ul.tabs li").removeClass("active");
+      	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+          });
+      	$('ul.tabs li').last().addClass("tab_last");
+</script>
+
+    </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<div data-role="page" id="faqpage">
+  <br/>
+  <br/>
+    <br/>
+
+    <h2>FAQ</h2>
+    <br/>
+    <br/>
+    <head>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+       <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+       <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+     <script>
+       $(function() {
+         $( ".accordion" ).accordion();
+         $(".accordion").accordion({ header: "h4", collapsible: true, active: false ,heightStyle: "content" });
+       });
+       </script>
+
+
+    </head>
+    <div class="accordion">
+      <h4>Question 1</h4>
+          <div>
+            <p></p>
+          </div>
+      <h4>Question 2</h4>
+          <div>
+            <p></p>
+          </div>
+      <h4>Question 3</h4>
+        <div>
+         <p></p>
+        </div>
+    </div>
+
+
+  </div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+  <div data-role="page" id="contactpage">
+    <br/>
+    <br/>
+    <br/>
+
+    <h2>Contact us</h2>
+    <br/>
+    <br/>
+    <div>
+        <form action="https://formspree.io/jean-claude.barbezange@worldline.com" method="POST" class="contact">
+            <input type="text" name="email" placeholder="Email Address" />
+            <textarea type="text" name="content" rows="10" placeholder="Ask us anything"></textarea>
+            <input type="hidden" name="_next" value="http://localhost:4000/thanks.html" />
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Send message" />
+        </form>
+    </div>
+
+  </div>
+
+
 
 <header class="stickyfooter" role="contentinfo">
 
@@ -274,6 +516,7 @@
 
 </header>
 <!-- Some empty space between the page counter and footer -->
+
 
 </body>
 </html>
