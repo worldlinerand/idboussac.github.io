@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:filterTouchesWhenObscured="true"
+android:paddingTop="60dp"
+android:weightSum="1"
+android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/claim_add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_claims"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/title_claims"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/claim_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textCapSentences"
+                />
+
+            <TextView
+                android:id="@+id/sexe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/gender"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/claim_sexe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/first_name"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/claim_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                android:id="@+id/sname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/second_name"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/claim_sname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                android:id="@+id/nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/nationality"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/claim_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textCapSentences"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/claim_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/place_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/place_of_birth"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/claim_place_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                android:id="@+id/postal_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/postal_address"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/claim_postal_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                android:id="@+id/credentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/credentials_uri"
+                android:textColor="@color/light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/claim_credentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/button_new_flied"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_regular_blue"
+                android:filterTouchesWhenObscured="true"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:shadowColor="@android:color/transparent"
+                android:stateListAnimator="@null"
+                android:text="add new field"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/claim_submit"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_regular_blue"
+                android:filterTouchesWhenObscured="true"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:shadowColor="@android:color/transparent"
+                android:stateListAnimator="@null"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
