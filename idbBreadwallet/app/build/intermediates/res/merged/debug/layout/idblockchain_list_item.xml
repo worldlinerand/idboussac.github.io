@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:filterTouchesWhenObscured="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:filterTouchesWhenObscured="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idblockchain_sent_received_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:filterTouchesWhenObscured="true"
+                android:includeFontPadding="false"
+                android:padding="0px"
+                android:textSize="13sp" />
+
+            <com.breadwallet.presenter.customviews.AutoResizeTextView
+                android:id="@+id/idblockchain_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:filterTouchesWhenObscured="true"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:filterTouchesWhenObscured="true"
+            android:gravity="end|center_vertical"
+            android:orientation="vertical">
+
+            <com.breadwallet.presenter.customviews.AutoResizeTextView
+                android:id="@+id/idblockchain_claims_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:filterTouchesWhenObscured="true"
+                android:textColor="@color/gray"
+                android:textSize="22sp"
+                android:maxLines="1"
+                android:layout_gravity="left"/>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

@@ -23,9 +23,10 @@ public class Tools {
 	 * create a hash from data by hashing separately each values in the JSONObject  and then hashing the concatenation of all these hashes 
 	 * @param data
 	 * 		a JSONObject containing the data to be hashed 
+	 * @param isSp
 	 * @return
 	 */
-	public static String globalHash(JSONObject data){
+	public static String globalHash(JSONObject data, boolean isSp){
 		MessageDigest digest = null;
 		try{
 			digest = MessageDigest.getInstance("SHA-256");
@@ -36,13 +37,24 @@ public class Tools {
 		String tmpOrder = data.getString("ordre");
 		String[] order = tmpOrder.split(",");
 		byte [] concatenateHash =null;
+		String exception =null;
+		if(isSp){
+			exception = data.getString("hide");
+		}
 		
 		for(int i = 0; i<order.length; i++){
 			digest.reset();
 			byte [] tmp = concatenateHash;
 			byte[] tmpHash = null;
 			try {
-				tmpHash = digest.digest(data.getString(order[i]).getBytes("UTF-8"));
+				if(isSp && exception != null){
+					if(exception.contains(order[i]))
+						tmpHash = hexStringToByteArray(data.getString(order[i]));
+					else
+						tmpHash = digest.digest(data.getString(order[i]).getBytes("UTF-8"));
+				}
+				else
+					tmpHash = digest.digest(data.getString(order[i]).getBytes("UTF-8"));
 			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
 			} catch (JSONException e) {

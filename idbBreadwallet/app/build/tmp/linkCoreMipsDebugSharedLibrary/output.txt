@@ -1,0 +1,4 @@
+See file:///C:/Utilisateurs/a660904/Documents/GitHub/bread2/breadwallet-android/app/build/tmp/linkCoreMipsDebugSharedLibrary/output.txt for all output for linkCoreMipsDebugSharedLibrary.
+linking libcore.so successful.
+
+Finished linkCoreMipsDebugSharedLibrary, see full log file:///C:/Utilisateurs/a660904/Documents/GitHub/bread2/breadwallet-android/app/build/tmp/linkCoreMipsDebugSharedLibrary/output.txt.

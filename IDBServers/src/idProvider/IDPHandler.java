@@ -83,7 +83,7 @@ public class IDPHandler extends HttpServlet {
 		JSONObject customerData = new JSONObject(s);
 		JSONObject hashData = customerData.getJSONObject("data");
 		
-		String calculatedHash = Tools.globalHash(hashData);
+		String calculatedHash = Tools.globalHash(hashData,false);
 		System.out.println(calculatedHash);
 		String signature = null;
 		System.out.println(customerData.getString("txId"));

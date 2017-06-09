@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\animator\\from_left.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\animator\\from_left.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\animator\\from_top.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\animator\\from_top.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\animator\\to_top.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\animator\\to_top.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\animator\\from_bottom.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\animator\\from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\animator\\to_bottom.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\animator\\to_bottom.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\animator\\to_right.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\animator\\to_right.xml"
+    }
+]

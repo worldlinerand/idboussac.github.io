@@ -1,0 +1,4 @@
+See file:///C:/Utilisateurs/a660904/Documents/GitHub/bread2/breadwallet-android/app/build/tmp/linkCoreX86DebugSharedLibrary/output.txt for all output for linkCoreX86DebugSharedLibrary.
+linking libcore.so successful.
+
+Finished linkCoreX86DebugSharedLibrary, see full log file:///C:/Utilisateurs/a660904/Documents/GitHub/bread2/breadwallet-android/app/build/tmp/linkCoreX86DebugSharedLibrary/output.txt.

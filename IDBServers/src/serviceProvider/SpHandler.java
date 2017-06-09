@@ -23,9 +23,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import tools.BitcoinOpReturnTX;
 import tools.ECDSA;
 import tools.Tools;
-import tools.BitcoinOpReturnTX;
 
 /**
  * Servlet implementation class SpHandler
@@ -33,6 +33,7 @@ import tools.BitcoinOpReturnTX;
 @WebServlet("/SpHandler")
 public class SpHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -67,14 +68,14 @@ public class SpHandler extends HttpServlet {
 		try {
 			String signature = BitcoinOpReturnTX.getOP_Return(txIds.getString("claimsTxID"));
 			String proofSign = BitcoinOpReturnTX.getOP_Return(txIds.getString("proofID"));
-			String calculateHash = Tools.globalHash(data);
+			String calculateHash = Tools.globalHash(data, true);
 			
 			PublicKey pubKeyIdp = Tools.getPubKeyFromAddr(data.getString("idpName"));
 
 			//PublicKey pubKey = getPubKeyFromAddr(data.getString(""))
 			
 			byte[] enc_key = Tools.hexStringToByteArray(global.getString("pubkey"));
-			System.out.println(global.getString("pubkey"));
+			
 			X509EncodedKeySpec formatted_public = new X509EncodedKeySpec(enc_key);
 			
 	        KeyFactory kf;
@@ -105,6 +106,9 @@ public class SpHandler extends HttpServlet {
 		
 		
 	}
+	
+	
+
 		
 
 }

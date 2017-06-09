@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:minWidth="350dp">
+
+    <TextView
+        android:id="@+id/guarantor_diologue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/id_provider_url"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/idp_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/guarantor_dialogue_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/cancel"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/text_small"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/button_scan_ipd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/guarantor_dialogue_cancel"
+            android:layout_centerHorizontal="true"
+            android:text="@string/scan"
+
+            android:background="@drawable/button_regular_blue"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/text_small"
+
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/guarantor_dialogue_validate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/validate"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/text_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/button_regular_blue"/>
+    </RelativeLayout>
+</LinearLayout>
