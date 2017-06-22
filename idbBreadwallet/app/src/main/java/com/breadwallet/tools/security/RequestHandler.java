@@ -5,6 +5,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.util.Log;
@@ -54,8 +55,9 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 
-
+import static com.breadwallet.presenter.activities.MainActivity.app;
 import static com.breadwallet.tools.util.BRConstants.AUTH_FOR_BIT_ID;
+import static com.breadwallet.tools.util.BRConstants.AUTH_FOR_IDP;
 import static com.breadwallet.tools.util.BRConstants.AUTH_FOR_PAY;
 import static com.breadwallet.tools.util.BRConstants.REQUEST_PHRASE_BITID;
 
@@ -89,6 +91,7 @@ public class RequestHandler extends Activity {
     private static final Object lockObject = new Object();
 
     private static String _bitUri;
+    private static String _idpUri;
     private static String _bitCallback;
     private static String _strToSign = null;
     private static String _authString = null;
@@ -122,6 +125,7 @@ public class RequestHandler extends Activity {
     public static boolean tryBitIdUri(final Activity app, String uri, JSONObject jsonBody) {
         if (uri == null) return false;
         boolean isBitUri = false;
+        boolean isIDPUri = false;
 
         URI bitIdUri = null;
         try {
@@ -150,6 +154,10 @@ public class RequestHandler extends Activity {
             //ask for phrase, will system auth if needed
 
             _authString = "BitID Authentication Request";
+        } else if(bitIdUri != null && "idb".equals(bitIdUri.getScheme())){
+            _idpUri = uri;
+            _authString = "IDP Authentication Request";
+            isIDPUri = true;
         }
 
     //    Log.e(TAG, "tryBitIdUri: _bitUri: " + _bitUri);
@@ -157,6 +165,7 @@ public class RequestHandler extends Activity {
     //    Log.e(TAG, "tryBitIdUri: _index: " + _index);
 
         final boolean finalIsBitUri = isBitUri;
+        final boolean finalIsIDPUri = isIDPUri;
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -171,6 +180,8 @@ public class RequestHandler extends Activity {
                     phrase = KeyStoreManager.getKeyStorePhrase(app, REQUEST_PHRASE_BITID);
                     if(finalIsBitUri) {
                         ((BreadWalletApp) app.getApplicationContext()).promptForAuthentication(app, AUTH_FOR_BIT_ID, null, tmpUri.getHost(), _authString, null, false);
+                    } else if(finalIsIDPUri){
+                        ((BreadWalletApp) app.getApplicationContext()).promptForAuthentication(app, AUTH_FOR_IDP, null, tmpUri.getHost(), _authString, null, false);
                     }
                     else{
                         ((BreadWalletApp) app.getApplicationContext()).promptForAuthentication(app, AUTH_FOR_PAY, null, tmpUri.getHost(), _authString, null, false);
@@ -186,6 +197,21 @@ public class RequestHandler extends Activity {
         }).start();
         return isBitUri;
 
+    }
+
+    public boolean tryIDPUri(final Activity app, String uri, JSONObject jsonBody){
+        if (uri == null) return false;
+        boolean isIDPUri = false;
+
+        URI idpUri = null;
+        try {
+            idpUri = new URI(uri);
+            if ("idb".equals(idpUri.getScheme())) isIDPUri = true;
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+
+        return isIDPUri;
     }
 
     public static void processBitIdResponse(final Activity app) {
@@ -496,5 +522,7 @@ public class RequestHandler extends Activity {
     public static Response getResp(){
         return resp;
     }
+
+    public static String getIdpUri() { return _idpUri; }
 
 }

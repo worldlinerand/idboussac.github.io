@@ -389,5 +389,6 @@
     <string name="claim_name">Claim Name :</string>
     <string name="credentials_uri">Credentials URI :</string>
     <string name="gender">Gender :</string>
+    <string name="claims">claims</string>
 
 </resources>

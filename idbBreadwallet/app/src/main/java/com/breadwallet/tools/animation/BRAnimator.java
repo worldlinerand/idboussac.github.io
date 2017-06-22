@@ -88,17 +88,17 @@ public class BRAnimator {
                     Manifest.permission.CAMERA)
                     != PackageManager.PERMISSION_GRANTED) {
                 // Should we show an explanation?
-                if (ActivityCompat.shouldShowRequestPermissionRationale(app,
+              /*  if (ActivityCompat.shouldShowRequestPermissionRationale(app,
                         Manifest.permission.CAMERA)) {
                     ((BreadWalletApp) app.getApplication()).showCustomToast(app,
                             app.getString(R.string.allow_camera_access),
                             MainActivity.screenParametersPoint.y / 2, Toast.LENGTH_LONG, 0);
-                } else {
+                } else {*/
                     // No explanation needed, we can request the permission.
                     ActivityCompat.requestPermissions(app,
                             new String[]{Manifest.permission.CAMERA},
                             BRConstants.CAMERA_REQUEST_ID);
-                }
+                //}
             } else {
                 if (BRAnimator.level > 0)
                     BRAnimator.pressMenuButton(app);
@@ -150,7 +150,6 @@ public class BRAnimator {
                 decoderFragmentOn = true;
                 app.activityButtonsEnable(false);
                 CustomPagerAdapter.adapter.showFragments(false, app);
-                //Disabled inspection: <Expected resource type anim>
                 FragmentTransaction fragmentTransaction = app.getFragmentManager().beginTransaction();
                 fragmentTransaction.setCustomAnimations(R.animator.from_bottom, R.animator.to_top);
                 FragmentDecoder fragmentDecoder = new FragmentDecoder();
@@ -398,12 +397,6 @@ public class BRAnimator {
             e.printStackTrace();
         }
 
-    }
-
-    public static void animateSlideToLeftFromPrevious(final MainActivity context, final Fragment to){
-        level--;
-
-        animateSlideToLeft(context,to,previous.lastElement());
     }
 
     public static void animateSlideToRight(final MainActivity context) {

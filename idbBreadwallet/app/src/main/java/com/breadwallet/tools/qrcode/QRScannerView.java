@@ -226,6 +226,18 @@ public class QRScannerView extends FrameLayout implements Camera.PreviewCallback
                     });
                     return;
                 }
+                RequestHandler rh = new RequestHandler();
+                boolean isIDPCode = rh.tryIDPUri(app,resultedText,null);
+                if(isIDPCode){
+                    Log.d(TAG, "onPreviewFrame: isIDPCode true");
+                    app.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            BRAnimator.hideDecoderFragment();
+                        }
+                    });
+                    return;
+                }
                 if(app.isIDP){
                     app.tIDP.setName(resultedText);
                     app.tIDP.setIdpUrl(resultedText);

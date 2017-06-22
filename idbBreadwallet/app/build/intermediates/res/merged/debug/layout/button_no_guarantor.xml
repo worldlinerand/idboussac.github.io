@@ -13,7 +13,7 @@
         android:layout_marginStart="20dp"
         android:filterTouchesWhenObscured="true"
         android:gravity="center"
-        android:text="@string/no_guarantors"
+        android:text="no voucher"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/light_gray"
         android:textSize="@dimen/text_size" />

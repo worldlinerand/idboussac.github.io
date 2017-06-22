@@ -51,6 +51,7 @@ import android.widget.TextView;
 
 import com.breadwallet.R;
 import com.breadwallet.BreadWalletApp;
+import com.breadwallet.presenter.activities.IDPActivity;
 import com.breadwallet.presenter.activities.IntroActivity;
 import com.breadwallet.presenter.activities.MainActivity;
 import com.breadwallet.presenter.activities.PhraseFlowActivity;
@@ -76,6 +77,7 @@ import java.util.Locale;
 import static com.breadwallet.presenter.activities.MainActivity.app;
 import static com.breadwallet.tools.security.KeyStoreManager.putLastPasscodeUsedTime;
 import static com.breadwallet.tools.util.BRConstants.AUTH_FOR_BIT_ID;
+import static com.breadwallet.tools.util.BRConstants.AUTH_FOR_IDP;
 
 public class PasswordDialogFragment extends DialogFragment {
 
@@ -402,6 +404,11 @@ public class PasswordDialogFragment extends DialogFragment {
                 } else if(app.isIDP){
                     app.tIDP.start();
                     app.isIDP = false;
+                } else if(mode==AUTH_FOR_IDP){
+                    Intent intent;
+                    intent = new Intent(app, IDPActivity.class);
+                    intent.putExtra("uri",RequestHandler.getIdpUri());
+                    startActivity(intent);
                 }
             } else {
                 SpringAnimator.failShakeAnimation(getActivity(), dialogFragment.getView());

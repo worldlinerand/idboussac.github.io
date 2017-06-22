@@ -1,22 +1,22 @@
 [
     {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\d7aa8fe19f483bc5a40a3e2fed171176adae06bc\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\e89975bc61820dfb1018d79f58ef9ce083fa879c\\output\\res\\layout-v21\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
         "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\e89975bc61820dfb1018d79f58ef9ce083fa879c\\output\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\e89975bc61820dfb1018d79f58ef9ce083fa879c\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\e89975bc61820dfb1018d79f58ef9ce083fa879c\\output\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\e89975bc61820dfb1018d79f58ef9ce083fa879c\\output\\res\\layout-v21\\notification_action.xml"
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\e89975bc61820dfb1018d79f58ef9ce083fa879c\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\d7aa8fe19f483bc5a40a3e2fed171176adae06bc\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\e89975bc61820dfb1018d79f58ef9ce083fa879c\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     }
 ]

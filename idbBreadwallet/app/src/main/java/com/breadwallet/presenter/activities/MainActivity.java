@@ -36,6 +36,7 @@ import com.breadwallet.R;
 import com.breadwallet.BreadWalletApp;
 import com.breadwallet.presenter.customviews.BubbleTextView;
 import com.breadwallet.presenter.entities.ClaimsEntity;
+import com.breadwallet.presenter.fragments.FragmentIdblockchainClaimsOverview;
 import com.breadwallet.presenter.fragments.FragmentScanResult;
 import com.breadwallet.presenter.fragments.FragmentSettings;
 import com.breadwallet.presenter.fragments.SignInRequestFragment;
@@ -673,8 +674,11 @@ public class MainActivity extends FragmentActivity implements Observer {
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    BRAnimator.animateDecoderFragment();
-
+                    if(isIDP)
+                        BRAnimator.animateDecoderFragment();
+                    else
+                        BRAnimator.animateDecoderFragmentIdb((FragmentIdblockchainClaimsOverview)  app.
+                                getFragmentManager().findFragmentByTag(FragmentIdblockchainClaimsOverview.class.getName()));
                 }
                 return;
             }

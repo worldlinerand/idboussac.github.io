@@ -6,12 +6,27 @@
     android:background="@drawable/backgroundmain_cropped"
     android:filterTouchesWhenObscured="true">
 
-    <Button
-        android:id="@+id/idp_request_close"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/x"
-        android:filterTouchesWhenObscured="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/idp_request_close"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/x"
+            android:filterTouchesWhenObscured="true" />
+
+        <TextView
+            android:id="@+id/idp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/claims"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/idp_title_claims"
