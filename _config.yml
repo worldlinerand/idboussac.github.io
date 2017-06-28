@@ -1,0 +1,47 @@
+# Site wide configuration
+title: idblockchain
+description: 'A working platform to communicate about idblockchain project'
+url: https://idboussac.github.io
+date_format: '%B %d, %Y'
+fort_awesome_icon: 'cog fa-spin'
+
+# Owner configuration
+# name and email are required (change code to remove these)
+# (leave the rest blank to disable the corresponding sharing button)
+owner:
+    name: Pierre Noizat
+    email: pierre.noizat@paymium.com
+    github: pierrenoizat
+    twitter: pierrenoizat
+    linkedin: pierrenoizat
+    facebook: pierre.noizat
+    # google_plus:
+    # youtube:
+
+# Post sharing icons
+sharing:
+    twitter: true
+    linkedin: true
+    facebook: true
+    google_plus: true
+    reddit: true
+
+# Disqus comments configuration (leave blank to disable comments)
+disqus_shortname: 'idblockchain'
+
+# Jekyll configuration
+permalink: /:year/:month/:day/:title/
+paginate: 4
+
+# Markdown
+# markdown: redcarpet
+highlighter: rouge
+
+# Enable when using redcarpet
+# redcarpet:
+#  extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
+
+# Gems
+gems: ['jekyll-paginate', 'kramdown']
+# Exclude
+exclude: ['README.md', 'config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']

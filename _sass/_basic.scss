@@ -1,0 +1,285 @@
+html {
+  font: 16px/1.5 Inconsolata, sans-serif;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+@media (min-width: 30rem) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin-top: 0rem;
+  color: $base-gray;
+}
+
+* {
+  border-radius: 0px !important;
+}
+
+@media (min-width: 30rem) {
+  body {
+    margin-top: 0rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+body a {
+  color: $theme-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, sans-serif;
+  margin: 0 0 0.5rem -0.1rem /* align left edge */;
+  line-height: 1;
+  color: darken($base-gray, 13.5%);
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 30rem) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+h1 a {
+  color: inherit;
+}
+
+div.site-title {
+  text-align: center;
+  margin-bottom: 3em;
+  a, a:hover, a:focus, a:active {
+    font-size: 3em;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 30rem) {
+  h2 {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+p, ul, ol, dl, table, pre, blockquote {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  padding-left: 0rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+}
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding: .5rem 1rem;
+  border-left: .25rem solid lighten($base-gray, 60%);
+  color: lighten($base-gray, 20%);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+hr {
+  border: none;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid lighten($base-gray, 60%);
+  position: relative;
+  top: -1px;
+}
+
+.container img, .container iframe {
+  max-width: 100%;
+}
+
+.container img {
+  margin: 0 auto;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border: 1px solid $table-border;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25rem .5rem;
+  border: 1px solid $table-border;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: $table-alt-row-color;
+}
+
+pre, code {
+  font-family: inherit;
+}
+
+pre {
+  padding: .5rem 1rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border: 1px solid #e6e1dc;
+  background-color: $white;
+}
+
+code {
+  padding: .1rem .25rem;
+  background-color: #f4f4f4;
+}
+
+pre > code {
+  padding: 0;
+  background-color: $white;
+}
+
+.container {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+div.post-title {
+  div.logo {
+    display:inline-block;
+    padding-right:0.75em;
+    vertical-align:top;
+    font-size:2em;
+    color: $theme-color;
+  }
+  div.title {
+    display:inline-block;
+    h2 {
+      display:block;
+      padding:0;
+      margin:0;
+    }
+    span {
+      padding-left:0.25em;
+      font-size: 0.75em;
+    }
+  }
+}
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  height: 45px;
+  border-bottom: 1px solid #333;
+  width: 100%;
+}
+
+ul.tabs li {
+  float: left;
+  margin: 0;
+  cursor: pointer;
+  padding: 0px 21px;
+  height: 44px;
+  line-height: 44px;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background-color: #f1f1f1;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.tab_last { border-right: 1px solid #333; }
+
+ul.tabs li:hover {
+  background-color: #fff;
+  color: #000;
+  // border-bottom: none !important;
+}
+
+ul.tabs li.active {
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #fff;
+  display: block;
+}
+
+.tab_container {
+  border-top: none;
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #fff;
+  overflow: auto;
+}
+
+.tab_content {
+  padding-top: 20px;
+  display: none;
+}
+
+.tab_drawer_heading { display: none; }
+
+@media screen and (max-width: 480px) {
+  .tabs {
+    display: none;
+  }
+  .tab_drawer_heading {
+    background-color: black;
+    color: #fff;
+    border-top: 1px solid black;
+    margin: 0;
+    padding: 5px 20px;
+    display: block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .d_active {
+    background-color: #666;
+    color: #fff;
+  }
+}
