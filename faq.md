@@ -21,18 +21,14 @@ permalink: /faq/
 <div class="accordion">
 	<h4>Question 1</h4>
 	    <div>
-	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus</p>
+
 	    </div>
 	<h4>Question 2</h4>
 	    <div>
-	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus</p>
+
 	    </div>
 	<h4>Question 3</h4>
 		<div>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus</p>
+
 		</div>
 </div>
-
-
-
-
