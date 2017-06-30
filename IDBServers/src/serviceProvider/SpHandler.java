@@ -46,8 +46,12 @@ public class SpHandler extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("========================== DEBUT Methode doGet SpHandler ====================================");
+		System.out.println("request : "+ request );
+		System.out.println("response : "+ response );
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println("========================== FIN Methode doGet SpHandler ====================================");
 	}
 
 	/**
@@ -55,6 +59,9 @@ public class SpHandler extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		System.out.println("========================== DEBUT Methode doPost SpHandler ====================================");
+		System.out.println("request : "+ request );
+		System.out.println("response : "+ response );
 		BufferedReader in = request.getReader();
 		String s;
 		s=in.readLine();
@@ -66,16 +73,15 @@ public class SpHandler extends HttpServlet {
 		JSONObject data = global.getJSONObject("data");
 		
 		try {
+			
 			String signature = BitcoinOpReturnTX.getOP_Return(txIds.getString("claimsTxID"));
 			String proofSign = BitcoinOpReturnTX.getOP_Return(txIds.getString("proofID"));
+			System.out.println("VALEUR DE REPUTATION  :   " + proofSign.substring(1, 3));
 			String calculateHash = Tools.globalHash(data, true);
 			
 			PublicKey pubKeyIdp = Tools.getPubKeyFromAddr(data.getString("idpName"));
-
-			//PublicKey pubKey = getPubKeyFromAddr(data.getString(""))
 			
 			byte[] enc_key = Tools.hexStringToByteArray(global.getString("pubkey"));
-			
 			X509EncodedKeySpec formatted_public = new X509EncodedKeySpec(enc_key);
 			
 	        KeyFactory kf;
@@ -89,10 +95,12 @@ public class SpHandler extends HttpServlet {
 			}
 			byte[] sign = Tools.hexStringToByteArray(signature);
 			
-			if(ECDSA.verify(Tools.hexStringToByteArray(proofSign.substring(2)), calculateHash, pubKeyIdp) && ECDSA.verify(sign, calculateHash, pubkey)){
+			if(ECDSA.verify(Tools.hexStringToByteArray(proofSign.substring(4)), calculateHash, pubKeyIdp) && ECDSA.verify(sign, calculateHash, pubkey)){
 				System.out.println("ok !");
 				response.setStatus(HttpServletResponse.SC_OK);
 				response.getWriter().write("BanqueBlesoise");
+				System.out.println("========================== FIN  Methode doPost SpHandler ====================================");
+				
 				response.getWriter().flush();
 				response.getWriter().close();
 				} else
@@ -102,7 +110,6 @@ public class SpHandler extends HttpServlet {
 			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
 		}
-		
 		
 		
 	}

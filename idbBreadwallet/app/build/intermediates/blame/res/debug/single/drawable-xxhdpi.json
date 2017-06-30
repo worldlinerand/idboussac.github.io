@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\sent_label.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\drawable-xxhdpi\\sent_label.9.png"
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\sent_label.9.png",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\sent_label.9.png"
     },
     {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\unconfirmed_label.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\drawable-xxhdpi\\unconfirmed_label.9.png"
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\unconfirmed_label.9.png",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\unconfirmed_label.9.png"
     },
     {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_fp_40px.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_fp_40px.png"
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\received_label.9.png",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\received_label.9.png"
     },
     {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\received_label.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\drawable-xxhdpi\\received_label.9.png"
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_fp_40px.png",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\ic_fp_40px.png"
     }
 ]

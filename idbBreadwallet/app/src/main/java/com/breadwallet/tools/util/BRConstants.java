@@ -44,6 +44,7 @@ public class BRConstants {
     public static final int AUTH_FOR_LIMIT = 14;
     public static final int AUTH_FOR_PAYMENT_PROTOCOL = 15;
     public static final int AUTH_FOR_BIT_ID = 16;
+    public static final int AUTH_FOR_IDP = 17;
 
     /**
      * BlockHeight prefs

@@ -31,7 +31,7 @@ public class ThreadOpReturnData extends Thread {
         FragmentIdBlockchain.refreshTransactions(app);
         if(idpApp.isOpReturnTx) {
             try {
-                sleep(500);
+                sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

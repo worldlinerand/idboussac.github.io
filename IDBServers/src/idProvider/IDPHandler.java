@@ -1,6 +1,6 @@
 package idProvider;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader; 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -23,6 +23,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import reputation.Reputation;
 import tools.BitcoinOpReturnTX;
 import tools.Tools;
 import tools.BitcoinOpReturnTX.BitcoinNet;
@@ -50,8 +51,11 @@ public class IDPHandler extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		System.out.println("========================== DEBUT Methode doGet IDPHandler ====================================");
+		System.out.println("request : "+ request );
+		System.out.println("response : "+ response );
 		try {
-			PublicKey pubkey = ECDSA.getKeyPairFromKeyStore().getPublic();
+			PublicKey pubkey = ECDSA.getKeyPairFromKeyStore().getPublic();//La clé publique issu de ecKeyStore.jks
 			byte [] encodedKey = pubkey.getEncoded();
 			StringBuilder key_builder = new StringBuilder();
 
@@ -59,12 +63,13 @@ public class IDPHandler extends HttpServlet {
 			    key_builder.append(String.format("%02x", b));
 			}
 			
-			
+			System.out.println("========================== FIN Methode doGet IDPHandler ====================================");
 			response.getWriter().append(key_builder.toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 	}
 
 	/**
@@ -73,7 +78,9 @@ public class IDPHandler extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
-		
+		System.out.println("========================== DEBUT Methode doPost IDPHandler ====================================");
+		System.out.println("request : "+ request );
+		System.out.println("response : "+ response );
 		BufferedReader in = request.getReader();
 		String s;
 		s=in.readLine();
@@ -117,12 +124,21 @@ public class IDPHandler extends HttpServlet {
 			String validateTx = null;
 		
 			try {
+				
 				System.out.println(calculatedHash);
 				byte[] signProof = ecdsa.signature(calculatedHash);
+				byte[] data = new byte[signProof.length+1];// data saved on blockchain
 				
-				System.out.println("siganature : " + Tools.bytesToHex(signProof));
-				validateTx = bot.recordSign(null, signProof);
-				System.out.println(validateTx);
+				
+				data[0] = (byte) Reputation.GetReputation();//value of reputation
+				for(int i =0;i<signProof.length; i++)
+				{
+					data[1+i]=signProof[i];
+				}
+				System.out.println("data : "+ Tools.bytesToHex(data));
+				validateTx = bot.recordSign(null, data);
+				System.out.println("validateTx : "+ validateTx);
+				
 			response.setStatus(HttpServletResponse.SC_OK);
 			response.getWriter().write(validateTx);
 			response.getWriter().flush();
@@ -130,11 +146,12 @@ public class IDPHandler extends HttpServlet {
 			} catch (EmptyBitcoinAccountException e) {
 				response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
 				e.printStackTrace();
-			} 
-			
+			} 	
 		}
 		else 
 			response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
+		System.out.println("========================== FIN  Methode doPost IDPHandler ====================================");
+		
 	
 	}
 	

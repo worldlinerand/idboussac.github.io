@@ -1,4 +1,4 @@
-See file:///C:/Utilisateurs/a660904/Documents/GitHub/bread2/breadwallet-android/app/build/tmp/linkCoreArmeabi-v7aDebugSharedLibrary/output.txt for all output for linkCoreArmeabi-v7aDebugSharedLibrary.
+See file:///C:/Users/ahamroun/Documents/GitHub/idboussac.github.io/idbBreadwallet/app/build/tmp/linkCoreArmeabi-v7aDebugSharedLibrary/output.txt for all output for linkCoreArmeabi-v7aDebugSharedLibrary.
 linking libcore.so successful.
 
-Finished linkCoreArmeabi-v7aDebugSharedLibrary, see full log file:///C:/Utilisateurs/a660904/Documents/GitHub/bread2/breadwallet-android/app/build/tmp/linkCoreArmeabi-v7aDebugSharedLibrary/output.txt.
+Finished linkCoreArmeabi-v7aDebugSharedLibrary, see full log file:///C:/Users/ahamroun/Documents/GitHub/idboussac.github.io/idbBreadwallet/app/build/tmp/linkCoreArmeabi-v7aDebugSharedLibrary/output.txt.

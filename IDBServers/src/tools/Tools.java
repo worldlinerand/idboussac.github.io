@@ -33,11 +33,12 @@ public class Tools {
 		}catch(NoSuchAlgorithmException e){
 			e.printStackTrace();
 		}
-		
+		//Catch order of claims
 		String tmpOrder = data.getString("ordre");
 		String[] order = tmpOrder.split(",");
-		byte [] concatenateHash =null;
+		byte [] concatenateHash = null;
 		String exception =null;
+		
 		if(isSp){
 			exception = data.getString("hide");
 		}
@@ -47,7 +48,9 @@ public class Tools {
 			byte [] tmp = concatenateHash;
 			byte[] tmpHash = null;
 			try {
+				
 				if(isSp && exception != null){
+					
 					if(exception.contains(order[i]))
 						tmpHash = hexStringToByteArray(data.getString(order[i]));
 					else
@@ -69,11 +72,8 @@ public class Tools {
 			}
 
 		}
-		
 		digest.reset();
-		
-		return bytesToHex(digest.digest(concatenateHash));
-		
+		return bytesToHex(digest.digest(concatenateHash));	
 	}
 	
 	
@@ -110,6 +110,9 @@ public class Tools {
 	
 
 	public static PublicKey getPubKeyFromAddr(String addr){
+		System.out.println("========================== DEBUT Methode getPubKeyFromAddr Tools ====================================");
+		System.out.println("addr : "  + addr);
+		
 		PublicKey pubkey = null;
 		System.out.println(addr);
 		try{		
@@ -139,16 +142,19 @@ public class Tools {
 					} catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}
-	            
+				}  
             }
 		}catch(IOException e){
-			e.printStackTrace();
-			
+			e.printStackTrace();	
 		}
+		System.out.println("========================== FIN Methode getPubKeyFromAddr Tools ====================================");
+		System.out.println("pubkey : "  + pubkey.toString());
 		return pubkey;
-		
+
 	}
+
+	
+
 
 
 }

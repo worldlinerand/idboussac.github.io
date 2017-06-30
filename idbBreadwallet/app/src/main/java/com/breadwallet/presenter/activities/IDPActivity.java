@@ -24,6 +24,7 @@ import com.breadwallet.wallet.BRWalletManager;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
+import java.net.URLDecoder;
 import java.security.KeyFactory;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -58,7 +59,6 @@ public class IDPActivity extends FragmentActivity {
         idpApp = this;
 
         final Intent intent = getIntent();
-
         final EditText title = (EditText) findViewById(R.id.idp_claim_title);
 
         setClaims(intent);
@@ -142,7 +142,7 @@ public class IDPActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(app,MainActivity.class);
+                intent = new Intent(idpApp,MainActivity.class);
                 startActivity(intent);
                 if (!IDPActivity.this.isDestroyed()) {
                     finish();
@@ -164,7 +164,19 @@ public class IDPActivity extends FragmentActivity {
     }
 
     private void setClaims(Intent intent) {
-        Uri uri = intent.getData();
+        Uri uriEncoded = intent.getData();
+
+        if(uriEncoded == null){
+            String extra = intent.getExtras().getString("uri");
+            uriEncoded = Uri.parse(extra);
+        }
+
+        Uri uri = null;
+        try {
+            uri = Uri.parse(URLDecoder.decode(uriEncoded.toString(),"UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         Log.d(TAG, "setUrlHandler: " + uri.getFragment());
         callbackURI = "http://" + uri.getAuthority() + uri.getPath();
         String claims = uri.getFragment();

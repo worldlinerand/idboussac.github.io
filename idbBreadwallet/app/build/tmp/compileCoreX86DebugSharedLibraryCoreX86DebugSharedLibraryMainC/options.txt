@@ -5,7 +5,7 @@ c
 -DANDROID
 -DANDROID_NDK
 -gcc-toolchain
-C:\\Utilisateurs\\a660904\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\x86-4.9\\prebuilt\\windows-x86_64
+C:\\Users\\ahamroun\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\x86-4.9\\prebuilt\\windows-x86_64
 -target
 i686-none-linux-android
 -ffunction-sections
@@ -26,11 +26,11 @@ i686-none-linux-android
 -std=c99
 -g
 -DBITCOIN_TESTNET=0
--IC:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\secp\\secp256k1\\include
--IC:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\secp\\secp256k1
--IC:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\secp
--IC:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\jni\\breadwallet-core
--IC:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\jni\\transition
+-IC:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\secp\\secp256k1\\include
+-IC:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\secp\\secp256k1
+-IC:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\secp
+-IC:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\jni\\breadwallet-core
+-IC:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\jni\\transition
 -Wno-trigraphs
 -Wmissing
 -Wno-missing-prototypes
@@ -64,5 +64,5 @@ i686-none-linux-android
 -Wno-sign-conversion
 -DBITCOIN_TESTNET=1
 -I
-C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\headers
---sysroot=C:\\Utilisateurs\\a660904\\AppData\\Local\\Android\\Sdk\\ndk-bundle/platforms/android-23/arch-x86
+C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\headers
+--sysroot=C:\\Users\\ahamroun\\AppData\\Local\\Android\\Sdk\\ndk-bundle/platforms/android-23/arch-x86

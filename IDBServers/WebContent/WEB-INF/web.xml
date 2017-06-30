@@ -13,7 +13,7 @@
     <description></description>
     <display-name>IDPServer</display-name>
     <servlet-name>IDPServer</servlet-name>
-    <servlet-class>idProvider.IDPHendler</servlet-class>
+    <servlet-class>idProvider.IDPHandler</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>IDPServer</servlet-name>
@@ -23,7 +23,7 @@
     <description></description>
     <display-name>ServiceProvider</display-name>
     <servlet-name>ServiceProvider</servlet-name>
-    <servlet-class>serviceProvider.SpHendler</servlet-class>
+    <servlet-class>serviceProvider.SpHandler</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ServiceProvider</servlet-name>
