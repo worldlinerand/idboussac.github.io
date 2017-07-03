@@ -1,6 +1,11 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\wallpaper_welcome.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-nodpi\\wallpaper_welcome.png"
+=======
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\wallpaper_welcome.png",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-nodpi\\wallpaper_welcome.png"
+>>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
     }
 ]
