@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 65,
+                    "endOffset": 116
+                },
+                "from": {
+                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\values-v16\\values-v16.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            }
+        ]
+    }
+]

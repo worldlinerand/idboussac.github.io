@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/backgroundmain_cropped"
+    android:filterTouchesWhenObscured="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/idp_request_close"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/x"
+            android:filterTouchesWhenObscured="true" />
+
+        <TextView
+            android:id="@+id/idp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/claims"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/idp_title_claims"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/title_claims"
+        android:textColor="@color/light_gray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/idp_claim_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        />
+
+    <ListView
+        android:id="@+id/idp_claims_list"
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:layout_weight="0.52" />
+
+    <Button
+        android:id="@+id/idp_submit_button"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_gravity="end"
+        android:background="@drawable/button_regular_blue"
+        android:filterTouchesWhenObscured="true"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:shadowColor="@android:color/transparent"
+        android:stateListAnimator="@null"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="transaction_item_margin">10dp</dimen>
+    <dimen name="pager_indicator_shadow_padding">2dp</dimen>
+    <dimen name="separator_height">1px</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <!-- bitid -->
+    <dimen name="text_small">14sp</dimen>
+    <!--claims margin -->
+    <dimen name="claim_margin15">15dp</dimen>
+    <dimen name="claim_margin25">25dp</dimen>
+    <!--claim text size-->
+    <dimen name="claim_size">9dp</dimen>
+
+</resources>

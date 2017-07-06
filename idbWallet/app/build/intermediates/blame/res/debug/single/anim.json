@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bounce_interpolator.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\anim\\bounce_interpolator.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_out.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\shake.xml",
+        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\src\\main\\res\\anim\\shake.xml"
+    },
+    {
+        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\bread2\\breadwallet-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\0c7bc8ed9e5d5b43fe75a098001d312254721af6\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    }
+]
