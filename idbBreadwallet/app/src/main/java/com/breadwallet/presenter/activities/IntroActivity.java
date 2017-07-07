@@ -35,6 +35,7 @@ import com.breadwallet.tools.security.KeyStoreManager;
 import com.breadwallet.tools.security.PostAuthenticationProcessor;
 import com.breadwallet.tools.util.Utils;
 import com.breadwallet.wallet.BRWalletManager;
+import com.breadwallet.wallet.BreadLibs;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -100,6 +101,7 @@ public class IntroActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
+        //BreadLibs.initNativeLib(this, "libCore.so");
         app = this;
 
         if (!BuildConfig.DEBUG && KeyStoreManager.AUTH_DURATION_SEC != 300) {
@@ -176,7 +178,8 @@ public class IntroActivity extends FragmentActivity {
         for (Fragment f : fragments) {
             fragmentTransaction.show(f);
         }
-        fragmentTransaction.commitAllowingStateLoss();
+        if (!isDestroyed())
+            fragmentTransaction.commitAllowingStateLoss();
     }
 
     private void setStatusBarColor(int mode) {

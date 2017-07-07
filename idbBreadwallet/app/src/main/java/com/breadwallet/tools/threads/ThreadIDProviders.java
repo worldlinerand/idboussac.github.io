@@ -17,6 +17,7 @@ public class ThreadIDProviders extends Thread {
     private String validationTx;
     private String idpUrl;
     private String jsonData;
+    private boolean runRefresh = true;
 
     public void run() {
 
@@ -24,7 +25,7 @@ public class ThreadIDProviders extends Thread {
         if(hash == null){   // if this is a service provider
             client.client(idpUrl,jsonData,txIDs);
         }else
-            client.client(idpUrl,jsonData, hash);
+            client.client(idpUrl,jsonData, hash, runRefresh);
 
 
     }
@@ -49,5 +50,7 @@ public class ThreadIDProviders extends Thread {
         this.txIDs = txIDs;
         hash =null;
     }
+
+    public void setRunRefresh(boolean _runrefresh){ runRefresh = _runrefresh;}
 
 }

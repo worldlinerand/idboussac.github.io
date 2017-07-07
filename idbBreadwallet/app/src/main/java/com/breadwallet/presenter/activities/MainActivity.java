@@ -35,12 +35,16 @@ import android.widget.ViewFlipper;
 import com.breadwallet.R;
 import com.breadwallet.BreadWalletApp;
 import com.breadwallet.presenter.customviews.BubbleTextView;
+import com.breadwallet.presenter.entities.BRMerkleBlockEntity;
+import com.breadwallet.presenter.entities.BlockEntity;
 import com.breadwallet.presenter.entities.ClaimsEntity;
 import com.breadwallet.presenter.fragments.FragmentIdblockchainClaimsOverview;
 import com.breadwallet.presenter.fragments.FragmentScanResult;
 import com.breadwallet.presenter.fragments.FragmentSettings;
 import com.breadwallet.presenter.fragments.SignInRequestFragment;
 import com.breadwallet.tools.animation.BRAnimator;
+import com.breadwallet.tools.sqlite.SQLiteManager;
+import com.breadwallet.tools.sqlite.TransactionDataSource;
 import com.breadwallet.tools.threads.ThreadIDProviders;
 import com.breadwallet.tools.threads.ThreadOpReturnData;
 import com.breadwallet.tools.util.BRConstants;
@@ -50,6 +54,7 @@ import com.breadwallet.tools.manager.SharedPreferencesManager;
 import com.breadwallet.tools.security.PostAuthenticationProcessor;
 import com.breadwallet.tools.security.RequestHandler;
 import com.breadwallet.tools.security.RootHelper;
+import com.breadwallet.wallet.BreadLibs;
 import com.breadwallet.tools.adapter.CustomPagerAdapter;
 import com.breadwallet.tools.adapter.MiddleViewAdapter;
 import com.breadwallet.tools.adapter.ParallaxViewPager;
@@ -58,6 +63,8 @@ import com.breadwallet.tools.security.KeyStoreManager;
 import com.breadwallet.tools.util.Utils;
 import com.breadwallet.wallet.BRPeerManager;
 import com.breadwallet.wallet.BRWalletManager;
+
+import com.google.firebase.crash.FirebaseCrash;
 import com.platform.APIClient;
 import com.platform.middlewares.plugins.CameraPlugin;
 import com.platform.middlewares.plugins.GeoLocationPlugin;
@@ -145,6 +152,7 @@ public class MainActivity extends FragmentActivity implements Observer {
 //        if (savedInstanceState != null)
 //            savedInstanceState.clear();
         super.onCreate(null);
+      //  BreadLibs.initNativeLib(this, "libCore.so");
 
         setContentView(R.layout.activity_main);
         app = this;
@@ -365,7 +373,7 @@ public class MainActivity extends FragmentActivity implements Observer {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                BRWalletManager.getInstance(app).setUpTheWallet();
+                BRWalletManager.getInstance(app).setUpTheWallet(MainActivity.this);
             }
         }).start();
 
@@ -597,35 +605,42 @@ public class MainActivity extends FragmentActivity implements Observer {
 
     public void request(View view) {
         SpringAnimator.showAnimation(view);
-        Intent intent;
-        String tempAmount = FragmentScanResult.instance.getBitcoinValue().value;
-        BRWalletManager m = BRWalletManager.getInstance(this);
-        int unit = BRConstants.CURRENT_UNIT_BITS;
-        Activity context = MainActivity.app;
-        String divideBy = "100";
-        if (context != null)
-            unit = SharedPreferencesManager.getCurrencyUnit(context);
-        if (unit == BRConstants.CURRENT_UNIT_MBITS) divideBy = "100000";
-        if (unit == BRConstants.CURRENT_UNIT_BITCOINS) divideBy = "100000000";
-        long minAmount = m.getMinOutputAmount();
-        if (new BigDecimal(tempAmount).multiply(new BigDecimal(divideBy)).doubleValue() < minAmount) {
-            String placeHolder = BRConstants.bitcoinLowercase + new BigDecimal(minAmount).divide(new BigDecimal(divideBy)).toString();
-            final String bitcoinMinMessage = String.format(Locale.getDefault(), getString(R.string.bitcoin_payment_cant_be_less), placeHolder);
-            ((BreadWalletApp) getApplication()).showCustomDialog(getString(R.string.amount_too_small),
-                    bitcoinMinMessage, getString(R.string.ok));
-            return;
-        }
-        String divideByForIntent = "1000000";
-        if (unit == BRConstants.CURRENT_UNIT_MBITS) divideByForIntent = "1000";
-        if (unit == BRConstants.CURRENT_UNIT_BITCOINS) divideByForIntent = "1";
-        String strAmount = String.valueOf(new BigDecimal(tempAmount).divide(new BigDecimal(divideByForIntent)).toString());
-        String address = SharedPreferencesManager.getReceiveAddress(this);
-        intent = new Intent(this, RequestQRActivity.class);
-        intent.putExtra(BRConstants.INTENT_EXTRA_REQUEST_AMOUNT, strAmount);
-        intent.putExtra(BRConstants.INTENT_EXTRA_REQUEST_ADDRESS, address);
-        startActivity(intent);
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-        BRAnimator.hideScanResultFragment();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent;
+                String tempAmount = FragmentScanResult.instance.getBitcoinValue().value;
+                BRWalletManager m = BRWalletManager.getInstance(MainActivity.this);
+                int unit = BRConstants.CURRENT_UNIT_BITS;
+                Activity context = MainActivity.app;
+                String divideBy = "100";
+                if (context != null)
+                    unit = SharedPreferencesManager.getCurrencyUnit(context);
+                if (unit == BRConstants.CURRENT_UNIT_MBITS) divideBy = "100000";
+                if (unit == BRConstants.CURRENT_UNIT_BITCOINS) divideBy = "100000000";
+
+                long minAmount = m.getMinOutputAmount();
+                if (new BigDecimal(tempAmount).multiply(new BigDecimal(divideBy)).doubleValue() < minAmount) {
+                    String placeHolder = BRConstants.bitcoinLowercase + new BigDecimal(minAmount).divide(new BigDecimal(divideBy)).toString();
+                    final String bitcoinMinMessage = String.format(Locale.getDefault(), getString(R.string.bitcoin_payment_cant_be_less), placeHolder);
+                    ((BreadWalletApp) getApplication()).showCustomDialog(getString(R.string.amount_too_small),
+                            bitcoinMinMessage, getString(R.string.ok));
+                    return;
+                }
+                String divideByForIntent = "1000000";
+                if (unit == BRConstants.CURRENT_UNIT_MBITS) divideByForIntent = "1000";
+                if (unit == BRConstants.CURRENT_UNIT_BITCOINS) divideByForIntent = "1";
+                String strAmount = String.valueOf(new BigDecimal(tempAmount).divide(new BigDecimal(divideByForIntent)).toString());
+                String address = SharedPreferencesManager.getReceiveAddress(MainActivity.this);
+                intent = new Intent(MainActivity.this, RequestQRActivity.class);
+                intent.putExtra(BRConstants.INTENT_EXTRA_REQUEST_AMOUNT, strAmount);
+                intent.putExtra(BRConstants.INTENT_EXTRA_REQUEST_ADDRESS, address);
+                startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                BRAnimator.hideScanResultFragment();
+            }
+        }).start();
+
     }
 
     @Override
@@ -660,7 +675,7 @@ public class MainActivity extends FragmentActivity implements Observer {
                 break;
             case BRConstants.REQUEST_PHRASE_BITID:
                 if (resultCode == RESULT_OK) {
-                    //goToSignInRequest(RequestHandler.getBitUri());
+                    RequestHandler.processBitIdResponse(this);
                 }
                 break;
 

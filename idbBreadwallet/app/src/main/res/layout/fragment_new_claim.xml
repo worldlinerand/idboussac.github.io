@@ -56,8 +56,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="textCapSentences"
-                android:text="Male" />
+                android:inputType="textCapSentences" />
 
             <TextView
                 android:id="@+id/fname"
@@ -76,8 +75,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="textCapSentences"
-                android:text="Jean" />
+                android:inputType="textCapSentences" />
 
             <TextView
                 android:id="@+id/sname"
@@ -96,8 +94,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="textCapSentences"
-                android:text="Dupont" />
+                android:inputType="textCapSentences" />
 
             <TextView
                 android:id="@+id/nationality"
@@ -116,8 +113,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="textCapSentences"
-                android:text="French" />
+                android:inputType="textCapSentences" />
 
             <TextView
                 android:id="@+id/date_of_birth"
@@ -136,8 +132,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="date"
-                android:text="2.1.1978" />
+                android:inputType="date" />
 
             <TextView
                 android:id="@+id/place_of_birth"
@@ -156,8 +151,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="textCapSentences"
-                android:text="Paris, France" />
+                android:inputType="textCapSentences" />
 
             <TextView
                 android:id="@+id/postal_address"
@@ -176,8 +170,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="textCapSentences"
-                android:text="19 rue de la Vallée Maillard, Blois, France" />
+                android:inputType="textCapSentences" />
 
             <TextView
                 android:id="@+id/credentials"
@@ -196,8 +189,7 @@ android:orientation="vertical">
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="25dp"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="jdCreds.png" />
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/button_new_flied"

@@ -70,6 +70,7 @@ public class FragmentIdblockchainClaimsOverview extends Fragment {
 
 
         adapter = new GuarantorListAdapter(getActivity(), guarantorObject);
+        adapter.notifyDataSetChanged();
         if (guarantorObject != null) {
             if (guarantorObject.length == 0) guarantorObject = null;
         }
@@ -78,7 +79,6 @@ public class FragmentIdblockchainClaimsOverview extends Fragment {
             guarantorsList.setAdapter(adapter);
 
         refreshGuarantors(app);
-
         final TextView hashText = (TextView) rootView.findViewById(R.id.idb_claims_id);
         TextView nameText = (TextView) rootView.findViewById(R.id.idb_name);
         BRAnimator.showCopyBubble(getActivity(), rootView.findViewById(R.id.idb_tx_id), hashText);
@@ -111,6 +111,7 @@ public class FragmentIdblockchainClaimsOverview extends Fragment {
         });
 
 
+
         return rootView;
     }
 
@@ -118,6 +119,7 @@ public class FragmentIdblockchainClaimsOverview extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        refreshGuarantors(app);
         MiddleViewAdapter.resetMiddleView(getActivity(), "claims overview"); //print "claims overview" at the top of the screen
     }
 
@@ -130,6 +132,7 @@ public class FragmentIdblockchainClaimsOverview extends Fragment {
 
     public void setCurrentObject(OpReturnTxListItem item) {
         this.item = item;
+        refreshGuarantors(app);
     }
 
 
@@ -164,7 +167,7 @@ public class FragmentIdblockchainClaimsOverview extends Fragment {
     public static void refreshUI() {
         if (adapter != null) {
             adapter.updateData(guarantorObject);
-            Log.d(TAG, "refreshUI");
+            Log.d(TAG, "refreshUI ");
         }
     }
 

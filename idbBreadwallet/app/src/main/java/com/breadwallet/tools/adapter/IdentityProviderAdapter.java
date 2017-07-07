@@ -52,14 +52,14 @@ public class IdentityProviderAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View tmpLayout = inflater.inflate(R.layout.claim_list_view, null);
+        View tmpLayout = inflater.inflate(R.layout.claims_ipd_list_view, null);
 
         return getIDPClaimsView(tmpLayout, position);
     }
 
     private View getIDPClaimsView(View tmpLayout, int position){
-        TextView type = (TextView) tmpLayout.findViewById(R.id.claims_type);
-        TextView value = (TextView) tmpLayout.findViewById(R.id.claims_value);
+        TextView type = (TextView) tmpLayout.findViewById(R.id.claims_idp_type);
+        TextView value = (TextView) tmpLayout.findViewById(R.id.claims_idp_value);
 
         Utils.overrideFonts(type,value);
         tmpLayout.setBackgroundResource(R.drawable.clickable_layout);

@@ -127,12 +127,12 @@ public class JsonParser {
                     e.printStackTrace();
                 }
             }
-            int stringId = 0;
-            String appName = "";
-            if (app != null) {
-                stringId = app.getApplicationInfo().labelRes;
-                appName = app.getString(stringId);
-            }
+            //int stringId = 0;
+            String appName = "Bread";
+//            if (app != null) {
+//                stringId = app.getApplicationInfo().labelRes;
+//                appName = app.getString(stringId);
+//            }
             String message = String.format(Locale.getDefault(), "%s/%d/%s", appName.isEmpty() ? "breadwallet" : appName, versionNumber, System.getProperty("http.agent"));
             urlConn.setRequestProperty("User-agent", message);
             urlConn.setReadTimeout(60 * 1000);

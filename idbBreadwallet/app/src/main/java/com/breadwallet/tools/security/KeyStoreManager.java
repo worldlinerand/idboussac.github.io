@@ -252,10 +252,13 @@ public class KeyStoreManager {
                 throw new BRKeystoreErrorException("no key but the phrase is there");
             }
 
-            if (!new File(getEncryptedDataFilePath(alias_iv, context)).exists() ||
-                    !new File(getEncryptedDataFilePath(alias_file, context)).exists()) {
+            boolean ivExists = new File(getEncryptedDataFilePath(alias_iv, context)).exists();
+            boolean aliasExists = new File(getEncryptedDataFilePath(alias_file, context)).exists();
+            if (!ivExists || !aliasExists) {
                 removeAliasAndFiles(alias, context);
-                FirebaseCrash.report(new IllegalArgumentException("removed alias and file: " + alias));
+                //report it if one exists and not the other.
+                if (ivExists != aliasExists)
+                    FirebaseCrash.report(new IllegalArgumentException("alias or iv isn't on the disk: " + alias));
                 return result;
             }
 
@@ -297,6 +300,7 @@ public class KeyStoreManager {
                 Log.e(TAG, "_getData: InvalidKeyException", e);
                 FirebaseCrash.report(e);
                 showKeyStoreFailedToLoad(context);
+                Assert.fail();
                 throw new BRKeystoreErrorException("Key store error");
             }
         } catch (IOException | CertificateException | KeyStoreException e) {
@@ -316,7 +320,6 @@ public class KeyStoreManager {
         } catch (UnrecoverableKeyException | InvalidAlgorithmParameterException | NoSuchAlgorithmException | NoSuchPaddingException e) {
             /** if for any other reason the keystore fails, crash! */
             Log.e(TAG, "getData: error: " + e.getClass().getSuperclass().getName());
-            FirebaseCrash.report(e);
             throw new RuntimeException(e.getMessage() + " | class: " + e.getClass().getName());
         }
     }
@@ -699,6 +702,7 @@ public class KeyStoreManager {
         // we will provide a generic one for you if you leave it null
         KeyguardManager mKeyguardManager = (KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE);
         Intent intent = mKeyguardManager.createConfirmDeviceCredentialIntent(context.getString(R.string.auth_required), context.getString(R.string.auth_message));
+        Assert.assertTrue(intent != null);
         if (intent != null) {
             context.startActivityForResult(intent, requestCode);
         } else {

@@ -1,9 +1,9 @@
 package com.breadwallet.wallet;
 
 import android.app.Activity;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import com.breadwallet.BreadWalletApp;
@@ -18,6 +18,7 @@ import com.breadwallet.tools.animation.BRAnimator;
 import com.breadwallet.tools.adapter.MiddleViewAdapter;
 import com.breadwallet.tools.manager.SharedPreferencesManager;
 import com.breadwallet.tools.sqlite.SQLiteManager;
+import com.breadwallet.tools.util.Utils;
 
 import java.text.DecimalFormat;
 
@@ -76,6 +77,10 @@ public class BRPeerManager {
 
     public static void syncStarted() {
         Log.d(TAG, "syncStarted");
+        int startHeight = SharedPreferencesManager.getStartHeight(ctx);
+        int lastHeight = SharedPreferencesManager.getLastBlockHeight(ctx);
+        if (startHeight > lastHeight) SharedPreferencesManager.putStartHeight(ctx, lastHeight);
+
         BRPeerManager.getInstance(ctx).refreshConnection();
     }
 

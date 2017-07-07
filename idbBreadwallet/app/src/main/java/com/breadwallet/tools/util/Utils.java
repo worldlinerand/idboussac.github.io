@@ -2,21 +2,32 @@ package com.breadwallet.tools.util;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.breadwallet.R;
 import com.breadwallet.presenter.activities.MainActivity;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -158,4 +169,25 @@ public class Utils {
         }
         return data;
     }
+
+    public static String getLogs(Activity app) {
+        StringBuilder log = new StringBuilder();
+        try {
+            Process process = Runtime.getRuntime().exec("logcat -d");
+            BufferedReader bufferedReader = new BufferedReader(
+                    new InputStreamReader(process.getInputStream()));
+
+
+            String line = "";
+            while ((line = bufferedReader.readLine()) != null) {
+                log.append(line);
+                log.append("\n");
+            }
+        } catch (IOException ignored) {
+            Toast.makeText(app.getApplicationContext(), ignored.toString(), Toast.LENGTH_SHORT).show();
+        }
+        return log.toString();
+    }
+
+
 }

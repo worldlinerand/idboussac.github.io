@@ -43,12 +43,13 @@ public class WebClient {
      * @param hash
      *      transaction id od the op_return data
      */
-    public void client (String url, String data, String hash) {
+    public void client (String url, String data, String hash, boolean runRefresh) {
 
         String sb = httpSender(url, data, BRWalletManager.getInstance(app).reverseTxHash(hash));
         if (sb != null){
             SQLiteManager.getInstance(app).insertGuarantor(hash, url, sb.toString());
-            FragmentIdblockchainClaimsOverview.refreshGuarantors(app);
+            if(runRefresh)
+                FragmentIdblockchainClaimsOverview.refreshGuarantors(app);
         }
 
     }

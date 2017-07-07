@@ -20,6 +20,8 @@ import com.breadwallet.tools.security.ECDSA;
 import com.breadwallet.tools.security.KeyStoreManager;
 import com.breadwallet.tools.threads.ThreadIDProviders;
 import com.breadwallet.tools.threads.ThreadOpReturnData;
+import com.breadwallet.tools.threads.ThreadPostClaims;
+import com.breadwallet.tools.util.PostClaims;
 import com.breadwallet.wallet.BRWalletManager;
 
 import java.io.UnsupportedEncodingException;
@@ -50,6 +52,7 @@ public class IDPActivity extends FragmentActivity {
     public static boolean isOpReturnTx = false;
     public static ThreadOpReturnData tOpRet;
     public String callbackURI;
+    public String claimsUri;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,11 +60,10 @@ public class IDPActivity extends FragmentActivity {
         setContentView(R.layout.activity_idp);
 
         idpApp = this;
-
         final Intent intent = getIntent();
         final EditText title = (EditText) findViewById(R.id.idp_claim_title);
 
-        setClaims(intent);
+        getClaims(intent);
         Button submit = (Button) findViewById(R.id.idp_submit_button);
 
 
@@ -129,6 +131,7 @@ public class IDPActivity extends FragmentActivity {
                         app.tIDP.setJsonData(claimsJSON);
                         app.tIDP.setIdpUrl(callbackURI);
                         app.tIDP.setIdpName(callbackURI);
+                        app.tIDP.setRunRefresh(false);
                         cancel();
 
                     }
@@ -158,18 +161,15 @@ public class IDPActivity extends FragmentActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        setClaims(intent);
+        getClaims(intent);
 
 
     }
 
-    private void setClaims(Intent intent) {
-        Uri uriEncoded = intent.getData();
+    public void setClaims() {
 
-        if(uriEncoded == null){
-            String extra = intent.getExtras().getString("uri");
-            uriEncoded = Uri.parse(extra);
-        }
+        Uri uriEncoded = Uri.parse(claimsUri);
+
 
         Uri uri = null;
         try {
@@ -177,6 +177,7 @@ public class IDPActivity extends FragmentActivity {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
+
         Log.d(TAG, "setUrlHandler: " + uri.getFragment());
         callbackURI = "http://" + uri.getAuthority() + uri.getPath();
         String claims = uri.getFragment();
@@ -193,6 +194,41 @@ public class IDPActivity extends FragmentActivity {
 
         if(claimsList != null)
             claimsList.setAdapter(adapter);
+
+        claimsUri = null;
+    }
+
+    private void getClaims(Intent intent){
+        Uri uriEncoded = intent.getData();
+
+        if(uriEncoded == null){
+            String extra = intent.getExtras().getString("uri");
+            uriEncoded = Uri.parse(extra);
+        }
+
+        Uri uri = null;
+        try {
+            uri = Uri.parse(URLDecoder.decode(uriEncoded.toString(),"UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        String getClaimsUri = "http://" + uri.getAuthority() + uri.getPath();
+        String nonce = uri.getFragment();
+        ThreadPostClaims tpc = new ThreadPostClaims();
+
+        tpc.setUri(getClaimsUri);
+        tpc.setNonce(nonce);
+
+        tpc.start();
+        try {
+            tpc.join();
+            if(claimsUri!=null)
+                setClaims();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
     /**
