@@ -1,6 +1,5 @@
 [
     {
-<<<<<<< HEAD
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\breadwalletupcentered.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\breadwalletupcentered.png"
     },
@@ -43,49 +42,5 @@
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\buttonbluepressed.9.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\buttonbluepressed.9.png"
-=======
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\buttonwhitepressed.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\buttonwhitepressed.9.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\checkbox_checked.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\checkbox_checked.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\breadwalletupcentered.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\breadwalletupcentered.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\breadwallet_white.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\breadwallet_white.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_fp_40px.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\ic_fp_40px.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\checkbox_empty.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\checkbox_empty.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\buttonblue.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\buttonblue.9.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bitcoin_buy_blue.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\bitcoin_buy_blue.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\buttonwhite.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\buttonwhite.9.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cameraguide_blue_small.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\cameraguide_blue_small.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\buttonbluepressed.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xhdpi\\buttonbluepressed.9.png"
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
     }
 ]

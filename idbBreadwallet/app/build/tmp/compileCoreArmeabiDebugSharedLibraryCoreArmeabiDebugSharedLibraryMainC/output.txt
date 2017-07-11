@@ -77,17 +77,6 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
         ^
 3 warnings generated.
 
-compiling BRCrypto.c successful.
-warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
-In file included from <built-in>:324:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-2 warnings generated.
-
 compiling BRMerkleBlock.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
 In file included from <built-in>:324:
@@ -105,6 +94,17 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
     if (r && (block->height % BLOCK_DIFFICULTY_INTERVAL) == 0) {
         ^
 4 warnings generated.
+
+compiling BRCrypto.c successful.
+warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
+In file included from <built-in>:324:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+2 warnings generated.
 
 compiling BRPaymentProtocol.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
@@ -271,27 +271,6 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
           ^
 7 warnings generated.
 
-compiling BRPeerManager.c successful.
-warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
-In file included from <built-in>:324:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:25:
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeerManager.h:28:
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:30:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:1854:9: warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
-        sprintf(manager->downloadPeerName, "%s:%d", BRPeerHost(manager->downloadPeer), manager->downloadPeer->port);
-        ^
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:1854:9: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
-4 warnings generated.
-
 compiling PeerManager.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
 In file included from <built-in>:324:
@@ -312,6 +291,27 @@ In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idb
 C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition/wallet.h:223:30: warning: no newline at end of file [-Wnewline-eof]
 #endif //BREADWALLET_WALLET_H
                              ^
+4 warnings generated.
+
+compiling BRPeerManager.c successful.
+warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
+In file included from <built-in>:324:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:25:
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeerManager.h:28:
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:30:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:1854:9: warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+        sprintf(manager->downloadPeerName, "%s:%d", BRPeerHost(manager->downloadPeer), manager->downloadPeer->port);
+        ^
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:1854:9: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
 4 warnings generated.
 
 compiling wallet.c successful.

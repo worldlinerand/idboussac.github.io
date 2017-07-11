@@ -69,11 +69,12 @@ public class SpHandler extends HttpServlet {
 		
 		
 		JSONObject global = new JSONObject(s);
+		//A modifier, recevoir un ensemble de txIDs puis les découper, exemple avec un espace entre chaque txId
 		JSONObject txIds = global.getJSONObject("txId");
 		JSONObject data = global.getJSONObject("data");
 		
 		try {
-			
+			//Récupération des informations
 			String signature = BitcoinOpReturnTX.getOP_Return(txIds.getString("claimsTxID"));
 			String proofSign = BitcoinOpReturnTX.getOP_Return(txIds.getString("proofID"));
 			System.out.println("VALEUR DE REPUTATION  :   " + proofSign.substring(1, 3));

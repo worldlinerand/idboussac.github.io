@@ -1,5 +1,5 @@
 See file:///C:/Users/ahamroun/Documents/GitHub/idboussac.github.io/idbBreadwallet/app/build/tmp/compileCoreArmeabi-v7aDebugSharedLibraryCoreArmeabi-v7aDebugSharedLibraryMainC/output.txt for all output for compileCoreArmeabi-v7aDebugSharedLibraryCoreArmeabi-v7aDebugSharedLibraryMainC.
-compiling BRBIP32Sequence.c successful.
+compiling BRBase58.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -10,7 +10,7 @@ In file included from <built-in>:335:
         ^
 2 warnings generated.
 
-compiling BRAddress.c successful.
+compiling BRBIP32Sequence.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -19,11 +19,7 @@ In file included from <built-in>:335:
 <command line>:5:9: note: previous definition is here
 #define BITCOIN_TESTNET 0
         ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRAddress.c:25:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-3 warnings generated.
+2 warnings generated.
 
 compiling BRBIP38Key.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
@@ -40,7 +36,22 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
         ^
 3 warnings generated.
 
-compiling BRBase58.c successful.
+compiling BRAddress.c successful.
+warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRAddress.c:25:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+3 warnings generated.
+
+compiling BRBIP39Mnemonic.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -51,7 +62,7 @@ In file included from <built-in>:335:
         ^
 2 warnings generated.
 
-compiling BRBIP39Mnemonic.c successful.
+compiling BRCrypto.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -76,17 +87,6 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
 #pragma message "testnet build"
         ^
 3 warnings generated.
-
-compiling BRCrypto.c successful.
-warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-2 warnings generated.
 
 compiling BRMerkleBlock.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
@@ -117,21 +117,6 @@ In file included from <built-in>:335:
         ^
 In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPaymentProtocol.c:25:
 In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPaymentProtocol.h:29:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-3 warnings generated.
-
-compiling BRKey.c successful.
-warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRKey.c:26:
 C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
 #pragma message "testnet build"
         ^
@@ -179,6 +164,21 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
         ^
 3 warnings generated.
 
+compiling BRKey.c successful.
+warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRKey.c:26:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+3 warnings generated.
+
 compiling core.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
 In file included from <built-in>:335:
@@ -213,6 +213,20 @@ In file included from <built-in>:335:
 #define BITCOIN_TESTNET 0
         ^
 2 warnings generated.
+
+compiling JNIBIP32Sequence.c successful.
+warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIBIP32Sequence.c:25:2: warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+3 warnings generated.
 
 compiling BRPeerManager.c successful.
 warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
@@ -249,20 +263,6 @@ In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idb
 C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
 #pragma message "testnet build"
         ^
-3 warnings generated.
-
-compiling JNIBIP32Sequence.c successful.
-warning: unknown warning option '-Wmissing'; did you mean '-Wmain'? [-Wunknown-warning-option]
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIBIP32Sequence.c:25:2: warning: no newline at end of file [-Wnewline-eof]
-}
- ^
 3 warnings generated.
 
 compiling JNIKey.c successful.

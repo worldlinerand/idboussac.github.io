@@ -81,6 +81,8 @@ public class IDPHandler extends HttpServlet {
 		System.out.println("========================== DEBUT Methode doPost IDPHandler ====================================");
 		System.out.println("request : "+ request );
 		System.out.println("response : "+ response );
+		
+		
 		BufferedReader in = request.getReader();
 		String s;
 		s=in.readLine();
@@ -151,11 +153,6 @@ public class IDPHandler extends HttpServlet {
 		else 
 			response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
 		System.out.println("========================== FIN  Methode doPost IDPHandler ====================================");
-		
-	
 	}
-	
-		
-		
 
 }

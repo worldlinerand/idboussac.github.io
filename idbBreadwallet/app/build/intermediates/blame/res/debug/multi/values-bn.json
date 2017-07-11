@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "outputFile": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
-=======
-        "outputFile": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
         "map": [
             {
                 "to": {
@@ -15,11 +11,7 @@
                     "endOffset": 211
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -38,11 +30,7 @@
                     "endOffset": 402
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -61,11 +49,7 @@
                     "endOffset": 532
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -84,11 +68,7 @@
                     "endOffset": 645
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -107,11 +87,7 @@
                     "endOffset": 841
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -130,11 +106,7 @@
                     "endOffset": 965
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -153,11 +125,7 @@
                     "endOffset": 1098
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -176,11 +144,7 @@
                     "endOffset": 1309
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\fafae47340b0150f5f65eb302074de086cb59c5e\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\8a3bcd803336d3da5e13cdf327ea6b66a5b95624\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -199,11 +163,7 @@
                     "endOffset": 1513
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -222,11 +182,7 @@
                     "endOffset": 1624
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -245,11 +201,7 @@
                     "endOffset": 1811
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -268,11 +220,7 @@
                     "endOffset": 1941
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -291,11 +239,7 @@
                     "endOffset": 2134
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -314,11 +258,7 @@
                     "endOffset": 2313
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -337,11 +277,7 @@
                     "endOffset": 2403
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -360,11 +296,7 @@
                     "endOffset": 2499
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -383,11 +315,7 @@
                     "endOffset": 2617
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\a23dd94d3d836c2c9b606278a406105917de8112\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\61e2f787a168edb95b105762ecfc4f37cd3d5697\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -406,11 +334,7 @@
                     "endOffset": 2726
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\c2080fe4493008c7415b10b748c69f52718d766f\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\c371caace47ca4e1b6619405d95bb25b73ca748d\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -429,11 +353,7 @@
                     "endOffset": 2830
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "C:\\Users\\ahamroun\\.android\\build-cache\\c2080fe4493008c7415b10b748c69f52718d766f\\output\\res\\values-bn\\values.xml",
-=======
-                    "file": "C:\\Utilisateurs\\a660904\\.android\\build-cache\\c371caace47ca4e1b6619405d95bb25b73ca748d\\output\\res\\values-bn\\values.xml",
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,

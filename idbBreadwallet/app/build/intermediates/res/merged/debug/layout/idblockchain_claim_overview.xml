@@ -109,10 +109,10 @@
         android:textColor="@color/dark_grey"
         android:textSize="15sp" />
 
-        <ListView
-            android:id="@+id/guarantor_list"
-            android:layout_width="match_parent"
-            android:layout_height="345dp" />
+    <ListView
+        android:id="@+id/guarantor_list"
+        android:layout_width="match_parent"
+        android:layout_height="345dp" />
 
     <Button
         android:id="@+id/button_claims_validation"

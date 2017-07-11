@@ -1,6 +1,5 @@
 [
     {
-<<<<<<< HEAD
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\sent_label.9.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\sent_label.9.png"
     },
@@ -15,21 +14,5 @@
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_fp_40px.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\ic_fp_40px.png"
-=======
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\sent_label.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\sent_label.9.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\unconfirmed_label.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\unconfirmed_label.9.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_fp_40px.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\ic_fp_40px.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\received_label.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-xxhdpi\\received_label.9.png"
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
     }
 ]

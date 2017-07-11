@@ -1,6 +1,5 @@
 [
     {
-<<<<<<< HEAD
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\cameraguide.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\cameraguide.png"
     },
@@ -29,12 +28,12 @@
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\ic_fp_40px.png"
     },
     {
-        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\cameraguide_red.png",
-        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\cameraguide_red.png"
-    },
-    {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\no_eye.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\no_eye.png"
+    },
+    {
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\cameraguide_red.png",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\cameraguide_red.png"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\locker.png",
@@ -67,73 +66,5 @@
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\burger.png",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\burger.png"
-=======
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\no_eye.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\no_eye.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\cameraguidebluesmall.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\cameraguidebluesmall.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\locker.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\locker.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\no_key.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\no_key.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\settings.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\settings.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\checkmark.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\checkmark.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\cameraguide.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\cameraguide.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\cameraguide_red.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\cameraguide_red.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\navigationback.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\navigationback.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bubble_up.9.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\bubble_up.9.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\flash_off.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\flash_off.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\flash_on.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\flash_on.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bug.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\bug.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\burger.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\burger.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\chevron.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\chevron.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_fp_40px.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\ic_fp_40px.png"
-    },
-    {
-        "merged": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\x.png",
-        "source": "C:\\Utilisateurs\\a660904\\Documents\\GitHub\\depotIDB\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\drawable-hdpi\\x.png"
->>>>>>> a1f474c9d8f1d777ce62d20f41fbcaf1f704f10f
     }
 ]

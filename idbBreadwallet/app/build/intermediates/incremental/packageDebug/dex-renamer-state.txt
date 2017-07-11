@@ -1,4 +1,4 @@
-#Fri Jun 30 17:17:43 CEST 2017
+#Mon Jul 03 11:40:36 CEST 2017
 file.50=C\:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\jbsdiff-1.0_9c62822dcc4e329ea90b5a9d4e6f6069dc1c5f80\\classes.dex
 file.49=C\:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\jetty-util-9.2.19.v20160908_2729980954b5ecff7ec90ec71df000516bfafe77\\classes.dex
 file.48=C\:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\orchid-1.0_529e1b0bf82f8b60ce4a39620a75fe650e44ff58\\classes.dex
