@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>WL Bank</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style type="text/css">@import url(../../js/ext-2.2/resources/css/ext-all.css);
+        </style>
+        <style type="text/css">@import url(../../js/ext-2.2/resources/css/xtheme-gray.css);
+        </style>
+        <style type="text/css">@import url(../../styles/xtheme-wlbank.css);
+        </style>
+        <style type="text/css">@import url(../../styles/main.css);
+        </style>
+        <style type="text/css">@import url(../../styles/dev.css);
+        </style>
+        <style type="text/css">@import url(../../styles/main.css);
+        </style>
+        <script type="text/javascript" src="../../js/worldlinebank.js">
+        </script>
+        <script type="text/javascript" src="../../js/ext-2.2/adapter/ext/ext-base.js">
+        </script>
+        <script type="text/javascript" src="../../js/ext-2.2/ext-all.js">
+        </script>
+		<script type="text/javascript" src="../../js/sepa/sepa-extjs.js">
+        </script>
+        <script type="text/javascript" src="../js/ext-2.2/source/locale/ext-lang-en.js">
+        </script>
+        <script type="text/javascript" src="../../js/jQuery/jquery-1.2.2.min.js">
+        </script>
+        <script type="text/javascript" src="../../js/jquery.flot/jquery.flot.pack.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sepa-common.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sdd-view.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sepa-menu.js">
+        </script>
+    </head>
+    <body onLoad="">
+    <div id="mainBlockL" class="sepa">
+    	<div id="loader"><img src="../../imgs/sepa/ajax-loader.gif" /></div>
+        <div class="mainBlock" id="sepaMainContent">
+            <div id="sepa-menu">
+            </div>
+            <h1 class="hMbV"><img src="../../imgs/sepa/sdd.png" width="75" align="absmiddle" class="imgH1Sepa"/>
+			<span id="html.sdd_view_title"></span></h1>
+            <div class="inMainBlockV">
+                <div id="filterGrid">
+                </div>
+                <div id="gridSdd">
+                </div>
+                <br/>
+                <p class="bold" id="summaryIntro">
+                </p>
+                <ul id="summary">
+                </ul>
+                <div id="chart">
+                </div>
+                <div id="placeholder" style="width:500px;height:300px">
+                </div>
+                <table width="100%" class="chartLegend">
+                    <tr>
+                        <td width="50%">
+                            <div id="legend">
+                            </div>
+                        </td>
+                        <td width="50%">
+                            <div id="overview" style="width:166px;height:100px">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p class="fMbV"/>
+    </div>
+    </div>
+    <div id="mainBlockR" class="sepaR">
+    </div>
+    <div id="footer">
+        <p>
+            <span id="html.footer"></span>
+        </p>
+    </div>
+</body>
+</html>

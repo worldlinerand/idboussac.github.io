@@ -1,0 +1,35 @@
+// AFFICHAGE
+&printButton=true&		/// true | false
+&helpButton=true&
+
+// COULEURS :
+&bgcolor=FFFFFF&		/// fond global
+&bgGraphColor=FBFAEE&		/// fond du graph
+&bgBarOutils=DADADA&		/// fond de la barre des boutons
+&bgBarCopy=DADADA&		/// fond du copyright
+&btColor=D0D0D0&		/// couleur des boutons
+&btLineColor=FFFFFF&		/// couleur des bordures de bouton
+&btOverColor=666666&		/// couleur des boutons au rollover
+
+// TEXTES			/// le style des textes est géré par la feuille de style
+&printText=Cliquez pour <b>imprimer ce graphique</b>...&
+&noDataLabel=Aucune donnée...&
+&copyrightText=© Atos Origin, 2004&
+&legendText=Légendes :&
+&helpCloseText=Cliquez pour <b>fermer</b> la rubrique Aide...&
+&helpTitle=Rubrique Aide...&
+&helpText=<b>Aide</b>&
+&helpTextFull=<p class='titres'><b>Bienvenue sur l'aide...</b></p>&
+
+
+// FORMAT
+
+&decimalSeparator=,&
+&nbDecimal=2&
+&nbCaractMax=10&			/// Nombre de caractères sur les ordonnées avant calcul puissance 10
+
+
+// DONNEES
+&urlRequest=camembert_stats.xml&
+&urlStyles=fds.css&		/// URL de la feuille de style
+&delaiRefresh=5000&		/// Rechargement XML en millisecondes

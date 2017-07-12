@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" lang="en">
+<head>
+<title>WL Bank</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="../js/worldlinebank.js" type="text/javascript"></script>
+  <script>
+		function initializeNbs()
+		{
+			var nbFacts=window.top.myBills.length;
+			if (nbFacts == 0)
+			{
+				document.getElementById('nbFactures').innerHTML="Aucune Facture at  payer";
+			}
+			else if (nbFacts == 1)
+			{
+				document.getElementById('nbFactures').innerHTML="Payer ma facture";
+			}
+			else
+			{
+				document.getElementById('nbFactures').innerHTML="Payer mes " + nbFacts + " bills ";
+			}		
+		}
+		</script>
+<style type="text/css">@import url(../styles/main.css);</style>
+</head>
+<body onLoad="initializeNbs();">
+	<table>
+		<tr>
+			<td style="margin-top:0px;padding-top:0px;">
+				<div id="mainBlockL">
+					<div class="mainBlock">
+						<h1 class="hMbV">Bill Paiement</h1>
+					  	<div class="inMainBlockV">
+						  <p class="alertes"><b>Pay your bills easily.</b><br /><br/><b>Worldline Bank's Bill Paiement service</b> enables you to pay your bills easily, from anywhere, and whenever you want.<br /><br />You can do this directly from your account using <b><u>online transfer</b></u> or with your <b><u>credit card</b></u>.<br /><br />The paiement is totally secure, so you can pay your bills safely. <br />You can also consult your payments history in order to know the situation of your bills.<br />Do not hesitate anymore!</p>
+						  <div class="getScri">
+						  <img class="tel" src="../imgs/visu-alert-wl-bank.jpg" alt="Alerte t&eacute;l&eacute;phonique"/>
+						  <img class="service" src="../imgs/serv-prat-simple.png" alt="Un service pratique et simple"/>
+						  <p class="visu"><a href="#">> Visualiser notre d&eacute;monstration</a></p>
+						  <p><span class="btnYelW"><a href="choixFacture.html"><strong>> <span id="nbFactures"></span></strong></a></span></p>
+						  <p><span class="btnYelW"><a href="historique-facture.html"><strong>> Your bills</strong></a></span></p>
+						  <p><span class="btnYelW"><a href="subscribe-facture.html"><strong>> Souscrire au paiement</strong></a></span></p>
+				   			</div>
+						</div>
+						<p class="fMbV"></p>
+					</div>
+				</div>
+			</td>
+			<td>
+			<iframe id="right" name="right" SRC="frame-right.html" height="720" width="320" align="right" frameborder="0" /></iframe>
+		
+			</td>
+		</tr>
+	</table>
+	
+	
+</body>
+</html>

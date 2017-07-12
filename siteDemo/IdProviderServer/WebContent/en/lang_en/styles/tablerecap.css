@@ -1,0 +1,15 @@
+/* CSS Document */
+table.sample { 
+    border: solid #d9d9d9 1px;
+    font-size: 1em;
+    text-align: center;
+}
+table.sample th {
+    padding: 5px;
+    border: solid #d9d9d9 1px;
+}
+table.sample td {
+    font-size: 1em;
+    padding: 5px;
+    border: solid #d9d9d9 1px;
+}

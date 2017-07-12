@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" lang="en">
+<head>
+<title>WL Bank</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script type="text/javascript" src="../js/ext-2.2/adapter/ext/ext-base.js"></script>
+		<script src="../js/ext-2.2/ext-all.js"></script>
+		<script type="text/javascript" src="../js/ext-2.2/source/locale/ext-lang-en.js"></script>
+	  	<script src="../js/worldlinebank.js" type="text/javascript"></script>
+		<script>
+			function processResult(answer){
+				if(answer=="yes"){
+					var textToTransform=document.getElementById("textarea_1").innerHTML;
+					var textToSave=textToTransform.replace(/"/g, "\#\#");
+					var dateFormatee=numday+"/"+month+"/"+numyear;
+					window.opener.top.myDataEchange.push([true,false,false,false,'','','','M. Martin','Discussion date  '+dateFormatee,dateFormatee,2,""+textToSave]);
+				}
+				window.close();
+			}
+			
+			function showDial(){
+				// Show a dialog using config options:
+				Ext.Msg.show({
+				   title:'Save the discussion?',
+				   msg: 'Do you want to save this discussion in your mailbox  ?',
+				   buttons: Ext.Msg.YESNO,
+				   fn: processResult,
+				   maxWidth: 480,
+				   icon: Ext.MessageBox.QUESTION
+				});			
+			}
+			
+		</script>
+		<style type="text/css">@import url(../js/ext-2.2/resources/css/ext-all.css);</style>
+		<style type="text/css">@import url(../styles/popup.css); @import url(../styles/main.css);</style>
+</head>
+
+<body>
+<table>
+<tr>
+	<td>
+	<div id="mainBlockL">
+		<div class="mainBlock" bgcolor="87d7ff">
+				<span class="btnYel3"><a href="#" onclick="javascript:showDial();"><strong>Save</strong></a></span>
+				
+				<h1 class="hMb">Your live adviser </h1>
+				<div class="inMainBlock">
+					<table >
+	                	<tr><td>
+	                  		<table src="fond-popup.gif" width="430" height="270" bgcolor="#ffffff" >
+	                  				<tr><td valign="top">
+	                  					<div id="textarea_1"><span class="conseiller"><b>Mr.Martin:</b> Good morning, your chequebook is available since yesterday in your agency<br/></span><br /></div>
+									</td></tr>
+							</table>
+	                	</td></tr>
+						<tr><td>
+							<table>
+								<tr><td bgcolor="87d7ff" height="30" colspan="2"></td></tr>
+							</table>
+						</td></tr>
+						<tr><td bgcolor="87d7ff" height="80">
+							<textarea cols="35" rows="3" class="popup" id="textarea_2" onkeypress="entree(event);" ></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp<input  type="image" src="../imgs/logopopup.gif" onclick="envoyer_texte();reponse_conseiller();" >
+						</td></tr>		
+					</table>
+				</div>
+				<p class="fMbV">&nbsp;</p>			
+		</div>
+	</body>
+	</div>
+	</td>
+	<td>
+	<iframe id="right" name="right" SRC="frame-right2.html" height="720" width="320" align="right" frameborder="0" /></iframe>
+
+	</td>
+
+	</tr>
+
+	</table>
+
+	<br/>
+
+<!-- --------------------------------Footer--------------------------------- -->	
+
+</div>
+
+	<div id="footer">
+
+		<p>&copy; Atos Worldine, 2008 - Legal Information</p>
+
+	</div>
+
+</body>
+
+</html>
+

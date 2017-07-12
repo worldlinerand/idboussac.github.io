@@ -1,0 +1,158 @@
+/* CSS file */
+Button.Search
+{
+	upSkin: Embed(source="imgs/search.gif");
+	overSkin: Embed(source="imgs/search.gif");
+	downSkin: Embed(source="imgs/search_press.gif");
+	disabledSkin: Embed(source="imgs/search.gif");
+}
+Canvas.Header
+{
+	backgroundImage: Embed(source="imgs/fond-header.png");
+	backgroundSize: auto;
+}
+Canvas.Footer
+{
+	backgroundImage: Embed(source="imgs/fond-footer.png");
+	backgroundSize: "100%";
+}
+Panel
+{
+	borderThicknessLeft: 0;
+	borderThicknessRight: 0;
+	borderThicknessTop: 0;
+	borderThicknessBottom: 15;
+	roundedBottomCorners: true;
+	borderAlpha: 1.0;
+	borderColor: #FF0000;
+	fontFamily: Arial;
+	color: #FFFFFF;
+	fontSize: 10;
+	fontWeight: normal;
+	statusStyleName: panelStatus;
+}
+
+Button.Service
+{
+	upSkin: Embed(source="imgs/menu-service.gif");
+	overSkin: Embed(source="imgs/menu-service-activ.gif");
+	downSkin: Embed(source="imgs/menu-service-activ.gif");
+	disabledSkin: Embed(source="imgs/menu-service.gif");
+}
+
+
+Button.Coffre
+{
+	upSkin: Embed(source="imgs/menu-coffre.gif");
+	overSkin: Embed(source="imgs/menu-coffre-activ.gif");
+	downSkin: Embed(source="imgs/menu-coffre-activ.gif");
+	disabledSkin: Embed(source="imgs/menu-coffre.gif");
+}
+
+Button.Assistance
+{
+	upSkin: Embed(source="imgs/menu-assistance.gif");
+	overSkin: Embed(source="imgs/menu-assistance-activ.gif");
+	downSkin: Embed(source="imgs/menu-assistance-activ.gif");
+	disabledSkin: Embed(source="imgs/menu-assistance.gif");
+}
+
+.Background
+{
+	backgroundImage: Embed(source="imgs/border-wrap.gif");
+	backgroundSize: "100%";
+}
+
+Application
+{
+	backgroundGradientAlphas: 1.0, 1.0;
+	backgroundGradientColors: #FFFFFF, #FFFFFF;
+}
+
+Canvas.Menu
+{
+	backgroundImage: Embed(source="imgs/menu-border-left.gif");
+	backgroundSize: "100%";
+}
+LinkButton.MenuItem
+{
+	overSkin: Embed(source="imgs/menu-sub-over.png");
+	downSkin: Embed(source="imgs/menu-sub-activ.png");
+	fontFamily: Arial;
+	fontSize: 14;
+	textAlign: left;
+	fontWeight: normal;
+}
+/**LinkButton.SimpleLink
+{
+	color: #FFFFFF;
+	fontFamily: Arial;
+	fontSize: 11;
+	fontWeight: normal;
+	upSkin: Embed(source='../TeapotClientNG/flex_skins.swf', symbol='LinkButton_disabledSkin');
+	overSkin: Embed(source='../TeapotClientNG/flex_skins.swf', symbol='LinkButton_overSkin');
+	downSkin: Embed(source='../TeapotClientNG/flex_skins.swf', symbol='LinkButton_downSkin');
+	disabledSkin: Embed(source='../TeapotClientNG/flex_skins.swf', symbol='LinkButton_disabledSkin');
+	textRollOverColor: #FFCC00;
+	textSelectedColor: #FFCC00;
+}
+*/
+Button.Presence
+{
+	upSkin: Embed(source="imgs/talk-inactif.png");
+	overSkin: Embed(source="imgs/talk-inactif.png");
+	downSkin: Embed(source="imgs/talk-inactif.png");
+	disabledSkin: Embed(source="imgs/talk-inactif.png");
+	textAlign: left;
+}
+.panelStatus
+{
+	fontFamily: Arial;
+	fontSize: 10;
+	color: #FFFFFF;
+	textAlign: right;
+}
+Button.Call
+{
+	color: #000000;
+	fontFamily: Arial;
+	fontSize: 12;
+	upSkin: Embed(source="imgs/buttonOrange.png");
+	overSkin: Embed(source="imgs/buttonRed.png");
+	downSkin: Embed(source="imgs/buttonRed.png");
+	disabledSkin: Embed(source="imgs/buttonOrange.png");
+	textRollOverColor: #FFFFFF;
+	textSelectedColor: #FFFFFF;
+}
+LinkButton.DocLink
+{
+	color: #000000;
+	fontSize: 16;
+	rollOverColor: #FFBC00;
+	selectionColor: #F30000;
+}
+
+Text.Instructions
+{
+	fontFamily: Arial;
+	fontSize: 12;
+	color:#000000
+}
+Text.FormTitle
+{
+	fontFamily: Arial;
+	fontSize: 15;
+	fontStyle: normal;
+	fontWeight: bold;
+	color:#000000
+}
+
+Text.FormSubtitle
+{
+	fontFamily: Arial;
+	fontSize: 13;
+	fontStyle: normal;
+	color: #000000
+}
+
+

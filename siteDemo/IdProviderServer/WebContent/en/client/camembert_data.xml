@@ -1,0 +1,33 @@
+<?xml version="1.0"?> 
+<pie>
+	<absolute>1</absolute>
+	<legendeorder>1</legendeorder>
+	<canpress>0</canpress>
+	<fontsize>36</fontsize>
+	<sort>1</sort>
+	<colors>
+		<color>0xAE0044</color>
+		<color>0xFF4400</color>
+		<color>0x3399FF</color>
+	</colors>
+	<parts>
+	    <part>
+	      <name>c0</name> 
+	      <value>150</value> 
+	      <label>Deposit account 150,38</label>
+	      <legende> Deposit account</legende> 
+	    </part>
+		<part>
+	      <name>c1</name> 
+	      <value>3400</value> 
+	      <label>PEL 3400,00</label>
+	      <legende> PEL</legende> 
+	    </part>
+		<part>
+	      <name>c2</name> 
+	      <value>1024</value> 
+	      <label>   LDD 1024,00</label>
+	      <legende> LDD</legende> 
+	    </part>
+	</parts>
+</pie>

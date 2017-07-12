@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <script src="../js/worldlinebank.js">
+        </script>
+        <script src="../js/jQuery/jquery-1.2.2.min.js">
+        </script>
+        <script>
+            jQuery(document).ready(function($){
+                $("#date").html(nowtoday);
+            });
+        </script>
+        <style type="text/css">@import url(../styles/main.css);
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <p class="headLink">
+            	<a href="#"><img src="../imgs/lang/fr.gif" /></a>
+				<a href="#"><img src="../imgs/lang/en.gif" /></a>
+				<a href="#"><img src="../imgs/lang/de.gif" /></a>
+				<a href="#"><img src="../imgs/lang/nl.gif" /></a>
+				| 
+				<a href="#">Sitemap </a>
+                | <a href="explications.html">Help</a>
+                | <strong><a href="#">Contacts</a></strong>
+            </p>
+            <p id="bdCrumbs">
+                <a target="main" href="frame-accueil.html">Main ></a>
+            </p>
+            <form method="post" action="" style="width:900px">
+                <fieldset id="fsSearch">
+                    <p>
+                        <label for="ipSearch">
+                        </label>
+                        <input name="textfield" type="text" id="ipSearch" value="Search on the site" /><input type="submit" id="btOk" title="Search" value=""/>
+                    </p>
+                </fieldset>
+            </form>
+            <div id="date">
+            </div>
+        </div>
+    </body>
+</html>

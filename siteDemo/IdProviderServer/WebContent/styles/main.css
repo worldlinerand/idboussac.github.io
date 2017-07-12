@@ -1,0 +1,1594 @@
+/* --------------------------------------------------------------------
+                    Atos Worldline
+            By Le Studio, Atos Worldline, 2007
+                    Created on 02/2007
+-------------------------------------------------------------------- */
+/* ------------------------------------------------------ DEFAULT VALUES -------------------------------------------------------- */
+html, body {
+	font:101% Arial, Helvetica, sans-serif;
+	background:#fff;
+	height: 100%;
+	color:#333;
+	overflow-x:hidden;
+}
+* {padding:0; margin:0;}
+h1 {}
+p,dl,li,td {font-size: 0.7em;}
+table{border-collapse:collapse;}
+fieldset,img {border:none;}
+option {}
+h1 {font-size:1.2em; color:#ffffff;}
+h2 {font-size:0.85em; color:#ff9900;}
+h3 {font-size:0.8em; color:#339999;}
+h4 {font-size:1.0em; color:#0000ff;}
+h5 {font-size:1.3em; color:#000000;}
+h6 {font-size:1.2em; color:#339a97;}
+th {font-size:0.75em; color:#339999; font-weight:bold; line-height:4ex;}
+a{text-decoration:none; color:#FFFFFF;}
+a:hover{text-decoration:none; color:#ffcc00;}
+/* ------------------------------------------------- STRUCTURAL & MAIN BLOCKS --------------------------------------------------- */
+/* ------------------------------------------------ Index ------------------------------------------------------- */
+#containerHome {
+width:660px;
+margin: 0 auto;
+background:url(../imgs/border-index.gif) repeat-y left;
+}
+
+#frameCenter {
+	width: 930px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------- HEADER index ------------------------------------------------ */
+#headerHome{
+float:left;
+width:490px;
+background:url(../imgs/header-index_EN.png) no-repeat left top;
+padding-left:170px;
+padding-top:245px;
+}
+#headerHome p{color:#666; }
+.hidden{ font-size:0px; line-height:0px;  color:#fff;}
+/* ------------------------------------------------ wrapper index---------------------------------------------- */
+#wrapperHome {float:left;}
+#mainBlockHomeL {
+float:left;
+padding:50px 0 20px 190px;
+}
+.particu{
+float:left;
+padding-right:30px;
+width:160px;
+border-right:1px solid #d9d9d9;
+}
+.conseil{
+float:left;
+padding-left:40px;
+width:160px;
+}
+#mainBlockHomeL img{
+padding-bottom:10px;
+}
+#mainBlockHomeL a{
+color:#FF0000;
+border:1px solid;
+}
+#mainBlockHomeL a:hover{
+color:#FFcc00;
+border:1px solid;
+}
+/* ------------------------------------------------ Login index---------------------------------------------- */
+#mainBlockHomeR{
+float:left;
+width:180px;
+margin:20px 0 0 28px;
+}
+#mainBlockHomeR h3{
+color:#333;
+padding: 25px 0 10px 0;
+margin-bottom: 10px;
+border-bottom: 1px solid #d9d9d9;
+background:url(../imgs/kdena.png) no-repeat;
+}
+#ipLogin {
+width:168px;
+margin:5px 0 15px 0;
+padding: 3px 5px 3px 5px;
+border:1px solid #d9d9d9;
+font-size: 130%;
+font-weight:bold;
+color:#666;
+}
+.indik {
+font-size:80%;
+color:#999;
+}
+/* ------------------------------------ Digicode ----------------------------- */
+#digicode{
+margin-top:5px;
+margin-left:4px;
+width:173px;
+height:211px;
+background:url(../imgs/digicode.png) no-repeat top;
+}
+#digicode a{
+	cursor: pointer;
+display:block;
+width:30px;
+height:24px;
+font-size:1.5em;
+font-weight:bold;
+padding-top:6px;
+text-align:center;
+}
+#digicode a:active{
+color:#ff0000;
+}
+#btnA{
+padding-top:27px;
+padding-left:27px;
+}
+#btnA a{
+background:url(../imgs/btn-code2_01.png) no-repeat center;
+}
+#btnA a:active{
+background:url(../imgs/btn-code_01.png) no-repeat center;
+}
+#btnB{
+padding-top:27px;
+padding-left:10px;
+padding-right:10px;
+}
+#btnB a{
+background:url(../imgs/btn-code2_01.png) no-repeat center;
+}
+#btnB a:active{
+background:url(../imgs/btn-code_01.png) no-repeat center;
+}
+#btnC{
+padding-top:27px;
+padding-right:25px;
+}
+#btnC a{
+background:url(../imgs/btn-code2_01.png) no-repeat center;
+}
+#btnC a:active{
+background:url(../imgs/btn-code_01.png) no-repeat center;
+}
+#btnD{
+padding-left:27px;
+}
+#btnD a{
+background:url(../imgs/btn-code2_02.png) no-repeat center;
+}
+#btnD a:active{
+background:url(../imgs/btn-code_02.png) no-repeat center;
+}
+#btnE{
+padding-left:10px;
+padding-right:10px;
+}
+#btnE a{
+background:url(../imgs/btn-code2_02.png) no-repeat center;
+}
+#btnE a:active{
+background:url(../imgs/btn-code_02.png) no-repeat center;
+}
+#btnF{
+padding-right:25px;
+}
+#btnF a{
+background:url(../imgs/btn-code2_02.png) no-repeat center;
+}
+#btnF a:active{
+background:url(../imgs/btn-code_02.png) no-repeat center;
+}
+#btnG{
+padding-left:27px;
+}
+#btnG a{
+background:url(../imgs/btn-code2_03.png) no-repeat center;
+}
+#btnG a:active{
+background:url(../imgs/btn-code_03.png) no-repeat center;
+}
+#btnH{
+padding-left:10px;
+padding-right:10px;
+}
+#btnH a{
+background:url(../imgs/btn-code2_03.png) no-repeat center;
+}
+#btnH a:active{
+background:url(../imgs/btn-code_03.png) no-repeat center;
+}
+#btnI{
+padding-right:25px;
+}
+#btnI a{
+background:url(../imgs/btn-code2_03.png) no-repeat center;
+}
+#btnI a:active{
+background:url(../imgs/btn-code_03.png) no-repeat center;
+}
+#btnJ{
+padding-bottom:28px;
+padding-left:10px;
+padding-right:10px;
+}
+#btnJ a{
+background:url(../imgs/btn-code2_04.png) no-repeat center;
+}
+#btnJ a:active{
+background:url(../imgs/btn-code_04.png) no-repeat center;
+}
+#ipPassword {
+width:60px;
+height:15px;
+*height:19px;
+padding-top: 5px;
+*padding-top: 2px;
+margin-left:58px;
+*margin-left:54px;
+border:1px solid #d9d9d9;
+color:#666;
+text-align:center;
+vertical-align:-10px;
+}
+p .bgPassword{
+margin-left:4px;
+height:41px;
+background:url(../imgs/bg-password.png) no-repeat;
+}
+/* ----------------------------------- /Digicode ----------------------------- */
+/* -------------------------------- /Bouton index ---------------------------- */
+.btnYelRh a{
+float: left;
+display: block;
+margin-top:5px;
+margin-left:23px;
+color: #fff;
+background: transparent url(../imgs/bg_red_btn-right.png) no-repeat right;
+cursor:pointer;
+}
+.btnYelRh a strong{
+float:left;
+color: #fff;
+padding: 10px;
+background: transparent url(../imgs/bg_red_btn-left.png) no-repeat left;
+}
+.btnYelRh a:hover{
+background: transparent url(../imgs/bg_redo_btn-right.png) no-repeat right;
+}
+.btnYelRh a:hover strong{
+background: transparent url(../imgs/bg_redo_btn-left.png) no-repeat left;
+}
+.btnYelWh a{
+float: left;
+display: block;
+margin-top:5px;
+margin-left:10px;
+color: #fff;
+background: transparent url(../imgs/bg_yel_btn-right.png) no-repeat right;
+cursor:pointer;
+}
+.btnYelWh a strong{
+float:left;
+color: #fff;
+padding: 10px;
+background: transparent url(../imgs/bg_yel_btn-left.png) no-repeat left;
+}
+.btnYelWh a:hover{
+background: transparent url(../imgs/bg_yelo_btn-right.png) no-repeat right;
+}
+.btnYelWh a:hover strong{
+background: transparent url(../imgs/bg_yelo_btn-left.png) no-repeat left;
+}
+/* -------------------------------- /Bouton index ---------------------------- */
+.forgetPass{
+margin-top:10px;
+padding-top:10px;
+text-align:center;
+border-top: 1px solid #d9d9d9;
+}
+.forgetPass a{
+color: #888;
+text-decoration:underline;
+}
+.forgetPass a:hover{
+color: #FF0000;
+text-decoration:none;
+}
+/* ------------------------------------------- FOOTER index ------------------------------------------------ */
+#footerHome{clear:both;height:45px; background:url(../imgs/footer-index.png) no-repeat left;}
+#footerHome p {padding:3px 0 0 115px; font-size: 0.6em; color:#FFF}
+/* ----------------------------------------------- /Index ------------------------------------------------------- */
+/* ------------------------------------------------ Pages------------------------------------------------------- */
+#container {width:930px; margin: 0 auto;background:url(../imgs/border-wrap.gif) repeat-y right;}
+#header, #footer{clear:both;}
+/* ------------------------------------------- HEADER ------------------------------------------------ */
+#header{
+height:161px;
+background:url(../imgs/fond-header.png) no-repeat left;
+}
+#header p {
+color:#FFF;
+}
+.headLink a:hover{color:#666666;
+}
+#header .headLink{
+width:895px;
+padding:30px 35px 67px 0;
+text-align:right;
+}
+#header #bdCrumbs{
+padding:1px 0 0 230px;
+}
+#header #date{
+float:left;
+padding:5px 0 0 230px;
+width:230px;
+font-size: 75%;
+color:#ffffff;
+font-weight:bold;
+}
+#header #fsSearch{
+float:right;
+padding:0 0px 0 5px;
+width:220px;
+text-align:right;
+}
+#ipSearch {
+vertical-align:top;
+*vertical-align:-1px;
+width:185px;
+height: 16px;
+padding:3px 0 0 5px;
+border:1px solid #d9d9d9;
+font-size: 90%; color:#666;
+}
+#btOk {
+margin-left:-3px;
+border:0;
+width:23px;
+height:21px;
+padding:0;
+cursor:pointer;
+background:url(../imgs/search.gif) no-repeat;
+}
+#btOk:active {
+background:url(../imgs/search_press.gif) no-repeat;
+}
+/* ------------------------------------------NAVIGATION ---------------------------------------------- */
+#navBox{
+float:left;
+width:192px;
+background:#FFF;
+}
+#mainNav {
+background:url(../imgs/menu-border-left.gif) no-repeat left;
+}
+#mainNav li {
+list-style:none;
+font-size:90%;
+display:inline;
+}
+#mainNav .navBtService a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-service_EN.gif) no-repeat top;
+}
+#mainNav .navBtService a:hover{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-service-activ_EN.gif) no-repeat top;
+}
+#mainNav .navBtServiceActiv a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-service-activ_EN.gif) no-repeat top;
+}
+#mainNav .navBtBanque a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-coffre_EN.gif) no-repeat top;
+}
+#mainNav .navBtBanque a:hover{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-coffre-activ_EN.gif) no-repeat top;
+}
+#mainNav .navBtBanqueActiv a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-coffre-activ_EN.gif) no-repeat top;
+}
+#mainNav .navBtAssistance a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-assistance.gif) no-repeat top;
+}
+#mainNav .navBtAssistance a:hover{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-assistance-activ.gif) no-repeat top;
+}
+#mainNav .navBtAssistanceActiv a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-assistance-activ.gif) no-repeat top;
+}
+
+#mainNav .navBtMessagerie a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-messagerie_EN.gif) no-repeat top;
+}
+#mainNav .navBtMessagerie a:hover{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-messagerie-activ_EN.gif) no-repeat top;
+}
+#mainNav .navBtMessagerieActiv a{
+display:block;
+width:189px;
+height:25px;
+background: url(../imgs/menu-messagerie-activ_EN.gif) no-repeat top;
+}
+/* ------------------- Sub Nav -------------------*/
+
+#myMenu .navLink a{
+display:block;
+color:#666;
+text-decoration:none;
+margin-left: 33px;
+padding:7px 0 7px 15px;
+border-top:1px solid #d9d9d9;
+background: white;
+}
+#myMenu .navLinkActiv a{
+display:block;
+color:#fff;
+text-decoration:none;
+margin-left: 33px;
+padding:7px 0 7px 15px;
+border-top:1px solid #d40000;
+background: url(../imgs/menu-sub-activ.png) repeat-x;
+}
+#myMenu .navLink a:hover{
+color:#fff;
+background: url(../imgs/menu-sub-over.png) repeat-x;
+text-decoration:none;
+border-top:1px solid #ff9b00;}
+/* ------------------- /Sub Nav -----------------*/
+#mainNav .mbBorder{
+display:block;
+height:25px;
+background: url(../imgs/menu-border-bottom.png) no-repeat top;
+}
+#mainNav .mdbBorder{
+display:block;
+height:36px;
+background: url(../imgs/menu-border-middle.png) no-repeat top;
+}
+
+/* --------------------- Menu ----------------------*/
+#myMenu {
+background:url(../imgs/menu-border-left.gif) repeat-y left;
+}
+#myMenu .normalMenu {
+list-style:none;
+font-size:18px;
+display:inline;
+}
+#myMenu .arbreLi {
+list-style:none;
+font-size:10px;
+display:inline;
+}
+#myMenu .navBtService a{
+display:block;
+height:19px;
+background: url(../imgs/menu-service_EN.gif) repeat-x top left;
+}
+#myMenu .navBtService a:hover{
+display:block;
+height: 19px;
+background: url(../imgs/menu-service-activ_EN.gif) repeat-x top left;
+}
+
+#myMenu .navBtBanque a{
+display:block;
+height:19px;
+background: url(../imgs/menu-coffre_EN.gif) repeat-x top left;
+}
+#myMenu .navBtBanque a:hover{
+display:block;
+height:19px;
+background: url(../imgs/menu-coffre-activ_EN.gif) repeat-x top left;
+}
+
+#myMenu .navBtAssistance a{
+display:block;
+height:19px;
+background: url(../imgs/menu-assistance.gif) repeat-x top left;
+}
+#myMenu .navBtAssistance a:hover{
+display:block;
+height:19px;
+background: url(../imgs/menu-assistance-activ.gif) repeat-x top left;
+}
+
+#myMenu .navBtMessagerie a{
+display:block;
+height:19px;
+background: url(../imgs/menu-messagerie_EN.gif) repeat-x top left;
+}
+#myMenu .navBtMessagerie a:hover{
+display:block;
+height:19px;
+background: url(../imgs/menu-messagerie-activ_EN.gif) repeat-x top left;
+}
+
+#myMenu .navBtContact a{
+display:block;
+height:19px;
+background: url(../imgs/menu-contact.gif) repeat-x top left;
+}
+#myMenu .navBtContact a:hover{
+display:block;
+height:19px;
+background: url(../imgs/menu-contact-activ.gif) repeat-x top left;
+}
+
+#myMenu .navBtContactActiv a{
+display:block;
+height:19px;
+background: url(../imgs/menu-contact-activ.gif) repeat-x top left;
+}
+
+#tree-coffre{ /* arbre mn coffre*/
+	display:block;
+	margin-left : 10px;
+	background: white;
+}
+
+#tree-mail{ /* arbre mn coffre*/
+	display:block;
+	margin-left : 10px;
+	background: white;
+}
+
+#myMenu .mbBorder{
+display:block;
+height:25px;
+background: url(../imgs/menu-border-bottom.png) no-repeat top left;
+}
+#myMenu .mdbBorder{
+display:block;
+height:36px;
+background: url(../imgs/menu-border-middle.png) no-repeat top left;
+}
+
+/* ------------------- /Messagerie -----------------*/
+
+#grid{
+	margin-left:30px;
+	margin-top:150px;
+}
+.messagerie{
+margin-left:30px;
+}
+.firstOutil {
+margin-left:10px;
+}
+.outils a img{
+border:1px solid #fff;
+}
+.outils a:hover img{
+border:1px solid #d9d9d9;
+}
+.treeView {
+padding:10px 0 10px 0;
+margin-bottom:5px;
+*margin-bottom:-10px;
+background:#ecf3f8;
+}
+.treeView img{
+padding-right:5px;
+vertical-align:middle;
+}
+.treeView a{
+display:block;
+padding-left:10px;
+width:150px;
+height:18px;
+font-size:85%;
+color:#333;
+}
+.subDoss a{
+padding-left:25px;
+width:135px;
+}
+#mainNav .lastDoss {
+display:block;
+margin-bottom:10px;
+}
+.treeView a:hover{
+color:#fff;
+background:#90caca;
+}
+/*-----------------------------------/menu messagerie------------------------------*/
+
+/* coffre */
+.coffre{
+margin-left:30px;
+}
+
+
+/* ----------------------------------------- MAIN BLOCKS ----------------------------------------------*/
+#wrapper{
+float:left;
+width:725px;
+padding-bottom:10px;
+}
+#mainBlockR{
+float:left;
+margin-top:5px;
+width:240px;
+background:url(../imgs/border-avat.gif) repeat-y right;
+}
+#mainBlockL{
+	float:left;
+}
+/*-------------- Standard Main Block -------------*/
+.mainBlock{
+width:455px;
+margin:10px 10px 10px 15px;}
+.mainBlock .hMb{
+padding:5px 10px;
+background:url(../imgs/head-main-block.gif) no-repeat top;
+}
+.mainBlock .hMb2{
+float:left;
+}
+
+.hMb2{
+text-align:left;
+width: 700px;
+height: 50px;
+font-size: 12px;
+background:url(../imgs/head2-main-block.gif) no-repeat bottom;
+}
+
+.fMb2{
+text-align:left;
+width: 700px;
+height: 50px;
+font-size: 12px;
+background:url(../imgs/foot2-main-block.gif) no-repeat bottom;
+}
+
+.inMainBlock {
+padding:20px 10px 20px 10px;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+}
+.inMainBlockCent {
+padding:20px 10px 20px 10px;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+text-align:left;}
+.fMb{
+padding:2px 10px;
+font-size:1.2em;
+text-align:right;
+background:url(../imgs/foot-main-block.gif) no-repeat bottom;
+}
+
+
+/*-------------- Your accounts -------------*/
+.mainBlTbCo {
+margin-top:10px;
+}
+.inMainBlock .mainBlTbCoF td h3, .inMainBlock .mainBlTbCo td h3{
+font-size:100%; width:80px;
+}
+.inMainBlock .mainBlTbCoF td strong, .inMainBlock .mainBlTbCo td strong{
+color:#666666;
+}
+.coName {
+padding:0 10px;
+width:100px;
+border-left:1px solid #d9d9d9;
+border-top:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+}
+.coNum {
+padding:3px 10px;
+width:80px;
+background:#f1f1f1;
+border-right:1px solid #d9d9d9;
+border-top:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+}
+.coNameAd {
+padding:0 10px;
+border-left:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+}
+.coNumAd {
+padding:3px 10px;
+background:#f1f1f1;
+border-right:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+}
+.coDetail {
+padding:3px 10px;
+width:130px;
+background:#f1f1f1;
+border-right:1px solid #d9d9d9;
+border-top:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+text-align: right;
+text-color: #d9d9d9;
+}
+.coDetail a {
+color: black;
+text-decoration: underline;
+}
+/*------------- /Your accounts -------------*/
+/*---------------- Stock exchange ----------------*/
+.inMainBlockCent .mainBlTbBo td h3{
+font-size:100%; width:140px; text-align:left;
+}
+.boNum {
+padding:3px 10px;
+width:120px;
+text-align:center;
+background:#f1f1f1;
+border:1px solid #d9d9d9;
+}
+.valBo{padding-top:10px; text-align:center; font-size: 10px; color: #AAAAAA}
+/*---------------- Stock exchange ----------------*/
+/*---------------- Bouton ----------------*/
+.fMbBtn{
+float:left;
+padding:2px 10px;
+text-align:right;
+background:url(../imgs/foot-main-block.gif) no-repeat bottom;
+}
+.fMbBtn2{
+float:left;
+width:687px;
+padding:0pt 30pt 0pt 0pt;
+text-align:right;
+background:url(../imgs/foot2-main-block.gif) no-repeat bottom;
+}
+.btnYel a{
+display: block;
+float: right;
+margin-left:5px;
+color: #fff;
+background: transparent url(../imgs/bg_yel_btn-right.gif) no-repeat right;
+cursor:pointer;
+}
+.btnVid a{
+display: block;
+float: right;
+margin-left:5px;
+margin-bottom:30px;
+}
+.btnYel a strong{
+float:left;
+width: auto;
+color: #fff;
+padding: 10px;
+background: transparent url(../imgs/bg_yel_btn-left.gif) no-repeat left;
+}
+.btnYel a:hover{
+background: transparent url(../imgs/bg_yelo_btn-right.gif) no-repeat right;
+}
+.btnYel a:hover strong{
+background: transparent url(../imgs/bg_yelo_btn-left.gif) no-repeat left;
+}
+btnYel2 a{
+display: block;
+float: left;
+margin-left:320px;
+color: #fff;
+background: transparent url(../imgs/bg_yel_btn-right.gif) no-repeat right;
+cursor:pointer;
+}
+.btnYel2 a strong{
+float:left;
+width: auto;
+color: #fff;
+padding: 10px;
+background: transparent url(../imgs/bg_yel_btn-left.gif) no-repeat left;
+}
+.btnYel3 a{
+display: block;
+float: right;
+margin-left:2px;
+color: #fff;
+background: transparent url(../imgs/bg_yel_btn-right.gif) no-repeat right;
+cursor:pointer;
+}
+.btnYel3 a strong{
+float:left;
+width: auto;
+color: #fff;
+padding: 5px;
+background: transparent url(../imgs/bg_yel_btn-left.gif) no-repeat left;
+}
+.btnRed a{
+display: block;
+float: right;
+margin-left:5px;
+color: #fff;
+background:transparent url(../imgs/bg_red_btn-right.gif) no-repeat right;
+cursor:pointer;
+}
+.btnRed a strong{
+float:left;
+width: auto;
+color: #fff;
+padding: 10px;
+background:transparent url(../imgs/bg_red_btn-left.gif) no-repeat left;
+}
+.btnRed a:hover{
+background: transparent url(../imgs/bg_redo_btn-right.gif) no-repeat right;
+}
+.btnRed a:hover strong{
+background: transparent url(../imgs/bg_redo_btn-left.gif) no-repeat left;
+}
+/*---------------- /Bouton ----------------*/
+/*------------- Souscription --------------*/
+/*-------- /Formulaire-----*/
+.inMainBlockSous {
+padding:20px;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+text-align:left;
+}
+.title{
+color:#339999;
+font-weight:bold;
+}
+#fsSouscription p{
+margin:15px 0;
+text-align:left;
+}
+label.title{
+float:left;
+width:118px;
+text-align:right;
+}
+.cObli {color:#FF0000;}
+p.cObli {font-size:100%; text-align:right;}
+.ipType{
+width:250px;
+padding:0px 0 0px 5px;
+border:1px solid #d9d9d9;
+font-size: 90%; color:#666;
+}
+.ipChoix{
+width:190px;
+padding:0px 0 0px 5px;
+border:1px solid #d9d9d9;
+font-size: 90%; color:#666;
+}
+.ipAmount {
+width :50px;
+text-align:right;
+padding:2px 5px 2px 5px;
+border:1px solid #d9d9d9;
+font-size: 90%; color:#666;
+}
+#fsSouscription {
+border-bottom: 1px solid #d9d9d9;
+}
+#ipMail, #ipSms, #ipApl {
+vertical-align:-4px;
+margin-left:10px;
+}
+#ipMail{
+margin-left:120px;
+}
+/*-------- /Formulaire-----*/
+/*---------- Table --------*/
+.titleTable {
+margin-top:20px; margin-bottom:10px;
+}
+#sousAlTable {
+border-left: 1px solid #d9d9d9;
+border-right: 1px solid #d9d9d9;
+border-top: 1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+width:100%;
+}
+#sousAlTable th{
+text-align:center;
+}
+.alTd {
+width:50px;
+}
+#sousAlTable td{
+text-align:center;
+line-height:5ex;
+}
+#sousAlTable td.alTd {
+text-align:left;
+padding-left:40px;
+}
+#sousAlTable th.alTl {
+text-align:left;
+border-left:0;
+}
+#sousAlTable td.alTl {
+text-align:left;
+border-left:0;
+}
+.bgGray { background:#f1f1f1;
+}
+.boLe{
+border-left: 1px solid #d9d9d9;
+}
+#sousAlTable td img{
+vertical-align:middle;
+}
+/*--------- /Table --------*/
+/*------------ /Souscription --------------*/
+.mainBlock .hMbV{
+float:left;
+width:435px;
+padding:5px 10px;
+background:url(../imgs/head-main-block.gif) no-repeat top;
+}
+.inMainBlockV{
+float:left;
+width:413px;
+padding:20px;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+text-align:left;
+}
+.tel{
+float:left;
+margin-top:20px;
+}
+.service{
+margin-top:20px;
+float:left;
+width:210px;
+text-align:center;
+padding-top:40px;
+}
+.visu{
+font-size:0.8em;
+float:left;
+width:210px;
+text-align:center;padding:30px 0 5px 0;
+}
+.visu a{
+color:#666666;
+}
+.visu a:hover{
+color:#ff0000;
+}
+.btnYelW a{
+display: block;
+float: left;
+margin-left:42px;
+color: #fff;
+background: transparent url(../imgs/bg_yel_btn-right.png) no-repeat right;
+cursor:pointer;
+}
+.btnYelW a strong{
+float:left;
+width: auto;
+color: #fff;
+padding: 10px;
+font-size: 13px;
+background: transparent url(../imgs/bg_yel_btn-left.png) no-repeat left;
+}
+.btnYelW a:hover{
+background: transparent url(../imgs/bg_red_btn-right.png) no-repeat right;
+}
+.btnYelW a:hover strong{
+background: transparent url(../imgs/bg_red_btn-left.png) no-repeat left;
+}
+.fMbV{
+float:left;
+width:455px;
+height:20px;
+text-align:right;
+background:url(../imgs/foot-main-block.gif) no-repeat bottom;
+}
+/*------------------------------- Block Avatar -----------------------------*/
+.avatBl {
+list-style:none;
+line-height:2ex;
+background:url(../imgs/head-avat.gif) no-repeat right top;
+}
+#deconect a{
+display:block;
+margin-left:115px;
+padding-top:15px;
+text-align:right;
+text-decoration:none;
+color:#666;
+width:105px;
+height:25px;
+background:url(../imgs/connect.png) no-repeat 0 10px;
+}
+#deconect a:hover{
+text-decoration:none;
+color:#ff0000;
+background:url(../imgs/deconnect.png) no-repeat 0 10px;
+}
+#lastDate {
+margin-left:25px;
+padding: 5px 5px;
+color:#666;
+}
+#name {
+margin-left:25px;
+width:190px;
+padding:5px 0 5px 5px;
+border-top:1px solid #d9d9d9;
+color:#666;
+}
+#name strong {
+font-size:120%;
+color:#333;
+}
+/*----------- Namebre de message ----------*/
+#nbMessage {
+margin-left:25px;
+padding:2px 0 2px 5px;
+width:190px;
+border-top:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+color:#666;
+}
+#nbMessage img{
+vertical-align:-8px;
+padding-right:5px;
+}
+#nbMessage a{
+color:#333;
+}
+#nbMessage a:hover{
+color:#b9b9b9;
+}
+#nbMessage strong{
+color:#FF0000;
+}
+/*---------- /Namebre de message ----------*/
+/*------------- Message Talk -------------*/
+#msTalkInactiv {
+text-align:right;
+width:191px;
+height:33px;
+margin:10px 0 0 27px;
+background:url(../imgs/talk-inactif.png) no-repeat;
+line-height:30px;
+}
+#msTalk {
+text-align:right;
+width:191px;
+height:33px;
+margin:10px 0 0 27px;
+background:url(../imgs/talk-inactif.png) no-repeat;
+line-height:30px;
+}
+#msTalk span{
+padding-right:10px;
+color:#FFF;
+}
+#msTalk a {
+display:block;
+padding-right:10px;
+background:url(../imgs/talk-actif.png) no-repeat;
+}
+#msTalk a:hover {
+background:url(../imgs/talk-over.png) no-repeat;
+color:#FFF;
+}
+.pop{
+font:101% Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#0066ff;
+}
+.conseiller{
+font:101% Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#ff6600;
+}
+/*-------------/ Message Talk -------------*/
+/*------------- Avatar -------------*/
+#fsAnswer {
+margin-left:5px;
+text-align:center;
+}
+#ipAvatar {
+margin-top:-6px;
+*margin-top:-3px;
+vertical-align:top;
+width:180px;
+height: 80px;
+padding:3px 0 0 5px;
+border:1px solid #d9d9d9;
+font-size: 150%; color:#666;
+}
+#ipAvatarSend {
+vertical-align:top;
+*vertical-align:0px;
+margin-top:5px;
+width:158px;
+height: 16px;
+padding:3px 0 0 5px;
+border:1px solid #d9d9d9;
+font-size: 150%; color:#666;
+}
+#btnOk {
+margin-top:5px;
+font-size:150%;
+font-weight:bold;
+color:#FFF;
+margin-left:-3px;
+border:0;
+width:24px;
+height:21px;
+background:url(../imgs/btn-ok.png) no-repeat left;
+padding:0;
+cursor:pointer;
+}
+#btnOk:active {
+background:url(../imgs/btn-ok_press.png) no-repeat;
+}
+.foAvat {
+background:url(../imgs/foot-avat.gif) no-repeat right;
+height:16px;
+}
+/*------------- /Avatar -------------*/
+/*------------- /Block Avatar -------------*/
+/* ---------------------- Mesagerie --------------------------- */
+.titlePlanel{
+float:left;
+height:73px;
+width:725px;
+background:url(../imgs/border-title_planel.png) no-repeat 7px 0;
+}
+p.plName{
+float:left;
+margin-left:32px;
+margin-top:26px;
+width:270px;
+}
+.red{
+color:#FF0000;
+}
+p.plPrct{
+float:left;
+height:24px;
+margin-top:20px;
+padding:6px 10px 0 10px;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+}
+p.plStats{
+float:right;
+height:24px;
+margin-top:20px;
+padding:0px 35px 0 0px;
+border-right:1px solid #d9d9d9;
+}
+.percent{
+float:left;
+}
+.spaceContainer{
+float:left;
+background:url(../imgs/bg_space-container.gif)repeat-x top;
+width:100px;
+height:15px;
+margin:0 8px;
+border:1px solid #d9d9d9;
+}
+p#deconnect{
+float:right;
+margin-top:6px;
+margin-right:20px;
+_margin-right:10px;
+}
+#deconnect a{
+display:block;
+padding-top:5px;
+text-align:right;
+text-decoration:none;
+color:#666;
+width:105px;
+height:25px;
+background:url(../imgs/connect.png) no-repeat 0 0px;
+}
+#deconnect a:hover{
+color:#ff0000;
+background:url(../imgs/deconnect.png) no-repeat 0 0px;
+}
+p#deconnect {
+height:47px;
+padding-top:15px;
+}
+ul.toolList {
+list-style-type:none;
+padding-left:30px;
+}
+ul.toolList li {float:left;}
+ul.toolList li {
+float:left;
+padding:5px 10px 10px 0px;
+}
+ul.toolList li a {
+display:block;
+text-align:right;
+padding:5px 5px;
+width:75px;
+color:#333;
+border: 1px solid #fff;
+}
+ul.toolList li a:hover {
+color:#999999;
+border: 1px solid #d9d9d9;
+}
+div.Nouveau { background:url(../imgs/tools-nouveau.png) no-repeat 5px 5px; }
+div.Nouveau a{ background:url(../imgs/tools-nouveau.png) no-repeat 5px 5px; }
+div.Nouveau a:hover {
+color:#999999;
+border: 1px solid #d9d9d9;
+}
+ul.toolList li.Nouveau { background:url(../imgs/tools-nouveau.png) no-repeat 5px 5px; }
+ul.toolList li.Repondre { background:url(../imgs/tools-repondre.png) no-repeat 7px 5px; }
+ul.toolList li.Deplacer { background:url(../imgs/tools-deplacer.png) no-repeat 5px 7px; }
+ul.toolList li.Deposer { background:url(../imgs/tools-deposer.png) no-repeat 5px 7px; }
+ul.toolList li.Cancel { background:url(../imgs/tools-supprimer.png) no-repeat 5px 5px; }
+ul.toolList li.Print { background:url(../imgs/tools-imprimer.png) no-repeat 5px 5px; }
+.tMailHeader {
+float:left;
+margin-left:19px;
+*margin-left:10px;
+width:680px;
+padding:4px;
+height:30px;
+background:url(../imgs/bg-header-mail.gif) no-repeat 0 0;
+}
+.tMailHeader .left {
+float:left;
+padding-top:5px;
+padding-left:10px;
+color:#fff;
+margin-top:2px}
+.tMailHeader .right {
+padding-top:4px;
+float:right;
+padding-right:10px;
+color:#fff;
+}
+.tMailHeader .left strong {
+font-size:105%;
+}
+.tMailHeader .right  select {width:40px;}
+
+#mailList {
+float:left;
+margin-left:20px;
+*margin-left:10px;
+margin-bottom:15px;
+width:686px;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+}
+#mailList td {
+border-bottom:1px solid #d9d9d9;
+height:30px;
+cursor:pointer
+}
+#mailList tr.selected {
+background:#90caca;
+color:#fff;
+}
+#light{
+background:#ffffff;
+}
+#light a{
+background:#ffffff;
+}
+#light a:hover{
+background:#90caca;
+color:#fff;
+}
+#mailList td.head {
+height:20px;
+background:#ffcc00;
+color:white;
+}
+#mailList td.headJoint {
+height:20px;
+width:15px;
+background:#ffcc00;
+color:white;
+}
+#mailList td.headImportant {
+height:20px;
+width:10px;
+background:#ffcc00;
+color:white;
+}
+#mailHeader {
+float:left;
+border-top:1px solid #d9d9d9;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+width:648px;
+padding:8px;
+background:#ecf3f8;
+}
+#mailContent {
+float:left;
+margin-left:20px;
+*margin-left:10px;
+border-bottom:1px solid #d9d9d9;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+border-top:1px solid #d9d9d9;
+width:668px;
+padding:8px;
+overflow: auto;
+}
+.lettre{
+width:30px;
+padding-left:10px;
+}
+/* --------------------- /Mesagerie --------------------------- */
+
+#pj_message a{
+	color:#ff0000;
+}
+
+#pj_message a:hover{
+	color:#ffcc00;
+}
+/* ----------------------Alertes------------------------------*/
+.alertes
+{
+	font-size: 101%;
+}
+/*------------- /Standard Main Block -------------*/
+/* ------------------------------------------- FOOTER ------------------------------------------------ */
+#footer{height:45px; background:url(../imgs/fond-footer.png) no-repeat left;}
+#footer p {padding:3px 0 0 230px; font-size: 0.6em; color:#FFF}
+
+.AgendaNotes
+{
+	height:230px;
+}
+.Notes
+{
+	float:right;
+	width:135px;
+	height:200px;
+	font-size:1.3em;
+	border-bottom:1px solid #d9d9d9;
+	border-left:1px solid #d9d9d9;
+	border-right:1px solid #d9d9d9;
+	border-top:1px solid #d9d9d9;
+	background:#ffffcc;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+}
+
+.editor_cancel
+{
+	color:#ffcc00;
+	margin:0px;
+	border-bottom:1px solid #d9d9d9;
+	border-left:1px solid #d9d9d9;
+	border-right:1px solid #d9d9d9;
+}
+
+.editor_ok_button
+{
+	background:#ffffff;
+	color:#ffcc00;
+	margin:0px;
+	border-bottom:1px solid #d9d9d9;
+	border-left:1px solid #d9d9d9;
+}
+.editor_field
+{
+	color:#111111;
+	font-size:0.9em;
+	float:right;
+	width:135px;
+	height:200px;
+	background:#ffffaa;
+	font-family: Arial, sans-serif;
+}
+
+#editMe
+{
+	color:#EEE;
+	font-size:0.8em;
+	float:right;
+	width:135px;
+	height:200px;
+	font-size:1.3em;
+	border-bottom:1px solid #d9d9d9;
+	border-left:1px solid #d9d9d9;
+	border-right:1px solid #d9d9d9;
+	border-top:1px solid #d9d9d9;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+}
+
+.Signature
+{
+	padding-left: 25px;
+}
+.Graph
+{
+	float:right;
+	z-index:0;
+}
+
+#fileList{
+float:left;
+margin-left:20px;
+*margin-left:10px;
+margin-bottom:15px;
+width:686px;
+border-left:1px solid #d9d9d9;
+border-right:1px solid #d9d9d9;
+border-bottom:1px solid #d9d9d9;
+}
+
+#fileList td{
+border-bottom:1px solid #d9d9d9;
+height:30px;
+cursor:pointer;
+}
+
+#fileList tr.selected {
+background:#90caca;
+color:#fff;
+}
+#fileList td.head {
+height:20px;
+background:#ffcc00;
+color:white;
+}
+#fileList td.headJoint {
+height:20px;
+width:15px;
+background:#ffcc00;
+color:white;
+}
+#fileList td.headImportant {
+height:20px;
+width:10px;
+background:#ffcc00;
+color:white;
+}
+
+a.file
+{
+color: #000000;
+text-decoration:underline;
+}
+
+a.btCancelCoffre:link,a.btCancelCoffre:visited,a.btCancelCoffre:active{
+width:45px;
+font-weight:bold;
+text-decoration:none;
+text-align:center;
+color:#fff;
+background:#a50001;
+padding:4px 10px;
+}
+a.btCancelCoffre:hover {background:#fe9900;}
+
+a.btConfirm:link,a.btConfirm:visited,a.btConfirm:active{
+width:45px;
+font-weight:bold;
+text-decoration:none;
+text-align:center;
+color:#fff;
+background:#ed1c24;
+padding:4px 10px;
+}
+a.btConfirm:hover {background:#fe9900;}
+
+p.titrePopUp{
+ width:100%;
+ border-bottom:1px solid #ed1c24;
+ color:#f00;
+ font-size:14px;
+ font-weight:bold;
+ margin-bottom:5px;
+}
+
+.popCoffre
+{
+width:500px;
+padding:10px;
+background:#ffffff;
+border: 1px solid #000000;
+}
+
+/*-----------------------------------------------------Facture*/
+
+#listeFournisseur{
+	border-collapse:separate;
+	border-spacing:0px;
+}
+
+.imgFacture{
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+	height:80px;
+	text-align:center;
+}
+
+.textFacture{
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	border-right:1px solid #ffffff;
+	height:80px;
+	text-align:center;
+}
+
+.selectionImgFacture{
+	border-top:1px solid #000000;
+	border-bottom:1px solid #000000;
+	border-left:1px solid #000000;
+	height:80px;
+	text-align:center;
+}
+
+.selectionTextFacture{
+	border-top:1px solid #000000;
+	border-bottom:1px solid #000000;
+	border-right:1px solid #000000;
+	height:80px;
+	text-align:center;
+}
+
+/*-----------------------------------------------------ID-Blockchain*/
+
+.logoidb{
+	width: 40%;
+	height: 40%;
+	float: right;
+}
+
+.idblink{
+color: #00aeef;
+}

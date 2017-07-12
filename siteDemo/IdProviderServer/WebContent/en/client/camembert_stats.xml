@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<graphs>
+	<top label="[ Mes donnees ]">
+		<series name="Account de dépôt" color="AE0044" data="150.38"/>
+		<series name="PEL" color="FF4400" data="3400"/>		
+		<series name="LDD" color="3399FF" data="1024"/>
+	</top>
+</graphs>

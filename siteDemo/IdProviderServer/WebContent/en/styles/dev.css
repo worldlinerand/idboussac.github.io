@@ -1,0 +1,198 @@
+/*Overrides default style */
+
+/** --------------------------------
+ * Left Menu
+ */
+
+#navLeft{
+	width:192px;
+	float:left;
+	
+}
+/** --------------------------------
+ * SEPA / Direct Debit
+ */
+div#mainBlockL.sepa{
+	width:665px; /*Uncomment to enable full width on center column */
+}
+
+#mainBlockR.sepaR{
+	width:1px !important; /*To keep footer*/
+}
+
+.sepa .mainBlock{
+	width:100%;
+	margin:5px 0px 0px 15px !important;
+}
+.sepa h1.hMbV, .sepa .inMainBlockV, .sepa .fMbV{
+	width:100%;
+	float:none;
+	clear:both;
+	background-position:left;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+.sepa p.fMbV{
+	margin-bottom:10px;
+	width:688px;
+}
+.sepa h1.hMbV, .sepa p.fMbV{
+	background-image:none;
+	background-color:#ff0000;
+}
+#mainBlockL.sepa .mainBlock h1.hMbV{
+	font-size:12px;
+}
+.bold{
+	font-weight:bold;
+}
+.green{
+	color:green;
+}
+.red{
+	color:red;
+}
+.blue{
+	color:blue;
+}
+.x-btn button{
+	font-size:14px !important;
+}
+#sepa-menu{
+	margin:5px 0px 20px 115px;
+}
+.menu-sepa .x-menu-item{
+	font-size:12px;
+}
+
+.imgH1Sepa{
+	margin:-20px 5px 0px -15px;
+	float:left;
+	clear:none;
+}
+.sepa h1{
+	font-size:12px;
+	margin-top:5px;
+	margin-left:5px;
+	color:#000;
+}
+.sepa h1.hMbV{
+	color:#fff;
+}
+.sepa ul#summary{
+	list-style-type:disc;
+	padding-top:15px;
+}
+.sepa #summary li{
+	list-style-type:disc;
+	margin:5px 10px 5px 15px;
+}
+.chartLegend td, .chartLegend td div{
+	font-size:100%;
+}
+.x-toolbar {
+	background-image:none !important;
+	background-color:#fff !important;
+	border:0px solid #000 !important;
+	text-align:center;
+	margin-left:75px;
+}
+
+a.action_grid{
+	color:#000;
+	text-decoration:underline;
+}
+a.action_grid:hover{
+	color:blue;
+	text-decoration:underline;
+}
+#autofill{
+	border:1px #999999 solid;
+	font-size:8px;
+}
+.alerte-red{
+	background-color:#FF3F3F;
+}
+.alerte-red td, .alerte-yellow td{
+	font-weight:bold;
+}
+.alerte-yellow{
+	background-color:#FEFF9F;
+}
+.select-blue{
+	background-color:#74D0F1;
+}
+#mainBlockHomeL a{
+	border:none;
+	color:#fff;
+}
+#mainBlockHomeL a:hover{
+	border:none;
+}
+.forgetPass {
+	border-top:none;
+}
+#ipLogin {
+	width:80px;
+	height:20px;
+}
+#ipPassword {
+	height:20px;
+	padding:3px 5px;
+	margin:5px 0 15px;
+}
+.x-item-disabled{
+	opacity:1 !important;
+	color:#000 !important;
+}
+#alerteConfigGeneral table{
+	margin:5px;
+	width:97%;
+}
+#alerteConfigGeneral table td, #alerteConfigGeneral table th, #alerteConfigGeneral table caption{
+	font-family:tahoma,arial,helvetica,sans-serif;
+	font-size:12px !important;
+	font-size-adjust:none;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	padding:5px;
+	color:#333;
+}
+
+#alerteConfigGeneral table td{
+	border-collapse:collapse;
+	text-align:center;
+}
+#alerteConfigGeneral table th{
+	text-align:left;
+	border-collapse:collapse;
+}
+
+#alerteConfigGeneral table tr{
+	border-collapse:collapse;
+}
+#alerteConfigGeneral table thead{
+	margin:5px;
+	height:50px;
+}
+.important_rule{
+	text-decoration : underline;
+}
+.sepa .mainBlock{
+	visibility:hidden;
+}
+
+#loader{
+	width: 100%;
+	text-align:center;
+	padding-top:250px;
+	background-color:#fff;
+	display:block;
+}
+
+.hidden_input{
+	display:none;
+}

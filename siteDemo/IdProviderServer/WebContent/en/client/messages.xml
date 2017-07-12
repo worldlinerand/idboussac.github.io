@@ -1,0 +1,29 @@
+	<catalog>
+-<totalCount>3</totalCount>
+	<message>
+	<coche>false</coche>
+<de>Miribel agency</de>
+<sujet>Shady</sujet>
+<date>05/10/2007</date>
+<taille>10 Ko</taille>
+<texte>Dear client,</texte>
+</message>
+-
+	<message>
+	<coche>false</coche>
+<de>Miribel agency</de>
+<sujet>Mostly Shady</sujet>
+<date>06/10/2007</date>
+<taille>13 867 Ko</taille>
+<texte>Sir Durand,</texte>
+</message>
+-
+	<message>
+	<coche>false</coche>
+<de>Michel Dupont</de>
+<sujet>Mostly Sunny</sujet>
+<date>07/10/2007</date>
+<taille>250 Ko</taille>
+<texte>Hello,</texte>
+</message>
+</catalog>

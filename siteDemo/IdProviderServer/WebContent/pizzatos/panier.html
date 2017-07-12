@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Pizz'atos : Mon Panier</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<script type="text/javascript"> </script>
+      	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <style type="text/css">#hd1 {width: 2%;}</style>
+</head>
+
+<body>
+<div id="bord"></div>
+<div id="mainbd">
+
+  <div id="header">
+    <h1 id="logo"><img src="imgs/logo.gif" alt="Pizz'atos" /></h1>
+	<p id="pub"><a href="#"><img src="imgs/pub.gif" alt="Menu Biolight &agrave; 20euros" /></a></p>
+  </div>
+  
+  <ul id="tabslist">
+    <li><a href="ajout.html">Les menus</a></li>
+    <li><a href="#">Notre carte</a></li>
+    <li><a href="#">Mon "Pizz'atos"</a></li>
+  </ul>
+  
+  <div id="pgbodys">
+    
+	  <h2 class="h2panier"><img src="imgs/monpanier_tit.gif" alt="Mon panier" /></h2>
+	  <p class="firstp">Vous trouverez ci-dessous les articles qui ont été ajoutés à votre panier. Vous pouvez à tout moment 
+	  modifier les données en désélectionnant des articles ou en modifiant leur quantité.</p>
+	  <p>Pour effectuer le paiement, cliquez sur le bouton "Paiement".</p>
+	  
+	  <form method="post" action="">
+	  <table summary="Tableau des articles ajout&eacute;s au panier">
+	  <caption></caption>
+	    <tr>
+		  <th id="hd1"></th>
+		  <th id="hd2" class="tdlft">Article</th>
+		  <th id="hd3"><acronym title="Quantit&eacute;">Qté.</acronym></th>
+		  <th id="hd4"><acronym title="Prix unitaire">PU</acronym></th>
+		  <th id="hd5">Total</th>
+		</tr>
+	    <tr>
+		  <td class="menuline"><input id="item1" type="checkbox" checked="checked" /></td>
+		  <td colspan="4" class="menuline">Menu "Cheesy"</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td class="tdlft">Pizza 4 fromages grande</td>
+		  <td><input id="qt1" type="text" value="1" /></td>
+		  <td>10,20&euro;</td>
+		  <td>10,20&euro;</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td class="tdlft">Brownies</td>
+		  <td><input id="qt2" type="text" value="2" /></td>
+		  <td>0,90&euro;</td>
+		  <td>1,80&euro;</td>
+		</tr>
+	    <tr>
+		  <td colspan="3" class="totaline"></td>
+		  <td class="totaline">TOTAL</td>
+		  <td class="totaline">12,00&euro;</td>
+		</tr>
+	  </table>
+	  <p id="btbar"><a href="paie.html" id="btok">PAIEMENT</a></p>
+	  </form>
+	
+  </div> <!-- pgbody -->  
+</div> <!-- mainbd -->
+
+  <div id="footer">
+	<ul>
+	  <li id="cprt"> [ © Pizz'atos, 2005 ] </li>
+	  <li><a href="#">Aide</a> - </li>
+	  <li><a href="#">Plan du site</a> - </li>
+	  <li><a href="#">Contact</a> - </li>
+	  <li><a href="#">Conditions de vente</a></li>
+	</ul>
+  </div>
+
+</body>
+</html>

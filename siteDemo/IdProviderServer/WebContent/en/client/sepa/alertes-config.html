@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>WL Bank</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style type="text/css">@import url(../../js/ext-2.2/resources/css/ext-all.css);
+        </style>
+        <style type="text/css">@import url(../../js/ext-2.2/resources/css/xtheme-gray.css);
+        </style>
+        <style type="text/css">@import url(../../styles/xtheme-wlbank.css);
+        </style>
+        <style type="text/css">@import url(../../styles/main.css);
+        </style>
+        <style type="text/css">@import url(../../styles/dev.css);
+        </style>
+        <style type="text/css">@import url(../../styles/main.css);
+        </style>
+        <script type="text/javascript" src="../../js/worldlinebank.js">
+        </script>
+        <script type="text/javascript" src="../../js/ext-2.2/adapter/ext/ext-base.js">
+        </script>
+        <script type="text/javascript" src="../../js/ext-2.2/ext-all.js">
+        </script>
+		<script type="text/javascript" src="../../js/sepa/sepa-extjs.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sepa-common.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/alertes-config.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sepa-menu.js">
+        </script>
+    </head>
+    <body onLoad="">
+        <div id="mainBlockL" class="sepa">
+        	<div id="loader"><img src="../../imgs/sepa/ajax-loader.gif" /></div>
+            <div class="mainBlock" id="sepaMainContent">
+                <div id="sepa-menu">
+                </div>
+                <h1 class="hMbV"><span id="html.alertes_config_title"></span></h1>
+                <div class="inMainBlockV">
+                    <div id="alerteConfigGeneral">
+                        <table>
+                        	<caption><span id="alertes_config_general_intro" class="hidden_input"></span></caption>
+                        	<thead>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td align="center" class="hidden_input">
+                                    <span id="action_accept"></span>
+                                </td>
+                                <td align="center" class="hidden_input">
+                                    <span id="action_reject"></span>
+                                </td>
+                                <td colspan="3" align="center">
+                                    <span id="notification"></span>
+                                </td>
+                            </tr>
+							</thead>
+							<tr>
+                                <th>
+                                    <span id="reason_0"></span>
+                                </th>
+                                <td class="hidden_input">
+                                   <span id="accept_0"></span>
+                                </td>
+                                <td class="hidden_input">
+                                    <span id="reject_0"></span>
+                                </td>
+                                <td>
+                                	<span id="sms_0"></span>
+                                </td>
+								 <td>
+                                	<span id="call_0"></span>
+                                </td>
+								 <td>
+                                	<span id="mail_0"></span>
+                                </td>
+                            </tr>
+							<tr>
+                                <th>
+                                    <span id="reason_1"></span>
+                                </th>
+                                <td class="hidden_input">
+                                   <span id="accept_1"></span>
+                                </td>
+                                <td class="hidden_input">
+                                    <span id="reject_1"></span>
+                                </td>
+                                <td>
+                                	<span id="sms_1"></span>
+                                </td>
+								 <td>
+                                	<span id="call_1"></span>
+                                </td>
+								 <td>
+                                	<span id="mail_1"></span>
+                                </td>
+                            </tr>
+							<tr>
+                                <th>
+                                    <span id="reason_2"></span>
+                                </th>
+                                <td class="hidden_input">
+                                   <span id="accept_2"></span>
+                                </td>
+                                <td class="hidden_input">
+                                    <span id="reject_2"></span>
+                                </td>
+                                <td>
+                                	<span id="sms_2"></span>
+                                </td>
+								 <td>
+                                	<span id="call_2"></span>
+                                </td>
+								 <td>
+                                	<span id="mail_2"></span>
+                                </td>
+                            </tr>
+							<tr>
+                                <th>
+                                    <span id="reason_3"></span>
+                                </th>
+                                <td class="hidden_input">
+                                   <span id="accept_3"></span>
+                                </td>
+                                <td class="hidden_input">
+                                    <span id="reject_3"></span>
+                                </td>
+                                <td>
+                                	<span id="sms_3"></span>
+                                </td>
+								 <td>
+                                	<span id="call_3"></span>
+                                </td>
+								 <td>
+                                	<span id="mail_3"></span>
+                                </td>
+                            </tr>
+							<tr>
+                                <th>
+                                    <span id="reason_4" class="important_rule"></span>
+                                </th>
+                                <td class="hidden_input">
+                                   <span id="accept_4"></span>
+                                </td>
+                                <td class="hidden_input">
+                                    <span id="reject_4"></span>
+                                </td>
+                                <td>
+                                	<span id="sms_4"></span>
+                                </td>
+								 <td>
+                                	<span id="call_4"></span>
+                                </td>
+								 <td>
+                                	<span id="mail_4"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+					 <div id="prefConfigGeneral">
+                    </div>
+                    <div id="alerteConfig">
+                    </div>
+                    <div id="rulesList">
+                    </div>
+                    <div id="ruleCreation">
+                    </div>
+                </div>
+                <p class="fMbV"/>
+            </div>
+        </div>
+        <div id="mainBlockR" class="sepaR">
+        </div>
+        <div id="footer">
+            <p>
+                <span id="html.footer"></span>
+            </p>
+        </div>
+    </body>
+</html>
