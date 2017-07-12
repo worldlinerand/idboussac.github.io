@@ -32,7 +32,6 @@ i686-none-linux-android
 -IC:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\jni\\breadwallet-core
 -IC:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\jni\\transition
 -Wno-trigraphs
--Wmissing
 -Wno-missing-prototypes
 -Werror=return-type
 -Wdocumentation

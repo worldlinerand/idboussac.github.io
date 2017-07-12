@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-
 import com.breadwallet.R;
 import com.breadwallet.presenter.entities.ClaimsEntity;
 import com.breadwallet.tools.adapter.IdentityProviderAdapter;
@@ -42,7 +41,6 @@ import static com.breadwallet.presenter.activities.MainActivity.app;
  */
 
 public class IDPActivity extends FragmentActivity {
-
 
     private static final String TAG = IDPActivity.class.getName();
     private ClaimsEntity[] idpClaim;
@@ -165,7 +163,7 @@ public class IDPActivity extends FragmentActivity {
 
 
     }
-
+//STOCKAGE
     public void setClaims() {
 
         Uri uriEncoded = Uri.parse(claimsUri);
@@ -177,7 +175,6 @@ public class IDPActivity extends FragmentActivity {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-
         Log.d(TAG, "setUrlHandler: " + uri.getFragment());
         callbackURI = "http://" + uri.getAuthority() + uri.getPath();
         String claims = uri.getFragment();
@@ -194,7 +191,6 @@ public class IDPActivity extends FragmentActivity {
 
         if(claimsList != null)
             claimsList.setAdapter(adapter);
-
         claimsUri = null;
     }
 

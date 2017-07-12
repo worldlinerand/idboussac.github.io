@@ -3,6 +3,42 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-security\9.2.19.v20160908\989498b69bbd48fabd6d0bd909ea2ac9ab2638ea\jetty-security-9.2.19.v20160908.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="989498b69bbd48fabd6d0bd909ea2ac9ab2638ea">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-security-9.2.19.v20160908_ac9e0fd279ec67f2b2f7749432b8787174f98e8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\5898dad1a864fb7cfaa223c4c3475a3cdb6853ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ebe5d109fc9f5b808b1fd8bfe48988b23ea3d83f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\c2080fe4493008c7415b10b748c69f52718d766f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1312d8b2540120db0f41d504ce0e9e68c48b992a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.5\d2bd2c0bd328f1dabdf33e10b6d223ebcbe93343\commons-compress-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d2bd2c0bd328f1dabdf33e10b6d223ebcbe93343">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-compress-1.5_d5fd2d2a0524ac79ed4ab5265a2a12d3fabd505c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
         jumboMode="false"
         optimize="true"
@@ -39,6 +75,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\a23dd94d3d836c2c9b606278a406105917de8112\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2819ba8430a654c77d2193a6b4e84c4be2d20f7e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.0_f5ad948a905067b30c220d28985db4c1b7f91236\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\ca9ddaa337c58ba887e288d8c17f089442a9775a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6eee4fd9434d6b8caccfa2775a5b3eb023ae3a11\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-client\9.2.19.v20160908\2c04a2fc7881ffa63795aa9b65df0b1f76a9384a\websocket-client-9.2.19.v20160908.jar"
         jumboMode="false"
         optimize="true"
@@ -57,6 +120,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\81a89a86e5e9d416657af20395b465b799661f15\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_42f72743b4afbff3150f46837fa25e53b458d318\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.22\a1c83373863cec7ae8d89dc1c5722d8cb6ec0309\slf4j-api-1.7.22.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a1c83373863cec7ae8d89dc1c5722d8cb6ec0309">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\slf4j-api-1.7.22_e54de592bdd6a25e9f171215dcbdf56ad169fc4c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ahamroun\.android\build-cache\fafae47340b0150f5f65eb302074de086cb59c5e\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -66,12 +147,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\a2649dac73eb2d5a18fae134714e7e62d7b2302d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d857406eaa1f056659100cc8b8c6140196046ad0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_50379c243f151c902bcfb5b74ae33b9cf8b1cbe1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.bitcoinj\bitcoinj-core\0.12.2\41341486b50efe648571ee39dc500a81b8ccc0e5\bitcoinj-core-0.12.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="41341486b50efe648571ee39dc500a81b8ccc0e5">
         <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\bitcoinj-core-0.12.2_957aca4943c91b4c053926f6dc9ebe3fb13ea2aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-continuation\9.2.19.v20160908\c62791dbb1581e743b19b6321eec17969c89192b\jetty-continuation-9.2.19.v20160908.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c62791dbb1581e743b19b6321eec17969c89192b">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-continuation-9.2.19.v20160908_7582584dd03668378d7b44ddd96ccd2394a93e36\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-common\9.2.19.v20160908\a3d6976d291b33e388ed65399ffa30330c2ba605\websocket-common-9.2.19.v20160908.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a3d6976d291b33e388ed65399ffa30330c2ba605">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\websocket-common-9.2.19.v20160908_82478f33430d4d5d87ba328e7b9bf3d1f3145dc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a10732c76bfacdbd633a7eb0f7968b1059a65dfa">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\protobuf-java-2.5.0_ea9124bfb7ed3ca8671de04a0c6b732c5dd37e4e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,6 +219,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-io\9.2.19.v20160908\c48225a47e7aec7ec0702b4e9b291775d3eabfd3\jetty-io-9.2.19.v20160908.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c48225a47e7aec7ec0702b4e9b291775d3eabfd3">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-io-9.2.19.v20160908_806868fd023db654cab2dc2c09c3fb75d2bdede0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ahamroun\.android\build-cache\eb370f44be7af93fd038d70ba0a90d76a0847450\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -111,12 +246,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-webapp\9.2.19.v20160908\ec12b0e83f78b4c15b2f73525e6dd0df5b408b4f\jetty-webapp-9.2.19.v20160908.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ec12b0e83f78b4c15b2f73525e6dd0df5b408b4f">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-webapp-9.2.19.v20160908_183b8653be9776e0646d1c1d5a5952800c0e45f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\8edbc8d3e4a8e49c7cfdf75f231877242442f5be\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e239c30c84ee09b9169f5df4059b1ad2b866dd85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\0318444288ae040e907b49d3d689b32379c87556\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_11bd6312154d073711f06e6adcdb70fded03a51f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\90b9f5d01b0c38c5721cfe991e5121de00958d69\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28545dc51d123308cb62aee4c715f35f74adc06d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.tukaani\xz\1.2\bfc66dda280a18ab341b5023248925265c00394c\xz-1.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="bfc66dda280a18ab341b5023248925265c00394c">
         <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\xz-1.2_15d1ab6f05ad28825f83b9699b8026189a6a1e85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\a71af3e87061f792ba1eb139ac99bf0e21f565af\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8ea96422264f02dd29f5b75ad5685d7dfb97a20c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\fef43adad3ae17ff33cc12b8948278ab8ddc7c4f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5dc26c228d4fdbb5c901ef98711405c4cd136126\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -129,12 +318,84 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\net.jcip\jcip-annotations\1.0\afba4942caaeaf46aab0b976afd57cc7c181467e\jcip-annotations-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="afba4942caaeaf46aab0b976afd57cc7c181467e">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jcip-annotations-1.0_d2b30c1e451ef96098005bde6984a131521fad3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\5a0954630d7fd05498577000d9a6cf2f31163fee\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d1fa0d80765176d9be95d3755752f8bdc5722df9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\8fd4bc94c0114026823b927f56ea8aa95d3fe07c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_51c13eaacddd4b38995e2ebd387919e3ba7bb35d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\javax.servlet\javax.servlet-api\3.1.0\3cd63d075497751784b2fa84be59432f4905bf7c\javax.servlet-api-3.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3cd63d075497751784b2fa84be59432f4905bf7c">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.servlet-api-3.1.0_8288d109ea239798ce4062c2b74e9e1a9d94e749\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-xml\9.2.19.v20160908\2d33c3086afa879f2c00eb84e97328065618379b\jetty-xml-9.2.19.v20160908.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2d33c3086afa879f2c00eb84e97328065618379b">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-xml-9.2.19.v20160908_09d995acb9a2506bf0cccdc6ef3f7f52bb73d875\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-http\9.2.19.v20160908\ebd3ae519c8ad9f15367fa45f09f09e186c6f5bb\jetty-http-9.2.19.v20160908.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ebd3ae519c8ad9f15367fa45f09f09e186c6f5bb">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-http-9.2.19.v20160908_1df12ac49421c964786dceee2b894c40f57d8c1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ahamroun\.android\build-cache\9b764674bde578dc8e6176c2d78fe74bed9b066e\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
         <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7e31c007584302dc64f85577c3cb484e03da5ebe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\7367a51f138b095a443039453e1b88f12e7819c4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b5f86cc5ed3999c07a36d7843a9cb877ed47f2e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\0f2bb28b199c825e61449783256bc2e0b1cc32eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_860d2abc90b0acd38f2edfcf748dcb6393e2eb17\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -153,6 +414,15 @@
         revision="25.0.3"
         sha1="5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5">
         <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-16.0.1_1b14455c24424f990e58114e55500e0d3887ff78\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\762237c2bf6eba60d90a89198caca45a09619d2a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a3175275e269026d488dc10ae90e7f83cba658ee\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -192,210 +462,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\io.sigpipe\jbsdiff\1.0\ac84a9fc05d8a12ee104dba712a587e768040468\jbsdiff-1.0.jar"
+        jar="C:\Users\ahamroun\.android\build-cache\f35597c78a3e1a995f20647762aae8f55f892efb\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="ac84a9fc05d8a12ee104dba712a587e768040468">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jbsdiff-1.0_9c62822dcc4e329ea90b5a9d4e6f6069dc1c5f80\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-security\9.2.19.v20160908\989498b69bbd48fabd6d0bd909ea2ac9ab2638ea\jetty-security-9.2.19.v20160908.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="989498b69bbd48fabd6d0bd909ea2ac9ab2638ea">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-security-9.2.19.v20160908_ac9e0fd279ec67f2b2f7749432b8787174f98e8b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\5898dad1a864fb7cfaa223c4c3475a3cdb6853ab\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ebe5d109fc9f5b808b1fd8bfe48988b23ea3d83f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\c2080fe4493008c7415b10b748c69f52718d766f\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1312d8b2540120db0f41d504ce0e9e68c48b992a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.5\d2bd2c0bd328f1dabdf33e10b6d223ebcbe93343\commons-compress-1.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d2bd2c0bd328f1dabdf33e10b6d223ebcbe93343">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-compress-1.5_d5fd2d2a0524ac79ed4ab5265a2a12d3fabd505c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\a23dd94d3d836c2c9b606278a406105917de8112\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2819ba8430a654c77d2193a6b4e84c4be2d20f7e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.0_f5ad948a905067b30c220d28985db4c1b7f91236\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\81a89a86e5e9d416657af20395b465b799661f15\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_42f72743b4afbff3150f46837fa25e53b458d318\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.22\a1c83373863cec7ae8d89dc1c5722d8cb6ec0309\slf4j-api-1.7.22.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="a1c83373863cec7ae8d89dc1c5722d8cb6ec0309">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\slf4j-api-1.7.22_e54de592bdd6a25e9f171215dcbdf56ad169fc4c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-continuation\9.2.19.v20160908\c62791dbb1581e743b19b6321eec17969c89192b\jetty-continuation-9.2.19.v20160908.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c62791dbb1581e743b19b6321eec17969c89192b">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-continuation-9.2.19.v20160908_7582584dd03668378d7b44ddd96ccd2394a93e36\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-common\9.2.19.v20160908\a3d6976d291b33e388ed65399ffa30330c2ba605\websocket-common-9.2.19.v20160908.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="a3d6976d291b33e388ed65399ffa30330c2ba605">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\websocket-common-9.2.19.v20160908_82478f33430d4d5d87ba328e7b9bf3d1f3145dc3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="a10732c76bfacdbd633a7eb0f7968b1059a65dfa">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\protobuf-java-2.5.0_ea9124bfb7ed3ca8671de04a0c6b732c5dd37e4e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-io\9.2.19.v20160908\c48225a47e7aec7ec0702b4e9b291775d3eabfd3\jetty-io-9.2.19.v20160908.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c48225a47e7aec7ec0702b4e9b291775d3eabfd3">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-io-9.2.19.v20160908_806868fd023db654cab2dc2c09c3fb75d2bdede0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-webapp\9.2.19.v20160908\ec12b0e83f78b4c15b2f73525e6dd0df5b408b4f\jetty-webapp-9.2.19.v20160908.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="ec12b0e83f78b4c15b2f73525e6dd0df5b408b4f">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-webapp-9.2.19.v20160908_183b8653be9776e0646d1c1d5a5952800c0e45f0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\0318444288ae040e907b49d3d689b32379c87556\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_11bd6312154d073711f06e6adcdb70fded03a51f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\90b9f5d01b0c38c5721cfe991e5121de00958d69\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28545dc51d123308cb62aee4c715f35f74adc06d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\a71af3e87061f792ba1eb139ac99bf0e21f565af\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8ea96422264f02dd29f5b75ad5685d7dfb97a20c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\net.jcip\jcip-annotations\1.0\afba4942caaeaf46aab0b976afd57cc7c181467e\jcip-annotations-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="afba4942caaeaf46aab0b976afd57cc7c181467e">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jcip-annotations-1.0_d2b30c1e451ef96098005bde6984a131521fad3a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\javax.servlet\javax.servlet-api\3.1.0\3cd63d075497751784b2fa84be59432f4905bf7c\javax.servlet-api-3.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="3cd63d075497751784b2fa84be59432f4905bf7c">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.servlet-api-3.1.0_8288d109ea239798ce4062c2b74e9e1a9d94e749\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-xml\9.2.19.v20160908\2d33c3086afa879f2c00eb84e97328065618379b\jetty-xml-9.2.19.v20160908.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="2d33c3086afa879f2c00eb84e97328065618379b">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-xml-9.2.19.v20160908_09d995acb9a2506bf0cccdc6ef3f7f52bb73d875\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-http\9.2.19.v20160908\ebd3ae519c8ad9f15367fa45f09f09e186c6f5bb\jetty-http-9.2.19.v20160908.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="ebd3ae519c8ad9f15367fa45f09f09e186c6f5bb">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-http-9.2.19.v20160908_1df12ac49421c964786dceee2b894c40f57d8c1c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\0f2bb28b199c825e61449783256bc2e0b1cc32eb\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_860d2abc90b0acd38f2edfcf748dcb6393e2eb17\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ahamroun\.android\build-cache\762237c2bf6eba60d90a89198caca45a09619d2a\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
-        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a3175275e269026d488dc10ae90e7f83cba658ee\classes.dex" />
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ba77bb48fc0738054a0b703a8d4f6b035e1c1300\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -405,6 +477,24 @@
         revision="25.0.3"
         sha1="16e2968b7bb971d138ca6afd6a0eccc550e36648">
         <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jetty-servlet-9.2.19.v20160908_ba6160c0a134dd5f10aa87b63064ab42ac9be5c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\08843ae29487beb31bcdd988413b52b15ef411b3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_00e8b39429fc767d52ac35152d5792a69457a09b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.gradle\caches\modules-2\files-2.1\io.sigpipe\jbsdiff\1.0\ac84a9fc05d8a12ee104dba712a587e768040468\jbsdiff-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ac84a9fc05d8a12ee104dba712a587e768040468">
+        <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\jbsdiff-1.0_9c62822dcc4e329ea90b5a9d4e6f6069dc1c5f80\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -441,6 +531,15 @@
         revision="25.0.3"
         sha1="555fba0ff452195210c451a187fb61926d246a1a">
         <dex dex="C:\Users\ahamroun\Desktop\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\websocket-api-9.2.19.v20160908_fdd7f2b4bdc9ad34c3d4e14d7116e312159e2074\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ahamroun\.android\build-cache\eaa7bc4aecae5a67a99622f6e5305c828661fac9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f9880f6d8cc9fda656bd2276f682d3bcf65eb815\classes.dex" />
     </item>
     <item
         is-multidex="true"

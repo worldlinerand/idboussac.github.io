@@ -14,7 +14,13 @@ public class User {
 		this.email=email;
 		this.password=password;
 		this.number=number;
-		this.walletCounter=walletCounter;
+		if(walletCounter>10)
+			this.walletCounter = 10;
+		else if(walletCounter < 0)
+			this.walletCounter = 0;
+		else
+			this.walletCounter=walletCounter;
+		
 	}
 	
 	public User(int userID, String email, String password, String number,int walletCounter){
@@ -57,6 +63,10 @@ public class User {
 		return this.number;
 	}
 	
+	public String getPassword(){
+		return this.password;
+	}
+	
 	//OPERATION on counter
 	
 	public boolean counterUp()
@@ -85,6 +95,7 @@ public class User {
 		}
 	}
 	
+	//Connexion
 	public boolean verify(String email, String password)
 	{
 		if( this.email.equals(email) && this.password.equals(password)){

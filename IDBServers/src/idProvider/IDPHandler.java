@@ -137,6 +137,7 @@ public class IDPHandler extends HttpServlet {
 				{
 					data[1+i]=signProof[i];
 				}
+				
 				System.out.println("data : "+ Tools.bytesToHex(data));
 				validateTx = bot.recordSign(null, data);
 				System.out.println("validateTx : "+ validateTx);

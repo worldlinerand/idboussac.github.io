@@ -5,11 +5,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\notification_template_media.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_currency.xml",
@@ -29,7 +29,7 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_idp.xml",
@@ -44,32 +44,32 @@
         "source": "C:\\Users\\ahamroun\\.android\\build-cache\\c2080fe4493008c7415b10b748c69f52718d766f\\output\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
     },
     {
-        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\currency_list_item.xml",
-        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\currency_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\intro_fragment_warning.xml",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\intro_fragment_warning.xml"
     },
     {
-        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\currency_list_item.xml",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\currency_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fingerprint_limit.xml",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\fragment_fingerprint_limit.xml"
+    },
+    {
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\transaction_received_to_addresses.xml",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\transaction_received_to_addresses.xml"
     },
     {
-        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fingerprint_limit.xml",
-        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\fragment_fingerprint_limit.xml"
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\transaction_sent_from_addresses.xml",
@@ -84,16 +84,16 @@
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\button_no_guarantor.xml"
     },
     {
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_scan_result.xml",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\fragment_scan_result.xml"
     },
     {
-        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_search_view.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\intro_fragment_welcome.xml",
@@ -105,11 +105,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\notification_template_lines_media.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\notification_template_media_custom.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\button_no_transactions.xml",
@@ -125,7 +125,7 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\notification_template_part_time.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\transaction_received_from_addresses.xml",
@@ -141,11 +141,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_screen_simple.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_new_claims_dialog_fragment.xml",
@@ -197,15 +197,15 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_screen_content_include.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_settings_all.xml",
@@ -229,15 +229,15 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_action_menu_layout.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_dialog_title_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\select_dialog_item_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\transaction_item_expanded_received.xml",
@@ -257,7 +257,7 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_activity_chooser_view.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\transaction_list_item_more.xml",
@@ -269,11 +269,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\button_claims_history.xml",
@@ -285,11 +285,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast.xml",
@@ -297,11 +297,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_phrase_flow.xml",
@@ -321,11 +321,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_recovery_phrase.xml",
@@ -337,11 +337,15 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_screen_toolbar.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
         "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\claims_ipd_list_view.xml",
+        "source": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\src\\main\\res\\layout\\claims_ipd_list_view.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
@@ -349,11 +353,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_action_mode_bar.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sharing_dialog.xml",
@@ -373,7 +377,7 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\guarantor_name.xml",
@@ -381,7 +385,7 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_action_bar_title_item.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_idblockchain.xml",
@@ -389,7 +393,7 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_service_provider_choice.xml",
@@ -397,11 +401,11 @@
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_alert_dialog_material.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\9b764674bde578dc8e6176c2d78fe74bed9b066e\\output\\res\\layout\\abc_action_bar_up_container.xml"
+        "source": "C:\\Users\\ahamroun\\.android\\build-cache\\5a0954630d7fd05498577000d9a6cf2f31163fee\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "C:\\Users\\ahamroun\\Documents\\GitHub\\idboussac.github.io\\idbBreadwallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\transaction_item_expanded_sent.xml",

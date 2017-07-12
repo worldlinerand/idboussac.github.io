@@ -13,6 +13,57 @@ import ObjetRemove.User;
 public class testBDD {
 
 	
+
+	
+	static void testd() throws SQLException
+	{
+	      try {
+	    	  Class.forName("org.postgresql.Driver");
+		      System.out.println("Driver O.K.");
+	
+		      String url = "jdbc:postgresql://localhost:5432/ID-Blockchain";
+		      String user = "postgres";
+		      String passwd = "0123456789";
+	
+		      Connection conn = DriverManager.getConnection(url, user, passwd);
+		      System.out.println("Connexion effective !");         
+	      
+		      DAOUser du = new DAOUser(conn);
+		      //public User(int userID, String email, String password, String number,int walletCounter)
+		      
+		      System.out.println(du.find("a", "fefe").getID());
+		      
+		      
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	}
+	
+	
+	static void testc() throws SQLException
+	{
+	      try {
+	    	  Class.forName("org.postgresql.Driver");
+		      System.out.println("Driver O.K.");
+	
+		      String url = "jdbc:postgresql://localhost:5432/ID-Blockchain";
+		      String user = "postgres";
+		      String passwd = "0123456789";
+	
+		      Connection conn = DriverManager.getConnection(url, user, passwd);
+		      System.out.println("Connexion effective !");         
+	      
+		      DAOUser du = new DAOUser(conn);
+		      //public User(int userID, String email, String password, String number,int walletCounter)
+		      
+		      du.delete( new User(5, "email@abc", "aaaaa", "01234566", 10 ) );
+		      
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	}
 	
 	static void testa() throws SQLException
 	{
@@ -33,7 +84,11 @@ public class testBDD {
 	      DAOUser du = new DAOUser(conn);
 	      
 	      
-	      User u=du.find(2);
+	      User u=du.find(1);
+	      System.out.println(u.getEmail() + "  " + u.getID());
+	      u.setEmail("new adresse");
+	      du.update(u);
+	      u = du.find(2);
 	      
 	      System.out.println(u.getEmail() + "  " + u.getID());
 	      
@@ -88,7 +143,9 @@ public class testBDD {
 	
 	public static void main(String[] args) throws SQLException {      
 
-		testa();
+		testb();
+		testd();
+		
 
 	}
 
