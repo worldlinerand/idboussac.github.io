@@ -1,0 +1,499 @@
+/*Personnalisation du menu, on a un cls pour chaque*/
+
+#myMenu .x-toolbar{
+background:#ffffff url();
+border:none;
+}
+
+#myMenu .x-btn-left{
+background:#ffffff url();
+border:none;
+}
+
+#myMenu .x-btn-over .x-btn-center{
+background:transparent;
+}
+
+#myMenu .x-btn-right{
+background:#ffffff url();
+border:none;
+}
+
+.menuNouveauDossier{
+	background:url(../imgs/mess_traite.png) no-repeat center;
+}
+
+.menuCancelDossier{
+	background-image:url(../imgs/mess_bin.png);
+}
+
+.menuRefresh{
+	background-image:url(../imgs/mess_rafraichir.png);
+}
+
+.menuSearch{
+	background-image:url(../imgs/mess_apercu.png);
+}
+
+#menu .x-panel-body{
+	border:0pt;
+}
+
+.menuServices .x-accordion-hd {
+background:url(../imgs/menu-service_EN.gif);
+border:none;
+}
+
+.menuBanque .x-accordion-hd{
+background:url(../imgs/menu-banque.gif);
+border:none;
+}
+
+.menu1{
+background:url(../imgs/menu-border-left.gif);
+background-repeat : repeat-y;
+border:none;
+}
+.menu1-header{
+background:url(../imgs/menu-service_EN.gif);
+height:10px;
+border:none;
+}
+
+.menu2{
+background:url(../imgs/menu-border-left.gif);
+background-repeat : repeat-y;
+border:none;
+}
+
+.arbreMenu{
+	font-size:12px;	
+}
+
+.arbreMenu-tbar{
+	background:#ffffff url();
+	border:none;
+}
+
+.menu2 .x-panel-tbar .x-toolbar{
+border:0pt;
+}
+
+.menu2-header{
+background:url(../imgs/menu-coffre2.png);
+height:48px;
+border:none;
+}
+
+.menu3{
+background:url(../imgs/menu-border-left.gif);
+background-repeat : repeat-y;
+border:none;
+}
+
+.menu3-header{
+background:url(../imgs/menu-assistance2.png);
+height:48px;
+border:none;
+}
+
+.menu4{
+background:url(../imgs/menu-border-left.gif);
+background-repeat : repeat-y;
+border:none;
+}
+
+.menu4-header{
+background:url(../imgs/menu-messagerie2.png);
+height:48px;
+border:none;
+}
+
+/*******************Menu Navigation***************/
+.navLink a{
+display:block;
+color:#666;
+text-decoration:none;
+margin-left: 33px;
+padding:7px 0px 7px 15px;
+border-top:1px solid #d9d9d9;
+}
+.navLinkActiv a{
+display:block;
+color:#fff;
+text-decoration:none;
+margin-left: 33px;
+padding:7px 0px 7px 15px;
+border-top:1px solid #d40000;
+background: url(../imgs/menu-sub-activ.png) repeat-x;
+}
+.navLink a:hover{
+color:#fff; 
+background: url(../imgs/menu-sub-over.png) repeat-x; 
+text-decoration:none; 
+border-top:1px solid #ff9b00;}
+
+/***************************************************************/
+
+/********************* Bloc dragable accueil *******************/
+
+.blocAccount{
+	margin-left: 15px;
+	width:455px;
+	background:url();
+	border:none;
+}
+
+.blocAccount-header{
+	background:url(../imgs/head-main-block.gif);
+	border:none;
+	height:20px;
+	padding-left : 10px;
+	padding-top : 5px;
+	font-size : 0.9em;
+	color:#ffffff;
+}
+
+.blocAgenda{
+	margin-left: 15px;
+	margin-top : 15px;
+	margin-right : 15px;
+	width:455px;
+	background:url();
+	border:none;
+}
+
+.blocAgenda-header{
+	background:url(../imgs/head-main-block.gif);
+	border:none;
+	height:20px;
+	padding-left : 10px;
+	padding-top : 5px;
+	font-size : 0.9em;
+	color:#ffffff;
+}
+
+.blocStock exchange{
+	margin-left: 15px;
+	margin-top : 15px;
+	margin-right : 15px;
+	width:455px;
+	background:url();
+	border:none;
+}
+
+.blocStock exchange-header{
+	background:url(../imgs/head-main-block.gif);
+	border:none;
+	height:20px;
+	padding-left : 10px;
+	padding-top : 5px;
+	font-size : 0.9em;
+	color:#ffffff;
+}
+
+/***************************************************************/
+
+/************************** Personnalisation Coffre **************/
+
+#gridcoffre .x-panel{
+border:none;
+}
+
+#gridcoffre .x-panel-header{
+	background:url(../imgs/bg-header-mail.gif) #ff0000;
+	color:#ffffff;
+	font-weight:bolder;
+	font-size:0.8em;
+	border:none;
+}
+
+#gridcoffre .x-toolbar{
+	background:url() #ff0000;
+	color:#ffffff;
+	font-size:0.7em;
+	border:none;
+}
+
+#gridcoffre .x-panel-body{
+	border:1px solid #ff0000;
+}
+
+#gridcoffre .x-tbar-page-number{
+	background:url() #ff0000;
+	color:#ffffff;
+	text-align:center;
+	vertical-align:bottom;
+	font-size:1em;
+	font-weight:bolder;
+	border:0px;
+}
+
+#gridcoffre .x-paging-info{
+	color:#ffffff;
+}
+
+#gridcoffre .x-btn-over .x-btn-center{
+background:transparent;
+}
+
+#gridcoffre .x-btn-left{
+background:transparent;
+}
+
+#gridcoffre .x-btn-right{
+background:transparent;
+}
+
+#gridcoffre .ytb-sep{
+	background:transparent;
+}
+
+#gridcoffre .x-grid3-header-offset{
+	background:url() #ffcc00;
+	color:#ffffff;
+}
+
+#gridcoffre .x-grid3-hd{
+	border:0px;
+	font-weight:bold;
+}
+
+#gridcoffre .x-grid3-hd-inner{
+	background:transparent;
+}
+
+#gridcoffre .x-grid3-hd-btn{
+	background-image : url(../imgs/grid-hd-bt.gif);
+	background-color: #ffcc00;
+	border:none;
+}
+
+/************************** Personnalisation Mail ****************/
+
+#grilleMail .x-panel{
+border:none;
+}
+
+#grilleMail .x-panel-header{
+	background:url(../imgs/bg-header-mail.gif) #ff0000;
+	color:#ffffff;
+	font-weight:bolder;
+	font-size:0.8em;
+	border:none;
+}
+
+#grilleMail .x-toolbar{
+	background:url() #ff0000;
+	color:#ffffff;
+	font-size:0.7em;
+	border:none;
+}
+
+#grilleMail .x-panel-body{
+	border:1px solid #ff0000;
+}
+
+#grilleMail .x-tbar-page-number{
+	background:url() #ff0000;
+	color:#ffffff;
+	text-align:center;
+	vertical-align:bottom;
+	font-size:1em;
+	font-weight:bolder;
+	border:0px;
+}
+
+#grilleMail .x-paging-info{
+	color:#ffffff;
+}
+
+#grilleMail .x-btn-over .x-btn-center{
+background:transparent;
+}
+
+#grilleMail .x-btn-left{
+background:transparent;
+}
+
+#grilleMail .x-btn-right{
+background:transparent;
+}
+
+#grilleMail .ytb-sep{
+	background:transparent;
+}
+
+#grilleMail .x-grid3-header-offset{
+	background:url() #ffcc00;
+	color:#ffffff;
+}
+
+#grilleMail .x-grid3-hd{
+	border:0px;
+	font-weight:bold;
+}
+
+#grilleMail .x-grid3-hd-inner{
+	background:transparent;
+}
+
+#grilleMail .x-grid3-hd-btn{
+	background-image : url(../imgs/grid-hd-bt.gif);
+	background-color: #ffcc00;
+	border:none;
+}
+
+
+/***********************************Nouveau message   */
+
+.newMessFieldSet{
+	border:none;
+	background : #DFE8F6;
+}
+
+.newMessFormField .x-panel-body{
+	border:none;
+	background : #DFE8F6;
+}
+
+.x-panel-body{
+	border:none;
+	background:#DFE8F6;
+}
+
+/*.x-window-header{
+	background:url() #ff0000;
+}
+
+.x-window-body{
+	background:url() #ffffff;
+	border:0px;
+}
+
+.x-window-header-text{
+	color:#ffffff;
+}
+
+.x-window-bwrap{
+	background:url() #ff0000;
+}
+
+.x-window-tl{
+	background:url() #ff0000;
+}
+
+.x-resizable-over .x-resizable-handle-west, .x-resizable-pinned .x-resizable-handle-west {
+	background:url() #ff0000;
+	opacity:1;
+}
+
+.x-resizable-over .x-resizable-handle-east, .x-resizable-pinned .x-resizable-handle-east {
+	background:url() #ff0000;
+	opacity:1;
+}
+
+.x-resizable-over .x-resizable-handle-south, .x-resizable-pinned .x-resizable-handle-south {
+	background:url() #ff0000;
+	opacity:1;
+}
+
+.x-window-tbar .x-toolbar{
+	background:url() #ffffff;
+	border: 0px;
+}
+
+.x-window-mc{
+	border: 0px;
+}
+
+.x-html-editor-wrap{
+	background:url() #ffffff;
+	border: 0px;
+}
+
+x-html-editor-tb{
+	background:url() #ffffff;
+}
+
+.x-fieldset{
+	background:url() #ffffff;
+}*/
+
+
+/************************** Personnalisation Coffre **************/
+
+#gridwlbank .x-panel{
+border:none;
+}
+
+#gridwlbank .x-panel-header{
+	background:url(../imgs/bg-header-mail.gif) #ff0000;
+	color:#ffffff;
+	font-weight:bolder;
+	font-size:0.8em;
+	border:none;
+}
+
+#gridwlbank .x-toolbar{
+	background:url() #ff0000;
+	color:#ffffff;
+	font-size:0.7em;
+	border:none;
+}
+
+#gridwlbank .x-panel-body{
+	border:1px solid #ff0000;
+}
+
+#gridwlbank .x-tbar-page-number{
+	background:url() #ff0000;
+	color:#ffffff;
+	text-align:center;
+	vertical-align:bottom;
+	font-size:1em;
+	font-weight:bolder;
+	border:0px;
+}
+
+#gridwlbank .x-paging-info{
+	color:#ffffff;
+}
+
+#gridwlbank .x-btn-over .x-btn-center{
+background:transparent;
+}
+
+#gridwlbank .x-btn-left{
+background:transparent;
+}
+
+#gridwlbank .x-btn-right{
+background:transparent;
+}
+
+#gridwlbank .ytb-sep{
+	background:transparent;
+}
+
+#gridwlbank .x-grid3-header-offset{
+	background:url() #ffcc00;
+	color:#ffffff;
+}
+
+#gridwlbank .x-grid3-hd{
+	border:0px;
+	font-weight:bold;
+}
+
+#gridwlbank .x-grid3-hd-inner{
+	background:transparent;
+}
+
+#gridwlbank .x-grid3-hd-btn{
+	background-image : url(../imgs/grid-hd-bt.gif);
+	background-color: #ffcc00;
+	border:none;
+}
+
+ 

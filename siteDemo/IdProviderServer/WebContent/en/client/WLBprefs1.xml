@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<preferences>
+	<red5>
+		<url>rtmp://rd-srv-red5.priv.atos.fr/webPhone</url>
+		<url>rtmpt://red5-1.rd.atosworldline.com/webPhone</url>
+		<url>rtmp://160.92.7.25/webPhone</url>
+		<url>rtmpt://160.92.7.25/webPhone</url>
+	</red5>
+	<GWName>GWTESTLocal</GWName>
+
+	<domain>labo.priv.atos.fr</domain>
+	<user>client</user>
+	<passwd>client</passwd>
+	<callnumber>operateur</callnumber> <!-- operateur -->
+	<callnumberRepondeur>0328555090</callnumberRepondeur> <!-- repondeur -->
+</preferences>
+	

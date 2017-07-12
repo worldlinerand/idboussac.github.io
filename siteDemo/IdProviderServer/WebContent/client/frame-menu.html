@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title></title>
+        <script type="text/javascript" src="../js/ext-2.2/adapter/ext/ext-base.js">
+        </script>
+        <script src="../js/ext-2.2/ext-all.js">
+        </script>
+        <script type="text/javascript" src="../js/ext-2.2/source/locale/ext-lang-en.js">
+        </script>
+        <script type="text/javascript" src="../js/sepa/sepa-tree-menu.js">
+        </script>
+        <script type="text/javascript" src="../js/jQuery/jquery-1.2.2.min.js">
+        </script>
+        <script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/jquery.dimensions.js">
+        </script>
+        <script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/ui.accordion.js">
+        </script>
+        <script type="text/javascript" src="../js/worldlinebank.js">
+        </script>
+        <script>
+
+            jQuery.noConflict();
+
+            jQuery(document).ready(function($){
+                $("#myMenu").accordion({
+                    header: 'div.accordHead',
+                    active: true
+                    //autoheight: true
+                });
+            });
+
+            var maRacineCoffre;
+
+            function getBoutonRefresh(){
+                var temporaire = Ext.get('boutonRefresh');
+                return temporaire;
+            }
+
+            function refreshMail(){
+                var maracineTemporaire = Ext.getCmp('monArbreMail').getRootNode();
+                maracineTemporaire.setText('<b>Receipt (2)</b>');
+            }
+
+
+
+            Ext.onReady(function(){
+                /*RÃ©solution bug pointage d'une image n'apparaissant pas hors-ligne*/
+                Ext.BLANK_IMAGE_URL = "../js/ext-2.2/resources/images/default/tree/s.gif";
+
+
+
+                /*DÃ©finition du treeview coffre*/
+                var Tree = Ext.tree;
+
+                function addDirectory(){
+                    var childplus = new Tree.TreeNode({
+                        id: 'Nouveau',
+                        text: 'New Folder'
+                    });
+                    maRacineCoffre.appendChild(childplus);
+                }
+
+                function deleteDirectory(){
+                    var selecteur = monArbreCoffre.getSelectionModel();
+                    var noeudAsupprimer = selecteur.getSelectedNode();
+
+                    maRacineCoffre.removeChild(noeudAsupprimer);
+                }
+                function addDirectoryMail(){
+                    var childplus = new Tree.TreeNode({
+                        id: 'Nouveau',
+                        text: 'New Folder',
+                        icon: '../imgs/mess_envoyer.png'
+                    });
+                    maRacineMail.appendChild(childplus);
+                }
+
+                function deleteDirectoryMail(){
+                    var selecteur = monArbreMail.getSelectionModel();
+                    var noeudAsupprimer = selecteur.getSelectedNode();
+
+                    maRacineMail.removeChild(noeudAsupprimer);
+                }
+
+                var boutonNouveau = new Ext.Button({
+                    ctCls: 'menuNouveauDossier',
+                    handler: addDirectory,
+                    minWidth: 30
+                });
+
+                var boutonCancel = new Ext.Button({
+                    ctCls: 'menuCancelDossier',
+                    handler: deleteDirectory,
+                    minWidth: 30
+                });
+
+                var boutonNouveauMail = new Ext.Button({
+                    ctCls: 'menuNouveauDossier',
+                    handler: addDirectoryMail,
+                    minWidth: 30
+                });
+
+                var boutonCancelMail = new Ext.Button({
+                    ctCls: 'menuCancelDossier',
+                    handler: deleteDirectoryMail,
+                    minWidth: 30
+                });
+
+                var boutonRefresh = new Ext.Button({
+                    id: 'boutonRefresh',
+                    ctCls: 'menuRefresh',
+                    //handler:refreshMail,
+                    minWidth: 30
+                });
+
+                var boutonSearch = new Ext.Button({
+                    id: 'boutonSearch',
+                    ctCls: 'menuSearch',
+                    minWidth: 30
+                });
+
+                function changerCoffre(noeud, e){
+                    if (noeud.id == "Personnel") {
+                        if (window.top.coffreAafficher != "Personnel") {
+                            window.top.coffreAafficher = "Personnel";
+                            parent.main.window.location = 'frame-coffre.html';
+                        }
+                    }
+                    else
+                        if (noeud.id == "Professionel") {
+                            window.top.coffreAafficher = "Professionel";
+                            parent.main.window.location = 'frame-coffre.html';
+                        }
+                        else
+                            if (noeud.id == "Contrats") {
+                                window.top.coffreAafficher = "Contrats";
+                                parent.main.window.location = 'frame-coffre.html';
+                            }
+                            else
+                                if (noeud.id == "Nouveau") {
+                                    window.top.coffreAafficher = "Nouveau";
+                                    parent.main.window.location = 'frame-coffre.html';
+                                }
+                }
+
+                var maRacineCoffre = new Tree.TreeNode({
+                    id: 'isroot',
+                    text: 'My Safe',
+                    expanded: true
+                })
+
+                var child1 = new Tree.TreeNode({
+                    id: 'Personnel',
+                    text: 'Personal'
+                })
+                var child2 = new Tree.TreeNode({
+                    id: 'Professionel',
+                    text: 'Professional'
+                })
+                var child3 = new Tree.TreeNode({
+                    id: 'Contrats',
+                    text: 'My contracts'
+                })
+
+                var monArbreCoffre = new Tree.TreePanel({
+                    header: false, // permet de ne pas afficher le titre
+                    renderTo: 'tree-coffre',
+                    title: 'MyTree test',
+                    width: '150px',
+                    baseCls: 'arbreMenu',
+                    rootVisible: true,
+                    expanded: true,
+                    tbar: [boutonNouveau, boutonCancel],
+                    root: maRacineCoffre,
+                    enableDD: true
+                })
+                monArbreCoffre.render();
+                maRacineCoffre.appendChild(child1);
+                maRacineCoffre.appendChild(child2);
+                maRacineCoffre.appendChild(child3);
+                monArbreCoffre.addListener("click", changerCoffre);
+
+                /*Definition du treeview Mail*/
+
+                function changerMail(noeud, e){
+                    if (noeud.id == "DemandePret") {
+                        if (window.top.mailAafficher != "Pret") {
+                            window.top.mailAafficher = "Pret";
+                            parent.main.window.location = 'frame-messagerie.html';
+                        }
+                    }
+                    else
+                        if (noeud.id == "recu") {
+                            window.top.mailAafficher = "Recu";
+                            parent.main.window.location = 'frame-messagerie.html';
+                        }
+                        else
+                            if (noeud.id == "Assurances") {
+                                window.top.mailAafficher = "Assurance";
+                                parent.main.window.location = 'frame-messagerie.html';
+                            }
+                            else
+                                if (noeud.id == "Echange") {
+                                    window.top.mailAafficher = "Echange";
+                                    parent.main.window.location = 'frame-messagerie.html';
+                                }
+                                else
+                                    if (noeud.id == "envoye") {
+                                        window.top.mailAafficher = "Envoye";
+                                        parent.main.window.location = 'frame-messagerie.html';
+                                    }
+                                    else
+                                        if (noeud.id == "Nouveau") {
+                                            window.top.mailAafficher = "Nouveau";
+                                            parent.main.window.location = 'frame-messagerie.html';
+                                        }
+                }
+
+                var maRacineMail = new Tree.TreeNode({
+                    id: 'mailroot',
+                    text: 'Messages',
+                    expanded: true
+                });
+
+                var childDemandePret = new Tree.TreeNode({
+                    id: 'DemandePret',
+                    text: 'Loan demand',
+                    icon: '../imgs/mess_envoyer.png'
+                });
+                var childAssurance = new Tree.TreeNode({
+                    id: 'Assurances',
+                    text: 'Assurances',
+                    icon: '../imgs/mess_envoyer.png'
+                });
+                var childConseiller = new Tree.TreeNode({
+                    id: 'Echange',
+                    text: 'Exchanges adviser ',
+                    icon: '../imgs/mess_envoyer.png'
+                });
+                var childRecu = new Tree.TreeNode({
+                    id: 'recu',
+                    text: 'Receipt',
+                    icon: '../imgs/mess_recus.png'
+                });
+
+                var childEnvoye = new Tree.TreeNode({
+                    id: 'envoye',
+                    text: 'Sent',
+                    icon: '../imgs/mess_dos-open.png'
+                });
+
+                var childDraft = new Tree.TreeNode({
+                    id: 'brouillon',
+                    text: 'Draft',
+                    icon: '../imgs/mess_brouillon.png'
+                });
+                var childTrash = new Tree.TreeNode({
+                    id: 'corbeille',
+                    text: 'Trash',
+                    icon: '../imgs/mess_bin-full.png'
+                });
+
+                childRecu.appendChild(childDemandePret);
+                childRecu.appendChild(childAssurance);
+                childRecu.appendChild(childConseiller);
+
+                var monArbreMail = new Tree.TreePanel({
+                    id: 'monArbreMail',
+                    header: false, // permet de ne pas afficher le titre
+                    renderTo: 'tree-mail',
+                    title: 'MyTree mail',
+                    width: '150px',
+                    rootVisible: false,
+                    baseCls: 'arbreMenu',
+                    tbar: [boutonRefresh, boutonNouveauMail, boutonCancelMail, boutonSearch],
+                    expanded: true,
+                    root: maRacineMail,
+                    enableDD: true
+                });
+                monArbreMail.render();
+                maRacineMail.appendChild(childRecu);
+                maRacineMail.appendChild(childEnvoye);
+                maRacineMail.appendChild(childDraft);
+                maRacineMail.appendChild(childTrash);
+                monArbreMail.expandAll();
+                monArbreMail.addListener("click", changerMail);
+
+            });
+        </script>
+        <style type="text/css">@import url(../js/ext-2.2/resources/css/ext-all.css);
+        </style>
+        <style type="text/css">@import url(../styles/main.css);
+        </style>
+        <style type="text/css">@import url(../styles/xtheme-wlbank.css);
+        </style>
+    </head>
+    <body>
+      <div style="background:url(../imgs/menu-border-left.gif) repeat-y right;">
+        <div id="menu" >
+            <ul id="myMenu" class="ui-accordion-container">
+                <li class="normalMenu">
+                    <div class="accordHead" >
+                        <span class="navBtService"><a href="#" id="NosServices" title="Our services"></a></span>
+                    </div>
+                    <ul id="subNavServ">
+                        <li class="navLink">
+                            <a target="main" id="comptes" onclick="setFocus('comptes');" href="frame-accueil.html" href="#">On-line accounts</a>
+                        </li>
+                        <li class="navLink">
+                            <a target="main" id="alertesWLB" onclick="setFocus('alertesWLB');" href="souscription-alertes.html">WL Bank's alert</a>
+                        </li>
+                        <li class="navLink">
+                            <a target="main" id="paiementFactures" onclick="setFocus('paiementFactures');" href="frame-facture.html">Bill Paiement</a>
+                        </li>
+                        <!--<li class="navLink"><a href="#">Stock exchange</a></li>
+                        <li class="navLink"><a href="#">E-payment</a></li>-->
+                        <li class="navLink"><a target="main" id="eBankCash" onclick="setFocus('eBankCash');" href="frame-eBankCash.html">eBankCash</a></li>
+                        <li class="navLink">
+                            <a target="main" id="sepa" onclick="setFocus('sepa');Ext.ComponentMgr.get('sepaTreeMenu').show('true');" href="sepa/sepa-welcome.html">SEPA Direct Debit</a>
+                        </li>
+                        <li class="navLink"><a target="main" id="idBlockchain" onclick="setFocus('idBlockchain');" href="frame-idblockchain.html">ID-Blockchain</a></li>
+                        <li class="navLink"><a target="main" id="profile" onclick="setFocus('profile');" href="frame-profile.html">Your Profil</a></li>
+
+
+						<div id="sepa-tree-menu"></div>
+                    </ul>
+
+                </li>
+                <li class="mdbBorder">
+                </li>
+                <li class="arbreLi">
+                    <div class="accordHead" onclick="javascript:parent.main.window.location='frame-coffre.html';">
+                        <span class="navBtBanque"><a target="main" href="frame-coffre.html" title="Your bank"></a></span>
+                    </div>
+                    <div style="margin-left:25px;">
+                        <div id="tree-coffre">
+                        </div>
+                    </div>
+                </li>
+                <li class="mdbBorder">
+                </li>
+                <li class="normalMenu">
+                    <div class="accordHead">
+                        <span class="navBtAssistance"><a href="#" title="Assistance"></a></span>
+                    </div>
+                    <ul id="subNavAssis">
+                        <li class="navLink">
+                            <a href="#">Oppositions cards</a>
+                        </li>
+                        <li class="navLink">
+                            <a href="#">Assistance credits</a>
+                        </li>
+                        <li class="navLink">
+                            <a href="#">Assistance insurances</a>
+                        </li>
+                        <li class="navLink">
+                            <a href="#">Calculator</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mdbBorder">
+                </li>
+                <li class="arbreLi">
+                    <div class="accordHead" onclick="javascript:parent.main.window.location='frame-messagerie.html';">
+                        <span class="navBtMessagerie"><a target="main" href="frame-messagerie.html" title="Your e-mails"></a></span>
+                    </div>
+                    <div style="margin-left:25px;">
+                        <div id="tree-mail">
+                        </div>
+                    </div>
+                </li>
+                <li class="mdbBorder">
+                </li>
+                <li>
+                    <div class="accordHead" onclick="javascript:parent.main.window.location='frame-contact.html';">
+                        <span class="navBtContact"><a target="main" href="frame-contact.html" title="Contact"></a></span>
+                    </div>
+                </li>
+                <li class="mbBorder">
+                </li>
+            </ul>
+        </div>
+      </div>
+    </body>
+</html>

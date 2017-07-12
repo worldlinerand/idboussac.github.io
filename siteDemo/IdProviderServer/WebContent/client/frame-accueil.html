@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>WL Bank</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+ <script type="text/javascript">
+var djConfig = {
+	isDebug: true
+};
+</script>
+
+<script type="text/javascript" src="../js/ext-2.2/adapter/ext/ext-base.js"></script>
+<script src="../js/ext-2.2/ext-all.js"></script>
+<script type="text/javascript" src="../js/ext-2.2/source/locale/ext-lang-en.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery-1.2.2.min.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/jquery.dimensions.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/ui.mouse.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/ui.magnifier.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/ui.sortable.js"></script>
+<script type="text/javascript" src="../js/worldlinebank.js"></script>
+
+<script>
+//Added to get the balance
+jQuery.get("/eBankCashServer/application.app?getCompteDepotSolde",{},	        
+	       function(e) {
+			document.getElementById('soldeDepot').innerHTML = e;     
+     });
+
+jQuery.get("/eBankCashServer/application.app?isRegistered",{},	        
+	  function(e) {
+		if (e.substring(0,1) == 'y'){
+	  		var balance = e.substring(1, e.length);
+	  		document.getElementById('soldeEBankCash').innerHTML = balance;
+	   } else {
+		   	var trnode = document.getElementById('compteEBankCash');
+		   	var tablenode = document.getElementById('mainTable');
+		   	tablenode.removeChild(trnode);
+	   }
+	}); 
+
+	Ext.onReady(function(){
+		/* DatePicker , voir si plug-in*/
+		
+		var agendaCal = new Ext.DatePicker({
+			renderTo:'agendaPicker'		
+			});
+		});
+</script>
+
+
+<style type="text/css">@import url(../styles/main.css);</style>
+
+ <style type="text/css">@import url(../js/ext-2.2/resources/css/ext-all.css);</style>
+  <style type="text/css">@import url(../styles/main.css);</style>
+  <style type="text/css">@import url(../styles/xtheme-wlbank.css);</style>
+  <style type="text/css">@import url(../styles/dev.css);</style>
+</head>
+<body onLoad="setMain();">
+	<div id="mainBlockL">
+		<table>
+			<tr>
+				<td>				
+				  <ul id="mesPanels">
+    				<li>
+						<!-----------------------------------------------Vos comptes ----------------------->
+							<div class="mainBlock">
+								<h1 class="hMb">Your accounts</h1>
+								<!--<div id="Graph" class="Graph">
+								<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+		 						codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+		 						WIDTH="239" HEIGHT="150" id="camembert" ALIGN="LEFT">
+									 <PARAM NAME="movie" VALUE="camembert.swf?datafile=camembert_data.xml"> 
+									 <PARAM NAME="quality" VALUE="high"> 
+									 <PARAM NAME=bgcolor VALUE=#FFFFFF> 
+									 <EMBED src=" camembert.swf?datafile=camembert_data.xml " quality="high" bgcolor="#FFFFFF"  WIDTH="230" HEIGHT="150" NAME="camembert" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+								</OBJECT>
+							</div>-->
+							<div class="inMainBlock">
+								<table class="mainBlTbCoF" >
+							        <tbody id="mainTable"><tr>
+							            <td class="coName" style="width:40%;" ><strong><h3>Account</h3></strong></td>
+			                 			<td class="coNum" colspan="2" style="width:20%;"><strong><h3>Balance</h3></strong></td>
+			                 			<td class="coDetail" style="width:40%;"><strong><h3>Detail</h3></strong></td>
+			                  		</tr>
+				                	<tr>
+				                  		<td class="coName"><strong>Deposit account</strong></td>
+				                  		<td class="coNum" id="soldeDepot" style="text-align:right;border-right-width:0px;">150,38</td>
+				                  		<td class="coNum" style="text-align:right;width:10%;border-left-width:0px;">EUR</td>
+				                  		<td class="coDetail"><strong><a target="main" href="frame-detail.html">List of operations</a></strong></td>
+				                	</tr>
+				                	<tr>
+				                  		<td class="coName"><strong>PEL</strong></td>
+				                  		<td class="coNum" style="text-align:right;border-right-width:0px;">3400,00</td>
+				                  		<td class="coNum" style="text-align:right;border-left-width:0px;">EUR</td>
+				                  		<td class="coDetail"><strong><a href="#">List of operations</a></strong></td>
+				                	</tr>
+				                	<tr>
+				                  		<td class="coNameAd"><strong>LDD</strong></td>
+				                  		<td class="coNumAd" style="text-align:right;border-right-width:0px;">1024,00</td>
+				                  		<td class="coNumAd" style="text-align:right;border-left-width:0px;">EUR</td>
+				                  		<td class="coDetail"><strong><a href="#">List of operations</a></strong></td>
+				                	</tr>
+                          <tr id="compteEBankCash">
+				                  		<td class="coNameAd" id="titreEBankCash"><strong>eBankCash</strong></td>
+				                  		<td class="coNumAd" id="soldeEBankCash" style="text-align:right;border-right-width:0px;"></td>
+				                  		<td class="coNumAd" style="text-align:right;border-left-width:0px;">EUR</td>
+				                  		<td class="coDetail" id="lienEBankCash" ><strong><a target="main" href="frame-detail2.html">List of operations</a></strong></td>
+				                	</tr></tbody>
+								</table>
+					          	<table class="mainBlTbCo">
+				                	<tbody><tr>
+				                  		<td class="coName"><strong><h3>Loyalty point</h3></strong></td>
+				                  		<td class="coNum">2325 pts</td>
+				                	</tr></tbody>
+								</table>      
+							</div>
+							<p class="fMb"><a href="#">&gt; Access to my on-line accounts</a></p>		
+						</div>
+					</li>
+							<!-- ---------------------------------- Notes et Agenda -------------------- -->
+					<li>
+						<div class="mainBlock">
+							<h1 class="hMb">Organizer and personal notes</h1>
+							<div class="inMainBlock" style="position: relative; padding-top: 5px;padding-bottom: 5px;">
+								<table width="100%">
+									<tr>
+										<td align="center">
+											<div id="agendaPicker"></div>
+										</td>
+										<td align="center">
+											<textarea class="Notes">You can take notes here</textarea>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<p class="fMb"><a href="#">&gt; More information</a></p>	
+						</div>
+					</li>
+						<!-- -------------------------------- Stock exchange  -->
+					<li>
+						<div class="mainBlock">
+							<h1 class="hMb">Stock exchange</h1>			
+				  			<div class="inMainBlockCent">
+		
+					  			<table class="mainBlTbBo">
+				                	<tbody><tr>
+				                  		<td><h3>CAC 40 :</h3></td>
+				                  		<td class="boNum">5925,45 at  -0.47 %</td>
+				                	</tr></tbody>
+								</table>
+								<p class="valBo">Increasing values :  Stratek, Solve4, ...</p>
+							</div>
+							<p class="fMb"><a href="#">&gt; All the live stock exchange</a></p>			
+						</div>
+					</li>
+				</ul>
+			</td>
+			<td>
+			<iframe id="right" name="right" SRC="frame-right.html" height="720" width="250" align="right" frameborder="0"></iframe>
+			</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>

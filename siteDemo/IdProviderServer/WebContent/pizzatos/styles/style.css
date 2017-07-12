@@ -1,0 +1,154 @@
+/* --------------  CSS FOR NFC DEMO ------------------*/
+/*                 LE STUDIO, 2005                    */
+/* ---------------------------------------------------*/
+
+body {
+	width: 740px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 101%;
+	color: #000;
+	text-align: center;
+	margin: 0 auto;
+	background: #5DC73E;
+}
+	
+* {padding: 0; margin: 0;}
+img {border: 0;}
+	
+h3 {font-size: 1em; color: #E7371E;}
+h3.sml {font-size: 0.8em;}
+
+a, a:link {color: #000; text-decoration: underline;}
+a: visited {color: #666;}
+a:hover {color: #E7371E; text-decoration: none;}
+
+acronym, abbr {cursor: help;}
+
+/* MAIN STRUCTURAL BLOCS  AND STYLES */
+#mainbd {
+	float: left; 
+	width: 740px;
+	text-align: center;
+	background: #FFF url(../imgs/bg_body.gif) right repeat-y;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+#pgbody, #pgbodys {float: left; width: 700px; padding: 15px 0; margin: 0 0 0 15px; border: 3px solid #E7371E;}
+* html #pgbody, * html #pgbodys {margin-left: 7px;}
+
+#pgbodys h2 {font-size: 1.2em; color: #E7371E; text-align: left; margin: 0 0 0 15px;}
+#pgbodys h2.h2panier {position: absolute; top: 120px; left: 15%; z-index: 1;}
+#pgbodys p {font-size: 0.8em; text-align: left; padding: 5px 15px;}
+#pgbodys p.firstp {padding-top: 40px;}
+#pgbodys table {width: 680px; margin: 10px auto; border: 0; border-collapse: collapse;}
+#pgbodys caption {display: none;}
+#pgbodys th {font-size: 0.8em; background: #FFC010; padding: 3px 8px;}
+#pgbodys td {font-size: 0.8em; padding: 3px 8px; border-bottom: 1px solid #EEF7EB;}
+#pgbodys td.menuline {font-weight: bold; text-align: left; background: #EEF7EB;}
+#pgbodys td.totaline {font-size: 1em; font-weight: bold; background: #FDEEC3;}
+#qt1, #qt2 {width: 20px;}
+
+p#btbar {text-align: right; padding: 0; margin: -5px 10px 15px 0;}
+#btok {
+	  font-size: 1em;
+	  font-weight: bold;
+	  color: #FFF;
+	  text-decoration: none;
+	  background: #E7371E url(../imgs/bg_bt_ok.gif) bottom left no-repeat;
+	  padding: 5px 10px;
+}
+
+/* table cells alignment */
+.tdlft {text-align: left;}
+
+#footer {
+	float: left;
+	width: 735px;
+	text-align: left;
+	background: #5DC73E url(../imgs/bg_footer.gif) repeat-x top;
+	padding-top: 9px;
+}
+#footer ul {font-size: 0.7em; color: #FFF; background: #FFC010; padding: 2px 0 3px 0;}
+#footer li {display: inline;}
+#footer a, #footer a:link, #footer a:visited {color: #000;}
+#cprt {padding: 0 2% 0 15px;}
+
+/* HEADER */
+#bord {float: left; width: 732px; height: 18px; background: #FFC010; margin: 0 auto;}
+#header {float: left; width: 97%;}
+#logo {float: left; width: 171px; padding-left: 17px;}
+#pub {float: right; width: 496px;}
+	
+/* TABS */
+#tabslist {float: right; width: 90%; text-align: right; padding-right: 20px;}
+#tabslist li {
+	display: inline;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #FFF;
+	line-height: 20px;
+	background: #5DC73E url(../imgs/tab_off.gif) top left no-repeat;
+	padding: 3px 7px 3px 10px;
+	margin-left: 2px;
+}
+#tabslist a, #tabslist a:link, #tabslist a:visited {color: #FFF; text-decoration: none;}
+#tabslist a:hover {color: #EEF7EB; text-decoration: underline;}
+#tabslist #tabon {background: #E7371E url(../imgs/tab_on.gif) top left no-repeat;}
+	
+/* RIGHT COLUMN FOR LES MENUS */
+
+#lesmenus {float: left; width: 499px; text-align: left; margin-right: 10px;}
+#mainmenu1, #mainmenu2 {float: left; width: 230px; border: 1px solid #5DC73E; margin-left: 15px;}
+#smlmenu1, #smlmenu2 {float: left; width: 230px; border: 1px solid #5DC73E; margin: 15px 0 0 15px;}
+* html #mainmenu1, * html #smlmenu1 {margin-left: 7px;}
+
+#mainmenu1 {background: #FFF url(../imgs/bg_p2.gif) bottom right no-repeat;}
+#mainmenu2 {background: #FFF url(../imgs/bg_p3.gif) bottom right no-repeat;}
+#lesmenus .menutit {display: block;}
+#lesmenus h3 {margin: 8px 0 8px 8px;}
+#lesmenus ul {font-size: 0.8em; list-style: url(../imgs/bullet.gif); padding-left: 20px; margin-left: 5px;}
+
+p.btbuy {margin: 15px 0;}
+p.btbuy img {padding-right: 2px; vertical-align: -4px;}
+p.btbuy a, p.btbuy a:link, p.btbuy a:visited {
+	   font-size: 0.7em;
+	   font-weight: bold;
+	   color: #FFF;
+	   text-decoration: none;
+	   line-height: 10px; 
+	   background: #FFC010 url(../imgs/bg_bt_buy.gif) right top no-repeat;
+	   padding: 5px 8px 6px 5px;
+}
+* html p.btbuy a, * html p.btbuy a:link, * html p.btbuy a:visited {padding: 4px 8px 4px 5px;}
+
+/* BASKET */	
+#pancol  {float: left; width: 175px; text-align: center;}
+#panier {width: 175px;}
+#pandiv {width: 150px; background: #EEF7EB; padding: 10px 0; margin: -7px auto 0 auto;}
+* html #pandiv {margin-top: 0;}
+#pancont {
+	width: 120px;
+	font-size: 0.7em;
+	padding: 8px 0 0 0;
+	margin: 0 auto;
+	border: 1px solid #E7371E;
+}
+#pancont p.item {font-size: 0.9em;}
+#btconf {width: 116px; background: #E7371E; padding: 4px 0; margin: 5px auto 1px auto; line-height: 10px;}
+#btconf a, #btconf a:link, #btconf a:visited {font-weight: bold; color: #FFF; text-decoration: none;}
+
+#total {font-weight: bold; background: #FFC010; padding: 2px 0; margin: 10px 2px 0 2px;}
+
+/* QUALITY TEXT */
+#quality {width: 147px; margin: 15px 0 0 18px;}
+#quality h3 {font-size: 0.8em; color: #5DC73E;}
+#quality p {font-size: 0.7em; text-align: left; margin-top: 8px;}
+
+/* PAIE */
+
+#nfc {width: 680px; margin: 0 auto 0 auto; border: 1px solid #5DC73E;}
+#nfc p {text-align: center;}
+#nfc object {vertical-align: -50px;}
+
+#space {margin-bottom: 150px;}

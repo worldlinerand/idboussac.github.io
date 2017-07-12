@@ -1,0 +1,16 @@
+
+<Avatar_config AgentName="Oz" ClientName="VirtuOz.com" WBHurl="http://127.0.0.1:8081/ClubA/WebBotHost/BotService.asmx/TalkXml" FadeSpeed="100" Bckgrnd_color = "0x00FFFF" version="1.00">
+	<Avatar_behavior mediaPath="Data" default_behavior ="Default" default_behavior_File_id ="0">
+		<behavior Title="Hello" File="avt_welcome.swf" Preload="true"/>
+		<behavior Title="Show" File="avt_show.swf" Preload="false"/>
+		<behavior Title="Default" File="avt_breath.swf" Preload="true" Is_Loop ="true"/>
+		<behavior Title="Wait" File="avt_wait.swf" Preload="true" Is_Loop ="true"/>
+	    <behavior Title="WakeUp" File="avt_call.swf" Preload="false"/>
+	</Avatar_behavior>
+	<Avatar_Nodialog>
+		<item TimeOut="15000" Text="Hello, I'm Oz. How can I help you ?" Behavior="Hello" File_id ="0" Next_Behavior_Loop="Default" />
+		<item TimeOut="" Text="Please, ask me if you have any question." Behavior="WakeUp" File_id ="0" Next_Behavior_Loop="Default" Url="" />
+	</Avatar_Nodialog>
+	<Avatar_Context>
+	</Avatar_Context>
+</Avatar_config >

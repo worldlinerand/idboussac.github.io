@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>WL Bank</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <link rel="stylesheet" type="text/css" href="../../js/ext-2.2/resources/css/ext-all.css" />
+        <link rel="stylesheet" type="text/css" href="../../js/ext-2.2/resources/css/xtheme-gray.css" />
+        <link rel="stylesheet" type="text/css" href="../../styles/xtheme-wlbank.css" />
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="../../styles/dev.css" />
+        
+        <script type="text/javascript" src="../../js/worldlinebank.js">
+        </script>
+        <script type="text/javascript" src="../../js/ext-2.2/adapter/ext/ext-base.js">
+        </script>
+        <script type="text/javascript" src="../../js/ext-2.2/ext-all.js">
+        </script>
+        <script type="text/javascript" src="../../js/jQuery/jquery-1.2.2.min.js">
+        </script>
+        <script type="text/javascript" src="../../js/jquery.flot/jquery.flot.pack.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sepa-common.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sepa-extjs.js">
+        </script>
+		<script type="text/javascript" src="../../js/sepa/sepa-welcome.js">
+        </script>
+        <script type="text/javascript" src="../../js/sepa/sepa-menu.js">
+        </script>
+    </head>
+    <body onLoad="">
+        <div id="mainBlockL" class="sepa">
+        	<div id="loader"><img src="../../imgs/sepa/ajax-loader.gif" /></div>
+            <div class="mainBlock" id="sepaMainContent">
+                <div id="sepa-menu">
+                </div>
+                <h1><img src="../../imgs/sepa/alertes.png" width="65" align="absmiddle" style="margin:0 20px 0 5px"/><span id="html_welcome_last_alerts"></span></h1>
+                <div class="inMainBlockV">
+                    <div id="grid5LastAlerts">
+                    </div>
+                </div>
+               <h1><img src="../../imgs/sepa/sdd.png" width="75" align="absmiddle" style="margin:0 10px 0 5px"/><span id="html_welcome_next_sdd"></span></h1>
+                <div class="inMainBlockV">
+                    <div id="grid5NextSDD">
+                    </div>
+                    <div id="nextSddChart" style="width:630px;height:200px;">
+                    </div>
+                </div>
+                <h1><img src="../../imgs/sepa/sddback.png" width="75" align="absmiddle" style="margin:0 10px 0 5px"/><span id="html_welcome_last_sdd"></span></h1>
+                <div class="inMainBlockV">
+                    <div id="grid5LastSDD">
+                    </div>
+                    <div id="lastSddChart" style="width:630px;height:200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mainBlockR" class="sepaR">
+        </div>
+        <div id="footer">
+            <p>
+                <span id="html.footer"></span>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Pizz'atos : Paiement</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<script type="text/javascript"> </script>
+      	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <style type="text/css">#hd1 {width: 2%;}</style>
+</head>
+
+<body>
+<div id="bord"></div>
+<div id="mainbd">
+
+  <div id="header">
+    <h1 id="logo"><img src="imgs/logo.gif" alt="Pizz'atos" /></h1>
+	<p id="pub"><a href="#"><img src="imgs/pub.gif" alt="Menu Biolight &agrave; 20euros" /></a></p>
+  </div>
+  
+  <ul id="tabslist">
+    <li><a href="ajout.html">Les menus</a></li>
+    <li><a href="#">Notre carte</a></li>
+    <li><a href="#">Mon "Pizz'atos"</a></li>
+  </ul>
+  
+  <div id="pgbodys">
+    
+	  <h2>Paiement</h2> 
+	  <form name="payment" method="post" action="confirmation.html">
+	  <script type="text/javascript">
+    function paymentSubmit() {
+	  document.forms["payment"].submit();
+    }
+    setTimeout("paymentSubmit()",2000);
+    </script>
+	  <table summary="Tableau des articles ajout&eacute;s au panier">
+	  <caption></caption>
+	    <tr>
+		  <th id="hd2" class="tdlft">Article</th>
+		  <th id="hd3"><acronym title="Quantit&eacute;">Qté.</acronym></th>
+		  <th id="hd4"><acronym title="Prix unitaire">PU</acronym></th>
+		  <th id="hd5">Total</th>
+		</tr>
+	    <tr>
+		  <td colspan="4" class="menuline">Menu "Cheesy"</td>
+		</tr>
+		<tr>
+		  <td class="tdlft">Pizza 4 fromages grande</td>
+		  <td>1</td>
+		  <td>10,40&euro;</td>
+		  <td>10,40&euro;</td>
+		</tr>
+		<tr>
+		  <td class="tdlft">Brownies</td>
+		  <td>2</td>
+		  <td>0,90&euro;</td>
+		  <td>1,80&euro;</td>
+		</tr>
+	    <tr>
+		  <td colspan="2" class="totaline"></td>
+		  <td class="totaline">TOTAL</td>
+		  <td class="totaline">12,20&euro;</td>
+		</tr>
+	  </table>
+	  </form>
+
+	  <div id="nfc">
+	   <p><!--<img src="imgs/logo_nfc.gif" alt="" />-->Transaction en cours...</p>
+	  </div>
+ 	  <p><img src="imgs/jauge.gif" alt="" /></p>
+
+  </div> <!-- pgbody -->  
+</div> <!-- mainbd -->
+
+  <div id="footer">
+	<ul>
+	  <li id="cprt"> [ © Pizz'atos, 2005 ] </li>
+	  <li><a href="#">Aide</a> - </li>
+	  <li><a href="#">Plan du site</a> - </li>
+	  <li><a href="#">Contact</a> - </li>
+	  <li><a href="#">Conditions de vente</a></li>
+	</ul>
+  </div>
+
+</body>
+</html>

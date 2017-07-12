@@ -1,0 +1,343 @@
+body, td {FONT-FAMILY: Arial,Helvetica; FONT-SIZE: 12px; COLOR:#26333E; }
+A {COLOR: #26333E; text-decoration: underline;} 
+a:hover {TEXT-DECORATION: none; color: #CC0000}
+
+.ong {font-size: 11px;  font-weight: bold; color:#FFFFFF; text-decoration:none;}
+.sml {font-size: 11px;}
+.red {color: #CC0000}
+
+.titregoogle {font-size: 16px;}
+.linkgoogle {font-size: 11px; color: #CC0000; text-decoration:none;}
+.archivegoogle {color: #8D8E8F;}
+
+
+.inputtxt { FONT-FAMILY: Arial,Helvetica; FONT-SIZE: 11px }
+INPUT { FONT-FAMILY: Arial,Helvetica; FONT-SIZE: 11px }
+SELECT { FONT-FAMILY: Arial,Helvetica; FONT-SIZE: 11px }
+
+
+.blue { color: #0E4A9D}
+.61718A {font-size: 12px; color: #61718A;}
+
+.linknav { FONT-FAMILY: Arial, Helvetica; FONT-SIZE: 11px; color: #FFFFFF; text-decoration: none; }
+.linknav2 { FONT-FAMILY: Arial, Helvetica; FONT-SIZE: 11px; color: #8197AB; text-decoration: none; font-weight: bold; }
+.linknavred { FONT-FAMILY: Arial, Helvetica; FONT-SIZE: 11px; color: #DB0016; text-decoration: none; }
+.linknavb { FONT-FAMILY: Arial, Helvetica; FONT-SIZE: 11px; color: #FFFFFF; text-decoration: none; font-weight: bold; }
+
+.linknavbot {FONT-FAMILY: Arial, Helvetica; FONT-SIZE: 11px; 	color: #42596D; text-decoration: none;}
+.linknavside {FONT-FAMILY: Arial, Helvetica; FONT-SIZE: 11px; 	color: #42596D; text-decoration: none;}
+
+.td11 {font-size: 11px;}
+.ttle {font-size: 11px; color: #42596D; font-weight: bold;}
+.date {font-size: 11px; color: #DB0016; font-weight: bold;}
+.tdtitle { font-size: 11px; color: #42596D; font-weight: bold; background-color: #E0E6EC; }
+.tdboxtitle { font-size: 11px; color: #42596D; font-weight: bold; background-color: #9CBDD3; }
+.sousttle { color: #42596D; font-weight: bold; font-size: 11px; }
+.whitelink { color: #FFFFFF; text-decoration: none; }
+.none { text-decoration: none; }
+
+.whitelink2 { /* Ajouté le 29/11/05 style des rollovers du dégroupage */
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 10px;
+	background-color: #51718A;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/* ajouté le 24/11/05 pour page dégroupage */
+#BougeMoi { /* Style du layer mobile sur la carte de DGP */
+	position:absolute;
+	width:100;
+	height:10px;
+	top: 0px;
+	left: 0px;
+}
+
+.region { /* Style du texte dans le layer mobile */
+	font-family: Verdana, Arial;
+	font-size: 9px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #679ABB;
+	text-transform: uppercase;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* END OF ajouté le 24/11/05 pour page dégroupage */
+.tv {
+	background: #CBD6DF no-repeat left top;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #26333E;
+}
+.pointill {
+	border: 1px solid #26333E;
+	padding: 5px;
+}
+.wtchme {
+	color: #26333E;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.rad {
+	background: #CBD6DF no-repeat scroll;
+}
+.line {
+	border: 1px solid #000;
+}
+#rolov {
+	font: 10px Arial, Helvetica, sans-serif;
+	color: #3D5156;
+	margin: 0px;
+	padding: 0px;
+	height: 150px;
+	width: 184px;
+	overflow: auto;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #999999;
+	border-left-color: #999999;
+}
+.standar {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #26333E;
+}
+
+.standar ul {
+	margin: 5px;
+	padding: 10px;
+}
+.clair {
+	background: #DEE6EB
+}
+
+.smalltxt {
+	font: 10px Arial, Helvetica, sans-serif;
+	color: #41697E;
+	text-decoration: none;
+}
+.nom {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #26333E;
+}
+.clair {
+	background: #E0E6EC;
+}
+/* Specifique @ support 
+*/
+.spaceme {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.spaceme li {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	margin-left: 5px;
+	list-style-type: none;
+	color: #506D7E;
+	list-style-image: url(/im/fl_cont_red.gif);
+}
+.spaceme ol {
+	margin-left: 0px;
+	font-style: normal;
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+.showme {
+	color: #990000;
+	text-align: center;
+	background-image: url(imgs/lexicon.gif);
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+.medium {
+	color: #CC0000;
+	font: bold 12px Arial, Helvetica, sans-serif;
+}
+.grey {
+	background: #E1E8EC;
+}
+
+.big {
+	color: #262F40;
+	text-align: left;
+	border-left: 10px solid #36485A;
+	text-transform: uppercase;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	padding: 1px 2px 1px 5px;
+}
+.lightit {
+	background-color: #FFFFFF;
+	text-decoration: none;
+	border: solid #999 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+/*corpo: style du corps de Div(content)*/
+.corpo {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333333;
+	text-decoration: none;
+	background-color: #CBD6DF;
+	padding: 5 5 5 5;
+	font-weight: normal;
+}
+#content {
+
+	/* height: 520px;*/
+	width: 600px;
+	overflow: hidden;
+	text-align: left;
+}
+.pp {
+	background: #FFFFFF;
+	letter-spacing: 1px;
+	padding: 10px;
+	border: 1px dotted #999999;
+	background-color: #CBD6DF;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+.light {
+	word-spacing: normal;
+	border-right: solid #e00000 20px;
+}
+.nojavascript {
+}
+
+.cross {
+	cursor: move;
+	border-bottom: 5px solid #75828D;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#audience {
+
+
+	/* height: 520px;*/
+	width: 550px;
+	overflow: hidden;
+	text-align: left;
+}
+.nom {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #26333E;
+}
+
+
+.tv .categor {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #42596D;
+}
+#chanels {
+	height: 32px;
+	overflow: hidden;
+	/*width: 600px;*/
+	white-space: nowrap;
+	position: absolute;
+}
+#winwin{
+position: relative;
+width: 600px;
+height: 32px;
+overflow: hidden;
+}
+.supportback {
+	background: url(im_support/slide.gif) no-repeat scroll 450px 300px;
+	background-color: #CBD6DF;
+}
+
+.height {
+height: 205px;
+width: 619px;
+overflow: auto;
+	}
+#search_web,  #search_web2{
+visibility:visible;
+display:block;
+margin:0;
+padding:0;
+border:0;
+}
+#search_images, #search_images2{
+visibility:hidden;
+display:none;
+margin:0;
+padding:0;
+border:0;
+}
+#search_audios, #search_audios2{
+visibility:hidden;
+display:none;
+margin:0;
+padding:0;
+border:0;
+}
+#search_videos, #search_videos2{
+visibility:hidden;
+display:none;
+margin:0;
+padding:0;
+border:0;
+}
+form{
+border:0;
+margin:0;
+padding:0;
+}
+
+
+.texte_input_web{
+height:22px;
+width:420px;
+padding-left:5px;
+padding-top:3px;
+ border:1px solid #FFFFFF;
+ border-color:#808080 #E2E2E2 #E2E2E2 #808080;
+ background:#fff url(http://img3.free.fr/im/bg_input_web.gif) no-repeat;
+ font-size:12px;
+}
+.texte_input_image{
+height:22px;
+width:420px;
+padding-left:5px;
+padding-top:3px;
+ border:1px solid #FFFFFF;
+ border-color:#808080 #E2E2E2 #E2E2E2 #808080;
+ background:#fff url(http://img3.free.fr/im/bg_input_image.gif) no-repeat;
+ font-size:12px;
+}
+.texte_input_video{
+height:22px;
+width:420px;
+padding-left:5px;
+padding-top:3px;
+ border:1px solid #FFFFFF;
+ border-color:#808080 #E2E2E2 #E2E2E2 #808080;
+ background:#fff url(http://img3.free.fr/im/bg_input_video.gif) no-repeat;
+ font-size:12px;
+}
+.texte_input_audio{
+height:22px;
+width:420px;
+padding-left:5px;
+padding-top:3px;
+ border:1px solid #FFFFFF;
+ border-color:#808080 #E2E2E2 #E2E2E2 #808080;
+ background:#fff url(http://img3.free.fr/im/bg_input_audio.gif) no-repeat;
+ font-size:12px;
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Messagerie WL Bank</title>
+
+<link href="../styles/home-messagerie.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="../js/worldlinebank.js"></script>
+<script type="text/javascript" src="../js/ext-2.2/adapter/ext/ext-base.js"></script>
+<script src="../js/ext-2.2/ext-all.js"></script>
+<script type="text/javascript" src="../js/grid-recu.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery-1.2.2.min.js"></script>
+<script>	
+	function nouveau(){		
+		Ext.QuickTips.init();
+	
+		var myDest = [['Dupont Michel, Miribel'],['Dupont Sophie, Miribel'],['Dupuis Laurent, Miribel'],['Miribel agency']];
+		
+		var mesDestinataires = new Ext.data.SimpleStore({
+	      fields: [{name: 'name'}],
+	      data:myDest
+		}); 
+		
+		var selectDest = new Ext.form.ComboBox({
+	    fieldLabel : 'To',
+	    mode : "local",
+	    displayField:'name',
+	    store : mesDestinataires,
+	    typeAhead: true,
+	    triggerAction: 'all',
+	    emptyText:'Select an address...',
+	    selectOnFocus:true,
+	    height : 20,
+	    width : 300
+	  });
+	  
+	  var signature = new Ext.form.Checkbox({
+	    boxLabel : 'Add a signature',
+	    hideLabel : true
+	  });
+		
+		var mySubjects = [['Information request'],['Appointment request'],['Internal transfer request'],['Order a chequebook'],['Extract of bank report'],['Other']];
+		
+		var mesSujets = new Ext.data.SimpleStore({
+	      fields: [{name: 'sujet'}],
+	      data:mySubjects
+		}); 
+		
+		var selectSubject = new Ext.form.ComboBox({
+	    fieldLabel : 'Subject',
+	    mode : "local",
+	    displayField:'sujet',
+	    store : mesSujets,
+	    typeAhead: true,
+	    triggerAction: 'all',
+	    emptyText:'Select an object...',
+	    selectOnFocus:true,
+	    height : 20,
+	    width : 300
+	  });
+	  
+	  var urgent = new Ext.form.Checkbox({
+	    boxLabel : 'High priority',
+	    hideLabel : true
+	  });
+	  
+	  var editor = new Ext.form.HtmlEditor({
+	    id: 'idEditor',
+	    name: 'monEditeur',
+	    value: '<br><br><br>Yours sincerely,<br>__________________________________________<br>Michel Durand,<br>243, chemin des Lilas<br>01800 Saint Jean de Niost',
+	    width:600,
+	    height:280,
+	    x:0,
+	    y:80
+	  });	
+	  
+	  var monFormulaire = new Ext.form.FieldSet({
+	    layout:'table',
+	    defaults: {
+	        bodyStyle:'margin-left:10px'
+	    },
+	    layoutConfig: {
+	        columns: 2
+	    },   
+		cls:'newMessFieldSet', 
+	    items:[
+	      {layout: 'form', items :[selectDest], cls:'newMessFormField'},
+	      {layout: 'form', items :[signature], cls:'newMessFormField'},
+	      {layout: 'form', items :[selectSubject], cls:'newMessFormField'},
+	      {layout: 'form', items :[urgent], cls:'newMessFormField'}
+	    ],
+	    width:600,
+	    height:70,
+	    x:0,
+	    y:0
+		});
+		
+		var mailTB = new Ext.Toolbar({
+	      buttons: [{
+	            text: 'Send',
+				handler:function(){
+					var textToTransform=editor.getRawValue();
+					var textToSave=textToTransform.replace(/"/g, "\#\#");
+					var dateFormatee=numday+"/"+month+"/"+numyear;
+					window.top.myDataSent.push([true,false,urgent.getValue(),false,'','','',selectDest.getValue(),selectSubject.getValue(),dateFormatee,2,""+textToSave]);
+					win.close();
+					$("#envoiMail").css({
+						width: "143px",
+				        height: "102px",
+				        opacity: 1,
+				        left: "634px"
+					});
+					$("#envoiMail").fadeIn("slow");
+				      $("#envoiMail").animate({ 
+				        width: "20px",
+				        height: "10px",
+				        opacity: 0,
+				        left: "1px",
+						top: "320px"
+				      }, 3000 );
+				}
+	        },{
+	            text: 'Save'
+	        },
+	      {
+	            text: 'Cancel'
+	        },
+	      {
+	            text: 'Address book'
+	        },
+	      {
+	            text: 'Attach a file'
+	        }]
+		  });
+		  
+		var win = new Ext.Window({
+			title: 'New Message',
+			height: 400,
+			width: 620,
+			modal: true,
+	    layout:'absolute',
+		tbar:mailTB
+		});
+		
+		win.add(monFormulaire);
+		win.add(editor);
+		win.show();
+	}
+	
+	/*---------------------------------------------------------------*/
+	
+	
+	function repondre(){		
+		Ext.QuickTips.init(); 
+		
+		var myDestRep = [['Dupont Michel, Miribel'],['Dupont Sophie, Miribel'],['Dupuis Laurent, Miribel'],['Miribel agency']];
+		
+		var mesDestinatairesRep = new Ext.data.SimpleStore({
+	      fields: [{name: 'name'}],
+	      data:myDestRep
+		}); 
+		
+		var selectDestRep = new Ext.form.ComboBox({
+	    fieldLabel : 'To',
+	    mode : "local",
+	    displayField:'name',
+	    store : mesDestinatairesRep,
+	    typeAhead: true,
+	    triggerAction: 'all',
+	    emptyText:'Sir Durand Michel',
+		disabled:true,
+	    selectOnFocus:true,
+	    height : 20,
+	    width : 300
+	  });
+	  
+	  var objetRep = new Ext.form.TextArea({
+	  	fieldLabel : 'Subject',
+		emptyText: 'Re: meeting request',
+		width: 300,
+		height:20
+	  });
+	  
+	  var signatureRep = new Ext.form.Checkbox({
+	    boxLabel : 'Add a signature',
+	    hideLabel : true
+	  });
+		
+		var mySubjectsRep = [['Appointment'],['Action Transfer'],['Action Chequebook'],['Action Credit card blocking'],['Information about life-insurance'],['Information about pensions off'],['Information about stock exchange'],['Politeness expression']];
+		
+		var mesSujetsRep = new Ext.data.SimpleStore({
+	      fields: [{name: 'sujet'}],
+	      data:mySubjectsRep
+		}); 
+		
+		var selectSubjectRep = new Ext.form.ComboBox({
+	    fieldLabel : 'Typical Answer',
+	    mode : "local",
+	    displayField:'sujet',
+	    store : mesSujetsRep,
+	    typeAhead: true,
+	    triggerAction: 'all',
+	    emptyText:'[None]',
+	    selectOnFocus:true,
+	    height : 20,
+	    width : 300
+	  });
+	  
+	  var urgentRep = new Ext.form.Checkbox({
+	    boxLabel : 'High priority',
+	    hideLabel : true
+	  });
+	  
+	  var textReponse = "<br>&nbsp;&nbsp;&nbsp;&nbsp;-----Original message-----<br>"+
+	  					"&nbsp;&nbsp;&nbsp;&nbsp;From: Michel Durand[mailto:Michel.Durand@worldlinebank.fr]<br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;Sent : Wednesday, September 12th 2007 16:17<br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;To: Durand Michel<br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;Subject : Meeting request<br><br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;Sir,<br><br><br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;I would like to discuss with you about the possibilities of tax reduction in the field of real estate as fast as possible.<br><br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;Please propose a phone meeting: I suggest next week after 6:00 pm, Paris time hour..<br><br><br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;Yours sincerely,<br><br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;Michel Durand<br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;21, square street<br>"+
+						"&nbsp;&nbsp;&nbsp;&nbsp;LONDON";
+						
+	  var editorRep = new Ext.form.HtmlEditor({
+	    id: 'idEditor',
+	    name: 'monEditeur',
+	    value: textReponse,
+	    width:600,
+	    height:280,
+	    x:0,
+	    y:110
+	  });	
+	  
+	  var insertAnswerButton = new Ext.Button({
+	  	text:'InsÃÂ©rer'
+	  });
+	  
+	  insertAnswerButton.on("click",function(){
+	  	textReponse="Hello,<br><br>Thank you for your message, blablablal blablablalblablablalblablablal blablablalblablablal.<br><br>Yours sincerely,<br>"+textReponse;
+	  	editorRep.setValue(textReponse);
+	  });
+	  
+	  var monFormulaireRep = new Ext.form.FieldSet({
+	    layout:'table',
+	    defaults: {
+	        bodyStyle:'margin-left:10px'
+	    },
+	    layoutConfig: {
+	        columns: 2
+	    },   
+		cls:'newMessFieldSet', 
+	    items:[
+	      {layout: 'form', items :[selectDestRep], cls:'newMessFormField'},
+	      {layout: 'form', items :[signatureRep], cls:'newMessFormField'},
+		  {layout: 'form', items :[objetRep], cls:'newMessFormField'},
+	      {layout: 'form', items :[urgentRep], cls:'newMessFormField'},
+		  {layout: 'form', items :[selectSubjectRep], cls:'newMessFormField'},
+		  {items:[insertAnswerButton]}
+	    ],
+	    width:600,
+	    height:70,
+	    x:0,
+	    y:0
+		});
+		
+		var mailTB = new Ext.Toolbar({
+	      buttons: [{
+	            text: 'Send',
+				handler: function(){
+					var textToTransform=editorRep.getRawValue();
+					var textToSave=textToTransform.replace(/"/g, "\#\#");
+					var dateFormatee=numday+"/"+month+"/"+numyear;
+					window.top.myDataSent.push([true,false,urgentRep.getValue(),false,'','','','M. Durand','Re: meeting request',dateFormatee,2,""+textToSave]);
+					winRep.close();
+					$("#envoiMail").css({
+						width: "143px",
+						height: "102px",
+						opacity: 1,
+						left: "634px"
+					});
+					$("#envoiMail").fadeIn("slow");
+					$("#envoiMail").animate({
+						width: "20px",
+						height: "10px",
+						opacity: 0,
+						left: "1px",
+						top: "320px"
+					}, 3000);
+				}
+	        },{
+	            text: 'Save'
+	        },
+	      {
+	            text: 'Cancel'
+	        },
+	      {
+	            text: 'Address book'
+	        },
+	      {
+	            text: 'Attach a file'
+	        }]
+		  });
+		  
+		var winRep = new Ext.Window({
+			title: 'New Message',
+			height: 400,
+			width: 620,
+			modal: true,
+	    layout:'absolute',
+		tbar:mailTB
+		});
+		
+		winRep.add(monFormulaireRep);
+		winRep.add(editorRep);
+		winRep.show();
+	}
+	
+	var avancement=0;
+
+	function updateAvancement(){
+	 	if (avancement <0.95) {
+			pbarT = Ext.getCmp('pbar');
+	 		if (avancement==0){
+				pbarT.updateProgress(0.21, "21%");
+				avancement=0.21;
+			}
+			else if (avancement==0.21){
+				pbarT.updateProgress(0.315, "31.5%");
+				avancement=0.315;
+			}
+			else if (avancement==0.315){
+				pbarT.updateProgress(0.473, "47.3%");
+				avancement=0.473;
+			}
+			else if (avancement==0.473){
+				pbarT.updateProgress(0.95, "95%");
+				avancement=0.95;
+			}
+			window.setTimeout("updateAvancement()",500);
+		}
+		else{
+			winT = Ext.getCmp('newFile2');
+			winT.close();
+			$("#envoiFichier").css({
+						opacity: 1,
+						left: "780px",
+						top: "250px"
+					});
+			$("#envoiFichier").fadeIn("slow");
+			$("#envoiFichier").animate({
+				opacity: 0,
+				left: "5px",
+				top: "50px"
+			}, 2000);
+		}
+	}
+	
+	function addDocumentToVault(){
+		pbar = new Ext.ProgressBar({
+		    text:'0%',
+		    id:'pbar',
+			x:150,
+			y:70,
+			width:200
+		});
+		
+		var message = "<span style=\"font-size:10pt;\">Upload files</span><hr /><br />"
+		+"Your bank statement is going to be put down in your safe<br />"
+		+"Please confirm this request?";
+			
+		win = new Ext.Window({
+				id:'newFile2',
+				width: 500,
+				height:150,
+				maxHeight: 200,
+				closeAction: 'close',
+				plain: true,
+				layout:'absolute',
+				html:message,
+				buttons: [{
+					text: 'Accept',
+					handler: function(){
+							updateAvancement();
+							myLocalFiles = window.top.myFiles;
+		    				myLocalFiles.push([false,'pdf','2007-09-bank_report-01234-031567K.pdf','18/04/2008 at Â  12:15',150,true,true,true,'Dupont','12/05/2008','JKHKJS54556DS']);
+						}
+					}, {
+					text: 'Cancel',
+					handler: function(){
+						win.close();
+					}
+				}]
+			});
+		win.add(pbar);
+		win.show();
+	}
+  </script>
+  
+
+<style type="text/css">@import url(../styles/main.css);</style>
+<style type="text/css">@import url(../js/ext-2.2/resources/css/ext-all.css);</style>
+<style type="text/css">@import url(../styles/xtheme-wlbank.css);</style>
+
+
+</head>
+
+<body>
+
+<div id="mainBlockL">
+
+	<div id="wrapper">
+
+        <div class="titlePlanel">
+
+            <p class="plName"><strong>
+
+                <script language="JavaScript" type="text/javascript">
+
+			document.write(window.top.userName);
+
+			</script>
+
+                </strong><span id="info">[You do not have any other message]</span></p>
+
+            <p class="plPrct"><span class="percent">Used space
+
+			</span><span class="spaceContainer"><img src="../imgs/jauge.gif" width="25px" height="15"/></span><span class="percent"><strong>25%</strong></span></p>
+
+		</div>   
+
+		<ul class="toolList">
+
+			<li class="Nouveau"><a onClick="nouveau();" href="#">New</a></li>
+
+			<li class="Repondre"><a onClick="repondre();" href="#">Answer</a></li>
+
+			<li class="Deplacer"><a href="#">Move</a></li>
+
+			<li class="Cancel"><a href="#">Cancel</a></li>
+
+			<li class="Print"><a href="#">Print</a></li>
+
+		</ul>
+	</div>
+</div>
+<div id="dlgNouveauMessage" style="display:none;">
+    <br/>
+    <table>
+        <tr>
+            <td><img src="../imgs/mail.gif" alt="Nouveaux messages" align="absmiddle" /></td>
+            <td align="center"><b>You received <font color="#FF0000">2</font> New messages.</b></td>
+        </tr>
+    </table>
+    <br/>
+</div>
+<div id="grid"></div>
+<img src="../imgs/enveloppe.gif" id="envoiMail" style="position:absolute;left:634px;top:175px;display:none;"/>
+<img src="../imgs/coffre/picto_fichier_pdf.gif" id="envoiFichier" style="position:absolute;left:780px;top:250px;display:none;"/>
+<div id="contenu" style="visibility:hidden;border:1px solid gray;width:664px;margin-left:30px;margin-top:10px;padding:10px;">
+	<div id="entete_message" style="background:#ecf3f8;margin:5px;padding:5px;border:solid 1px #808080;">
+		<div id="sujet_message"></div><br/>
+		<hr width="80%"/>
+		<table width="100%">
+			<tr>
+				<td id="auteur_message" style="font-size:8pt;"></td>
+				<td id="date_message" style="font-size:8pt;text-align:right;"></td>
+			</tr>
+			<tr>
+				<td id="pj_message" style="font-size:10pt;font-weight:bold;"></td>
+			</tr>
+		</table>
+	</div>
+	<br />
+	<div id="texte_message" style="font-size:8pt;padding-left:6px;"></div>
+	<div style="display:block;float:left;"><img src="../imgs/miribel_logo.png" /></div>
+	<div style="margin-left:220px;font-size:0.7em;">
+		Michel Dupont<br>
+		Miribel agency<br>
+		5 Cordeliers Street<br>
+		<img src="../imgs/phone.jpg" valign="middle"/> 04 78 17 69 56
+	</div>
+</div>
+</body>
+
+</html>

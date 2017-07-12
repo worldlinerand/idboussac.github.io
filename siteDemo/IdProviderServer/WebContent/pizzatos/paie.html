@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Pizz'atos : Paiement</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<script type="text/javascript"> </script>
+    	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <style type="text/css">#hd1 {width: 2%;}</style>
+</head>
+
+<body>
+<div id="bord"></div>
+<div id="mainbd">
+
+  <div id="header">
+    <h1 id="logo"><img src="imgs/logo.gif" alt="Pizz'atos" /></h1>
+	<p id="pub"><a href="#"><img src="imgs/pub.gif" alt="Menu Biolight &agrave; 20euros" /></a></p>
+  </div>
+  
+  <ul id="tabslist">
+    <li><a href="ajout.html">Les menus</a></li>
+    <li><a href="#">Notre carte</a></li>
+    <li><a href="#">Mon "Pizz'atos"</a></li>
+  </ul>
+  
+  <div id="pgbodys">
+    
+	  <h2>Paiement</h2> 
+	  <form name="payment" method="post" action="paie2.html">
+	  <script type="text/javascript">
+	  function paiement() {
+	  	var divCourant = document.getElementById('nfc');
+	  	var otherDiv = document.getElementById('paiement');
+	  	divCourant.innerHTML = otherDiv.innerHTML;
+    	}
+
+	  function getRequest(){
+			var xmlHttp = null;
+			try {
+				xmlHttp = new XMLHttpRequest();
+			} catch(e) { 
+				var ax = ['Msxml2.XMLHTTP.5.0', 'Msxml2.XMLHTTP.4.0', 'Msxml2.XMLHTTP.3.0', 'Msxml2.XMLHTTP', 'Microsoft.XMLHTTP'];
+				var c = 0;
+				while(c < ax.length){
+					try {
+						xmlHttp = new ActiveXObject(ax[c]);
+						c = ax.length+1;
+					} catch(e) {
+					}
+					c++;
+				}
+			}
+			return xmlHttp;
+		}
+
+	  function paiementEBankCash() {
+		  var req = getRequest();
+			req.onreadystatechange=function() { 
+						if(req.readyState==4){
+					        if(req.status==200){
+					          var message = req.responseText;
+					          	window.location = "confirmation.html";						      
+					    	}
+					    }
+				};
+			var phoneNumber = document.getElementById('id').value;
+			req.open("POST", "/eBankCashServer/application.app?payer", true);
+			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=\"UTF-8\"");
+			req.send("montant=12&libelle=Pizz'Atos Transaction 36381472&phoneNumber=" + phoneNumber);	
+	  }
+    </script>
+	  <table summary="Tableau des articles ajout&eacute;s au panier">
+	  <caption></caption>
+	    <tr>
+		  <th id="hd2" class="tdlft">Article</th>
+		  <th id="hd3"><acronym title="Quantit&eacute;">Qté.</acronym></th>
+		  <th id="hd4"><acronym title="Prix unitaire">PU</acronym></th>
+		  <th id="hd5">Total</th>
+		</tr>
+	    <tr>
+		  <td colspan="4" class="menuline">Menu "Cheesy"</td>
+		</tr>
+		<tr>
+		  <td class="tdlft">Pizza 4 fromages grande</td>
+		  <td>1</td>
+		  <td>10,20&euro;</td>
+		  <td>10,20&euro;</td>
+		</tr>
+		<tr>
+		  <td class="tdlft">Brownies</td>
+		  <td>2</td>
+		  <td>0,90&euro;</td>
+		  <td>1,80&euro;</td>
+		</tr>
+	    <tr>
+		  <td colspan="2" class="totaline"></td>
+		  <td class="totaline">TOTAL</td>
+		  <td class="totaline">12,00&euro;</td>
+		</tr>
+	  </table>
+	  </form>
+
+	  <div id="nfc">
+	   <p><img src="img/cartes-bancaires.gif" alt="CB" style="vertical-align:center;"/>
+	   <a href="#" onClick="paiement();"><img src="img/ebankcash.png" height=75 alt="" /></a></p>
+			<p>Transaction n° : <b>36381472</b></p>
+	  </div>	
+
+		<div id="paiement" style="visibility:hidden;">
+		<table>
+			<tr>
+				<td rowspan="2" width="30%">
+						<img src="img/ebankcash.png" height=75 alt="" />
+				</td>
+				<td width="30%" align="right">
+				Identifiant eBankCash (t&eacute;l&eacute;phone ou email)
+				</td>
+				<td width="40%" align="left">
+				<input type="text" name="id" id="id" value=""></input>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+				Mot de passe
+				</td>
+				<td align="left">
+				<input type="password" name="password" id="password" value=""></input>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="3">
+					<input type="submit" onClick="paiementEBankCash();" value="Payer" name="Payer>&nbsp;</input><br/>
+				</td>
+			</tr>
+			<tr>
+			<td align="center" colspan="3"> 
+			</td>
+			</tr>
+		</table>
+		<div align="center">Transaction n° : <b>36381472</b></div>
+		
+		
+		</div>
+		
+  </div> <!-- pgbody -->  
+</div> <!-- mainbd -->
+
+  <div id="footer">
+	<ul>
+	  <li id="cprt"> [ © Pizz'atos, 2005 ] </li>
+	  <li><a href="#">Aide</a> - </li>
+	  <li><a href="#">Plan du site</a> - </li>
+	  <li><a href="#">Contact</a> - </li>
+	  <li><a href="#">Conditions de vente</a></li>
+	</ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>WL Banque</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+ <script type="text/javascript">
+var djConfig = {
+	isDebug: true
+};
+</script>
+
+<script type="text/javascript" src="../js/ext-2.2/adapter/ext/ext-base.js"></script>
+<script src="../js/ext-2.2/ext-all.js"></script>
+<script type="text/javascript" src="../js/ext-2.2/source/locale/ext-lang-fr.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery-1.2.2.min.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/jquery.dimensions.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/ui.mouse.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/ui.magnifier.js"></script>
+<script type="text/javascript" src="../js/jQuery/jquery.ui-1.0/ui.sortable.js"></script>
+<script type="text/javascript" src="../js/worldlinebank.js"></script>
+
+<script>
+var info = '<li id="infos"><div class="mainBlock"><h1 class="hMb">About eBankCash</h1><div class="inMainBlock"><table width="100%"><tr><td>eBankCash is a new payment system................ ............ .............. ..................</td></tr></table></div><p class="fMb"><a href="#">More informations</a></p></div></li>';
+var register = '<li id="puceEnregistrement"><div class="mainBlock" id="enregistrement"><h1 class="hMb">eBankCash registration</h1><div class="inMainBlock" style="position: relative; padding-top: 5px;padding-bottom: 5px;"><table width="100%"><tr><td>Linked account</td><td><select name="nom_select" onchange="fonction(this);"><option value="1">124-454A64-5 Deposit account - 150,00 EUR</option></select></td></tr><tr><td>Lastname</td><td><input type="text" name="nom" id="eBankCashNom" value="Doe"></input></td></tr><tr><td>Firstname</td><td><input type="text" name="prenom" id="eBankCashPrenom" value="John"></input></td></tr><tr><td>Email</td><td><input type="text" name="email" id="eBankCashEmail" value="john.doe@atosorigin.com"></input></td></tr><tr><td>Mobile phone number</td><td><input type="text" name="phone" id="eBankCashPhone" value="06"></input></td></tr><tr><td>Amount (&euro;)</td><td><input type="text" name="montant" id="eBankCashMontant"></input></td></tr><tr><td colspan="2" align="center"><input type="submit" value="Register" onClick="inscription();"></input></td></tr></table></div><p class="fMb"><a href="#">&nbsp;</a></p></div></li>';
+var registerOK = '<li id="OK"><div class="mainBlock"><h1 class="hMb">eBankCash registration</h1><div class="inMainBlock" style="position: relative; padding-top: 5px;padding-bottom: 5px;"><table width="100%"><tr><td align="center">Your eBankCash registration is now complete.</td></tr><tr><td align="center"><br/>You will soon receive a text message on your mobile phone<br/>allowing you to download and install the eBankCash mobile application,<br/>compliant with your mobile. You must have a data access to download this application.<br/></td></tr><tr><td align="center"><br/>Note this pin code : <span style="font-weight:bold;font-size:medium;">4482</span><br/><br/>You must enter it on your mobile phone once the application is installed.<br/><br/><input type="submit" value="Back" onClick="display();"></input></td></tr></table></div><p class="fMb"><a href="#">&nbsp;</a></p></div></li>';
+var reload = '<li id="puceRechargement"><div class="mainBlock" id="rechargement"><h1 class="hMb">Reload my eBankCash account</h1><div class="inMainBlock" style="position: relative; padding-top: 5px;padding-bottom: 5px;"><table width="100%"><tr><td>Amount (&euro;)</td><td><input type="text" name="montant" id="eBankCashMontantRechargement"></input></td></tr><tr><td colspan="2" align="center"><input type="submit" value="Reload" onClick="recharger();"></input></td></tr></table></div><p class="fMb"><a href="#">&nbsp;</a></p></div></li>';
+var reloadOK = '<li id="puceRechargementOK"><div class="mainBlock"><h1 class="hMb">Reload my eBankCash account</h1><div class="inMainBlock" style="position: relative; padding-top: 5px;padding-bottom: 5px;"><table width="100%"><tr><td align="center">Your reload of ';
+var reloadOK2 = ' &euro; has been recorded.<br/><br/><input type="submit" value="Back" onClick="display();"></input></td></tr></table></div><p class="fMb"><a href="#">&nbsp;</a></p></div></li>';
+var comptes= '<li><div class="mainBlock"><h1 class="hMb">Your accounts</h1><div class="inMainBlock"><table class="mainBlTbCoF" ><tbody id="mainTable"><tr><td class="coName" style="width:40%;" <strong><h3>Account</h3></strong></td><td class="coNum" colspan="2" style="width:20%;"><strong><h3>Balance</h3></strong></td><td class="coDetail" style="width:40%;"><strong><h3>Detail</h3></strong></td></tr><tr id="compteEBankCash"><td class="coNameAd" id="titreEBankCash"><strong>eBankCash</strong></td><td class="coNumAd" id="soldeEBankCash" style="text-align:right;border-right-width:0px;"></td><td class="coNumAd" style="text-align:right;border-left-width:0px;">EUR</td><td class="coDetail" id="lienEBankCash" ><strong><a target="main" href="frame-detail2.html">List of operations</a></strong></td></tr></tbody></table></div><p class="fMb"><a href="#">&gt; Access to my on-line accounts</a></p></div></li>';
+
+function retour(){
+	document.getElementById('mesPanels').innerHTML = info + reload;
+}
+
+function inscription(){
+	var email = document.getElementById('eBankCashEmail').value;
+	var phone = document.getElementById('eBankCashPhone').value;
+	var montant = document.getElementById('eBankCashMontant').value;
+	var nom = document.getElementById('eBankCashNom').value;
+	var prenom = document.getElementById('eBankCashPrenom').value;
+	jQuery.ajax({
+		   type: "POST",
+		   url: "/eBankCashServer/application.app?register",
+		   data: "email=" + email + "&phone=" + phone + "&amount=" + montant + "&lastname=" + nom + "&firstname=" + prenom + "&lang=en",
+		   success: function(msg){
+			if (msg == 'ok'){
+				document.getElementById('mesPanels').innerHTML = registerOK;
+		   }
+	}});
+}
+	
+function recharger(){
+	var montant = document.getElementById('eBankCashMontantRechargement').value;
+	jQuery.ajax({
+		   type: "POST",
+		   url: "/eBankCashServer/application.app?reload",
+		   data: "amount=" + montant + "&lang=en",
+		   success: function(msg){
+				document.getElementById('mesPanels').innerHTML = reloadOK + montant + reloadOK2;
+			}
+	});
+}
+
+function display(){
+ jQuery.get("/eBankCashServer/application.app?isRegistered",{},	        
+			function(e) {
+				if (e.substring(0,1) == 'y'){
+					var balance = e.substring(1, e.length);
+			  		document.getElementById('mesPanels').innerHTML = comptes + info + reload;
+			  		document.getElementById('soldeEBankCash').innerHTML = balance;
+				} else {
+					document.getElementById('mesPanels').innerHTML = info + register;
+				}    
+			});  
+ }
+</script>
+
+<style type="text/css">@import url(../styles/main.css);</style>
+
+ <style type="text/css">@import url(../js/ext-2.2/resources/css/ext-all.css);</style>
+  <style type="text/css">@import url(../styles/main.css);</style>
+  <style type="text/css">@import url(../styles/xtheme-wlbank.css);</style>
+</head>
+<body onLoad="display();">
+	<div id="mainBlockL">
+		<table>
+			<tr> 
+				<td style="vertical-align:top;">				
+				  <ul id="mesPanels"></ul>
+				</td>
+			<td> 
+			<iframe id="right" name="right" SRC="frame-right.html" height="720" width="250" align="right" frameborder="0"></iframe>
+			</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
