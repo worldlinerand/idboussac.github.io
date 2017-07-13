@@ -9,24 +9,40 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
+  
+  <servlet> 
+  <description/>
     <display-name>IDPServer</display-name>
     <servlet-name>IDPServer</servlet-name>
     <servlet-class>idProvider.IDPHandler</servlet-class>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>IDPServer</servlet-name>
     <url-pattern>/IDPServer</url-pattern>
   </servlet-mapping>
+  
   <servlet>
-    <description></description>
+  <description/>
     <display-name>ServiceProvider</display-name>
     <servlet-name>ServiceProvider</servlet-name>
     <servlet-class>serviceProvider.SpHandler</servlet-class>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>ServiceProvider</servlet-name>
     <url-pattern>/SPServer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <description/>
+  	<display-name>idBlockChain</display-name>
+  	<servlet-name>idBlockChain</servlet-name>
+  	<servlet-class>idBlockchain.IDBHandler</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>idBlockChain</servlet-name>
+  	<url-pattern>/IDBServer</url-pattern>
   </servlet-mapping>
 </web-app>

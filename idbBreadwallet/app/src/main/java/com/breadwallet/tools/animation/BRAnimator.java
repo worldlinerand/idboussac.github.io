@@ -26,6 +26,7 @@ import com.breadwallet.BreadWalletApp;
 import com.breadwallet.presenter.activities.MainActivity;
 import com.breadwallet.presenter.fragments.FragmentDecoder;
 import com.breadwallet.presenter.fragments.FragmentIdBlockchain;
+import com.breadwallet.presenter.fragments.FragmentMasterAccount;
 import com.breadwallet.presenter.fragments.FragmentScanResult;
 import com.breadwallet.presenter.fragments.FragmentSettings;
 import com.breadwallet.presenter.fragments.FragmentSettingsAll;
@@ -330,6 +331,61 @@ public class BRAnimator {
             e.printStackTrace();
         }
     }
+
+
+    public static void pressMasterAccountButton(final MainActivity context) {
+        try {
+            if (context == null) return;
+            ((BreadWalletApp) context.getApplication()).cancelToast();
+            final FragmentManager fragmentManager = context.getFragmentManager();
+            if (level == 0) {
+                level++;
+                idb_open = true;
+                CustomPagerAdapter.adapter.showFragments(false, context);
+                context.setBurgerButtonImage(BRConstants.CLOSE);
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                FragmentMasterAccount to = (FragmentMasterAccount) fragmentManager.findFragmentByTag(FragmentMasterAccount.class.getName());
+                if (to == null) to = new FragmentMasterAccount();
+                fragmentTransaction.add(R.id.main_layout, to, FragmentIdBlockchain.class.getName());
+                fragmentTransaction.commit();
+                final FragmentMasterAccount finalTo = to;
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        TranslateAnimation trans = new TranslateAnimation(0, 0, 1920, 0);
+                        trans.setDuration(500);
+                        trans.setInterpolator(new DecelerateOvershootInterpolator(3f, 0.5f));
+                        View view = finalTo.getView();
+                        if (view != null)
+                            view.startAnimation(trans);
+                    }
+                }, 1);
+                InputMethodManager keyboard = (InputMethodManager) context.
+                        getSystemService(Context.INPUT_METHOD_SERVICE);
+
+                if (keyboard != null)
+                    keyboard.hideSoftInputFromWindow(CustomPagerAdapter.adapter.
+                            mainFragment.addressEditText.getWindowToken(), 0);
+            } else if (level == 1) {
+                level--;
+                idb_open=false;
+                context.setBurgerButtonImage(BRConstants.BURGER);
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.animator.from_top, R.animator.to_bottom);
+                FragmentMasterAccount fragmentMasterAccount = (FragmentMasterAccount) fragmentManager.
+                        findFragmentByTag(FragmentMasterAccount.class.getName());
+                fragmentTransaction.remove(fragmentMasterAccount);
+                fragmentTransaction.commit();
+                CustomPagerAdapter.adapter.showFragments(true, context);
+                MiddleViewAdapter.resetMiddleView(MainActivity.app, null);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 
 

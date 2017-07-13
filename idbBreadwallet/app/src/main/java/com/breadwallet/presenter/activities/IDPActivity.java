@@ -168,7 +168,6 @@ public class IDPActivity extends FragmentActivity {
 
         Uri uriEncoded = Uri.parse(claimsUri);
 
-
         Uri uri = null;
         try {
             uri = Uri.parse(URLDecoder.decode(uriEncoded.toString(),"UTF-8"));
@@ -186,9 +185,7 @@ public class IDPActivity extends FragmentActivity {
             idpClaim[i] = new ClaimsEntity(tmpClaim[0], tmpClaim[1]);
         }
         claimsList = (ListView) findViewById(R.id.idp_claims_list);
-
         adapter = new IdentityProviderAdapter(this, idpClaim);
-
         if(claimsList != null)
             claimsList.setAdapter(adapter);
         claimsUri = null;

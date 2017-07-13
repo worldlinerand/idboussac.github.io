@@ -92,8 +92,10 @@ public class MainFragment extends Fragment {
         mainFragmentLayout = (RelativeLayout) rootView.findViewById(R.id.main_fragment);
         final Button payAddressFromClipboardButton = (Button)
                 rootView.findViewById(R.id.main_button_pay_address_from_clipboard);
+
         final Button idBlockchain = (Button) rootView.findViewById(R.id.main_button_id_blockchain);
 
+        final Button masterAccount = (Button)  rootView.findViewById(R.id.main_button_master_account);
         addressEditText = (EditText) rootView.findViewById(R.id.address_edit_text);
         addressEditText.setGravity(Gravity.CENTER_HORIZONTAL);
         addressEditText.setOnClickListener(new View.OnClickListener() {
@@ -282,9 +284,28 @@ public class MainFragment extends Fragment {
             public void onClick(View v) {
                 ((MainActivity) getActivity()).hideAllBubbles();
 
-                    if (BRAnimator.checkTheMultipressingAvailability()) {
-                        BRAnimator.pressIdblockchainButton(app);
-                    }
+                if (BRAnimator.checkTheMultipressingAvailability()) {
+                    BRAnimator.pressIdblockchainButton(app);
+                }
+
+
+
+               /* ((MainActivity) getActivity()).hideAllBubbles();
+                if (BRAnimator.checkTheMultipressingAvailability()) {
+                    BRAnimator.op_return_fragment_animation(app);
+                    app.activityButtonsEnable(false);
+                }*/
+            }
+        });
+
+        masterAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity) getActivity()).hideAllBubbles();
+
+                if (BRAnimator.checkTheMultipressingAvailability()) {
+                    BRAnimator.pressMasterAccountButton(app);
+                }
 
 
 

@@ -1,8 +1,8 @@
 package idBlockchain;
 
 import java.io.BufferedReader;
-
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -16,13 +16,16 @@ import org.json.JSONObject;
 import ObjetRemove.User;
 import tools.BDDManager;
 import tools.BitcoinOpReturnTX;
-import tools.BitcoinOpReturnTX.BitcoinNet;
 import tools.BitcoinOpReturnTX.EmptyBitcoinAccountException;
+import tools.BitcoinOpReturnTX.BitcoinNet;
+
 
 @WebServlet("/IDBHandler")
 public class IDBHandler extends HttpServlet {
-	
-	
+
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 	private  BitcoinOpReturnTX bot;
 	
@@ -30,11 +33,24 @@ public class IDBHandler extends HttpServlet {
     public  IDBHandler() {
         super();
         bot = new BitcoinOpReturnTX(BitcoinNet.TEST);
-        // TODO Auto-generated constructor stub
     }
+	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
+		response.setContentType("text/html");
+		response.setCharacterEncoding( "UTF-8" );
+		PrintWriter out = response.getWriter();
+		out.println("<!DOCTYPE html>");
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<meta charset=\"utf-8\" />");
+		out.println("<title>Test</title>");
+		out.println("</head>");
+		out.println("<body>");
+		out.println("<p>Ceci est une page générée depuis une servlet.</p>");
+		out.println("</body>");
+		out.println("</html>");
+	}
 	
-    
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		BufferedReader in = request.getReader();
 		String s;
@@ -69,14 +85,10 @@ public class IDBHandler extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*
-		validateTx = bot.recordSign(null, data);
-		System.out.println("validateTx : "+ validateTx);
-		*/ catch (EmptyBitcoinAccountException e) {
+		 catch (EmptyBitcoinAccountException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-    
-    
+
 }

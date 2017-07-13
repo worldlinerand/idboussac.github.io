@@ -1,24 +1,4 @@
 See file:///C:/Users/ahamroun/Documents/GitHub/idboussac.github.io/idbBreadwallet/app/build/tmp/compileCoreArmeabi-v7aDebugSharedLibraryCoreArmeabi-v7aDebugSharedLibraryMainC/output.txt for all output for compileCoreArmeabi-v7aDebugSharedLibraryCoreArmeabi-v7aDebugSharedLibraryMainC.
-compiling BRBase58.c successful.
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-1 warning generated.
-
-compiling BRBIP32Sequence.c successful.
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-1 warning generated.
-
 compiling BRAddress.c successful.
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -47,6 +27,26 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
         ^
 2 warnings generated.
 
+compiling BRBIP32Sequence.c successful.
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+1 warning generated.
+
+compiling BRBase58.c successful.
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+1 warning generated.
+
 compiling BRBIP39Mnemonic.c successful.
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -67,20 +67,6 @@ In file included from <built-in>:335:
         ^
 1 warning generated.
 
-compiling BRBloomFilter.c successful.
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRBloomFilter.c:27:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-2 warnings generated.
-
 compiling BRMerkleBlock.c successful.
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -97,6 +83,20 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
     if (r && (block->height % BLOCK_DIFFICULTY_INTERVAL) == 0) {
         ^
 3 warnings generated.
+
+compiling BRBloomFilter.c successful.
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRBloomFilter.c:27:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+2 warnings generated.
 
 compiling BRPaymentProtocol.c successful.
 In file included from <built-in>:335:
@@ -123,20 +123,6 @@ In file included from <built-in>:335:
         ^
 1 warning generated.
 
-compiling BRKey.c successful.
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRKey.c:26:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-2 warnings generated.
-
 compiling BRTransaction.c successful.
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -146,6 +132,20 @@ In file included from <built-in>:335:
 #define BITCOIN_TESTNET 0
         ^
 In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRTransaction.c:27:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+2 warnings generated.
+
+compiling BRKey.c successful.
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRKey.c:26:
 C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
 #pragma message "testnet build"
         ^
@@ -182,7 +182,7 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
         ^
 2 warnings generated.
 
-compiling BRWallet.c successful.
+compiling JNIBase58.c successful.
 In file included from <built-in>:335:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
 #define BITCOIN_TESTNET 1
@@ -190,12 +190,7 @@ In file included from <built-in>:335:
 <command line>:5:9: note: previous definition is here
 #define BITCOIN_TESTNET 0
         ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRWallet.c:25:
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRWallet.h:29:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-2 warnings generated.
+1 warning generated.
 
 compiling core.c successful.
 In file included from <built-in>:335:
@@ -219,16 +214,6 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
 }
  ^
 4 warnings generated.
-
-compiling JNIBase58.c successful.
-In file included from <built-in>:335:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-1 warning generated.
 
 compiling JNIBIP32Sequence.c successful.
 In file included from <built-in>:335:
@@ -268,6 +253,21 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
     jsize nonceSize = (*env)->GetArrayLength(env, nonce);
           ^
 6 warnings generated.
+
+compiling BRWallet.c successful.
+In file included from <built-in>:335:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRWallet.c:25:
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRWallet.h:29:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+2 warnings generated.
 
 compiling PeerManager.c successful.
 In file included from <built-in>:335:

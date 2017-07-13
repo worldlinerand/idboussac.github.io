@@ -13,16 +13,6 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
         ^
 2 warnings generated.
 
-compiling BRBIP32Sequence.c successful.
-In file included from <built-in>:326:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-1 warning generated.
-
 compiling BRBIP39Mnemonic.c successful.
 In file included from <built-in>:326:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -56,6 +46,16 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
 #pragma message "testnet build"
         ^
 2 warnings generated.
+
+compiling BRBIP32Sequence.c successful.
+In file included from <built-in>:326:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+1 warning generated.
 
 compiling BRCrypto.c successful.
 In file included from <built-in>:326:
@@ -137,6 +137,35 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
         ^
 2 warnings generated.
 
+compiling BRPeerManager.c successful.
+In file included from <built-in>:326:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:25:
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeerManager.h:28:
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:30:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:1473:94: warning: format specifies type 'unsigned long long' but the argument has type 'unsigned long' [-Wformat]
+        peer_log(peer, "increasing feePerKb to %llu based on feefilter messages from peers", secondFeePerKb*3/2);
+                                               ~~~~                                          ^~~~~~~~~~~~~~~~~~
+                                               %lu
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:36:62: note: expanded from macro 'peer_log'
+                                      (peer)->port, _va_rest(__VA_ARGS__, NULL))
+                                                             ^~~~~~~~~~~
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:38:30: note: expanded from macro '_va_rest'
+#define _va_rest(first, ...) __VA_ARGS__
+                             ^~~~~~~~~~~
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:45:71: note: expanded from macro '_peer_log'
+#define _peer_log(...) __android_log_print(ANDROID_LOG_INFO, "bread", __VA_ARGS__)
+                                                                      ^~~~~~~~~~~
+3 warnings generated.
+
 compiling BRWallet.c successful.
 In file included from <built-in>:326:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -147,20 +176,6 @@ In file included from <built-in>:326:
         ^
 In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRWallet.c:25:
 In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRWallet.h:29:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-2 warnings generated.
-
-compiling BRKey.c successful.
-In file included from <built-in>:326:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRKey.c:26:
 C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
 #pragma message "testnet build"
         ^
@@ -194,7 +209,7 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
                                                                       ^~~~~~~~~~~
 3 warnings generated.
 
-compiling BRPeerManager.c successful.
+compiling BRKey.c successful.
 In file included from <built-in>:326:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
 #define BITCOIN_TESTNET 1
@@ -202,37 +217,7 @@ In file included from <built-in>:326:
 <command line>:5:9: note: previous definition is here
 #define BITCOIN_TESTNET 0
         ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:25:
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeerManager.h:28:
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:30:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
-#pragma message "testnet build"
-        ^
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRPeerManager.c:1473:94: warning: format specifies type 'unsigned long long' but the argument has type 'unsigned long' [-Wformat]
-        peer_log(peer, "increasing feePerKb to %llu based on feefilter messages from peers", secondFeePerKb*3/2);
-                                               ~~~~                                          ^~~~~~~~~~~~~~~~~~
-                                               %lu
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:36:62: note: expanded from macro 'peer_log'
-                                      (peer)->port, _va_rest(__VA_ARGS__, NULL))
-                                                             ^~~~~~~~~~~
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:38:30: note: expanded from macro '_va_rest'
-#define _va_rest(first, ...) __VA_ARGS__
-                             ^~~~~~~~~~~
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRPeer.h:45:71: note: expanded from macro '_peer_log'
-#define _peer_log(...) __android_log_print(ANDROID_LOG_INFO, "bread", __VA_ARGS__)
-                                                                      ^~~~~~~~~~~
-3 warnings generated.
-
-compiling test.c successful.
-In file included from <built-in>:326:
-<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
-#define BITCOIN_TESTNET 1
-        ^
-<command line>:5:9: note: previous definition is here
-#define BITCOIN_TESTNET 0
-        ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\test.c:28:
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRWallet.h:29:
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRKey.c:26:
 C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
 #pragma message "testnet build"
         ^
@@ -271,6 +256,32 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
  ^
 4 warnings generated.
 
+compiling JNIKey.c successful.
+In file included from <built-in>:326:
+<command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
+#define BITCOIN_TESTNET 1
+        ^
+<command line>:5:9: note: previous definition is here
+#define BITCOIN_TESTNET 0
+        ^
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:10:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+#pragma message "testnet build"
+        ^
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:42:9: warning: unused variable 'res' [-Wunused-variable]
+    int res = BRKeySetPrivKey(&_key, (const char *) bytePrivKey);
+        ^
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:55:88: warning: format specifies type 'char *' but the argument has type 'UInt256' [-Wformat]
+    __android_log_print(ANDROID_LOG_ERROR, "Message from C: ", "key is set, _key: %s", _key.secret);
+                                                                                  ~~   ^~~~~~~~~~~
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:64:11: warning: unused variable 'nonceSize' [-Wunused-variable]
+    jsize nonceSize = (*env)->GetArrayLength(env, nonce);
+          ^
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:86:11: warning: unused variable 'nonceSize' [-Wunused-variable]
+    jsize nonceSize = (*env)->GetArrayLength(env, nonce);
+          ^
+6 warnings generated.
+
 compiling JNIBIP32Sequence.c successful.
 In file included from <built-in>:326:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
@@ -305,7 +316,7 @@ C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\ma
                              ^
 3 warnings generated.
 
-compiling JNIKey.c successful.
+compiling test.c successful.
 In file included from <built-in>:326:
 <command line>:6:9: warning: 'BITCOIN_TESTNET' macro redefined [-Wmacro-redefined]
 #define BITCOIN_TESTNET 1
@@ -313,23 +324,12 @@ In file included from <built-in>:326:
 <command line>:5:9: note: previous definition is here
 #define BITCOIN_TESTNET 0
         ^
-In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:10:
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core\test.c:28:
+In file included from C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRWallet.h:29:
+C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\breadwallet-core/BRAddress.h:39:9: warning: testnet build [-W#pragma-messages]
 #pragma message "testnet build"
         ^
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:42:9: warning: unused variable 'res' [-Wunused-variable]
-    int res = BRKeySetPrivKey(&_key, (const char *) bytePrivKey);
-        ^
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:55:88: warning: format specifies type 'char *' but the argument has type 'UInt256' [-Wformat]
-    __android_log_print(ANDROID_LOG_ERROR, "Message from C: ", "key is set, _key: %s", _key.secret);
-                                                                                  ~~   ^~~~~~~~~~~
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:64:11: warning: unused variable 'nonceSize' [-Wunused-variable]
-    jsize nonceSize = (*env)->GetArrayLength(env, nonce);
-          ^
-C:\Users\ahamroun\Documents\GitHub\idboussac.github.io\idbBreadwallet\app\src\main\jni\transition\JNIKey.c:86:11: warning: unused variable 'nonceSize' [-Wunused-variable]
-    jsize nonceSize = (*env)->GetArrayLength(env, nonce);
-          ^
-6 warnings generated.
+2 warnings generated.
 
 compiling wallet.c successful.
 In file included from <built-in>:326:
