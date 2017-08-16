@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import jdbc.SQL;
+import tools.ConfigReader;
 import tools.CredsData;
 import tools.Hash;
 import tools.Nonce;
@@ -44,8 +45,11 @@ public class LoginServlet extends HttpServlet {
 		request.setAttribute("username", customer.get("fname")+ " " + customer.get("lname"));
 		
 		nonce = new Nonce(Nonce.nonceGen());
+		ConfigReader cr = new ConfigReader();
+		String serverAddr = cr.read(getServletContext()).getString("urlsite");
 		
-		String idbURI = "idb://192.168.43.23:7080/IdProviderServer/ClaimsServlet";
+		
+		String idbURI = "idb://"+ serverAddr +"/IdProviderServer/ClaimsServlet";
 		String idbData = "#" + nonce.getNonce();
 		String idbEncoded = URLEncoder.encode(idbData,"UTF-8");
 		idbURI += idbEncoded;

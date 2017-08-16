@@ -13,16 +13,19 @@ public class Nonce {
 	private static String nonce;
 	private static int EXPIRATION_DELAY = 600;
 	private static long startTimer;
+	private static boolean valid = true;
 
 	public Nonce(String _nonce) {
 		nonce = _nonce;
 		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
 		startTimer = calendar.getTimeInMillis() / 1000;
+
 	}
 		
 	
 	public static String nonceGen() {
 		byte[] randByte = new byte[32];
+		valid = true;
 		new Random().nextBytes(randByte);
 		BigInteger randInt = new BigInteger(256, new Random());
 		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
@@ -46,7 +49,11 @@ public class Nonce {
 	public boolean nonceCheck(String receivedNonce) {
 		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
 		long currentTime = calendar.getTimeInMillis() / 1000;
-		return (receivedNonce.compareTo(nonce) == 0 && ((currentTime - startTimer) < EXPIRATION_DELAY));
+		if(receivedNonce.compareTo(nonce) == 0 && ((currentTime - startTimer) < EXPIRATION_DELAY) && valid==true){
+			valid=false;
+			return true;
+		}
+		return false;
 	}
 
 	final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
