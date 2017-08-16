@@ -2,10 +2,14 @@ package com.breadwallet.tools.adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.breadwallet.R;
@@ -25,6 +29,7 @@ public class IdentityProviderAdapter extends BaseAdapter {
     private Activity activity;
     private ArrayList<ClaimsEntity> data;
     private static LayoutInflater inflater = null;
+    private double maxHeigth = 100.0;
 
     public IdentityProviderAdapter(Activity a, ClaimsEntity[] d){
         activity = a;
@@ -67,7 +72,16 @@ public class IdentityProviderAdapter extends BaseAdapter {
         final ClaimsEntity item = data.get(position);
 
         type.setText(item.getType());
-        value.setText(item.getValue());
+        if(item.getType().equals("Creds")){
+            ImageView credsimg = (ImageView) tmpLayout.findViewById(R.id.credspic);
+            String imgStr = item.getValue();
+            byte imgBytes[] = Base64.decode(imgStr,Base64.DEFAULT);
+            Bitmap bmp = BitmapFactory.decodeByteArray(imgBytes,0,imgBytes.length);
+            double ratio = maxHeigth/(double)bmp.getHeight();
+            Bitmap resized = Bitmap.createScaledBitmap(bmp,(int)(bmp.getWidth()*ratio), (int)(bmp.getHeight()*ratio), true);
+            credsimg.setImageBitmap(resized);
+        } else
+            value.setText(item.getValue());
 
         return tmpLayout;
     }
