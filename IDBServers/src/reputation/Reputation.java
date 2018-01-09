@@ -1,10 +1,12 @@
 package reputation;
 
+import java.util.Scanner;
+
 public class Reputation {
 	
 	static public int GetReputation()
 	{
-		return 95;
+		return 20;
 	}
 	
 	public static byte[] intToByte(int x)

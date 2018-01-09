@@ -12,6 +12,8 @@ import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,6 +39,7 @@ import tools.ECDSA;
 public class IDPHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private  BitcoinOpReturnTX bot;
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -51,9 +54,7 @@ public class IDPHandler extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("========================== DEBUT Methode doGet IDPHandler ====================================");
-		System.out.println("request : "+ request );
-		System.out.println("response : "+ response );
+
 		try {
 			PublicKey pubkey = ECDSA.getKeyPairFromKeyStore().getPublic();//La clé publique issu de ecKeyStore.jks
 			byte [] encodedKey = pubkey.getEncoded();
@@ -62,14 +63,11 @@ public class IDPHandler extends HttpServlet {
 			for(byte b : encodedKey){
 			    key_builder.append(String.format("%02x", b));
 			}
-			
-			System.out.println("========================== FIN Methode doGet IDPHandler ====================================");
 			response.getWriter().append(key_builder.toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	/**
@@ -78,26 +76,21 @@ public class IDPHandler extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
-		System.out.println("========================== DEBUT Methode doPost IDPHandler ====================================");
-		System.out.println("request : "+ request );
-		System.out.println("response : "+ response );
-		
-		
 		BufferedReader in = request.getReader();
 		String s;
 		s=in.readLine();
-		System.out.println(s);
-		
 		
 		JSONObject customerData = new JSONObject(s);
 		JSONObject hashData = customerData.getJSONObject("data");
 		
 		String calculatedHash = Tools.globalHash(hashData,false);
-		System.out.println(calculatedHash);
+		String customerPublicKey = customerData.getString("pubkey");
+		//System.out.println(calculatedHash);
 		String signature = null;
-		System.out.println(customerData.getString("txId"));
+		//System.out.println(customerData.getString("txId"));
 		
 		try {
+			//Customer'signature 
 			signature = BitcoinOpReturnTX.getOP_Return(customerData.getString(("txId")));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -105,42 +98,74 @@ public class IDPHandler extends HttpServlet {
 		}
 		
 		byte[] sign = Tools.hexStringToByteArray(signature);
-		byte[] enc_key = Tools.hexStringToByteArray(customerData.getString("pubkey"));
+		byte[] enc_key = Tools.hexStringToByteArray(customerPublicKey);
 		
+		try {
+			System.out.println("hash clé publique du client : " + Tools.getPKHash(customerPublicKey));
+			
+		} catch (NoSuchAlgorithmException e3) {
+			// TODO Auto-generated catch block
+			e3.printStackTrace();
+		}		
+		
+		
+		try {
+			
+			if(!Tools.isvalidatePublicKey(customerPublicKey))
+			{
+				response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
+				return;
+			}
+			System.out.println("customerPublicKey a été validée");
+		} catch (Exception e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} 
 		X509EncodedKeySpec formatted_public = new X509EncodedKeySpec(enc_key);
-		
-        KeyFactory kf;
+		KeyFactory kf;
         PublicKey pubkey = null;
 		try {
 			kf = KeyFactory.getInstance("EC");
 			 pubkey = kf.generatePublic(formatted_public);
+			 
 		} catch (NoSuchAlgorithmException | InvalidKeySpecException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		
+		// is calculatedHash hashs of received claims ?
 		if(ECDSA.verify(sign, calculatedHash,pubkey)){
 			System.out.println("hash ok");
 			ECDSA ecdsa = new ECDSA();
-			
+
 			String validateTx = null;
-		
 			try {
-				
-				System.out.println(calculatedHash);
+				System.out.println("hash calculated : "+calculatedHash);
 				byte[] signProof = ecdsa.signature(calculatedHash);
 				byte[] data = new byte[signProof.length+1];// data saved on blockchain
 				
-				
-				data[0] = (byte) Reputation.GetReputation();//value of reputation
+				//value of reputation
+				data[0] = (byte) Reputation.GetReputation();
+				System.out.println("Valeur de la réputation : " + Reputation.GetReputation());
 				for(int i =0;i<signProof.length; i++)
 				{
 					data[1+i]=signProof[i];
 				}
 				
-				System.out.println("data : "+ Tools.bytesToHex(data));
 				validateTx = bot.recordSign(null, data);
-				System.out.println("validateTx : "+ validateTx);
+				
+				System.out.println("Validate tx : "+ validateTx);
+				
+				
+				// doPost AddReputationbis
+				boolean reputed = Tools.doPostReputation("http://localhost:8085/IDBServers/IDPHandler",
+						validateTx,
+						Tools.getPKHash(customerPublicKey ));
+				
+				
+				if(!reputed){
+					System.out.println("La réputation n'a pas été enregistré");
+					response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
+				}
 				
 			response.setStatus(HttpServletResponse.SC_OK);
 			response.getWriter().write(validateTx);
@@ -149,11 +174,13 @@ public class IDPHandler extends HttpServlet {
 			} catch (EmptyBitcoinAccountException e) {
 				response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
 				e.printStackTrace();
+			} catch (NoSuchAlgorithmException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			} 	
 		}
 		else 
 			response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
-		System.out.println("========================== FIN  Methode doPost IDPHandler ====================================");
 	}
 
 }

@@ -72,12 +72,29 @@ public class SpHandler extends HttpServlet {
 		//A modifier, recevoir un ensemble de txIDs puis les découper, exemple avec un espace entre chaque txId
 		JSONObject txIds = global.getJSONObject("txId");
 		JSONObject data = global.getJSONObject("data");
-		
 		try {
 			//Récupération des informations
 			String signature = BitcoinOpReturnTX.getOP_Return(txIds.getString("claimsTxID"));
 			String proofSign = BitcoinOpReturnTX.getOP_Return(txIds.getString("proofID"));
-			System.out.println("VALEUR DE REPUTATION  :   " + proofSign.substring(1, 3));
+			String customerPubKey = global.getString("pubkey");
+			String cPKHash = Tools.getPKHash(customerPubKey);
+			
+			String[] reputationPaser = Tools.VerificationPubKeyPaser(cPKHash);
+			byte reputations[] =new  byte[reputationPaser.length/2];
+			
+			
+
+			for(int i =0;i<reputationPaser.length;i=i+2)
+			{
+				proofSign = BitcoinOpReturnTX.getOP_Return(reputationPaser[i+1]);
+				System.out.println(reputationPaser[i+1]);
+				reputations[i/2]=Tools.hexStringToByteArray(proofSign.substring(2, 4))[0];
+				System.out.println("ADRESSE FEEDBACKER  :   " + reputationPaser[i]);
+				System.out.println("VALEUR DE REPUTATION  :   " + reputations[i/2]);
+				
+			}
+			
+			
 			String calculateHash = Tools.globalHash(data, true);
 			
 			PublicKey pubKeyIdp = Tools.getPubKeyFromAddr(data.getString("idpName"));

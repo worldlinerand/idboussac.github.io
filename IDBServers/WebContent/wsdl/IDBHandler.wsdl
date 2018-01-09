@@ -1,88 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions targetNamespace="http://idBlockchain" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://idBlockchain" xmlns:intf="http://idBlockchain" xmlns:tns1="http://http.servlet.javax" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<!--WSDL created by Apache Axis version: 1.4
-Built on Apr 22, 2006 (06:55:48 PDT)-->
- <wsdl:types>
-  <schema elementFormDefault="qualified" targetNamespace="http://idBlockchain" xmlns="http://www.w3.org/2001/XMLSchema">
-   <import namespace="http://http.servlet.javax"/>
-   <element name="doGet">
-    <complexType>
-     <sequence>
-      <element name="request" type="xsd:anyType"/>
-      <element name="response" type="xsd:anyType"/>
-     </sequence>
-    </complexType>
-   </element>
-   <element name="doGetResponse">
-    <complexType/>
-   </element>
-  </schema>
- </wsdl:types>
+<wsdl:definitions targetNamespace="http://idBlockchain"
+	xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://idBlockchain"
+	xmlns:intf="http://idBlockchain" xmlns:tns1="http://http.servlet.javax"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--WSDL created by Apache Axis version: 1.4 Built on Apr 22, 2006 (06:55:48 
+		PDT) -->
+	<wsdl:types>
+		<schema elementFormDefault="qualified" targetNamespace="http://idBlockchain"
+			xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://http.servlet.javax" />
+			<element name="doGet">
+				<complexType>
+					<sequence>
+						<element name="request" type="xsd:anyType" />
+						<element name="response" type="xsd:anyType" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="doGetResponse">
+				<complexType />
+			</element>
+		</schema>
+	</wsdl:types>
 
-   <wsdl:message name="doGetResponse">
+	<wsdl:message name="doGetResponse">
 
-      <wsdl:part element="impl:doGetResponse" name="parameters">
+		<wsdl:part element="impl:doGetResponse" name="parameters">
 
-      </wsdl:part>
+		</wsdl:part>
 
-   </wsdl:message>
+	</wsdl:message>
 
-   <wsdl:message name="doGetRequest">
+	<wsdl:message name="doGetRequest">
 
-      <wsdl:part element="impl:doGet" name="parameters">
+		<wsdl:part element="impl:doGet" name="parameters">
 
-      </wsdl:part>
+		</wsdl:part>
 
-   </wsdl:message>
+	</wsdl:message>
 
-   <wsdl:portType name="IDBHandler">
+	<wsdl:portType name="IDBHandler">
 
-      <wsdl:operation name="doGet">
+		<wsdl:operation name="doGet">
 
-         <wsdl:input message="impl:doGetRequest" name="doGetRequest">
+			<wsdl:input message="impl:doGetRequest" name="doGetRequest">
 
-       </wsdl:input>
+			</wsdl:input>
 
-         <wsdl:output message="impl:doGetResponse" name="doGetResponse">
+			<wsdl:output message="impl:doGetResponse" name="doGetResponse">
 
-       </wsdl:output>
+			</wsdl:output>
 
-      </wsdl:operation>
+		</wsdl:operation>
 
-   </wsdl:portType>
+	</wsdl:portType>
 
-   <wsdl:binding name="IDBHandlerSoapBinding" type="impl:IDBHandler">
+	<wsdl:binding name="IDBHandlerSoapBinding" type="impl:IDBHandler">
 
-      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdlsoap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
 
-      <wsdl:operation name="doGet">
+		<wsdl:operation name="doGet">
 
-         <wsdlsoap:operation soapAction=""/>
+			<wsdlsoap:operation soapAction="" />
 
-         <wsdl:input name="doGetRequest">
+			<wsdl:input name="doGetRequest">
 
-            <wsdlsoap:body use="literal"/>
+				<wsdlsoap:body use="literal" />
 
-         </wsdl:input>
+			</wsdl:input>
 
-         <wsdl:output name="doGetResponse">
+			<wsdl:output name="doGetResponse">
 
-            <wsdlsoap:body use="literal"/>
+				<wsdlsoap:body use="literal" />
 
-         </wsdl:output>
+			</wsdl:output>
 
-      </wsdl:operation>
+		</wsdl:operation>
 
-   </wsdl:binding>
+	</wsdl:binding>
 
-   <wsdl:service name="IDBHandlerService">
+	<wsdl:service name="IDBHandlerService">
 
-      <wsdl:port binding="impl:IDBHandlerSoapBinding" name="IDBHandler">
+		<wsdl:port binding="impl:IDBHandlerSoapBinding" name="IDBHandler">
 
-         <wsdlsoap:address location="http://localhost:8085/IDBServers/services/IDBHandler"/>
+			<wsdlsoap:address
+				location="http://localhost:8085/IDBServers/services/IDBHandler" />
 
-      </wsdl:port>
+		</wsdl:port>
 
-   </wsdl:service>
+	</wsdl:service>
 
 </wsdl:definitions>

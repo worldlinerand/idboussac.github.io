@@ -1,48 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>IDBServers</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
-  <servlet> 
-  <description/>
-    <display-name>IDPServer</display-name>
-    <servlet-name>IDPServer</servlet-name>
-    <servlet-class>idProvider.IDPHandler</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>IDPServer</servlet-name>
-    <url-pattern>/IDPServer</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  <description/>
-    <display-name>ServiceProvider</display-name>
-    <servlet-name>ServiceProvider</servlet-name>
-    <servlet-class>serviceProvider.SpHandler</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>ServiceProvider</servlet-name>
-    <url-pattern>/SPServer</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  <description/>
-  	<display-name>idBlockChain</display-name>
-  	<servlet-name>idBlockChain</servlet-name>
-  	<servlet-class>idBlockchain.IDBHandler</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>idBlockChain</servlet-name>
-  	<url-pattern>/IDBServer</url-pattern>
-  </servlet-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>IDBServers</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<description />
+		<display-name>IDPServer</display-name>
+		<servlet-name>IDPServer</servlet-name>
+		<servlet-class>idProvider.IDPHandler</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>IDPServer</servlet-name>
+		<url-pattern>/IDPServer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description />
+		<display-name>ServiceProvider</display-name>
+		<servlet-name>ServiceProvider</servlet-name>
+		<servlet-class>serviceProvider.SpHandler</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServiceProvider</servlet-name>
+		<url-pattern>/SPServer</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Inscription</servlet-name>
+		<servlet-class>idBlockchain.Inscription</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Inscription</servlet-name>
+		<url-pattern>/Inscription</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddPubKeyHashbis</servlet-name>
+		<servlet-class>idBlockchainbis.AddPubKeyHashbis</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddPubKeyHashbis</servlet-name>
+		<url-pattern>/AddPubKeyHashbis</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AddReputation</servlet-name>
+		<servlet-class>idBlockchainbis.AddReputation</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddReputation</servlet-name>
+		<url-pattern>/AddReputation</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AddPublicKeyHash</servlet-name>
+		<servlet-class>idBlockchain.AddPublicKeyHash</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddPublicKeyHash</servlet-name>
+		<url-pattern>/AddPublicKeyHash</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>VerificationPubKeyHash</servlet-name>
+		<servlet-class>idBlockchainbis.VerificationPubKeyHash</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>VerificationPubKeyHash</servlet-name>
+		<url-pattern>/VerificationPubKeyHash</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test</servlet-name>
+		<servlet-class>test.test</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+
 </web-app>

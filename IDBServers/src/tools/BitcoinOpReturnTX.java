@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
+import org.bitcoinj.core.Address;
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.core.InsufficientMoneyException;
 import org.bitcoinj.core.NetworkParameters;
@@ -31,7 +32,6 @@ public class BitcoinOpReturnTX {
 	private WalletAppKit walletAppKit;
 	
 	public BitcoinOpReturnTX(BitcoinNet bitcoinNet){
-		System.out.println("================ DEBUT Methode BitcoinOpReturnTX BitcoinOpReturnTX ==================");
 		System.out.println("bitcoinNet : " + bitcoinNet.toString());
 		NetworkParameters params;
 		if(bitcoinNet.equals(BitcoinNet.TEST)) {
@@ -53,43 +53,39 @@ public class BitcoinOpReturnTX {
 		//walletAppKit.restoreWalletFromSeed(seed);
 		initialise();
 		waitUntilReady();
-		System.out.println(walletAppKit.wallet().getChangeAddress());
-		System.out.println(walletAppKit.wallet().getBalance());
-		System.out.println("========================== FIN Methode BitcoinOpReturnTX BitcoinOpReturnTX ====================================");
+		System.out.println("Wallet address : "+walletAppKit.wallet().getChangeAddress());
+		System.out.println("containt :  "+walletAppKit.wallet().getBalance());
 	}
 
+	public Address getPubAddress()
+	{
+		return walletAppKit.wallet().getChangeAddress();
+	}
 	
 	public void initialise() {
-		System.out.println("========================== Debut Methode initialise BitcoinOpReturnTX ====================================");
 
 		walletAppKit.setAutoSave(true);
 		walletAppKit.setBlockingStartup(true);
 
 		walletAppKit.startAsync();
-		System.out.println("========================== Fin Methode initialise BitcoinOpReturnTX ====================================");
 
 	}
 
 	public void stop() {
-		System.out.println("========================== Debut Methode stop BitcoinOpReturnTX ====================================");
-		System.out.println("========================== Fin Methode stop BitcoinOpReturnTX ====================================");
+
 
 		walletAppKit.stopAsync();
 		
 	}
 
 	public boolean isReady() {
-		System.out.println("========================== Debut Methode isReady BitcoinOpReturnTX ====================================");
-		System.out.println("========================== Fin Methode isReady BitcoinOpReturnTX ====================================");
-
+	
 		return walletAppKit.isRunning();
 
 	}
 
 	public void waitUntilReady() {
-		System.out.println("========================== Debut Methode waitUntilReady BitcoinOpReturnTX ====================================");
-		System.out.println("========================== Fin Methode waitUntilReady BitcoinOpReturnTX ====================================");
-
+		
 		walletAppKit.awaitRunning();
 		
 	}
@@ -105,25 +101,20 @@ public class BitcoinOpReturnTX {
 	 * 		bitcoin transaction id
 	 * @throws EmptyBitcoinAccountException
 	 */
-	
 	public String recordSign(String prefix, byte[] data) throws EmptyBitcoinAccountException{
-		System.out.println("========================== Debut Methode recordSign BitcoinOpReturnTX ====================================");
-		System.out.println("data : "  + data.toString());
+
 		final Wallet wallet = walletAppKit.wallet();
 		if(data.length>80)
 		{
-			System.out.println("========================== FIN Methode recordSign BitcoinOpReturnTX ====================================");
-			System.out.println("return : null");
 			return null;
 		}
-		
 		byte[] opReturnValue;
 		if(prefix == null){
 			opReturnValue = new byte[data.length];
 			System.arraycopy(data, 0, opReturnValue, 0, data.length);
 		}else{
 			byte[] prefixBytes = prefix.getBytes(StandardCharsets.US_ASCII);
-			System.out.println("prefixBytes : " + prefixBytes.toString());
+			
 			
 			if(MAX_PREFIX_LENGTH < prefix.length()) {
 				throw new IllegalArgumentException("OP_RETURN prefix is too long: " + prefix);
@@ -150,8 +141,52 @@ public class BitcoinOpReturnTX {
 				// Broadcast and commit transaction
 				walletAppKit.peerGroup().broadcastTransaction(transaction);
 				wallet.commitTx(transaction);
-				System.out.println("========================== FIN Methode recordSign BitcoinOpReturnTX ====================================");
-				System.out.println("transaction.getHashAsString() : " + transaction.getHashAsString());
+				
+				// Return a reference to the caller
+				return transaction.getHashAsString();
+	}
+	
+	public String recordSign(String prefix, byte[] data,byte[] receivedAddress ) throws EmptyBitcoinAccountException{
+		final Wallet wallet = walletAppKit.wallet();
+		Address recAdd = new Address(wallet.getParams(),receivedAddress);
+		if(data.length>80)
+		{
+			return null;
+		}
+		
+		byte[] opReturnValue;
+		if(prefix == null){
+			opReturnValue = new byte[data.length];
+			System.arraycopy(data, 0, opReturnValue, 0, data.length);
+		}else{
+			byte[] prefixBytes = prefix.getBytes(StandardCharsets.US_ASCII);
+			System.out.println("prefixBytes : " + prefixBytes.toString());
+			
+			if(MAX_PREFIX_LENGTH < prefix.length()) {
+				throw new IllegalArgumentException("OP_RETURN prefix is too long: " + prefix);
+			}
+			opReturnValue = new byte[prefixBytes.length + data.length];
+			System.arraycopy(prefixBytes, 0, opReturnValue, 0, prefixBytes.length);
+			System.arraycopy(data, 0, opReturnValue, prefixBytes.length, data.length);
+		}
+		// Construct a OP_RETURN transaction
+				Transaction transaction = new Transaction(wallet.getParams());
+				transaction.addOutput(Coin.SATOSHI,recAdd);
+				transaction.addOutput(
+						Coin.ZERO,
+						ScriptBuilder.createOpReturnScript(opReturnValue));
+		SendRequest sendRequest = SendRequest.forTx(transaction);
+	
+		// Fill-in the missing details for our wallet, eg. fees.
+				try {
+					wallet.completeTx(sendRequest);
+				} catch (InsufficientMoneyException e) {
+					throw new EmptyBitcoinAccountException();
+				}
+
+				// Broadcast and commit transaction
+				walletAppKit.peerGroup().broadcastTransaction(transaction);
+				wallet.commitTx(transaction);
 				
 				// Return a reference to the caller
 				return transaction.getHashAsString();
@@ -166,52 +201,51 @@ public class BitcoinOpReturnTX {
 	 * 		op_return value
 	 * @throws Exception
 	 */
-public static String getOP_Return(String txId) throws Exception {
-	System.out.println("========================== DEBUT Methode getOP_Return BitcoinOpReturnTX ====================================");
-	System.out.println("txId : "  + txId);
-	
+	public static String getOP_Return(String txId) throws Exception {
+		System.out.println("========================== DEBUT Methode getOP_Return BitcoinOpReturnTX ====================================");
+		System.out.println("txId : "  + txId);
 		
-		String urlToRead = "https://api.blocktrail.com/v1/tbtc/transaction/" + txId + "?api_key=8d33fdcc2c596bafde45df806f6d1b63b777330d";
-		URL url = new URL(urlToRead);
-		JSONObject tx = null;
-		try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"))) {
-		    for (String line; (line = reader.readLine()) != null;) {
-		    	System.out.println("line : " +line);
-		    	tx = new JSONObject(line);
-		    }
-		    if(tx != null){
-		    	JSONArray arr = tx.getJSONArray("outputs");
-		    	boolean isOPReturn = false;
-		    	int i =0;
-		    	while(!isOPReturn){
-		    		if(arr.getJSONObject(i).getString("type").equals("op_return")){
-		    			isOPReturn =true;
-		    		}else
-		    			i++;
-		    	}
-		    	System.out.println("========================== FIN Methode getOP_Return BitcoinOpReturnTX ====================================");
-		    	return arr.getJSONObject(i).getString("script_hex").substring(2);
-		    }
-		   }
-		System.out.println("========================== FIN Methode getOP_Return BitcoinOpReturnTX ====================================");
-		System.out.println("return  : null" );
-		return null;
-		}
-	
-		private static String toAscii(String hex){
-			   StringBuilder output = new StringBuilder();
-			    for (int i = 0; i < hex.length(); i+=2) {
-			        String str = hex.substring(i, i+2);
-			        output.append((char)Integer.parseInt(str, 16));
+			
+			String urlToRead = "https://api.blocktrail.com/v1/tbtc/transaction/" + txId + "?api_key=8d33fdcc2c596bafde45df806f6d1b63b777330d";
+			URL url = new URL(urlToRead);
+			JSONObject tx = null;
+			try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"))) {
+			    for (String line; (line = reader.readLine()) != null;) {
+			    	tx = new JSONObject(line);
 			    }
-			    return output.toString();
-		   }
+			    if(tx != null){
+			    	JSONArray arr = tx.getJSONArray("outputs");
+			    	boolean isOPReturn = false;
+			    	int i =0;
+			    	while(!isOPReturn){
+			    		if(arr.getJSONObject(i).getString("type").equals("op_return")){
+			    			isOPReturn =true;
+			    		}else
+			    			i++;
+			    	}
+			    	System.out.println("========================== FIN Methode getOP_Return BitcoinOpReturnTX ====================================");
+			    	return arr.getJSONObject(i).getString("script_hex").substring(2);
+			    }
+			   }
+			System.out.println("========================== FIN Methode getOP_Return BitcoinOpReturnTX ====================================");
+			System.out.println("return  : null" );
+			return null;
+			}
+		
+			private static String toAscii(String hex){
+				   StringBuilder output = new StringBuilder();
+				    for (int i = 0; i < hex.length(); i+=2) {
+				        String str = hex.substring(i, i+2);
+				        output.append((char)Integer.parseInt(str, 16));
+				    }
+				    System.out.println("========================== FIN Methode getOP_Return BitcoinOpReturnTX ====================================");
+				    return output.toString();
+	}
 	
 	
 	@Override
 	public void finalize() throws Throwable {
-		System.out.println("========================== DEBUT Methode getOP_Return BitcoinOpReturnTX ====================================");
-		System.out.println("========================== FIN Methode finalize BitcoinOpReturnTX ====================================");
+
 		
 		this.stop();
 		super.finalize();

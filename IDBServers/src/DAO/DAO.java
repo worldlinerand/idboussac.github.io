@@ -1,6 +1,9 @@
 package DAO;
 
 import java.sql.Connection;
+import java.util.List;
+
+import ObjetRemove.PublicKey;
 
 public abstract class DAO<T> {
 
@@ -37,4 +40,6 @@ public abstract class DAO<T> {
   * @return T
   */
   public abstract T find(int id);
+  public abstract List findAll();
+
 }

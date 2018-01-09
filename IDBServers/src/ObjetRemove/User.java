@@ -1,56 +1,78 @@
 package ObjetRemove;
 
+import tools.BDDManager;
+
 public class User {
 	
-	private static int classUserID = 256;
+	private static int classUserID = 300;
 	private int userID = 0;
 	private String email = "";
 	private String password = "";
-	private String number = "";
 	private int walletCounter = 0;
-	
-	public User(String email, String password, String number,int walletCounter){
+	/**
+	 * Constructeur de User
+	 * @param email
+	 * @param password
+	 * @param walletCounter
+	 */
+	public User(String email, String password,int walletCounter){
 		this.userID=classUserID++;
 		this.email=email;
 		this.password=password;
-		this.number=number;
 		if(walletCounter>10)
 			this.walletCounter = 10;
 		else if(walletCounter < 0)
 			this.walletCounter = 0;
 		else
 			this.walletCounter=walletCounter;
-		
 	}
-	
-	public User(int userID, String email, String password, String number,int walletCounter){
+	/**
+	 * Constructeur de User
+	 * @param userID
+	 * @param email
+	 * @param password
+	 * @param walletCounter
+	 */
+	public User(int userID, String email, String password,int walletCounter){
 		this.userID=userID;
 		this.email=email;
 		this.password=password;
-		this.number=number;
 		this.walletCounter=walletCounter;
 	}
-	
+	/**
+	 * Constructeur de User
+	 */
 	public User(){}
 	
-	//SET
+	/**
+	 * Modifier l'email
+	 * @param email
+	 */
 	public void setEmail(String email){
 		this.email=email;
 	}
 	
+	/**
+	 * Modifier le password
+	 * @param password
+	 */
 	public void setPassword(String password){
 		this.password=password;
 	}
 	
-	public void setNumber(String number){
-		this.number=number;
-	}
 	
-	//GET
+	/**
+	 * 
+	 * @return userID
+	 */
 	public int getID(){
 		return this.userID;
 	}
 	
+	/**
+	 * 
+	 * @return walletCounter
+	 */
 	public int getCounter(){
 		return this.walletCounter;
 	}
@@ -59,16 +81,18 @@ public class User {
 		return this.email;
 	}
 	
-	public String getNumber(){
-		return this.number;
-	}
-	
+	/**
+	 * 
+	 * @return password
+	 */
 	public String getPassword(){
 		return this.password;
 	}
 	
-	//OPERATION on counter
-	
+	/**
+	 * 
+	 * @return boolean
+	 */
 	public boolean counterUp()
 	{
 		if(this.walletCounter==10)
@@ -82,6 +106,10 @@ public class User {
 		}
 	}
 	
+	/**
+	 * 
+	 * @return boolean
+	 */ 
 	public boolean counterDown()
 	{
 		if(this.walletCounter==0)
@@ -95,7 +123,12 @@ public class User {
 		}
 	}
 	
-	//Connexion
+	/**
+	 * 
+	 * @param email
+	 * @param password
+	 * @return boolean
+	 */
 	public boolean verify(String email, String password)
 	{
 		if( this.email.equals(email) && this.password.equals(password)){
