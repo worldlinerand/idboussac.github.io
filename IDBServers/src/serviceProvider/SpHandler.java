@@ -46,12 +46,10 @@ public class SpHandler extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("========================== DEBUT Methode doGet SpHandler ====================================");
 		System.out.println("request : "+ request );
 		System.out.println("response : "+ response );
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		System.out.println("========================== FIN Methode doGet SpHandler ====================================");
 	}
 
 	/**
@@ -59,7 +57,6 @@ public class SpHandler extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("========================== DEBUT Methode doPost SpHandler ====================================");
 		System.out.println("request : "+ request );
 		System.out.println("response : "+ response );
 		BufferedReader in = request.getReader();
@@ -69,7 +66,6 @@ public class SpHandler extends HttpServlet {
 		
 		
 		JSONObject global = new JSONObject(s);
-		//A modifier, recevoir un ensemble de txIDs puis les découper, exemple avec un espace entre chaque txId
 		JSONObject txIds = global.getJSONObject("txId");
 		JSONObject data = global.getJSONObject("data");
 		try {
@@ -91,7 +87,6 @@ public class SpHandler extends HttpServlet {
 				reputations[i/2]=Tools.hexStringToByteArray(proofSign.substring(2, 4))[0];
 				System.out.println("ADRESSE FEEDBACKER  :   " + reputationPaser[i]);
 				System.out.println("VALEUR DE REPUTATION  :   " + reputations[i/2]);
-				
 			}
 			
 			
@@ -117,8 +112,6 @@ public class SpHandler extends HttpServlet {
 				System.out.println("ok !");
 				response.setStatus(HttpServletResponse.SC_OK);
 				response.getWriter().write("BanqueBlesoise");
-				System.out.println("========================== FIN  Methode doPost SpHandler ====================================");
-				
 				response.getWriter().flush();
 				response.getWriter().close();
 				} else
@@ -127,13 +120,7 @@ public class SpHandler extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
-		}
-		
-		
+		}		
 	}
-	
-	
-
-		
 
 }

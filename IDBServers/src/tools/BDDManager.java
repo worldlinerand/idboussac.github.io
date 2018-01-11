@@ -5,14 +5,14 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 
+import Beans.Feedback;
+import Beans.PublicKey;
+import Beans.ReputationTX;
+import Beans.User;
 import DAO.DAOFB;
 import DAO.DAOPK;
 import DAO.DAOReputationTX;
 import DAO.DAOUser;
-import ObjetRemove.Feedback;
-import ObjetRemove.PublicKey;
-import ObjetRemove.ReputationTX;
-import ObjetRemove.User;
 
 public class BDDManager {
 
@@ -77,12 +77,12 @@ public class BDDManager {
     		}
     		return allPK;
         }
-/**
- * @param pk : public key
- * @return List : Liste de transactions de réputation liées à pk.
- * @throws ClassNotFoundException
- * @throws SQLException
- */
+	/**
+	 * @param pk : public key
+	 * @return List : Liste de transactions de réputation liées à pk.
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 */
       static public List findAllReputationTXOf(PublicKey pk) throws ClassNotFoundException, SQLException{
       	  Class.forName("org.postgresql.Driver");
     	  System.out.println("Driver O.K.");
@@ -129,12 +129,10 @@ public class BDDManager {
     		rpar[i*2+1]= rtx.getTx();
     		
     	}
-    	
     	return rpar;
     }
     
     /**
-     * 
      * @param user
      * @return
      * @throws SQLException
@@ -162,7 +160,6 @@ public class BDDManager {
 	}
 	
 	/**
-	 * 
 	 * @param pk
 	 * @return
 	 * @throws SQLException
@@ -186,8 +183,8 @@ public class BDDManager {
 	  		}
 		return false;
 	}
+	
 	/**
-	 * 
 	 * @param email
 	 * @return User
 	 * @throws SQLException
@@ -213,7 +210,6 @@ public class BDDManager {
 	}
 	
 	/**
-	 * 
 	 * @param id
 	 * @return
 	 * @throws SQLException
@@ -239,7 +235,6 @@ public class BDDManager {
 	}
 	
 	/**
-	 * 
 	 * @param hashTransaction
 	 * @return PublicKey
 	 * @throws SQLException
@@ -265,7 +260,6 @@ public class BDDManager {
 	}
 	
 	/**
-	 * 
 	 * @param user
 	 * @return 
 	 * @throws SQLException
@@ -291,6 +285,7 @@ public class BDDManager {
 	  		}
 		return 0;
 	}
+	
 	/**
 	 * 
 	 * @param user
@@ -374,6 +369,7 @@ public class BDDManager {
 	  		}
 		return false;
 	}
+	
 	/**
 	 * Augmenter le classUserID de la classe User
 	 * @param user
@@ -427,5 +423,4 @@ public class BDDManager {
   		}
 	    return idMax;
 	}
-	
 }

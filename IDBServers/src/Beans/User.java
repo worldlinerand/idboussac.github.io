@@ -1,4 +1,4 @@
-package ObjetRemove;
+package Beans;
 
 import tools.BDDManager;
 

@@ -3,12 +3,15 @@ package DAO;
 import java.sql.Connection;
 import java.util.List;
 
-import ObjetRemove.PublicKey;
+import Beans.PublicKey;
 
 public abstract class DAO<T> {
 
   protected Connection connect = null;
-   
+  /***
+   * Constructeur
+   * @param conn
+   */
   public DAO(Connection conn){
     this.connect = conn;
   }

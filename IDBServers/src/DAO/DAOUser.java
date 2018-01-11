@@ -6,10 +6,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-import ObjetRemove.User;
+import Beans.User;
 
 public class DAOUser extends DAO<User> {
-
+/**
+ * Constructeur
+ * @param conn
+ */
 	public DAOUser(Connection conn) {
 		super(conn);
 		// TODO Auto-generated constructor stub

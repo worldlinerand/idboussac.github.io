@@ -25,7 +25,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import reputation.Reputation;
+import Beans.Reputation;
 import tools.BitcoinOpReturnTX;
 import tools.Tools;
 import tools.BitcoinOpReturnTX.BitcoinNet;
@@ -132,7 +132,6 @@ public class IDPHandler extends HttpServlet {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		// is calculatedHash hashs of received claims ?
 		if(ECDSA.verify(sign, calculatedHash,pubkey)){
 			System.out.println("hash ok");
 			ECDSA ecdsa = new ECDSA();

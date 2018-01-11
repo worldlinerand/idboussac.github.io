@@ -1,4 +1,4 @@
-package reputation;
+package Beans;
 
 import java.util.Scanner;
 

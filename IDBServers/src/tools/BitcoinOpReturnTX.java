@@ -123,7 +123,6 @@ public class BitcoinOpReturnTX {
 			System.arraycopy(prefixBytes, 0, opReturnValue, 0, prefixBytes.length);
 			System.arraycopy(data, 0, opReturnValue, prefixBytes.length, data.length);
 		}
-		// Construct a OP_RETURN transaction
 				Transaction transaction = new Transaction(wallet.getParams());
 				transaction.addOutput(
 						Coin.ZERO,

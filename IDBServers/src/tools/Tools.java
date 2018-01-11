@@ -34,6 +34,8 @@ import org.json.JSONObject;
 
 public class Tools {
 	private final static char[] hexArray = "0123456789abcdef".toCharArray();
+	
+	
 	/**
 	 * create a hash from data by hashing separately each values in the JSONObject  and then hashing the concatenation of all these hashes 
 	 * @param data
@@ -42,9 +44,6 @@ public class Tools {
 	 * @return
 	 * @throws UnsupportedEncodingException 
 	 */
-	
-
-	
 	public static String globalHash(JSONObject data, boolean isSp){
 		MessageDigest digest = null;
 		try{
@@ -123,10 +122,12 @@ public class Tools {
 	    return data;
 	}
 	
-	
-
+	/**
+	 * 
+	 * @param addr
+	 * @return
+	 */
 	public static PublicKey getPubKeyFromAddr(String addr){
-		
 		PublicKey pubkey = null;
 		System.out.println(addr);
 		try{		
@@ -162,9 +163,14 @@ public class Tools {
 			e.printStackTrace();	
 		}
 		return pubkey;
-
 	}
-
+	
+	/**
+	 * 
+	 * @param urlToRead
+	 * @return
+	 * @throws Exception
+	 */
 	 public static String getHTML(String urlToRead) throws Exception {
 	      StringBuilder result = new StringBuilder();
 	      URL url = new URL(urlToRead);
@@ -179,11 +185,15 @@ public class Tools {
 	      return result.toString();
 	   }
 	 
-	 
+	 /***
+	  * 
+	  * @param urlToRead
+	  * @param params
+	  * @return
+	  * @throws IOException
+	  */
 	 public static String postHTML(String urlToRead, Map<String,Object> params) throws IOException
 	 {
-
-		 	//= new LinkedHashMap<>();
 	        URL url = new URL(urlToRead);
 	        StringBuilder postData = new StringBuilder();
 	        for (Map.Entry<String,Object> param : params.entrySet()) {
@@ -211,6 +221,14 @@ public class Tools {
 	        return result;
 	 }
 	 
+	 /**
+	  * 
+	  * @param name
+	  * @param txID
+	  * @param cPKHash
+	  * @return
+	  * @throws IOException
+	  */
 	 public static boolean doPostReputation(String name,String txID, String cPKHash) throws IOException
 	 {
 			Map<String,Object> params = new LinkedHashMap<>();
@@ -227,10 +245,15 @@ public class Tools {
 			}
 	 }
 	 
+	 /**
+	  * 
+	  * @param customerPublicKey
+	  * @return
+	  * @throws Exception
+	  */
 	 public static boolean isvalidatePublicKey(String customerPublicKey) throws Exception
-	 
-	 {	System.out.println("====================================isvalidatePublicKey debut ====================");		
-		 Map<String,Object> params = new LinkedHashMap<>();
+	 {	
+		Map<String,Object> params = new LinkedHashMap<>();
 	 	try {
 			params.put("hash",Tools.getPKHash(customerPublicKey ));
 		} catch (NoSuchAlgorithmException e2) {
@@ -247,21 +270,28 @@ public class Tools {
 		
 		 if(isvalidPKH.trim().equals("oui"))
 		 {
-			 System.out.println("====================================isvalidatePublicKey fin true ====================");
 			 return true;
 		 }
 		 else{
-			 System.out.println("====================================isvalidatePublicKey fin false ====================");
 			 return false;
 		 }
 	 }
 
-	    static String bin2hex(byte[] data){
+	 /**
+	  * 
+	  * @param data
+	  * @return
+	  */
+	 static String bin2hex(byte[] data){
 	        return  String.format("%0" + (data.length * 2) +'x', new BigInteger(1,data));
 	    }
 	 
-	    
-	    
+	    /**
+	     * 
+	     * @param pubkey
+	     * @return
+	     * @throws NoSuchAlgorithmException
+	     */
 	    public static String getPKHash(String pubkey) throws NoSuchAlgorithmException
 	    {
 			byte[] data = Tools.hexStringToByteArray(pubkey);
@@ -277,6 +307,12 @@ public class Tools {
 	        return bin2hex(out);
 	    }
 	    
+	    /**
+	     * 
+	     * @param pubkey
+	     * @return
+	     * @throws NoSuchAlgorithmException
+	     */
 	    public static byte[] getPKHashByte(String pubkey) throws NoSuchAlgorithmException
 	    {
 			byte[] data = Tools.hexStringToByteArray(pubkey);
@@ -292,6 +328,10 @@ public class Tools {
 	        return out;
 	    }
 	    
+	    /**
+	     * 
+	     * @return
+	     */
 	    public static String getIPAddress()
 	    {
 			  InetAddress ip;
@@ -307,6 +347,12 @@ public class Tools {
 	    	
 	    }
 	    
+	    /**
+	     * 
+	     * @param hash
+	     * @return
+	     * @throws IOException
+	     */
 	    public static String[] VerificationPubKeyPaser(String hash) throws IOException
 	    {
 			String urlToRead="http://134.214.108.142:8085/IDBServers/VerificationPubKeyHash";
@@ -315,10 +361,13 @@ public class Tools {
 			String nbTX="";
 			int inTX=0;
 			params.put("hash", hash);
-			
 			String data =  Tools.postHTML(urlToRead,params );
 			data =data.substring(data.indexOf("<p>") +3);
 			nbTX=data.substring(0 , data.indexOf("<br/>") );
+			System.out.println("'nbTX' = '"+nbTX+"'");
+			nbTX= nbTX.replaceAll("	","");
+			nbTX = nbTX.replaceAll(" ","");
+			System.out.println("'nbTX' = '"+nbTX+"'");
 			inTX=Integer.parseInt(nbTX);
 			String[] reputationPaser=new String[inTX*2];
 			data=data.substring(data.indexOf("<br/>")+4);
